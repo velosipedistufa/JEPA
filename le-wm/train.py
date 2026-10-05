@@ -41,6 +41,10 @@ def lejepa_forward(self, batch, stage, cfg):
     output["loss"] = output["pred_loss"] + lambd * output["sigreg_loss"]  
 
     losses_dict = {f"{stage}/{k}": v.detach() for k, v in output.items() if "loss" in k}
+    # Report latent_std for collapse detection
+    with torch.no_grad():
+        latent_std = emb.std().item()
+    self.log(f"{stage}/latent_std", latent_std, on_step=True, sync_dist=True)
     self.log_dict(losses_dict, on_step=True, sync_dist=True)
     return output
 

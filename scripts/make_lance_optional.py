@@ -107,12 +107,30 @@ def _replace_once(path: Path, old: str, new: str) -> str:
 
 
 def main() -> None:
-    if not FORMATS_INIT.is_file() or not DATA_INIT.is_file():
-        raise SystemExit(f"stable_worldmodel data package not found under {PKG}")
-    print(FORMATS_INIT, _replace_once(FORMATS_INIT, OLD_FORMATS, NEW_FORMATS))
-    print(DATA_INIT, _replace_once(DATA_INIT, OLD_DATA, NEW_DATA))
-    print(SPT_DATA, _replace_once(SPT_DATA, OLD_SPT_VIDEO, NEW_SPT_VIDEO))
-    print(KORNIA_IO, _replace_once(KORNIA_IO, OLD_KORNIA, NEW_KORNIA))
+    root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else ROOT
+    site = (
+        root
+        / ".venv"
+        / "lib"
+        / f"python{sys.version_info.major}.{sys.version_info.minor}"
+        / "site-packages"
+    )
+    formats_init = site / "stable_worldmodel" / "data" / "formats" / "__init__.py"
+    data_init = site / "stable_worldmodel" / "data" / "__init__.py"
+    spt_data = site / "stable_pretraining" / "data" / "__init__.py"
+    kornia_io = site / "kornia" / "io" / "io.py"
+    if not formats_init.is_file() or not data_init.is_file():
+        raise SystemExit(f"stable_worldmodel data package not found under {site}")
+    print(formats_init, _replace_once(formats_init, OLD_FORMATS, NEW_FORMATS))
+    print(data_init, _replace_once(data_init, OLD_DATA, NEW_DATA))
+    if spt_data.is_file():
+        print(spt_data, _replace_once(spt_data, OLD_SPT_VIDEO, NEW_SPT_VIDEO))
+    else:
+        print(spt_data, "absent")
+    if kornia_io.is_file():
+        print(kornia_io, _replace_once(kornia_io, OLD_KORNIA, NEW_KORNIA))
+    else:
+        print(kornia_io, "absent")
 
 
 if __name__ == "__main__":

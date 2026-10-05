@@ -10,3 +10,6 @@ reports/*.log
 reports/*.out
 reports/*.blg
 reports/*.toc
+.env
+.env.*
+.cycle/

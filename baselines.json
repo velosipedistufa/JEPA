@@ -1,0 +1,34 @@
+{
+  "baselines": [
+    {
+      "id": "baseline-0",
+      "status": "filled",
+      "description": "Unmodified LeWM checkout. Baseline fill from cycle 33 on remote GPU (RTX 4090).",
+      "commit": "8edfeb336732b5f3ce7b8b210d0ba370a09e2cac",
+      "config": {
+        "train_config": "le-wm/config/train/lewm.yaml",
+        "model_config": "le-wm/config/train/model/lewm.yaml",
+        "cem_config": "le-wm/config/eval/solver/cem.yaml",
+        "seed": 3072,
+        "train_split": 0.9,
+        "embed_dim": 192,
+        "sigreg_weight": 0.09,
+        "predictor_depth": 6,
+        "cem_population": 300,
+        "cem_iterations": 30,
+        "accelerator": "cpu",
+        "wandb_enabled": false,
+        "dataset_name": "pusht_expert_train"
+      },
+      "metric": 0.201171875,
+      "filled_by_cycle": 33
+    }
+  ],
+  "machine": {
+    "nvidia_smi": false,
+    "rocminfo": false,
+    "pusht_expert_train_h5": false,
+    "h5_path": "$HOME/.stable-wm/pusht_expert_train.h5",
+    "wandb": "off"
+  }
+}
