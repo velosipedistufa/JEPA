@@ -1,0 +1,13 @@
+torch 2.5.1+cu121
+cuda True
+gpu NVIDIA GeForce RTX 4090
+torch.version.cuda 12.1
+encode_s 0.068280
+z_shape (1, 1, 192)
+z_mean -0.039798151701688766
+z_std 0.97542405128479
+z_min -2.342271566390991
+z_max 2.6890833377838135
+frame (224, 224, 3) uint8
+goal (224, 224, 3) uint8
+pixels (1, 1, 3, 224, 224)

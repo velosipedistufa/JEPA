@@ -1,0 +1,266 @@
+/root/MMAGAIProject/.venv/lib/python3.11/site-packages/stable_worldmodel/envs/__init__.py:215: UserWarning: ale-py not found; ALE/* envs are unavailable. Install with: pip install 'stable-worldmodel[env]' or pip install ale-py.
+  from stable_worldmodel.envs import ale  # noqa: F401
+15:33:06 | INFO  | atomic_chec~| [atomic_save] installed crash-safe checkpoint plugin (write to sibling .tmp + fsync + atomic rename)
+15:33:06 | INFO  | utils.py    | Loading quentinll/lewm-pusht from local cache...
+15:33:06 | INFO  | utils.py    | Loading checkpoint from folder /root/MMAGAIProject/data/checkpoints/models--quentinll--lewm-pusht...
+/root/MMAGAIProject/.venv/lib/python3.11/site-packages/stable_worldmodel/wm/utils.py:80: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint_path, map_location='cpu')
+15:33:06 | INFO  | utils.py    | Created ViT-tiny from scratch with config: {'hidden_size': 192, 'num_hidden_layers': 12, 'num_attention_heads': 3, 'intermediate_size': 768, 'image_size': 224, 'patch_size': 14}
+/root/MMAGAIProject/.venv/lib/python3.11/site-packages/gymnasium/spaces/box.py:415: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+torch 2.5.1+cu121
+cuda True
+gpu NVIDIA GeForce RTX 4090
+torch.version.cuda 12.1
+encode_s 0.068280
+z_shape (1, 1, 192)
+z_mean -0.039798151701688766
+z_std 0.97542405128479
+z_min -2.342271566390991
+z_max 2.6890833377838135
+frame (224, 224, 3) uint8
+goal (224, 224, 3) uint8
+pixels (1, 1, 3, 224, 224)
+baseline 0 success=False pos=262.2 ang=89.0 solve_s=0.88
+baseline 1 success=False pos=161.1 ang=109.5 solve_s=0.79
+baseline 2 success=False pos=330.6 ang=22.9 solve_s=0.79
+baseline 3 success=False pos=143.6 ang=151.2 solve_s=0.80
+baseline 4 success=False pos=617.8 ang=83.5 solve_s=0.80
+baseline 5 success=False pos=230.8 ang=15.9 solve_s=0.80
+baseline 6 success=False pos=95.3 ang=152.1 solve_s=0.80
+baseline 7 success=False pos=166.0 ang=152.3 solve_s=0.80
+baseline 8 success=False pos=61.3 ang=52.3 solve_s=0.80
+baseline 9 success=False pos=143.4 ang=170.4 solve_s=0.80
+baseline_success_rate 0.0 wall 8.164769551998688
+baseline 0 success=False pos=316.0 ang=45.7 solve_s=0.80
+baseline 1 success=False pos=198.6 ang=172.7 solve_s=0.80
+baseline 2 success=False pos=45.5 ang=85.0 solve_s=0.80
+baseline 3 success=False pos=344.0 ang=119.5 solve_s=0.80
+baseline 4 success=False pos=864.3 ang=83.5 solve_s=0.80
+baseline 5 success=False pos=305.2 ang=51.3 solve_s=0.80
+baseline 6 success=False pos=196.5 ang=126.5 solve_s=0.80
+baseline 7 success=False pos=171.9 ang=128.7 solve_s=0.80
+baseline 8 success=False pos=131.6 ang=110.5 solve_s=0.80
+baseline 9 success=False pos=241.7 ang=129.7 solve_s=0.80
+baseline 10 success=False pos=34.9 ang=6.4 solve_s=0.80
+baseline 11 success=False pos=513.3 ang=160.1 solve_s=0.80
+baseline 12 success=False pos=155.0 ang=41.3 solve_s=0.80
+baseline 13 success=False pos=240.5 ang=50.3 solve_s=0.80
+baseline 14 success=False pos=381.8 ang=6.3 solve_s=0.80
+baseline 15 success=False pos=1208.5 ang=171.8 solve_s=0.80
+baseline 16 success=False pos=142.1 ang=66.6 solve_s=0.80
+baseline 17 success=False pos=207.7 ang=39.4 solve_s=0.80
+baseline 18 success=False pos=51.1 ang=19.9 solve_s=0.80
+baseline 19 success=False pos=80.9 ang=150.8 solve_s=0.80
+baseline_success_rate 0.0 wall 16.170249257998876
+baseline 0 success=False pos=249.4 ang=111.9 solve_s=0.80
+baseline 1 success=False pos=45.7 ang=54.2 solve_s=0.80
+baseline 2 success=False pos=30.2 ang=52.9 solve_s=0.80
+baseline 3 success=False pos=93.6 ang=169.4 solve_s=0.80
+baseline 4 success=False pos=835.0 ang=83.5 solve_s=0.80
+baseline 5 success=False pos=290.5 ang=29.8 solve_s=0.80
+baseline 6 success=False pos=340.3 ang=74.6 solve_s=0.80
+baseline 7 success=False pos=1225.0 ang=145.4 solve_s=0.80
+baseline 8 success=False pos=73.2 ang=54.1 solve_s=0.80
+baseline 9 success=False pos=219.8 ang=41.4 solve_s=0.80
+baseline 10 success=False pos=258.2 ang=7.3 solve_s=0.80
+baseline 11 success=False pos=614.4 ang=160.1 solve_s=0.80
+baseline 12 success=False pos=221.6 ang=72.4 solve_s=0.80
+baseline 13 success=False pos=304.5 ang=17.6 solve_s=0.80
+baseline 14 success=False pos=148.5 ang=37.4 solve_s=0.80
+baseline 15 success=False pos=1114.9 ang=171.8 solve_s=0.80
+baseline 16 success=False pos=95.6 ang=4.0 solve_s=0.80
+baseline 17 success=False pos=309.2 ang=80.4 solve_s=0.80
+baseline 18 success=False pos=82.2 ang=33.4 solve_s=0.80
+baseline 19 success=False pos=392.7 ang=142.3 solve_s=0.80
+baseline 20 success=False pos=263.2 ang=158.2 solve_s=0.80
+baseline 21 success=False pos=341.1 ang=160.3 solve_s=0.80
+baseline 22 success=False pos=245.5 ang=45.9 solve_s=0.80
+baseline 23 success=False pos=406.0 ang=133.1 solve_s=0.80
+baseline 24 success=False pos=147.6 ang=96.0 solve_s=0.80
+baseline 25 success=False pos=802.8 ang=52.6 solve_s=0.80
+baseline 26 success=False pos=52.7 ang=12.0 solve_s=0.80
+baseline 27 success=False pos=45.8 ang=22.8 solve_s=0.80
+baseline 28 success=False pos=387.5 ang=145.7 solve_s=0.80
+baseline 29 success=False pos=194.5 ang=8.7 solve_s=0.80
+baseline 30 success=False pos=29.0 ang=12.4 solve_s=0.80
+baseline 31 success=False pos=80.8 ang=86.4 solve_s=0.80
+baseline 32 success=False pos=54.1 ang=34.8 solve_s=0.80
+baseline 33 success=False pos=263.4 ang=84.4 solve_s=0.80
+baseline 34 success=False pos=81.6 ang=79.9 solve_s=0.80
+baseline 35 success=False pos=249.8 ang=36.8 solve_s=0.80
+baseline 36 success=False pos=82.2 ang=151.4 solve_s=0.80
+baseline 37 success=False pos=822.9 ang=110.7 solve_s=0.80
+baseline 38 success=False pos=245.2 ang=58.4 solve_s=0.80
+baseline 39 success=False pos=168.7 ang=66.2 solve_s=0.80
+baseline 40 success=False pos=377.7 ang=96.6 solve_s=0.80
+baseline 41 success=False pos=82.4 ang=90.7 solve_s=0.80
+baseline 42 success=False pos=188.0 ang=23.0 solve_s=0.80
+baseline 43 success=False pos=73.5 ang=8.8 solve_s=0.80
+baseline 44 success=False pos=609.2 ang=93.9 solve_s=0.80
+baseline 45 success=False pos=156.4 ang=63.0 solve_s=0.80
+baseline 46 success=False pos=337.0 ang=46.4 solve_s=0.80
+baseline 47 success=False pos=671.2 ang=119.9 solve_s=0.80
+baseline 48 success=False pos=178.0 ang=127.1 solve_s=0.80
+baseline 49 success=False pos=420.9 ang=112.2 solve_s=0.80
+baseline_success_rate 0.0 wall 40.546643834999486
+/root/MMAGAIProject/.venv/lib/python3.11/site-packages/gymnasium/spaces/box.py:415: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+probe ep=50 rotate T 90 ang=51.9 xy=134.6 ok=False
+probe ep=50 rotate T 180 ang=101.3 xy=151.8 ok=False
+probe ep=50 rotate T -90 ang=77.6 xy=18.0 ok=False
+probe ep=50 put T on the target ang=101.2 xy=67.1 ok=False
+probe ep=5 rotate T 90 ang=155.3 xy=153.3 ok=False
+probe ep=5 rotate T 180 ang=89.7 xy=151.8 ok=False
+probe ep=5 rotate T -90 ang=90.0 xy=0.0 ok=False
+probe ep=5 put T on the target ang=135.0 xy=311.9 ok=False
+probe ep=19 rotate T 90 ang=1.5 xy=220.9 ok=True
+probe ep=19 rotate T 180 ang=42.9 xy=172.1 ok=False
+probe ep=19 rotate T -90 ang=89.3 xy=220.5 ok=False
+probe ep=19 put T on the target ang=36.9 xy=59.9 ok=False
+probe ep=66 rotate T 90 ang=75.4 xy=33.5 ok=False
+probe ep=66 rotate T 180 ang=65.9 xy=90.6 ok=False
+probe ep=66 rotate T -90 ang=179.7 xy=310.2 ok=False
+probe ep=66 put T on the target ang=9.5 xy=62.2 ok=False
+probe ep=53 rotate T 90 ang=51.7 xy=125.6 ok=False
+probe ep=53 rotate T 180 ang=94.5 xy=174.9 ok=False
+probe ep=53 rotate T -90 ang=115.7 xy=29.2 ok=False
+probe ep=53 put T on the target ang=41.0 xy=114.2 ok=False
+probe ep=9 rotate T 90 ang=51.7 xy=203.1 ok=False
+probe ep=9 rotate T 180 ang=145.6 xy=42.5 ok=False
+probe ep=9 rotate T -90 ang=41.9 xy=156.2 ok=False
+probe ep=9 put T on the target ang=52.9 xy=30.7 ok=False
+probe ep=64 rotate T 90 ang=88.6 xy=376.0 ok=False
+probe ep=64 rotate T 180 ang=120.7 xy=184.6 ok=False
+probe ep=64 rotate T -90 ang=61.5 xy=76.4 ok=False
+probe ep=64 put T on the target ang=137.0 xy=107.4 ok=False
+probe ep=36 rotate T 90 ang=90.0 xy=0.0 ok=False
+probe ep=36 rotate T 180 ang=101.9 xy=75.9 ok=False
+probe ep=36 rotate T -90 ang=81.8 xy=27.9 ok=False
+probe ep=36 put T on the target ang=148.3 xy=41.7 ok=False
+probe ep=20 rotate T 90 ang=130.4 xy=176.4 ok=False
+probe ep=20 rotate T 180 ang=78.2 xy=244.0 ok=False
+probe ep=20 rotate T -90 ang=82.0 xy=132.7 ok=False
+probe ep=20 put T on the target ang=106.4 xy=39.9 ok=False
+probe ep=11 rotate T 90 ang=90.0 xy=0.0 ok=False
+probe ep=11 rotate T 180 ang=178.9 xy=69.7 ok=False
+probe ep=11 rotate T -90 ang=95.9 xy=130.2 ok=False
+probe ep=11 put T on the target ang=123.4 xy=186.2 ok=False
+probe ep=13 rotate T 90 ang=79.6 xy=36.3 ok=False
+probe ep=13 rotate T 180 ang=138.9 xy=131.6 ok=False
+probe ep=13 rotate T -90 ang=64.9 xy=144.4 ok=False
+probe ep=13 put T on the target ang=56.5 xy=68.8 ok=False
+probe ep=52 rotate T 90 ang=84.5 xy=249.9 ok=False
+probe ep=52 rotate T 180 ang=104.2 xy=140.5 ok=False
+probe ep=52 rotate T -90 ang=68.0 xy=107.8 ok=False
+probe ep=52 put T on the target ang=23.7 xy=31.9 ok=False
+probe ep=8 rotate T 90 ang=57.9 xy=23.3 ok=False
+probe ep=8 rotate T 180 ang=138.8 xy=27.4 ok=False
+probe ep=8 rotate T -90 ang=109.6 xy=9.4 ok=False
+probe ep=8 put T on the target ang=139.5 xy=29.1 ok=False
+probe ep=65 rotate T 90 ang=177.6 xy=250.2 ok=False
+probe ep=65 rotate T 180 ang=138.7 xy=26.0 ok=False
+probe ep=65 rotate T -90 ang=170.3 xy=242.3 ok=False
+probe ep=65 put T on the target ang=9.3 xy=51.4 ok=False
+probe ep=16 rotate T 90 ang=88.8 xy=21.1 ok=False
+probe ep=16 rotate T 180 ang=56.8 xy=18.4 ok=False
+probe ep=16 rotate T -90 ang=98.4 xy=10.3 ok=False
+probe ep=16 put T on the target ang=26.2 xy=172.2 ok=False
+probe ep=74 rotate T 90 ang=49.7 xy=91.1 ok=False
+probe ep=74 rotate T 180 ang=164.0 xy=240.5 ok=False
+probe ep=74 rotate T -90 ang=80.6 xy=173.0 ok=False
+probe ep=74 put T on the target ang=66.1 xy=34.7 ok=False
+probe ep=75 rotate T 90 ang=17.7 xy=41.7 ok=True
+probe ep=75 rotate T 180 ang=180.0 xy=0.0 ok=False
+probe ep=75 rotate T -90 ang=90.0 xy=0.0 ok=False
+probe ep=75 put T on the target ang=37.8 xy=125.1 ok=False
+probe ep=4 rotate T 90 ang=138.1 xy=178.8 ok=False
+probe ep=4 rotate T 180 ang=180.0 xy=0.0 ok=False
+probe ep=4 rotate T -90 ang=90.0 xy=0.0 ok=False
+probe ep=4 put T on the target ang=91.8 xy=79.5 ok=False
+probe ep=44 rotate T 90 ang=9.3 xy=39.3 ok=True
+probe ep=44 rotate T 180 ang=93.2 xy=225.0 ok=False
+probe ep=44 rotate T -90 ang=59.5 xy=116.4 ok=False
+probe ep=44 put T on the target ang=39.8 xy=73.6 ok=False
+probe ep=23 rotate T 90 ang=77.9 xy=53.5 ok=False
+probe ep=23 rotate T 180 ang=180.0 xy=0.0 ok=False
+probe ep=23 rotate T -90 ang=90.0 xy=0.0 ok=False
+probe ep=23 put T on the target ang=82.3 xy=41.3 ok=False
+probe_cost written {'rotate T 90': {'n': 20, 'mean_angle_err_deg': 78.37632270380871, 'median_angle_err_deg': 78.73852010803502, 'mean_xy_err': 120.43175162859794, 'reach_rate': 0.15, 'mean_solve_seconds': 0.7969246041000588}, 'rotate T 180': {'n': 20, 'mean_angle_err_deg': 119.7029946085172, 'median_angle_err_deg': 112.42467269057275, 'mean_xy_err': 108.37057500269478, 'reach_rate': 0.0, 'mean_solve_seconds': 0.796638453000105}, 'rotate T -90': {'n': 20, 'mean_angle_err_deg': 91.83229953490172, 'median_angle_err_deg': 89.64197254670944, 'mean_xy_err': 95.23800303824632, 'reach_rate': 0.0, 'mean_solve_seconds': 0.7965599854498577}, 'put T on the target': {'n': 20, 'mean_angle_err_deg': 73.22507065994061, 'median_angle_err_deg': 61.278596708528354, 'mean_xy_err': 86.44163928128563, 'reach_rate': 0.0, 'mean_solve_seconds': 0.7959360794496206}}
+/root/MMAGAIProject/.venv/lib/python3.11/site-packages/gymnasium/spaces/box.py:415: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+extra_episodes 50/200
+extra_episodes 100/200
+extra_episodes 150/200
+extra_episodes 200/200
+skill_pairs 780 existing 180 extra 600
+skill_step 0 mse 1.22129
+skill_step 50 mse 0.65956
+skill_step 100 mse 0.52542
+skill_step 150 mse 0.47272
+skill_step 200 mse 0.43095
+skill_step 250 mse 0.38514
+skill_step 300 mse 0.36557
+skill_step 350 mse 0.33114
+skill_step 399 mse 0.28341
+skill ep=50 rotate T 90 ang=105.9 xy=47.8 ok=False
+skill ep=50 rotate T 180 ang=165.2 xy=100.0 ok=False
+skill ep=50 rotate T -90 ang=5.8 xy=106.9 ok=True
+skill ep=5 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=5 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=5 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=19 rotate T 90 ang=92.1 xy=14.6 ok=False
+skill ep=19 rotate T 180 ang=170.2 xy=9.6 ok=False
+skill ep=19 rotate T -90 ang=87.0 xy=10.9 ok=False
+skill ep=66 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=66 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=66 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=53 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=53 rotate T 180 ang=179.2 xy=1.7 ok=False
+skill ep=53 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=9 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=9 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=9 rotate T -90 ang=87.3 xy=6.1 ok=False
+skill ep=64 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=64 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=64 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=36 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=36 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=36 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=20 rotate T 90 ang=78.7 xy=19.8 ok=False
+skill ep=20 rotate T 180 ang=152.1 xy=96.4 ok=False
+skill ep=20 rotate T -90 ang=91.6 xy=6.3 ok=False
+skill ep=11 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=11 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=11 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=13 rotate T 90 ang=85.8 xy=82.2 ok=False
+skill ep=13 rotate T 180 ang=98.8 xy=112.7 ok=False
+skill ep=13 rotate T -90 ang=76.7 xy=80.2 ok=False
+skill ep=52 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=52 rotate T 180 ang=150.3 xy=142.6 ok=False
+skill ep=52 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=8 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=8 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=8 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=65 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=65 rotate T 180 ang=177.8 xy=0.2 ok=False
+skill ep=65 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=16 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=16 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=16 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=74 rotate T 90 ang=87.9 xy=81.1 ok=False
+skill ep=74 rotate T 180 ang=164.2 xy=63.1 ok=False
+skill ep=74 rotate T -90 ang=88.5 xy=56.6 ok=False
+skill ep=75 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=75 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=75 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=4 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=4 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=4 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill ep=44 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=44 rotate T 180 ang=161.3 xy=19.6 ok=False
+skill ep=44 rotate T -90 ang=102.0 xy=56.6 ok=False
+skill ep=23 rotate T 90 ang=90.0 xy=0.0 ok=False
+skill ep=23 rotate T 180 ang=180.0 xy=0.0 ok=False
+skill ep=23 rotate T -90 ang=90.0 xy=0.0 ok=False
+skill written {'rotate T 90': {'n': 20, 'mean_angle_err_deg': 90.01572362384627, 'median_angle_err_deg': 90.0, 'mean_xy_err': 12.277210697787144, 'reach_rate': 0.0, 'mean_solve_seconds': 0.796932865850249}, 'rotate T 180': {'n': 20, 'mean_angle_err_deg': 169.9681925672945, 'median_angle_err_deg': 180.0, 'mean_xy_err': 27.291933523596022, 'reach_rate': 0.0, 'mean_solve_seconds': 0.7965596910498789}, 'rotate T -90': {'n': 20, 'mean_angle_err_deg': 85.44314881319576, 'median_angle_err_deg': 90.0, 'mean_xy_err': 16.17700515229093, 'reach_rate': 0.05, 'mean_solve_seconds': 0.7965002709500368}, 'put T on the target': {'n': 0, 'status': 'not measured'}}

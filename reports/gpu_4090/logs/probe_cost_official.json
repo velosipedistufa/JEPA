@@ -1,0 +1,299 @@
+{
+  "by_command": {
+    "rotate T 90": {
+      "n": 20,
+      "mean_angle_err_deg": 75.4414030461388,
+      "reach_rate": 0.1,
+      "mean_xy_err": 58.96942800560841
+    },
+    "rotate T 180": {
+      "n": 20,
+      "mean_angle_err_deg": 159.15336169324013,
+      "reach_rate": 0.0,
+      "mean_xy_err": 35.89458346314362
+    }
+  },
+  "episodes": [
+    {
+      "episode_id": 50,
+      "command": "rotate T 90",
+      "angle_err_deg": 59.70263710127018,
+      "xy_err": 88.12109601979684,
+      "reached": false
+    },
+    {
+      "episode_id": 50,
+      "command": "rotate T 180",
+      "angle_err_deg": 120.04984606760797,
+      "xy_err": 106.95542067898621,
+      "reached": false
+    },
+    {
+      "episode_id": 5,
+      "command": "rotate T 90",
+      "angle_err_deg": 120.19433282572277,
+      "xy_err": 180.84161979273802,
+      "reached": false
+    },
+    {
+      "episode_id": 5,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 19,
+      "command": "rotate T 90",
+      "angle_err_deg": 89.5916215282227,
+      "xy_err": 86.0985349955176,
+      "reached": false
+    },
+    {
+      "episode_id": 19,
+      "command": "rotate T 180",
+      "angle_err_deg": 144.67594229014583,
+      "xy_err": 73.30232958548252,
+      "reached": false
+    },
+    {
+      "episode_id": 66,
+      "command": "rotate T 90",
+      "angle_err_deg": 65.9664317628584,
+      "xy_err": 63.812334106463595,
+      "reached": false
+    },
+    {
+      "episode_id": 66,
+      "command": "rotate T 180",
+      "angle_err_deg": 158.0537405853357,
+      "xy_err": 38.99939229389537,
+      "reached": false
+    },
+    {
+      "episode_id": 53,
+      "command": "rotate T 90",
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 53,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 9,
+      "command": "rotate T 90",
+      "angle_err_deg": 101.5576599839977,
+      "xy_err": 34.648471294746685,
+      "reached": false
+    },
+    {
+      "episode_id": 9,
+      "command": "rotate T 180",
+      "angle_err_deg": 158.3511176268987,
+      "xy_err": 30.353210018864786,
+      "reached": false
+    },
+    {
+      "episode_id": 64,
+      "command": "rotate T 90",
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 64,
+      "command": "rotate T 180",
+      "angle_err_deg": 162.31808858465055,
+      "xy_err": 32.01770507746834,
+      "reached": false
+    },
+    {
+      "episode_id": 36,
+      "command": "rotate T 90",
+      "angle_err_deg": 90.00000000000003,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 36,
+      "command": "rotate T 180",
+      "angle_err_deg": 170.76336899296894,
+      "xy_err": 35.70154642397287,
+      "reached": false
+    },
+    {
+      "episode_id": 20,
+      "command": "rotate T 90",
+      "angle_err_deg": 85.28916350340477,
+      "xy_err": 27.72281688380188,
+      "reached": false
+    },
+    {
+      "episode_id": 20,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 11,
+      "command": "rotate T 90",
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 11,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 13,
+      "command": "rotate T 90",
+      "angle_err_deg": 101.02497013850093,
+      "xy_err": 89.37189093152391,
+      "reached": false
+    },
+    {
+      "episode_id": 13,
+      "command": "rotate T 180",
+      "angle_err_deg": 150.3329812672019,
+      "xy_err": 130.46008910248062,
+      "reached": false
+    },
+    {
+      "episode_id": 52,
+      "command": "rotate T 90",
+      "angle_err_deg": 9.10753524090584,
+      "xy_err": 114.95086772012799,
+      "reached": true
+    },
+    {
+      "episode_id": 52,
+      "command": "rotate T 180",
+      "angle_err_deg": 44.68952085195776,
+      "xy_err": 151.45083729623093,
+      "reached": false
+    },
+    {
+      "episode_id": 8,
+      "command": "rotate T 90",
+      "angle_err_deg": 89.99999999999997,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 8,
+      "command": "rotate T 180",
+      "angle_err_deg": 179.99999999999997,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 65,
+      "command": "rotate T 90",
+      "angle_err_deg": 61.30834129853031,
+      "xy_err": 11.869954439424738,
+      "reached": false
+    },
+    {
+      "episode_id": 65,
+      "command": "rotate T 180",
+      "angle_err_deg": 135.4499704209996,
+      "xy_err": 3.7163636829743907,
+      "reached": false
+    },
+    {
+      "episode_id": 16,
+      "command": "rotate T 90",
+      "angle_err_deg": 91.72385161379808,
+      "xy_err": 2.963180637023656,
+      "reached": false
+    },
+    {
+      "episode_id": 16,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 74,
+      "command": "rotate T 90",
+      "angle_err_deg": 9.423689365672017,
+      "xy_err": 130.415538616348,
+      "reached": true
+    },
+    {
+      "episode_id": 74,
+      "command": "rotate T 180",
+      "angle_err_deg": 138.38265717703527,
+      "xy_err": 114.93477510251634,
+      "reached": false
+    },
+    {
+      "episode_id": 75,
+      "command": "rotate T 90",
+      "angle_err_deg": 89.35005941533886,
+      "xy_err": 20.679840506080055,
+      "reached": false
+    },
+    {
+      "episode_id": 75,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 4,
+      "command": "rotate T 90",
+      "angle_err_deg": 32.259517215016515,
+      "xy_err": 101.83051055970873,
+      "reached": false
+    },
+    {
+      "episode_id": 4,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 44,
+      "command": "rotate T 90",
+      "angle_err_deg": 79.1074191160543,
+      "xy_err": 163.4576561913693,
+      "reached": false
+    },
+    {
+      "episode_id": 44,
+      "command": "rotate T 180",
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false
+    },
+    {
+      "episode_id": 23,
+      "command": "rotate T 90",
+      "angle_err_deg": 63.22083081348259,
+      "xy_err": 62.60424741749707,
+      "reached": false
+    },
+    {
+      "episode_id": 23,
+      "command": "rotate T 180",
+      "angle_err_deg": 179.99999999999994,
+      "xy_err": 0.0,
+      "reached": false
+    }
+  ],
+  "n_episodes": 20
+}

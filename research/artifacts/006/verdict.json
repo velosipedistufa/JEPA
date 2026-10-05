@@ -1,0 +1,19 @@
+{
+  "verdict": "kills",
+  "decision": "kill",
+  "next": "Archive the +90 matrix on this table. The next cycle frames B7 on the Xeon. Do not relax the 5 px or 20 degree gate.",
+  "reasons": [
+    "kill line 0.9 hit: test ratio 1.342773",
+    "constant test ratio 1.000066",
+    "train ratio 0.000000 is not scored",
+    "n_train 60 n_test 20",
+    "decision kill",
+    "Archive the +90 matrix on this table. The next cycle frames B7 on the Xeon. Do not relax the 5 px or 20 degree gate."
+  ],
+  "test_ratio": 1.3427727374663092,
+  "constant_test_ratio": 1.0000655389858344,
+  "train_ratio": 3.061758467482079e-15,
+  "n_train_pairs": 60,
+  "n_test_pairs": 20,
+  "git_commit": "440a293530ba87f2ac792d1026e9cc1f8a75c476"
+}

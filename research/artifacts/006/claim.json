@@ -1,0 +1,50 @@
+{
+  "cycle": "006",
+  "family": "rotation",
+  "question": "Does one linear map send a stored latent to the latent of a same-xy +90 degree turn, with held-out residual ratio at most 0.70?",
+  "claim": "On the F2 seed-0 split, least squares from z to z' on train same-xy +90 pairs has test RMS(Rz - z') / RMS(z' - z) at most 0.70, and that ratio is strictly below the constant +90 displacement.",
+  "falsifier": "Kill if the test ratio is at least 0.90. A computed ratio between 0.70 and 0.90, or a ratio that does not beat the constant displacement, weakens. If fewer than 30 train pairs survive the 5 px and 20 degree gates, the ratio is not computed.",
+  "command": "rotate T 90",
+  "pair_gate": {"max_xy_px": 5.0, "max_angle_deg": 20.0},
+  "min_train_pairs": 30,
+  "small_sample_decision": "kill",
+  "solver": "numpy.linalg.lstsq rcond=None",
+  "ratio": "sqrt(mean(residual^2)) / sqrt(mean((z' - z)^2)) over matrix elements, the F3 ratio",
+  "split": {"seed": 0, "test_fraction": 0.25, "kinds": ["rotation", "random_only"]},
+  "success": {"test_ratio_le": 0.7},
+  "kill": {"test_ratio_ge": 0.9},
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "A 192 by 192 map can memorize a few dozen train pairs. The scored number is the held-out ratio. The constant +90 displacement is the trivial map; support requires the matrix ratio to be strictly smaller. K2 stays closed: this is not a command-only vector on all three turns.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "encode": false,
+    "seeds": [0]
+  },
+  "next_action": {
+    "deepen": "The same least-squares matrix on same-xy -90 degree pairs only. One command. Write that falsifier before the fit. Do not fit +180 in that cycle.",
+    "pivot": "The +90 matrix claim is withdrawn. Do not add a nonlinear map. The next cycle frames B7 on the Xeon.",
+    "kill": "Archive the +90 matrix on this table. The next cycle frames B7 on the Xeon. Do not relax the 5 px or 20 degree gate.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "non_goals": ["B7 in this cycle", "B10", "B11", "-90 and 180 in this cycle", "any 4090 protocol"]
+}

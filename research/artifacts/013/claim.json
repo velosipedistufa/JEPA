@@ -1,0 +1,30 @@
+{
+  "cycle": "013",
+  "family": "imagined-angle",
+  "question": "Is the first in-place +180 plan still more than 60 degrees off in the F2 angle readout?",
+  "claim": "On the seed-0 held-out rotation starts, the median circular error of the F2 readout at the first plan's imagined terminal is greater than 60 degrees.",
+  "falsifier": "Kill the miss claim if that median is below 20 degrees and the median executed angle error stays above 60 degrees. If executed reach exceeds 0.30, F7 was not reproduced and the imagined angle is not scored.",
+  "f2_pin_mae_deg": 13.751980913656148,
+  "f2_pin_abs_tol_deg": 0.0001,
+  "budget": 50,
+  "command": "+180",
+  "torch_seed": 42,
+  "f13_mean": [-0.007812564379916167, 0.006860687229453028],
+  "f13_std_unbiased": [0.2084674874515821, 0.20674867061239938],
+  "success": {"median_imagined_err_deg_gt": 60, "executed_reach_at_most": 0.3},
+  "kill": {"median_imagined_err_deg_lt": 20, "median_executed_err_deg_gt": 60},
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "next_action": {
+    "deepen": "Imagination misses the rendered +180 goal. No further registered GPU falsifier can run without the Lance table. B1 stays parked. Stop.",
+    "pivot": "The 60 degree imagination claim is withdrawn. B1 stays parked. Stop.",
+    "kill": "Archive the imagination-miss claim. The plan's readout matched the goal while execution stayed off. B1 stays parked. Stop.",
+    "escalate": "Stop. Executed reach exceeded 0.30 or the F2 pin failed."
+  },
+  "degenerate_check": "The ridge is the float32 F2 fit. A pin miss aborts before CEM. A factor of 5 is not used. The z_g MLP is not trained.",
+  "non_goals": ["B1", "Lance", "the z_g MLP", "train.py"]
+}

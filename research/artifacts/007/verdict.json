@@ -1,0 +1,18 @@
+{
+  "verdict": "kills",
+  "decision": "kill",
+  "next": "Archive the state-dependent command map. K2 stays closed. The next cycle frames B10 on the Xeon.",
+  "reasons": [
+    "kill line 0.9 hit: test ratio 1.146343",
+    "command-only test ratio 1.000431",
+    "train ratio 0.571455 is not scored",
+    "decision kill",
+    "Archive the state-dependent command map. K2 stays closed. The next cycle frames B10 on the Xeon."
+  ],
+  "test_ratio": 1.1463429404945915,
+  "k2_test_ratio": 1.0004309905879292,
+  "train_ratio": 0.5714547704935116,
+  "n_train_pairs": 180,
+  "n_test_pairs": 60,
+  "git_commit": "9edc393763621b35046f7982a63dc10e25db63da"
+}

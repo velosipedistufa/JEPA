@@ -1,0 +1,15 @@
+{
+  "verdict": "supports",
+  "decision": "deepen",
+  "next": "Both blocks agree. No further Xeon falsifier is registered. B1, B3, B4, and B9 need a 24 GB GPU and are not started.",
+  "reasons": [
+    "v_x R^2 -0.012655 is below 0.2",
+    "mean paired RMSE 0.847923",
+    "decision deepen",
+    "Both blocks agree. No further Xeon falsifier is registered. B1, B3, B4, and B9 need a 24 GB GPU and are not started."
+  ],
+  "r2_x": -0.012655494701210301,
+  "mean_pair_rmse": 0.8479230049462124,
+  "n_test_frames": 40,
+  "git_commit": "e00064449c511badd7ef6d037bc514de42e807ab"
+}

@@ -1,0 +1,176 @@
+{
+  "n": 20,
+  "stopped_early": false,
+  "reach_rate": 0.0,
+  "median_imagined_err_deg": 152.52160986646408,
+  "median_executed_err_deg": 170.00105766809014,
+  "f2_pin_mae_deg": 13.751884152966307,
+  "f13_mean": [
+    -0.007812564379916167,
+    0.006860687229453028
+  ],
+  "action_scale": 1,
+  "torch_seed": 42,
+  "episodes": [
+    {
+      "episode_id": 50,
+      "imagined_err_deg": 175.7857539148298,
+      "executed_err_deg": 137.7408637530342,
+      "executed_xy": 81.08028110889236,
+      "reached": false,
+      "zh_zg_l2": 6.017691135406494
+    },
+    {
+      "episode_id": 5,
+      "imagined_err_deg": 177.75929815891115,
+      "executed_err_deg": 111.50209754352423,
+      "executed_xy": 116.71321393275339,
+      "reached": false,
+      "zh_zg_l2": 17.032312393188477
+    },
+    {
+      "episode_id": 19,
+      "imagined_err_deg": 173.7218279302112,
+      "executed_err_deg": 153.77304724172157,
+      "executed_xy": 58.246699175332694,
+      "reached": false,
+      "zh_zg_l2": 2.8996365070343018
+    },
+    {
+      "episode_id": 66,
+      "imagined_err_deg": 111.86469647457795,
+      "executed_err_deg": 84.00871554278044,
+      "executed_xy": 113.56862621293229,
+      "reached": false,
+      "zh_zg_l2": 15.125725746154785
+    },
+    {
+      "episode_id": 53,
+      "imagined_err_deg": 176.3138477408378,
+      "executed_err_deg": 144.80053067250498,
+      "executed_xy": 76.44420166833531,
+      "reached": false,
+      "zh_zg_l2": 16.409175872802734
+    },
+    {
+      "episode_id": 9,
+      "imagined_err_deg": 146.50062701173385,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 15.5477294921875
+    },
+    {
+      "episode_id": 64,
+      "imagined_err_deg": 174.64732627518478,
+      "executed_err_deg": 142.80037758565413,
+      "executed_xy": 71.99247498352705,
+      "reached": false,
+      "zh_zg_l2": 11.156938552856445
+    },
+    {
+      "episode_id": 36,
+      "imagined_err_deg": 174.134432733026,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 18.777212142944336
+    },
+    {
+      "episode_id": 20,
+      "imagined_err_deg": 167.77773849212434,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 18.236522674560547
+    },
+    {
+      "episode_id": 11,
+      "imagined_err_deg": 109.73731623958449,
+      "executed_err_deg": 134.0167423708008,
+      "executed_xy": 19.18510838281001,
+      "reached": false,
+      "zh_zg_l2": 6.7467522621154785
+    },
+    {
+      "episode_id": 13,
+      "imagined_err_deg": 19.03530411050432,
+      "executed_err_deg": 174.7458550858381,
+      "executed_xy": 87.98780102267838,
+      "reached": false,
+      "zh_zg_l2": 4.858706951141357
+    },
+    {
+      "episode_id": 52,
+      "imagined_err_deg": 123.22777894418958,
+      "executed_err_deg": 143.59489370539177,
+      "executed_xy": 117.61099613947681,
+      "reached": false,
+      "zh_zg_l2": 12.987991333007812
+    },
+    {
+      "episode_id": 8,
+      "imagined_err_deg": 162.69762493119927,
+      "executed_err_deg": 179.99999999999997,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 17.412778854370117
+    },
+    {
+      "episode_id": 65,
+      "imagined_err_deg": 160.40166109017227,
+      "executed_err_deg": 68.10893037160545,
+      "executed_xy": 223.56823869700722,
+      "reached": false,
+      "zh_zg_l2": 15.069974899291992
+    },
+    {
+      "episode_id": 16,
+      "imagined_err_deg": 42.50412189503454,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 1.9582576751708984
+    },
+    {
+      "episode_id": 74,
+      "imagined_err_deg": 74.7683702436601,
+      "executed_err_deg": 165.2562602503422,
+      "executed_xy": 122.9543557288485,
+      "reached": false,
+      "zh_zg_l2": 4.122772216796875
+    },
+    {
+      "episode_id": 75,
+      "imagined_err_deg": 140.9799589738023,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 13.976018905639648
+    },
+    {
+      "episode_id": 4,
+      "imagined_err_deg": 158.54259272119427,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 15.966054916381836
+    },
+    {
+      "episode_id": 44,
+      "imagined_err_deg": 139.07509397997228,
+      "executed_err_deg": 180.0,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 16.120683670043945
+    },
+    {
+      "episode_id": 23,
+      "imagined_err_deg": 132.85531335299368,
+      "executed_err_deg": 179.99999999999994,
+      "executed_xy": 0.0,
+      "reached": false,
+      "zh_zg_l2": 16.44886016845703
+    }
+  ]
+}

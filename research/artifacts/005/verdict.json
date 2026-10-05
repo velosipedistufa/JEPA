@@ -1,0 +1,24 @@
+{
+  "verdict": "supports",
+  "decision": "deepen",
+  "next": "The registered xy stresses are done: two seeds, episode aggregation, and the 15 px gate. The next cycle frames B6, one rotation matrix on the Xeon. No further summary of these same predictions.",
+  "reasons": [
+    "both seeds are at or above 0.5 and above the constant predictor",
+    "seed 0 ridge_hit_rate=0.620000 constant_hit_rate=0.000000",
+    "seed 1 ridge_hit_rate=0.660000 constant_hit_rate=0.040000",
+    "decision deepen",
+    "The registered xy stresses are done: two seeds, episode aggregation, and the 15 px gate. The next cycle frames B6, one rotation matrix on the Xeon. No further summary of these same predictions."
+  ],
+  "gate_px": 15.0,
+  "rates": {
+    "0": {
+      "ridge": 0.62,
+      "constant": 0.0
+    },
+    "1": {
+      "ridge": 0.66,
+      "constant": 0.04
+    }
+  },
+  "git_commit": "23b770776d2bf32085086361b189ca6a119b6ff1"
+}

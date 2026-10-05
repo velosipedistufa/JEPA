@@ -1,0 +1,28 @@
+{
+  "verdict": "supports",
+  "decision": "deepen",
+  "next": "Same fits and seeds. Score the fraction of test episodes whose per-coordinate episode-mean absolute error is under 15 px on both coordinates. Write that falsifier before the rescore. Do not add a model class. Do not start B6 inside that rescore.",
+  "reasons": [
+    "both seeds and both coordinates are below 20.0 px and below the constant predictor",
+    "seed 0 episode MAE x=11.710440 y=9.989942 constant x=74.914171 y=54.225796",
+    "seed 1 episode MAE x=10.213865 y=10.989068 constant x=71.877958 y=68.028352",
+    "decision deepen",
+    "Same fits and seeds. Score the fraction of test episodes whose per-coordinate episode-mean absolute error is under 15 px on both coordinates. Write that falsifier before the rescore. Do not add a model class. Do not start B6 inside that rescore."
+  ],
+  "by_seed": {
+    "0": {
+      "episode_test_mae_x": 11.710440094140232,
+      "episode_test_mae_y": 9.989942039258745,
+      "episode_constant_mae_x": 74.9141706278158,
+      "episode_constant_mae_y": 54.22579626243668
+    },
+    "1": {
+      "episode_test_mae_x": 10.213864689000905,
+      "episode_test_mae_y": 10.989067528789096,
+      "episode_constant_mae_x": 71.87795783877485,
+      "episode_constant_mae_y": 68.0283524671003
+    }
+  },
+  "git_commit": "6be0b91c1b8e5f7ce73f5fca3c5d9406424cc2b2",
+  "fit_seconds": 0.02400806600053329
+}

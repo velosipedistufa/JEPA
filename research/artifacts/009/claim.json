@@ -1,0 +1,42 @@
+{
+  "cycle": "009",
+  "family": "velocity",
+  "question": "With block and agent pose held fixed, does one frozen-encoder frame fail to reveal agent velocity?",
+  "claim": "A Ridge(alpha=1) from z to commanded v_x has held-out R^2 below 0.20 on the frozen 40/20 episode split. v_y is identically 0 for both protocol velocities and is not a score.",
+  "falsifier": "Kill if the held-out v_x R^2 is greater than 0.50. If the mean paired-render RMSE exceeds 5, the pose match failed and R^2 is not a velocity result.",
+  "scored_coordinate": "v_x",
+  "pixel_rmse": "For each pair, sqrt(mean((frame_zero - frame_fast)^2)) over raw uint8 pixels and channels. The gate is the mean of those pair RMSEs.",
+  "pixel_rmse_max": 5.0,
+  "velocities": [[0.0, 0.0], [50.0, 0.0]],
+  "model": {"type": "Ridge", "alpha": 1.0, "fit_intercept": true, "dtype": "float32", "features": "z"},
+  "split": {
+    "train_seeds": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039],
+    "test_seeds": [2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059]
+  },
+  "forbidden_seed_ranges": [[0, 79], [1000, 1119]],
+  "max_frames": 120,
+  "success": {"v_x_r2_lt": 0.2},
+  "kill": {"v_x_r2_gt": 0.5},
+  "pose_fail_decision": "escalate",
+  "decision_map": {
+    "supports": "continue",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 10800,
+    "gpu": false,
+    "download": false,
+    "frames": 120
+  },
+  "next_action": {
+    "continue": "One more disjoint 40/20 block, same velocities and the same ridge. No new label.",
+    "pivot": "The R^2 < 0.20 claim is withdrawn. Do not add a second frame. No Xeon falsifier remains. The parked bets need a 4090.",
+    "kill": "Archive the claim that one frame hides velocity. No Xeon falsifier remains. The parked bets need a 4090.",
+    "escalate": "Stop. The pose match failed or the result cannot be computed here. Do not rent a GPU inside this session."
+  },
+  "degenerate_check": "A high R^2 is not evidence about velocity when the two renders differ because the agent moved. Mean paired RMSE above 5 blocks the R^2. The score is test episodes only. Train R^2 is not scored.",
+  "non_goals": ["B1", "B3", "B4", "B9", "a second frame stack", "the RX 580", "any download"]
+}

@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Maes et~al.(2026)Maes, Le~Lidec, Scieur, LeCun, and
+  Balestriero]{maes2026lewm}
+Lucas Maes, Quentin Le~Lidec, Damien Scieur, Yann LeCun, and Randall
+  Balestriero.
+\newblock Leworldmodel: Stable end-to-end joint-embedding predictive
+  architecture from pixels.
+\newblock \emph{arXiv preprint arXiv:2603.19312}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2603.19312}.
+
+\end{thebibliography}

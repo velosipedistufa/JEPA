@@ -1,0 +1,42 @@
+{
+  "cycle": "010",
+  "family": "velocity",
+  "question": "Does the cycle-009 result, that one frame does not reveal commanded v_x, hold on a second disjoint 40/20 block?",
+  "claim": "A Ridge(alpha=1) from z to commanded v_x has held-out R^2 below 0.20 on seeds 2060-2099 train and 2100-2119 test.",
+  "falsifier": "Kill if the held-out v_x R^2 is greater than 0.50. If the mean paired-render RMSE exceeds 5, the pose match failed and R^2 is not a velocity result.",
+  "scored_coordinate": "v_x",
+  "pixel_rmse": "For each pair, sqrt(mean((frame_zero - frame_fast)^2)) over raw uint8 pixels and channels. The gate is the mean of those pair RMSEs.",
+  "pixel_rmse_max": 5.0,
+  "velocities": [[0.0, 0.0], [50.0, 0.0]],
+  "model": {"type": "Ridge", "alpha": 1.0, "fit_intercept": true, "dtype": "float32", "features": "z"},
+  "split": {
+    "train_seeds": [2060, 2061, 2062, 2063, 2064, 2065, 2066, 2067, 2068, 2069, 2070, 2071, 2072, 2073, 2074, 2075, 2076, 2077, 2078, 2079, 2080, 2081, 2082, 2083, 2084, 2085, 2086, 2087, 2088, 2089, 2090, 2091, 2092, 2093, 2094, 2095, 2096, 2097, 2098, 2099],
+    "test_seeds": [2100, 2101, 2102, 2103, 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 2113, 2114, 2115, 2116, 2117, 2118, 2119]
+  },
+  "forbidden_seed_ranges": [[0, 79], [1000, 1119]],
+  "max_frames": 120,
+  "success": {"v_x_r2_lt": 0.2},
+  "kill": {"v_x_r2_gt": 0.5},
+  "pose_fail_decision": "escalate",
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 10800,
+    "gpu": false,
+    "download": false,
+    "frames": 120
+  },
+  "next_action": {
+    "deepen": "Both blocks agree. No further Xeon falsifier is registered. B1, B3, B4, and B9 need a 24 GB GPU and are not started.",
+    "pivot": "The second block missed the support line. Do not add a frame. The parked bets need a 24 GB GPU and are not started.",
+    "kill": "Archive the reproducible velocity claim. Cycle 009 stays as one block. The parked bets need a 24 GB GPU and are not started.",
+    "escalate": "Stop. Do not rent a GPU inside this session."
+  },
+  "degenerate_check": "Mean paired RMSE above 5 blocks the R^2. The score is v_x on the test episodes only.",
+  "non_goals": ["B1", "B3", "B4", "B9", "a third block", "the RX 580"]
+}

@@ -1,0 +1,31 @@
+{
+  "cycle": "012",
+  "family": "staged-rotate",
+  "question": "Does a chain of rendered in-place goals at +30, +60, and +90 degrees reach the final pose on at least 8 of 20 held-out starts?",
+  "claim": "With F13 and the official CEM, three stages of budget 25 reach wrapped angle error under 20 degrees and xy drift under 15 px on at least 8 of the seed-0 held-out rotation starts.",
+  "falsifier": "Kill if the final gate holds for at most 1 of 20. A count from 2 through 7 weakens.",
+  "f13_mean": [-0.007812564379916167, 0.006860687229453028],
+  "f13_std_unbiased": [0.2084674874515821, 0.20674867061239938],
+  "starts": "seed-0 held-out rotation episodes, the random frame of each, from pusht_theta_probe.npz",
+  "stages_deg": [30, 60, 90],
+  "stage_budget": 25,
+  "gate": {"angle_deg_lt": 20, "xy_px_lt": 15},
+  "torch_seed": 42,
+  "success": {"reached_ge": 8},
+  "kill": {"reached_le": 1},
+  "stop_rule": "After the first 5 starts, stop if every stage on every one of those starts increased xy error by more than 30 px.",
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "next_action": {
+    "deepen": "The chain is followable. The next GPU cycle may frame B4, the imagined angle of the single +180 plan. Do not start it in this run.",
+    "pivot": "The 8/20 chain claim is withdrawn. Do not add a stage. The next GPU cycle may frame B4.",
+    "kill": "Archive the three-stage chain. It is in the same regime as the single in-place miss. The next GPU cycle may frame B4.",
+    "escalate": "Stop."
+  },
+  "degenerate_check": "No factor of 5. The goal image is a render at the original block xy and the stage angle, not a dataset frame. Same-episode scripted frames are not used as goals.",
+  "non_goals": ["B1", "B4", "Lance", "train.py", "a guessed action scale"]
+}

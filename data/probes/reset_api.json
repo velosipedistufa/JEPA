@@ -1,0 +1,123 @@
+{
+  "env_id": "swm/PushT-v1",
+  "render_mode": "rgb_array",
+  "wrapper_type": "OrderEnforcing",
+  "unwrapped_type": "PushT",
+  "obs_keys": [
+    "proprio",
+    "state"
+  ],
+  "obs_state": [
+    235.7827122332356,
+    303.60737773694973,
+    383.7717999951891,
+    318.03596539366947,
+    4.969469195953559,
+    0.0,
+    0.0
+  ],
+  "obs_proprio": [
+    235.7827122332356,
+    303.60737773694973,
+    0.0,
+    0.0
+  ],
+  "info": {
+    "env_name": "PushT",
+    "pos_agent": {
+      "type": "ndarray",
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "value": [
+        235.7827122332356,
+        303.60737773694973
+      ]
+    },
+    "vel_agent": {
+      "type": "ndarray",
+      "shape": [
+        2
+      ],
+      "dtype": "float64",
+      "value": [
+        0.0,
+        0.0
+      ]
+    },
+    "block_pose": {
+      "type": "ndarray",
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "value": [
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559
+      ]
+    },
+    "goal_pose": {
+      "type": "ndarray",
+      "shape": [
+        3
+      ],
+      "dtype": "float64",
+      "value": [
+        256.0,
+        256.0,
+        0.7853981633974483
+      ]
+    },
+    "goal_state": {
+      "type": "ndarray",
+      "shape": [
+        7
+      ],
+      "dtype": "float64",
+      "value": [
+        449.7421385356927,
+        228.03972607201476,
+        151.3812651411871,
+        309.2774551608988,
+        0.2836952224888609,
+        0.0,
+        0.0
+      ]
+    },
+    "goal_proprio": {
+      "type": "ndarray",
+      "shape": [
+        4
+      ],
+      "dtype": "float64",
+      "value": [
+        449.7421385356927,
+        228.03972607201476,
+        0.0,
+        0.0
+      ]
+    },
+    "n_contacts": 0,
+    "goal": {
+      "type": "ndarray",
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8"
+    }
+  },
+  "state_layout": "obs['state'] is length 7: agent_xy (2), block_xy (2), block_angle wrapped to [0, 2pi) via _get_obs, agent_vel (2). info['block_pose'] is (x, y, raw pymunk angle). info['goal_pose'] is (x, y, angle) of the goal overlay.",
+  "setter": "PushT._set_state(state) writes agent xy, block xy, block angle, and agent velocity, then steps pymunk once. In-place turns call _set_state on the reset state with angle += dtheta.",
+  "default_block_angle_init_rad": 0.0,
+  "methods": [
+    "_set_state",
+    "_get_obs",
+    "_get_info",
+    "reset",
+    "render"
+  ]
+}

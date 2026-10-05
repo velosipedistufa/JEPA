@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+% cleveref must follow hyperref or the document does not compile.
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\title{Status of language on frozen LeWM for MMAGAI}
+\author{MMAGAI team\\Skoltech}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+LeWorldModel stays frozen.
+A linear readout already recovers Push-T block angle, including after a half turn.
+The planner that scores 90 percent on a dataset goal image does not spin the block in place, even when it is shown a rendered frame of that spin.
+Language for this course should name goals that planner already reaches.
+\end{abstract}
+
+\section{Introduction}
+The model is the public Push-T checkpoint of LeWorldModel \citep{maes2026lewm}.
+No language model sits inside the JEPA, and text is not turned into pixels.
+This note records which interfaces were measured on a CPU Xeon and on one rented RTX 4090, and which course step follows.
+
+\section{Methods}
+Angle was probed on the Xeon by a ridge map from the 192-dimensional latent to $(\cos\theta,\sin\theta)$, with episodes held out.
+A separate least-squares map sent each of four command strings to one latent displacement.
+On the 4090, cross-entropy planning used 300 samples, 30 iterations, 30 elites, horizon 5, and an action block of 5.
+Actions were z-scored with the Push-T training column before the action encoder, then inverse-transformed and clipped to $[-1,1]$ before the environment step.
+The image-goal task took its start and its goal from dataset rows 25 steps apart, with a budget of 50 environment steps.
+A second task rendered the same block position at $\theta+90^{\circ}$ or $\theta+180^{\circ}$ and used that frame as the goal latent.
+The rented machine is no longer available.
+Nothing below was recomputed for this note.
+
+\section{Results}
+The CPU ridge has held-out circular mean absolute error 12.08 degrees on scripted $180^{\circ}$ frames and 14.58 degrees on frames within 30 degrees of angle 0.
+The decision from that comparison is to leave the encoder frozen.
+A constant displacement per command has residual ratio 0.991 against the root-mean-square of the observed latent change.
+Official image-goal CEM succeeds on 45 of 50 episodes, which is 90 percent.
+The action column used for that run has mean $[-0.00781, 0.00686]$ and unbiased standard deviation $[0.20847, 0.20675]$.
+An earlier planner that multiplied actions by 5, without those statistics, succeeded on 0 of 50 episodes and is not a valid baseline.
+A cost written on the angle probe, with the official action transform, reaches a $+90^{\circ}$ turn on fraction 0.10 of 20 held-out starts and a $180^{\circ}$ turn on fraction 0.00.
+Giving CEM the encoding of a rendered in-place target does not raise that rate.
+Reach is 0.00 for $+90^{\circ}$ at budget 50, and 0.00 for $+180^{\circ}$ at budgets 50 and 100.
+\Cref{tab:status} collects these figures.
+
+\begin{table}[t]
+\centering
+\caption{Measured interfaces. Reach is a fraction of episodes.}
+\label{tab:status}
+\begin{tabular}{ll}
+\toprule
+Measurement & Value \\
+\midrule
+Ridge MAE, $180^{\circ}$ frames & 12.08 degrees \\
+Ridge MAE, within 30 degrees of 0 & 14.58 degrees \\
+Constant $\Delta z$ residual ratio & 0.991 \\
+Image-goal CEM & 45/50 (90 percent) \\
+Guessed $\times 5$ CEM & 0/50 (invalid) \\
+Probe-cost reach, $+90^{\circ}$ / $180^{\circ}$ & 0.10 / 0.00 \\
+Oracle rendered goal, $+90^{\circ}$, budget 50 & 0.00 \\
+Oracle rendered goal, $+180^{\circ}$, budgets 50 and 100 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+The planner can chase a dataset goal image.
+It cannot spin the T in place.
+A command list for the course should name goals the planner already reaches, such as putting the block on the target or other expert-style goals from the demonstration set.
+It should not ask for a $180^{\circ}$ in-place skill.
+Captioning or indexing those reachable goals from a small command list is the next implementation step.
+Hierarchical planning is future work, not this checkpoint's missing text encoder.
+
+\section{Conclusion}
+The encoder stays frozen because angle is already linearly readable.
+Language is useful here as an index into goal images the existing CEM can follow.
+In-place half-turns are outside that set under the horizon and budget that were tested.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

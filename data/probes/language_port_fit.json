@@ -1,0 +1,67 @@
+{
+  "backend": "bag_of_commands",
+  "clip": "transformers CLIPTextModel and CLIPTokenizer import on CPU. Weights were not downloaded. The fitted head uses the bag-of-commands embedding. Swap CLIP on the rental.",
+  "commands": [
+    "rotate T 90",
+    "rotate T 180",
+    "rotate T -90",
+    "put T on the target"
+  ],
+  "n_train_pairs": 180,
+  "n_test_pairs": 60,
+  "max_xy_shift_allowed": 5.0,
+  "max_dtheta_err_deg": 20.0,
+  "fit": {
+    "rank": 3,
+    "singular": [
+      7.745966692414833,
+      7.745966692414833,
+      7.745966692414833,
+      0.0
+    ],
+    "lstsq_residual_sum_of_squares": null,
+    "train_rmse": 1.0893172089127459,
+    "train_target_rms": 1.0987317923480677,
+    "train_rmse_over_target_rms": 0.9914314089199128,
+    "per_command": {
+      "rotate T 90": {
+        "n": 60,
+        "train_rmse": 0.9963970660094956,
+        "mean_l2_residual": 13.411391786986027,
+        "mean_l2_target": 13.509200527644266,
+        "status": "fit"
+      },
+      "rotate T 180": {
+        "n": 60,
+        "train_rmse": 1.22733149707608,
+        "mean_l2_residual": 16.7537310833702,
+        "mean_l2_target": 16.894479950266295,
+        "status": "fit"
+      },
+      "rotate T -90": {
+        "n": 60,
+        "train_rmse": 1.0298962219723997,
+        "mean_l2_residual": 13.910266367615096,
+        "mean_l2_target": 13.990495879988806,
+        "status": "fit"
+      },
+      "put T on the target": {
+        "n": 0,
+        "train_rmse": null,
+        "mean_l2_residual": null,
+        "status": "not measured"
+      }
+    }
+  },
+  "test_rmse": 1.1967177716074247,
+  "test_mean_energy": 274.96961757715974,
+  "example": {
+    "text": "rotate T 90",
+    "z_t_norm": 13.526604029513672,
+    "z_g_norm": 14.026970424380185,
+    "delta_z_norm": 1.751037690024519
+  },
+  "unfitted_command": "put T on the target",
+  "put_T_on_the_target_delta_norm": 0.0,
+  "put_T_on_the_target_status": "not measured"
+}

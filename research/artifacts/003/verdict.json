@@ -1,0 +1,21 @@
+{
+  "verdict": "supports",
+  "decision": "deepen",
+  "next": "Stress the same xy ridge on the Xeon by scoring episode-level MAE on seeds 0 and 1. Write that falsifier before the rescore. Do not add a model class. Do not start B6. Do not use a 4090.",
+  "reasons": [
+    "both test MAEs are below 20.0 px and below the constant predictor",
+    "constant test MAE x=72.382300 y=74.191966",
+    "train MAE x=6.796274 y=6.101761 is not scored",
+    "decision deepen",
+    "Stress the same xy ridge on the Xeon by scoring episode-level MAE on seeds 0 and 1. Write that falsifier before the rescore. Do not add a model class. Do not start B6. Do not use a 4090."
+  ],
+  "test_mae_x": 11.374770603169216,
+  "test_mae_y": 11.400641675149357,
+  "constant_test_mae_x": 72.38230019438832,
+  "constant_test_mae_y": 74.19196581739159,
+  "angle_pin_mae_deg": 13.751980913656148,
+  "n_test_frames": 110,
+  "n_train_frames": 330,
+  "git_commit": "afe115aba89517ce64084088982cfc262ab14ed7",
+  "fit_seconds": 0.015716208999947412
+}

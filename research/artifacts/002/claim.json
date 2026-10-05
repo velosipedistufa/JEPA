@@ -1,0 +1,98 @@
+{
+  "cycle": "002",
+  "family": "xy",
+  "question": "On the saved probe table, is block (x, y) a ridge readout of z under the F2 episode split, at frame-level MAE below 20 px on both coordinates?",
+  "claim": "Ridge(alpha=1) from z to (x, y) has held-out frame-level MAE below 20 px on both coordinates, and each MAE is strictly below the train-mean constant predictor.",
+  "falsifier": "Kill if either held-out coordinate MAE is at least 40 px. Any other computed result that misses the support line weakens. Inconclusive only if the MAE cannot be computed.",
+  "assumptions": [
+    "x and y are info['block_pose'][0] and [1] in the same units as the oracle 15 px gate",
+    "z is the stored float32 latent and has dimension 192; a float64 cast is not the F2 fit",
+    "the episode split is probe_theta.episode_split with seed 0 and test fraction 0.25, kinds rotation then random_only",
+    "MAE is the unweighted mean of absolute error over test frames, not over episodes",
+    "rotation episodes contribute four frames at nearly the same xy; the score stays frame-level anyway"
+  ],
+  "model": {
+    "type": "Ridge",
+    "alpha": 1.0,
+    "fit_intercept": true,
+    "solver": "auto",
+    "standardize": false,
+    "features": "z",
+    "targets": ["x", "y"],
+    "dtype": "float32"
+  },
+  "split": {
+    "seed": 0,
+    "test_fraction": 0.25,
+    "kinds": ["rotation", "random_only"],
+    "expected_rows": 440,
+    "expected_z_dim": 192,
+    "expected_train_episodes": 150,
+    "expected_test_episodes": 50,
+    "expected_train_frames": 330,
+    "expected_test_frames": 110,
+    "expected_test_rotation_episodes": 20,
+    "expected_test_random_only_episodes": 30
+  },
+  "success": {
+    "both_test_mae_px_lt": 20.0,
+    "each_strictly_below_constant": true
+  },
+  "kill": {
+    "either_test_mae_px_ge": 40.0
+  },
+  "middle_or_degenerate": "weakens",
+  "decision_map": {
+    "supports": "continue",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "one_seed_only": true,
+  "baseline_pin": {
+    "name": "F2 ridge circular MAE on all test frames",
+    "expected_mae_deg": 13.751980913656148,
+    "abs_tol_deg": 0.0001,
+    "on_fail": "abort before the xy fit and do not write xy_ridge_obs.json"
+  },
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "A train-mean constant predictor clears 20 px if a coordinate barely moves. Shared episodes, a train-frame score, a single-coordinate score, or a feature other than z also clears it without a latent readout. Support requires the F2 counts, disjoint episodes, z only, both test-frame MAEs below 20 px, and each of those MAEs strictly below the constant predictor.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "download": false,
+    "encode": false,
+    "seeds": [0]
+  },
+  "next_action": {
+    "continue": "Reproduce the same xy ridge on one new split seed, on the Xeon. No new target and no second model class.",
+    "pivot": "Restate one xy-readout claim and write its falsifier before any refit. Do not add a model class. Do not start B6 inside that revision.",
+    "kill": "Archive B5. The next cycle may frame B6 only, on the Xeon, with a new frozen falsifier.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "literature_constraint": "Maes et al. 2026 Table 1 block-location correlation 0.986 is not this split and not pixel MAE. It does not move the 20 px or 40 px lines. Source: research_os/cycles/001/REPORT.md and research_os/cycles/001/01_librarian.md. No new paper enters the ledger.",
+  "non_goals": [
+    "B6 rotation matrix",
+    "B7 state-dependent delta-z",
+    "B10 pose catalog",
+    "B11 velocity",
+    "CEM",
+    "finetuning",
+    "a second split seed",
+    "OLS",
+    "any 4090 protocol"
+  ]
+}

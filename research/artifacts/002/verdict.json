@@ -1,0 +1,21 @@
+{
+  "verdict": "supports",
+  "decision": "continue",
+  "next": "Reproduce the same xy ridge on one new split seed, on the Xeon. No new target and no second model class.",
+  "reasons": [
+    "both test MAEs are below 20.0 px and below the constant predictor",
+    "constant test MAE x=68.707314 y=46.259440",
+    "train MAE x=6.688914 y=6.745074 is not scored",
+    "decision continue",
+    "Reproduce the same xy ridge on one new split seed, on the Xeon. No new target and no second model class."
+  ],
+  "test_mae_x": 12.70093186924053,
+  "test_mae_y": 9.677809205954556,
+  "constant_test_mae_x": 68.70731363573843,
+  "constant_test_mae_y": 46.259439527506636,
+  "angle_pin_mae_deg": 13.751980913656148,
+  "n_test_frames": 110,
+  "n_train_frames": 330,
+  "git_commit": "6a6b91ab4b2ac63110f681aa604fdb33d5c7d090",
+  "fit_seconds": 0.012093730001652148
+}

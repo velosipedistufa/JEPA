@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+% cleveref must follow hyperref or the document does not compile.
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\title{Oracle goal-image rotation with frozen LeWM CEM on Push-T}
+\author{MMAGAI team\\Skoltech}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The frozen LeWorldModel planner that reaches a dataset goal image on Push-T does not rotate the T in place when that same cost is given a rendered frame at $\theta+90^{\circ}$ or $\theta+180^{\circ}$.
+On 20 held-out starts the reach rate is 0.00 at a 50-step budget for both turns, and 0.00 for $180^{\circ}$ at a 100-step budget.
+The rendered target is a real rotation: its latent is far from the start, and the block barely moves between the two renders.
+A network that predicts the goal latent was not trained.
+\end{abstract}
+
+\section{Introduction}
+The official image-goal protocol, with actions z-scored from the Push-T training column, succeeds on 45 of 50 episodes \citep{maes2026lewm}.
+A probe that reads angle from $z$ is accurate near $180^{\circ}$, but a planning cost written on that probe does not turn the block.
+This note replaces the probe with an oracle: the goal latent is the encoding of a frame rendered at the desired angle and the same block position.
+
+\section{Methods}
+The encoder is the frozen checkpoint \texttt{quentinll/lewm-pusht}.
+The planner is the one in \texttt{scripts/eval\_official\_cem.py}.
+Actions are normalized with mean $[-0.00781, 0.00686]$ and unbiased standard deviation $[0.20847, 0.20675]$, then inverse-transformed and clipped to $[-1,1]$ before \texttt{env.step}.
+CEM uses 300 samples, 30 iterations, and 30 elites.
+The horizon is 5 and the action block is 5.
+Pixel history length is 1.
+Each of 20 test episodes from \texttt{pusht\_theta\_probe.npz}, split with seed 0, is reset to its recorded agent and block pose.
+The goal frame is produced by \texttt{\_set\_state} with the same block position, angle increased by $\pi/2$ or $\pi$, and agent velocity 0.
+The start state is restored, and CEM minimizes $\|z_H - z_g\|^2$.
+Budgets are 50 environment steps for both turns and 100 steps for $180^{\circ}$ only.
+A trial reaches the oracle when the wrapped angle error is below 20 degrees and the block has moved less than 15 pixels.
+Push-T does not expose a coverage score in the info dict.
+
+\section{Results}
+The goal render matches the command.
+Mean residual of the rendered angle is 0.023 degrees for $+90^{\circ}$ and 0.065 degrees for $+180^{\circ}$.
+Mean block motion during that render is 0.19 and 0.12 pixels.
+Mean $\|z_g - z_t\|$ is 15.69 for $+90^{\circ}$ and 18.33 for $+180^{\circ}$.
+\Cref{tab:oracle} is the CEM outcome.
+No cell has a nonzero reach rate.
+Lengthening the $180^{\circ}$ budget from 50 to 100 steps changes the mean angle error from 153.05 degrees to 151.60 degrees.
+
+\begin{table}[t]
+\centering
+\caption{In-place oracle CEM on 20 held-out starts.}
+\label{tab:oracle}
+\begin{tabular}{lrrrrr}
+\toprule
+Turn & budget & mean $|\Delta\theta|$ & mean $\Delta xy$ & reach & wall (s) \\
+\midrule
+$+90^{\circ}$ & 50 & 91.94 & 27.76 & 0.00 & 15.56 \\
+$+180^{\circ}$ & 50 & 153.05 & 50.46 & 0.00 & 15.48 \\
+$+180^{\circ}$ & 100 & 151.60 & 53.39 & 0.00 & 30.97 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Discussion}
+The 25-step dataset goal protocol was 90 percent successful with this planner.
+In-place rotation with a true goal image is not.
+CEM cannot execute in-place $180^{\circ}$ even with a true goal image under this horizon and budget.
+A map from $(z_t, \mathrm{command})$ to $z_g$ was therefore not fit.
+The next change is a longer horizon or a multi-stage plan, not a better text encoder.
+
+\section{Conclusion}
+Oracle goal images of a rotated T are easy to render and easy to tell apart in latent space.
+The working image-goal CEM does not drive the live block onto those images within 50 or 100 steps while staying in place.
+The language port should not be asked to invent a goal latent until planning can follow one that is given.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

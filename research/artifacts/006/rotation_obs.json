@@ -1,0 +1,16 @@
+{
+  "family": "rotation",
+  "cycle": "006",
+  "small_sample": false,
+  "n_train_pairs": 60,
+  "n_test_pairs": 20,
+  "test_ratio": 1.3427727374663092,
+  "constant_test_ratio": 1.0000655389858344,
+  "train_ratio": 3.061758467482079e-15,
+  "fit_seconds": 0.0322374880015559,
+  "git_commit": "440a293530ba87f2ac792d1026e9cc1f8a75c476",
+  "script_blob": "3e7719f176c0b161cecc5cc94154cdb0303cdf1d",
+  "script_or_claim_dirty": false,
+  "status_porcelain": "",
+  "claim_sha256": "9ef0df4489dc485b22d5df195fb557a41c6d33f3d6d3a0b8922d6925dc3d49c4"
+}

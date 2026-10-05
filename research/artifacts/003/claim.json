@@ -1,0 +1,104 @@
+{
+  "cycle": "003",
+  "family": "xy",
+  "question": "Does the cycle-002 xy ridge clear the same 20 px support line on split seed 1?",
+  "claim": "The same Ridge(alpha=1) from stored float32 z to (x, y), with the only change being episode-split seed 1, has held-out frame-level MAE below 20 px on both coordinates, and each MAE is strictly below the train-mean constant predictor.",
+  "falsifier": "Kill if either held-out coordinate MAE is at least 40 px. Any other computed result that misses the support line weakens. Inconclusive only if the MAE cannot be computed.",
+  "assumptions": [
+    "x and y are info['block_pose'][0] and [1] in the same units as the oracle 15 px gate",
+    "z is the stored float32 latent and has dimension 192",
+    "the split procedure matches probe_theta.episode_split except that the Generator seed is 1",
+    "MAE is the unweighted mean of absolute error over test frames, not over episodes",
+    "seed 1 test episodes are the frozen list in this file, and exactly 10 of those 50 episodes are also in the seed-0 test set"
+  ],
+  "model": {
+    "type": "Ridge",
+    "alpha": 1.0,
+    "fit_intercept": true,
+    "solver": "auto",
+    "standardize": false,
+    "features": "z",
+    "targets": ["x", "y"],
+    "dtype": "float32"
+  },
+  "split": {
+    "seed": 1,
+    "test_fraction": 0.25,
+    "kinds": ["rotation", "random_only"],
+    "expected_rows": 440,
+    "expected_z_dim": 192,
+    "expected_train_episodes": 150,
+    "expected_test_episodes": 50,
+    "expected_train_frames": 330,
+    "expected_test_frames": 110,
+    "expected_test_rotation_episodes": 20,
+    "expected_test_random_only_episodes": 30,
+    "expected_test_overlap_with_seed0": 10,
+    "expected_test_episode_ids": [6, 14, 15, 16, 17, 20, 27, 31, 34, 35, 38, 47, 52, 55, 56, 60, 63, 67, 70, 75, 1003, 1007, 1009, 1020, 1021, 1022, 1024, 1025, 1029, 1031, 1036, 1041, 1044, 1047, 1059, 1061, 1062, 1063, 1072, 1076, 1079, 1081, 1082, 1086, 1088, 1090, 1103, 1109, 1112, 1113]
+  },
+  "seed0_regression": {
+    "seed": 0,
+    "angle_mae_deg": 13.751980913656148,
+    "angle_abs_tol_deg": 0.0001,
+    "test_mae_x": 12.70093186924053,
+    "test_mae_y": 9.677809205954556,
+    "mae_abs_tol_px": 1e-6,
+    "on_fail": "abort before the seed-1 xy fit and do not write the observation"
+  },
+  "success": {
+    "both_test_mae_px_lt": 20.0,
+    "each_strictly_below_constant": true
+  },
+  "kill": {
+    "either_test_mae_px_ge": 40.0
+  },
+  "middle_or_degenerate": "weakens",
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "one_seed_only": false,
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "Support requires disjoint episodes within the seed-1 split, features equal to stored float32 z, the frozen test-episode list, both test-frame MAEs below 20 px, and each of those MAEs strictly below the train-mean constant predictor. A test-episode intersection of 40 or more with seed 0 is not a second sample and aborts the fit.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "download": false,
+    "encode": false,
+    "seeds": [1]
+  },
+  "next_action": {
+    "deepen": "Stress the same xy ridge on the Xeon by scoring episode-level MAE on seeds 0 and 1. Write that falsifier before the rescore. Do not add a model class. Do not start B6. Do not use a 4090.",
+    "pivot": "The seed-1 reproduction missed the support line. Restate one xy claim before any refit. Do not start B6 in that revision. Ledger row 002 stays.",
+    "kill": "Archive the reproducible xy-ridge claim. Ledger row 002 stays as the seed-0 measurement. The next cycle may frame B6 only, on the Xeon.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "literature_constraint": "No new source. Maes et al. 2026 Table 1 still does not move the 20 px or 40 px lines. No paper enters the ledger.",
+  "non_goals": [
+    "B6 rotation matrix",
+    "B7 state-dependent delta-z",
+    "B10 pose catalog",
+    "B11 velocity",
+    "CEM",
+    "finetuning",
+    "OLS",
+    "a third seed",
+    "changing alpha or the 20/40 lines",
+    "any 4090 protocol"
+  ]
+}

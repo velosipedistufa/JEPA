@@ -1,0 +1,57 @@
+{
+  "cycle": "007",
+  "family": "state-map",
+  "question": "Does a linear map of (z_t, rotate command) predict same-xy delta-z with held-out residual ratio at most 0.70?",
+  "claim": "On the F2 seed-0 split, least squares from the concatenation of z_t and a command one-hot to delta-z has test ratio at most 0.70, and that ratio is strictly below the command-only map.",
+  "falsifier": "Kill if the test ratio is at least 0.90. A computed ratio between the lines, or a ratio that does not beat the command-only map, weakens.",
+  "pair_gate": {"max_xy_px": 5.0, "max_angle_deg": 20.0},
+  "split": {"seed": 0, "test_fraction": 0.25, "kinds": ["rotation", "random_only"]},
+  "commands": ["rotate T 90", "rotate T 180", "rotate T -90", "put T on the target"],
+  "features": "z_t concatenated with a 4-way one-hot; the fourth command has no pairs",
+  "k2_pin": {
+    "n_train_pairs": 180,
+    "n_test_pairs": 60,
+    "train_ratio": 0.9914314089199128,
+    "train_rmse": 1.0893172089127459,
+    "test_rmse": 1.1967177716074247,
+    "ratio_abs_tol": 1e-6,
+    "rmse_abs_tol": 1e-6,
+    "source": "data/probes/language_port_fit.json"
+  },
+  "success": {"test_ratio_le": 0.7},
+  "kill": {"test_ratio_ge": 0.9},
+  "decision_map": {
+    "supports": "continue",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "Dropping z_t leaves K2, which is already closed. The state map must beat that command-only test ratio. The K2 train ratio and RMSE must match language_port_fit.json before the state map is fit. Train ratio of the state map is not scored.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "encode": false,
+    "seeds": [0]
+  },
+  "next_action": {
+    "continue": "Reproduce the same state map on split seed 1. No new feature.",
+    "pivot": "The state-map claim is withdrawn. Do not add a nonlinear head. The next cycle frames B10 on the Xeon.",
+    "kill": "Archive the state-dependent command map. K2 stays closed. The next cycle frames B10 on the Xeon.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "non_goals": ["B10 in this cycle", "B11", "a nonlinear head", "CLIP", "any 4090 protocol"]
+}

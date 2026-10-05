@@ -1,0 +1,319 @@
+{
+  "n_frames": 440,
+  "n_rotation_episodes": 80,
+  "n_random_only_episodes": 120,
+  "test_fraction": 0.25,
+  "split_seed": 0,
+  "n_train_episodes": 150,
+  "n_test_episodes": 50,
+  "n_train_frames": 330,
+  "n_test_frames": 110,
+  "ridge_alpha": 1.0,
+  "default_pose_angle_rad": 0.0,
+  "xy_shift_rot_vs_random_max": 3.780571044120651,
+  "ridge": {
+    "model": "ridge",
+    "test": {
+      "n": 110,
+      "mae_deg": 13.751980913656148,
+      "median_abs_deg": 11.96476657881987
+    },
+    "train": {
+      "n": 330,
+      "mae_deg": 7.9524447201487805,
+      "median_abs_deg": 5.769373722239097
+    },
+    "by_tag_test": {
+      "random": {
+        "n": 50,
+        "mae_deg": 12.355784572932944,
+        "median_abs_deg": 9.42576589119685
+      },
+      "rot90": {
+        "n": 20,
+        "mae_deg": 16.16691011087699,
+        "median_abs_deg": 16.219406974373296
+      },
+      "rot180": {
+        "n": 20,
+        "mae_deg": 12.078862900523902,
+        "median_abs_deg": 7.104903488368079
+      },
+      "rot_m90": {
+        "n": 20,
+        "mae_deg": 16.500660581375563,
+        "median_abs_deg": 16.473428593489174
+      }
+    },
+    "near_default_test": {
+      "definition": "|wrapped theta| < 30.0 deg from the default angle 0",
+      "n": 19,
+      "mae_deg": 14.584086219971399,
+      "median_abs_deg": 17.61032653803585
+    },
+    "abs_dtheta_bins_test": [
+      {
+        "lo_deg": 0,
+        "hi_deg": 15,
+        "n": 13,
+        "mae_deg": 12.738029181425352,
+        "median_abs_deg": 9.215007715955494
+      },
+      {
+        "lo_deg": 15,
+        "hi_deg": 30,
+        "n": 6,
+        "mae_deg": 18.583876470154493,
+        "median_abs_deg": 20.893333866656747
+      },
+      {
+        "lo_deg": 30,
+        "hi_deg": 45,
+        "n": 11,
+        "mae_deg": 12.509286255465918,
+        "median_abs_deg": 9.918808441661962
+      },
+      {
+        "lo_deg": 45,
+        "hi_deg": 60,
+        "n": 9,
+        "mae_deg": 9.960367492434077,
+        "median_abs_deg": 7.7219360169931175
+      },
+      {
+        "lo_deg": 60,
+        "hi_deg": 90,
+        "n": 16,
+        "mae_deg": 13.420923057714294,
+        "median_abs_deg": 12.01779869624951
+      },
+      {
+        "lo_deg": 90,
+        "hi_deg": 135,
+        "n": 25,
+        "mae_deg": 14.513316734699764,
+        "median_abs_deg": 10.796967303049389
+      },
+      {
+        "lo_deg": 135,
+        "hi_deg": 180,
+        "n": 30,
+        "mae_deg": 14.36023729299218,
+        "median_abs_deg": 13.309410625674895
+      }
+    ],
+    "true_theta_bins_test": [
+      {
+        "lo_deg": -180.0,
+        "hi_deg": -135.0,
+        "n": 14,
+        "mae_deg": 11.72924005542177,
+        "median_abs_deg": 11.274194249017881
+      },
+      {
+        "lo_deg": -135.0,
+        "hi_deg": -90.0,
+        "n": 12,
+        "mae_deg": 13.33637407777261,
+        "median_abs_deg": 10.33789984136791
+      },
+      {
+        "lo_deg": -90.0,
+        "hi_deg": -45.0,
+        "n": 13,
+        "mae_deg": 11.965297508175375,
+        "median_abs_deg": 8.882747221970712
+      },
+      {
+        "lo_deg": -45.0,
+        "hi_deg": 0.0,
+        "n": 15,
+        "mae_deg": 14.472598297612558,
+        "median_abs_deg": 16.79854935699982
+      },
+      {
+        "lo_deg": 0.0,
+        "hi_deg": 45.0,
+        "n": 15,
+        "mae_deg": 13.17405416835955,
+        "median_abs_deg": 10.838204023396527
+      },
+      {
+        "lo_deg": 45.0,
+        "hi_deg": 90.0,
+        "n": 12,
+        "mae_deg": 12.40243406242129,
+        "median_abs_deg": 10.47428280112274
+      },
+      {
+        "lo_deg": 90.0,
+        "hi_deg": 135.0,
+        "n": 13,
+        "mae_deg": 15.599725341094056,
+        "median_abs_deg": 16.148307829978528
+      },
+      {
+        "lo_deg": 135.0,
+        "hi_deg": 180.0,
+        "n": 16,
+        "mae_deg": 16.66235987586629,
+        "median_abs_deg": 13.658163226742307
+      }
+    ],
+    "train_cos_sin_r2": 0.9346927311340648,
+    "decision": "do not finetune LeWM; only train the language port"
+  },
+  "linear": {
+    "model": "linear",
+    "test": {
+      "n": 110,
+      "mae_deg": 18.877071099689818,
+      "median_abs_deg": 14.735351756890886
+    },
+    "train": {
+      "n": 330,
+      "mae_deg": 6.590006213982818,
+      "median_abs_deg": 4.921937827396594
+    },
+    "by_tag_test": {
+      "random": {
+        "n": 50,
+        "mae_deg": 19.91116654508388,
+        "median_abs_deg": 11.566228270698524
+      },
+      "rot90": {
+        "n": 20,
+        "mae_deg": 16.898966745547924,
+        "median_abs_deg": 14.85970073259421
+      },
+      "rot180": {
+        "n": 20,
+        "mae_deg": 20.057343397302283,
+        "median_abs_deg": 17.075325069121895
+      },
+      "rot_m90": {
+        "n": 20,
+        "mae_deg": 17.089664542734084,
+        "median_abs_deg": 17.754609936649484
+      }
+    },
+    "near_default_test": {
+      "definition": "|wrapped theta| < 30.0 deg from the default angle 0",
+      "n": 19,
+      "mae_deg": 26.09271268280661,
+      "median_abs_deg": 14.983825528238603
+    },
+    "abs_dtheta_bins_test": [
+      {
+        "lo_deg": 0,
+        "hi_deg": 15,
+        "n": 13,
+        "mae_deg": 25.790130493152553,
+        "median_abs_deg": 16.265979016846416
+      },
+      {
+        "lo_deg": 15,
+        "hi_deg": 30,
+        "n": 6,
+        "mae_deg": 26.748307427057068,
+        "median_abs_deg": 12.75518698620186
+      },
+      {
+        "lo_deg": 30,
+        "hi_deg": 45,
+        "n": 11,
+        "mae_deg": 14.807403623665516,
+        "median_abs_deg": 11.98882192058668
+      },
+      {
+        "lo_deg": 45,
+        "hi_deg": 60,
+        "n": 9,
+        "mae_deg": 16.968811341617116,
+        "median_abs_deg": 12.640549898710645
+      },
+      {
+        "lo_deg": 60,
+        "hi_deg": 90,
+        "n": 16,
+        "mae_deg": 12.97050272552096,
+        "median_abs_deg": 11.209311831340342
+      },
+      {
+        "lo_deg": 90,
+        "hi_deg": 135,
+        "n": 25,
+        "mae_deg": 21.275024434861297,
+        "median_abs_deg": 16.889908536264276
+      },
+      {
+        "lo_deg": 135,
+        "hi_deg": 180,
+        "n": 30,
+        "mae_deg": 17.52372945259372,
+        "median_abs_deg": 16.021945658390166
+      }
+    ],
+    "true_theta_bins_test": [
+      {
+        "lo_deg": -180.0,
+        "hi_deg": -135.0,
+        "n": 14,
+        "mae_deg": 18.193455810836728,
+        "median_abs_deg": 20.69929522812354
+      },
+      {
+        "lo_deg": -135.0,
+        "hi_deg": -90.0,
+        "n": 12,
+        "mae_deg": 17.996376901736465,
+        "median_abs_deg": 15.7701014361385
+      },
+      {
+        "lo_deg": -90.0,
+        "hi_deg": -45.0,
+        "n": 13,
+        "mae_deg": 16.336390843862205,
+        "median_abs_deg": 11.534560735292702
+      },
+      {
+        "lo_deg": -45.0,
+        "hi_deg": 0.0,
+        "n": 15,
+        "mae_deg": 24.403546746942926,
+        "median_abs_deg": 16.265979016846416
+      },
+      {
+        "lo_deg": 0.0,
+        "hi_deg": 45.0,
+        "n": 15,
+        "mae_deg": 19.505985308633495,
+        "median_abs_deg": 12.230621752867817
+      },
+      {
+        "lo_deg": 45.0,
+        "hi_deg": 90.0,
+        "n": 12,
+        "mae_deg": 12.322855392723397,
+        "median_abs_deg": 12.006089223842778
+      },
+      {
+        "lo_deg": 90.0,
+        "hi_deg": 135.0,
+        "n": 13,
+        "mae_deg": 24.301468311591922,
+        "median_abs_deg": 16.889908536264276
+      },
+      {
+        "lo_deg": 135.0,
+        "hi_deg": 180.0,
+        "n": 16,
+        "mae_deg": 16.937718889131084,
+        "median_abs_deg": 14.672519797792539
+      }
+    ],
+    "train_cos_sin_r2": 0.9578458742361489,
+    "decision": "do not finetune LeWM; only train the language port"
+  },
+  "xy_shift_rot_vs_random_mean": 0.12618322691671857
+}

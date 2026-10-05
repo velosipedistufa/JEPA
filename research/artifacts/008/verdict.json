@@ -1,0 +1,16 @@
+{
+  "verdict": "kills",
+  "decision": "kill",
+  "next": "Archive the pose catalog on this table. The next cycle frames B11 on the Xeon.",
+  "reasons": [
+    "kill line hit: median xy 8.175518 px, median angle 100.510381 deg",
+    "same-episode nearest fraction 1.000000 is not scored",
+    "decision kill",
+    "Archive the pose catalog on this table. The next cycle frames B11 on the Xeon."
+  ],
+  "median_xy_px": 8.175517996701211,
+  "median_angle_deg": 100.51038138097391,
+  "n_queries": 60,
+  "same_episode_nearest_fraction": 1.0,
+  "git_commit": "ebb47c1889bfe4624f3155a0ded1499381c37800"
+}

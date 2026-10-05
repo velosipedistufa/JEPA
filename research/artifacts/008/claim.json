@@ -1,0 +1,47 @@
+{
+  "cycle": "008",
+  "family": "catalog",
+  "question": "Does the 440-frame table contain a different episode within 15 px and 15 degrees of a held-out rotation start's +90, 180, and -90 targets?",
+  "claim": "On the seed-0 held-out rotation episodes, the median cross-episode nearest neighbor is inside 15 px and 15 degrees of the commanded pose.",
+  "falsifier": "Kill if the median neighbor xy error is greater than 30 px or the median angle error is greater than 20 degrees. A median between the lines weakens.",
+  "split": {"seed": 0, "test_fraction": 0.25},
+  "expected_query_episodes": 20,
+  "commands": ["+90", "180", "-90"],
+  "exclusion": "Every row from the query episode is excluded. Excluding only the start frame would retrieve that episode's own scripted turns.",
+  "success": {"median_xy_px_le": 15.0, "median_angle_deg_le": 15.0},
+  "kill": {"median_xy_px_gt": 30.0, "median_angle_deg_gt": 20.0},
+  "decision_map": {
+    "supports": "continue",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "The query episode's own turns sit about 0.13 px away and are not a catalog of other poses. They are excluded. The fraction of queries whose nearest non-start row is still in the query episode is recorded and not scored.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "encode": false,
+    "seeds": [0]
+  },
+  "next_action": {
+    "continue": "Reproduce the same cross-episode catalog on split seed 1. No new distance.",
+    "pivot": "The 15 px and 15 degree catalog claim is withdrawn. Do not change the neighbor rule to pass it. The next cycle frames B11 on the Xeon.",
+    "kill": "Archive the pose catalog on this table. The next cycle frames B11 on the Xeon.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "non_goals": ["B11 in this cycle", "a learned index", "any 4090 protocol"]
+}

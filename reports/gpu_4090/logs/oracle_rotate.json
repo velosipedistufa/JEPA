@@ -1,0 +1,932 @@
+{
+  "n_starts": 20,
+  "table": {
+    "rotate_90_budget50": {
+      "n": 20,
+      "mean_abs_dtheta_deg": 91.93870957399145,
+      "mean_dxy": 27.763354138798878,
+      "reach_rate": 0.0,
+      "wall_s": 15.561131663002016,
+      "mean_zg_zt_l2": 15.690844297409058
+    },
+    "rotate_180_budget50": {
+      "n": 20,
+      "mean_abs_dtheta_deg": 153.05034841214064,
+      "mean_dxy": 50.464223408627966,
+      "reach_rate": 0.0,
+      "wall_s": 15.48283805599931,
+      "mean_zg_zt_l2": 18.33313136100769
+    },
+    "rotate_180_budget100": {
+      "n": 20,
+      "mean_abs_dtheta_deg": 151.59533855838052,
+      "mean_dxy": 53.394907793973175,
+      "reach_rate": 0.0,
+      "wall_s": 30.96771533199899,
+      "mean_zg_zt_l2": 18.33313136100769
+    }
+  },
+  "rows": [
+    {
+      "angle_err_deg": 127.82752954375187,
+      "xy_err": 48.02094786983623,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 50,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 14.405646324157715,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.8566304830001172
+    },
+    {
+      "angle_err_deg": 171.03316756332308,
+      "xy_err": 142.66976916040122,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 50,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 17.247182846069336,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7735097410004528
+    },
+    {
+      "angle_err_deg": 177.65401717498858,
+      "xy_err": 83.9812303504738,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 50,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 17.247182846069336,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5466179939994618
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 5,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 15.844183921813965,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7723176730014529
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 5,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 20.272092819213867,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7726267979996919
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 5,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 20.272092819213867,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5462079379994975
+    },
+    {
+      "angle_err_deg": 60.52050087139676,
+      "xy_err": 50.937298340733996,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 19,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 17.641590118408203,
+      "goal_render_dxy": 0.7871662403972169,
+      "goal_render_dtheta_deg": 0.17301722079164852,
+      "wall_s": 0.7730839539999579
+    },
+    {
+      "angle_err_deg": 146.40191756481798,
+      "xy_err": 55.48142192240386,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 19,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.364038467407227,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.773200182000437
+    },
+    {
+      "angle_err_deg": 146.65831853769185,
+      "xy_err": 53.702886669875504,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 19,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.364038467407227,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5459834590001265
+    },
+    {
+      "angle_err_deg": 55.96196894664826,
+      "xy_err": 85.77275501090098,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 66,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 19.645212173461914,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7740818929996749
+    },
+    {
+      "angle_err_deg": 82.99999501598128,
+      "xy_err": 110.55884837106967,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 66,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 21.268836975097656,
+      "goal_render_dxy": 0.5757751480854457,
+      "goal_render_dtheta_deg": 0.5014759390054633,
+      "wall_s": 0.7738348650000262
+    },
+    {
+      "angle_err_deg": 95.39673866644564,
+      "xy_err": 47.85756426370465,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 66,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 21.268836975097656,
+      "goal_render_dxy": 0.5757751480854457,
+      "goal_render_dtheta_deg": 0.5014759390054633,
+      "wall_s": 1.5477560899998934
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 53,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 12.10515022277832,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731426629998168
+    },
+    {
+      "angle_err_deg": 166.6529529601623,
+      "xy_err": 34.30069696044047,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 53,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.083484649658203,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7733988999989378
+    },
+    {
+      "angle_err_deg": 138.7459963181202,
+      "xy_err": 56.38541685475019,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 53,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.083484649658203,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5474280620001082
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 9,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 19.539247512817383,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7728737749985157
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 9,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.579153060913086,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731266529990535
+    },
+    {
+      "angle_err_deg": 141.0321788463131,
+      "xy_err": 176.36932828437682,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 9,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.579153060913086,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5476615890001995
+    },
+    {
+      "angle_err_deg": 78.62037526949108,
+      "xy_err": 27.572506413367428,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 64,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 7.985683441162109,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731451920008112
+    },
+    {
+      "angle_err_deg": 138.2014848568019,
+      "xy_err": 74.41786590853256,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 64,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 13.835857391357422,
+      "goal_render_dxy": 0.9711157318261674,
+      "goal_render_dtheta_deg": 0.6401743021265245,
+      "wall_s": 0.774140792000253
+    },
+    {
+      "angle_err_deg": 135.1070359405224,
+      "xy_err": 50.94545955275125,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 64,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 13.835857391357422,
+      "goal_render_dxy": 0.9711157318261674,
+      "goal_render_dtheta_deg": 0.6401743021265245,
+      "wall_s": 1.5477084979993379
+    },
+    {
+      "angle_err_deg": 90.00000000000003,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 36,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 14.790595054626465,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731466010009171
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 36,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 21.153162002563477,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7728951729986875
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 36,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 21.153162002563477,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5463955010000063
+    },
+    {
+      "angle_err_deg": 103.11947613370107,
+      "xy_err": 45.7806982878908,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 20,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 19.347288131713867,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7730933919992822
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 20,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 21.097232818603516,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731840810010908
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 20,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 21.097232818603516,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5463380809997034
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 11,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 14.157416343688965,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731497599997965
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 11,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 14.137748718261719,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731918900008168
+    },
+    {
+      "angle_err_deg": 166.87247335196327,
+      "xy_err": 34.32906033625749,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 11,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 14.137748718261719,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5463395200004015
+    },
+    {
+      "angle_err_deg": 110.55583752581117,
+      "xy_err": 39.6706273423031,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 13,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 13.457135200500488,
+      "goal_render_dxy": 1.1873395306642687,
+      "goal_render_dtheta_deg": 0.16143829094429463,
+      "wall_s": 0.7734834259990748
+    },
+    {
+      "angle_err_deg": 172.5634628597695,
+      "xy_err": 73.16624972163208,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 13,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 16.64775848388672,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7736049150007602
+    },
+    {
+      "angle_err_deg": 170.89199865017486,
+      "xy_err": 78.67937261105486,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 13,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 16.64775848388672,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5465575760008505
+    },
+    {
+      "angle_err_deg": 96.96647566551844,
+      "xy_err": 11.021946810021468,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 52,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 18.61593246459961,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7736555250012316
+    },
+    {
+      "angle_err_deg": 68.27022638513345,
+      "xy_err": 131.98473226208083,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 52,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 18.20138168334961,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7738958919999277
+    },
+    {
+      "angle_err_deg": 8.376822903956658,
+      "xy_err": 103.87691181454996,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 52,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 18.20138168334961,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5477904029994534
+    },
+    {
+      "angle_err_deg": 89.99999999999997,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 8,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 18.197811126708984,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7731238699998357
+    },
+    {
+      "angle_err_deg": 179.99999999999997,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 8,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.756582260131836,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7738378619997093
+    },
+    {
+      "angle_err_deg": 179.99999999999997,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 8,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.756582260131836,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5464661170008185
+    },
+    {
+      "angle_err_deg": 149.36242532220706,
+      "xy_err": 90.4608714781346,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 65,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 18.24275016784668,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7734435459988163
+    },
+    {
+      "angle_err_deg": 34.195808300408146,
+      "xy_err": 201.0224104176929,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 65,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.297779083251953,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7747413109991612
+    },
+    {
+      "angle_err_deg": 117.46879299136849,
+      "xy_err": 54.87920010453454,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 65,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.297779083251953,
+      "goal_render_dxy": 2.842170943040401e-14,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5478558209997573
+    },
+    {
+      "angle_err_deg": 34.85875443037498,
+      "xy_err": 29.236667027523726,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 16,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 14.961339950561523,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7733070970007248
+    },
+    {
+      "angle_err_deg": 124.26943427067849,
+      "xy_err": 40.740652250772506,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 16,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 15.514228820800781,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7734553560003405
+    },
+    {
+      "angle_err_deg": 157.85783869495236,
+      "xy_err": 23.54143831667339,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 16,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 15.514228820800781,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5492774650010688
+    },
+    {
+      "angle_err_deg": 120.9808477709283,
+      "xy_err": 126.79276419526519,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 74,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 13.7356595993042,
+      "goal_render_dxy": 1.8950422315342774,
+      "goal_render_dtheta_deg": 0.12063346145189738,
+      "wall_s": 0.7751977370007808
+    },
+    {
+      "angle_err_deg": 156.4185184657367,
+      "xy_err": 144.9418211975332,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 74,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 14.822943687438965,
+      "goal_render_dxy": 0.7865533116946649,
+      "goal_render_dtheta_deg": 0.16031697140253542,
+      "wall_s": 0.7752248559991131
+    },
+    {
+      "angle_err_deg": 135.8445590911127,
+      "xy_err": 303.35028672046116,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 74,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 14.822943687438965,
+      "goal_render_dxy": 0.7865533116946649,
+      "goal_render_dtheta_deg": 0.16031697140253542,
+      "wall_s": 1.5523606429997017
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 75,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 15.190765380859375,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7750545380004041
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 75,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 17.931167602539062,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.775145927000267
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 75,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 17.931167602539062,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.550297852998483
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 4,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 14.536683082580566,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.776484062000236
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 4,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.294618606567383,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7765834420006286
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 4,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.294618606567383,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5525305480005045
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 44,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 15.427785873413086,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7762912140005938
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 44,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 19.503190994262695,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7767440589996113
+    },
+    {
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 44,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 19.503190994262695,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 1.5531992409996747
+    },
+    {
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 23,
+      "command": "rotate_90",
+      "budget": 50,
+      "zg_zt_l2": 15.989009857177734,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 0.0,
+      "wall_s": 0.7764252619999752
+    },
+    {
+      "angle_err_deg": 179.99999999999994,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 23,
+      "command": "rotate_180",
+      "budget": 50,
+      "zg_zt_l2": 18.654186248779297,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 5.088887490341627e-14,
+      "wall_s": 0.7764953610003431
+    },
+    {
+      "angle_err_deg": 179.99999999999994,
+      "xy_err": 0.0,
+      "reached": false,
+      "coverage": {
+        "coverage_arr_len": 0
+      },
+      "episode_id": 23,
+      "command": "rotate_180",
+      "budget": 100,
+      "zg_zt_l2": 18.654186248779297,
+      "goal_render_dxy": 0.0,
+      "goal_render_dtheta_deg": 5.088887490341627e-14,
+      "wall_s": 1.5529429329999402
+    }
+  ],
+  "decision": "CEM cannot execute in-place 180\u00b0 even with a true goal image under this horizon/budget."
+}

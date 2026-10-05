@@ -1,0 +1,34 @@
+{
+  "cycle": "011",
+  "family": "live-goal",
+  "question": "Does the official z-scored CEM reach info['goal'] from a live reset on at least 12 of 20 episodes?",
+  "claim": "With F13 mean and unbiased std, CEM 300/30/top-30, horizon 5, action block 5, and budget 50, eval_state succeeds on at least 12 of reset seeds 0 through 19.",
+  "falsifier": "Kill if successes are at most 4 of 20. A count from 5 through 11 weakens. A global action scale of 5 discards the run.",
+  "f13_mean": [-0.007812564379916167, 0.006860687229453028],
+  "f13_std_unbiased": [0.2084674874515821, 0.20674867061239938],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "torch_seed": 42,
+  "n": 20,
+  "budget": 50,
+  "cem": [300, 30, 30],
+  "success": {"successes_ge": 12},
+  "kill": {"successes_le": 4},
+  "stop_rule": "After 10 episodes, if successes are 0 and mean position L2 of the first four state coordinates is above 100, confirm the action mean is F13. If it differs, discard the run. If it matches, finish all 20. The early check does not replace the 20-episode count.",
+  "scored_bit": "eval_state only. The terminated flag is recorded and not scored.",
+  "goal": "info['goal'] image and info['goal_state'] from reset(seed). The driver does not call reset a second time and does not open Lance.",
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "next_action": {
+    "deepen": "The live goal is inside the set the official planner reaches. The next GPU cycle may frame B3, the three-stage +30 degree chain. Do not start it in this run.",
+    "pivot": "The 12/20 live-goal claim is withdrawn. Do not change the z-score. The next GPU cycle may frame B3.",
+    "kill": "Archive the live-goal claim under F13. F5 stays a different planner. The next GPU cycle may frame B3.",
+    "escalate": "Stop."
+  },
+  "degenerate_check": "A factor of 5 is not this planner. Success is eval_state, not a terminated flag and not the 95 percent coverage attribute. The action mean in the log must equal F13.",
+  "non_goals": ["B1", "B3", "B4", "Lance", "HDF5", "train.py", "a guessed action scale"],
+  "machine": "RTX 4090 24564 MiB, ssh port 1803, no password in this file"
+}

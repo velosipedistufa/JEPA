@@ -1,0 +1,80 @@
+{
+  "cycle": "004",
+  "family": "xy-episode",
+  "question": "Does the supported xy ridge stay under 20 px on both coordinates when each test episode counts once, on seeds 0 and 1?",
+  "claim": "The frozen Ridge(alpha=1) from stored float32 z to (x, y), scored as the unweighted mean of per-episode mean absolute errors, is below 20 px on both coordinates for both seed 0 and seed 1, and each of those four numbers is strictly below the train-mean constant predictor scored the same way.",
+  "falsifier": "Kill if any of the four episode-level MAEs is at least 40 px. Any other computed result that misses the support line weakens. Inconclusive only if the MAE cannot be computed.",
+  "assumptions": [
+    "The ridge, the float32 latent, and seeds 0 and 1 are the fits already in ledger rows 002 and 003",
+    "An episode score is the mean absolute error of its frames, then the mean of those episode scores",
+    "Rotation test episodes have 4 frames and random-only test episodes have 1 frame",
+    "The constant predictor is the training-frame mean, not an episode mean"
+  ],
+  "model": {
+    "type": "Ridge",
+    "alpha": 1.0,
+    "fit_intercept": true,
+    "solver": "auto",
+    "standardize": false,
+    "features": "z",
+    "targets": ["x", "y"],
+    "dtype": "float32"
+  },
+  "split": {
+    "seeds": [0, 1],
+    "test_fraction": 0.25,
+    "kinds": ["rotation", "random_only"]
+  },
+  "expected_test_frame_counts": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "frame_regression": {
+    "0": {
+      "test_mae_x": 12.70093186924053,
+      "test_mae_y": 9.677809205954556,
+      "angle_mae_deg": 13.751980913656148,
+      "angle_abs_tol_deg": 0.0001,
+      "mae_abs_tol_px": 1e-6
+    },
+    "1": {
+      "test_mae_x": 11.374770603169216,
+      "test_mae_y": 11.400641675149357,
+      "mae_abs_tol_px": 1e-6
+    }
+  },
+  "success": {"all_episode_mae_px_lt": 20.0},
+  "kill": {"any_episode_mae_px_ge": 40.0},
+  "decision_map": {
+    "supports": "deepen",
+    "weakens": "pivot",
+    "kills": "kill",
+    "inconclusive": "escalate"
+  },
+  "inputs": {
+    "npz": "data/probes/pusht_theta_probe.npz",
+    "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121",
+    "metrics": "data/probes/probe_metrics.json",
+    "metrics_sha256": "b337e5a4f3368c83ba98d1bdd9457419fb7ecd92e64e183721436102a7b8ec0f",
+    "split_source": "scripts/probe_theta.py",
+    "split_source_sha256": "79574d99e46f01f79d744962a96e02b2b50617532da42b4a265d818f26cb7287"
+  },
+  "environment": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2"
+  },
+  "degenerate_check": "Episode weighting can clear 20 px when the constant predictor already does, or when the frame-level fit is recomputed on a different split. Support requires the frame-level ledger numbers to reproduce and each episode-level MAE to beat its constant predictor.",
+  "budget": {
+    "machine": "Xeon CPU",
+    "wall_clock_seconds_max": 600,
+    "gpu": false,
+    "download": false,
+    "encode": false,
+    "seeds": [0, 1]
+  },
+  "next_action": {
+    "deepen": "Same fits and seeds. Score the fraction of test episodes whose per-coordinate episode-mean absolute error is under 15 px on both coordinates. Write that falsifier before the rescore. Do not add a model class. Do not start B6 inside that rescore.",
+    "pivot": "The episode-level <20 px claim is withdrawn. Do not retune the ridge. Ledger rows 002 and 003 stay. The next new claim is B6 on the Xeon.",
+    "kill": "Archive the episode-level xy claim. Ledger rows 002 and 003 stay. The next cycle may frame B6 only, on the Xeon.",
+    "escalate": "Stop. Do not rent a GPU."
+  },
+  "non_goals": ["B6", "B7", "B10", "B11", "a new model", "a third seed", "any 4090 protocol"]
+}

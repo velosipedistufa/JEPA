@@ -1,0 +1,12 @@
+.venv/
+.tools/
+.cache/
+data/*.lance
+data/*.h5
+__pycache__/
+*.pyc
+reports/*.aux
+reports/*.log
+reports/*.out
+reports/*.blg
+reports/*.toc

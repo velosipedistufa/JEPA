@@ -1,0 +1,1401 @@
+{
+  "wall_s": 64.6794017760003,
+  "by_command": {
+    "rotate T 90": {
+      "n": 20,
+      "mean_angle_err_deg": 78.37632270380871,
+      "median_angle_err_deg": 78.73852010803502,
+      "mean_xy_err": 120.43175162859794,
+      "reach_rate": 0.15,
+      "mean_solve_seconds": 0.7969246041000588
+    },
+    "rotate T 180": {
+      "n": 20,
+      "mean_angle_err_deg": 119.7029946085172,
+      "median_angle_err_deg": 112.42467269057275,
+      "mean_xy_err": 108.37057500269478,
+      "reach_rate": 0.0,
+      "mean_solve_seconds": 0.796638453000105
+    },
+    "rotate T -90": {
+      "n": 20,
+      "mean_angle_err_deg": 91.83229953490172,
+      "median_angle_err_deg": 89.64197254670944,
+      "mean_xy_err": 95.23800303824632,
+      "reach_rate": 0.0,
+      "mean_solve_seconds": 0.7965599854498577
+    },
+    "put T on the target": {
+      "n": 20,
+      "mean_angle_err_deg": 73.22507065994061,
+      "median_angle_err_deg": 61.278596708528354,
+      "mean_xy_err": 86.44163928128563,
+      "reach_rate": 0.0,
+      "mean_solve_seconds": 0.7959360794496206
+    }
+  },
+  "episodes": [
+    {
+      "angle_err_rad": 0.9064483650839481,
+      "angle_err_deg": 51.93566566584384,
+      "xy_err": 134.62777542531913,
+      "reached": false,
+      "theta_deg": -175.7285896045219,
+      "xy": [
+        442.0302352459234,
+        191.6551174713746
+      ],
+      "episode_id": 50,
+      "command": "rotate T 90",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7986081110011582,
+      "wall_s": 0.8095441440000286
+    },
+    {
+      "angle_err_rad": 1.7682553541563282,
+      "angle_err_deg": 101.31356889456828,
+      "xy_err": 151.7822243036031,
+      "reached": false,
+      "theta_deg": 67.52064495589023,
+      "xy": [
+        462.7358308918343,
+        195.24973501022285
+      ],
+      "episode_id": 50,
+      "command": "rotate T 180",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7960624179977458,
+      "wall_s": 0.8057675540003402
+    },
+    {
+      "angle_err_rad": 1.3536094074520655,
+      "angle_err_deg": 77.55610615620756,
+      "xy_err": 17.972943059690422,
+      "reached": false,
+      "theta_deg": 133.76318221752953,
+      "xy": [
+        341.07140953218044,
+        254.7753765133032
+      ],
+      "episode_id": 50,
+      "command": "rotate T -90",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7957026219992258,
+      "wall_s": 0.8058521839993773
+    },
+    {
+      "angle_err_rad": 1.7663967035864028,
+      "angle_err_deg": 101.20707606132197,
+      "xy_err": 67.11030149857565,
+      "reached": false,
+      "theta_deg": 146.20707606132197,
+      "xy": [
+        323.09849857429765,
+        254.74140701388325
+      ],
+      "episode_id": 50,
+      "command": "put T on the target",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7954198749994248,
+      "wall_s": 0.804783485000371
+    },
+    {
+      "angle_err_rad": 2.710519236051085,
+      "angle_err_deg": 155.30131251475132,
+      "xy_err": 153.26313760739336,
+      "reached": false,
+      "theta_deg": -123.07951534635902,
+      "xy": [
+        211.5661911943239,
+        345.157265255361
+      ],
+      "episode_id": 5,
+      "command": "rotate T 90",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.7970613470006356,
+      "wall_s": 0.8070562800003245
+    },
+    {
+      "angle_err_rad": 1.5657724317260548,
+      "angle_err_deg": 89.71215201583878,
+      "xy_err": 151.82453954162727,
+      "reached": false,
+      "theta_deg": -148.06605081576893,
+      "xy": [
+        230.89285339032313,
+        361.5286281050058
+      ],
+      "episode_id": 5,
+      "command": "rotate T 180",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.7961650060005923,
+      "wall_s": 0.806039821000013
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -57.77820283160771,
+      "xy": [
+        325.9393029939339,
+        243.1357937577556
+      ],
+      "episode_id": 5,
+      "command": "rotate T -90",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.7964775139989797,
+      "wall_s": 0.8059949620001134
+    },
+    {
+      "angle_err_rad": 2.3568839692116272,
+      "angle_err_deg": 135.0395042378677,
+      "xy_err": 311.9419489424516,
+      "reached": false,
+      "theta_deg": -90.0395042378677,
+      "xy": [
+        6.84825394435849,
+        443.699725485788
+      ],
+      "episode_id": 5,
+      "command": "put T on the target",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.795655062998776,
+      "wall_s": 0.8070589800008747
+    },
+    {
+      "angle_err_rad": 0.02600568705231776,
+      "angle_err_deg": 1.4900161114358181,
+      "xy_err": 220.94632244956588,
+      "reached": true,
+      "theta_deg": 173.9589415425277,
+      "xy": [
+        339.08036503242784,
+        422.69618030638463
+      ],
+      "episode_id": 19,
+      "command": "rotate T 90",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.796711941000467,
+      "wall_s": 0.8069491320002271
+    },
+    {
+      "angle_err_rad": 0.7481809559572032,
+      "angle_err_deg": 42.867611088411074,
+      "xy_err": 172.12121650740835,
+      "reached": false,
+      "theta_deg": -140.3986856573192,
+      "xy": [
+        179.16942699476726,
+        428.01932112765445
+      ],
+      "episode_id": 19,
+      "command": "rotate T 180",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7972859040019102,
+      "wall_s": 0.8072927280009026
+    },
+    {
+      "angle_err_rad": 1.5582988110499958,
+      "angle_err_deg": 89.2839450934189,
+      "xy_err": 220.52789186402322,
+      "reached": false,
+      "theta_deg": 81.75287052451077,
+      "xy": [
+        404.706558793988,
+        193.06860498592263
+      ],
+      "episode_id": 19,
+      "command": "rotate T -90",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7963914449992444,
+      "wall_s": 0.806169299999965
+    },
+    {
+      "angle_err_rad": 0.6437259715420778,
+      "angle_err_deg": 36.882781332319595,
+      "xy_err": 59.89355692760681,
+      "reached": false,
+      "theta_deg": 81.8827813323196,
+      "xy": [
+        196.10733547967408,
+        255.6730472569772
+      ],
+      "episode_id": 19,
+      "command": "put T on the target",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7951801269991847,
+      "wall_s": 0.8048183040009462
+    },
+    {
+      "angle_err_rad": 1.3157423278876674,
+      "angle_err_deg": 75.38648231468146,
+      "xy_err": 33.50437000114938,
+      "reached": false,
+      "theta_deg": 3.4075816230666613,
+      "xy": [
+        225.49724072732215,
+        284.25569762066027
+      ],
+      "episode_id": 66,
+      "command": "rotate T 90",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7963492939998105,
+      "wall_s": 0.8062577180007793
+    },
+    {
+      "angle_err_rad": 1.1495364048607737,
+      "angle_err_deg": 65.86358439516422,
+      "xy_err": 90.6219601164647,
+      "reached": false,
+      "theta_deg": 102.9304795425839,
+      "xy": [
+        281.53652073289805,
+        299.99623933363137
+      ],
+      "episode_id": 66,
+      "command": "rotate T 180",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7960894770003506,
+      "wall_s": 0.806032951000816
+    },
+    {
+      "angle_err_rad": 3.135556523230277,
+      "angle_err_deg": 179.65415520580896,
+      "xy_err": 310.16002675033576,
+      "reached": false,
+      "theta_deg": 79.13990873193917,
+      "xy": [
+        492.7953145508475,
+        361.58174482831566
+      ],
+      "episode_id": 66,
+      "command": "rotate T -90",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7961175769996771,
+      "wall_s": 0.8070383009999205
+    },
+    {
+      "angle_err_rad": 0.16542439228225003,
+      "angle_err_deg": 9.478119506289435,
+      "xy_err": 62.211593657564976,
+      "reached": false,
+      "theta_deg": 35.52188049371056,
+      "xy": [
+        307.4762028287127,
+        221.0645892001939
+      ],
+      "episode_id": 66,
+      "command": "put T on the target",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7956175919989619,
+      "wall_s": 0.805410077000488
+    },
+    {
+      "angle_err_rad": 0.9023024690549892,
+      "angle_err_deg": 51.698123321084445,
+      "xy_err": 125.5845527990477,
+      "reached": false,
+      "theta_deg": 124.28709560620409,
+      "xy": [
+        187.5380040211381,
+        86.89417517420006
+      ],
+      "episode_id": 53,
+      "command": "rotate T 90",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7963484740012063,
+      "wall_s": 0.8071187890000147
+    },
+    {
+      "angle_err_rad": 1.6489563835626528,
+      "angle_err_deg": 94.47824137929535,
+      "xy_err": 174.9180026048381,
+      "reached": false,
+      "theta_deg": 0.4634603065839084,
+      "xy": [
+        197.31370867298224,
+        38.414771400790855
+      ],
+      "episode_id": 53,
+      "command": "rotate T 180",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7961267370010319,
+      "wall_s": 0.8058164129997749
+    },
+    {
+      "angle_err_rad": 2.0189436555125475,
+      "angle_err_deg": 115.67695053558336,
+      "xy_err": 29.199447532914984,
+      "reached": false,
+      "theta_deg": 111.6621694628719,
+      "xy": [
+        123.96217809711689,
+        213.1664274907414
+      ],
+      "episode_id": 53,
+      "command": "rotate T -90",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7959306979992107,
+      "wall_s": 0.8063616269992053
+    },
+    {
+      "angle_err_rad": 0.7153270149318836,
+      "angle_err_deg": 40.98521892728855,
+      "xy_err": 114.1889726929725,
+      "reached": false,
+      "theta_deg": 85.98521892728854,
+      "xy": [
+        152.61131720636075,
+        207.52421475754454
+      ],
+      "episode_id": 53,
+      "command": "put T on the target",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7952502760017524,
+      "wall_s": 0.8048281840001437
+    },
+    {
+      "angle_err_rad": 0.9015382833969974,
+      "angle_err_deg": 51.65433870811709,
+      "xy_err": 203.1229820572217,
+      "reached": false,
+      "theta_deg": 30.43946447485878,
+      "xy": [
+        80.62780118776084,
+        181.2961749262244
+      ],
+      "episode_id": 9,
+      "command": "rotate T 90",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7965098309996392,
+      "wall_s": 0.8072946069987665
+    },
+    {
+      "angle_err_rad": 2.540463145342844,
+      "angle_err_deg": 145.5578162366752,
+      "xy_err": 42.47227158244316,
+      "reached": false,
+      "theta_deg": 26.53598694630067,
+      "xy": [
+        212.42511799010742,
+        279.59730703844866
+      ],
+      "episode_id": 9,
+      "command": "rotate T 180",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7959292779996758,
+      "wall_s": 0.8052490589998342
+    },
+    {
+      "angle_err_rad": 0.7313244464442863,
+      "angle_err_deg": 41.90180423599881,
+      "xy_err": 156.23429037582295,
+      "reached": false,
+      "theta_deg": -56.00439258102532,
+      "xy": [
+        108.64846200029163,
+        343.10355023970106
+      ],
+      "episode_id": 9,
+      "command": "rotate T -90",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7969781480005622,
+      "wall_s": 0.8065981939998892
+    },
+    {
+      "angle_err_rad": 0.923387329165215,
+      "angle_err_deg": 52.90619681702413,
+      "xy_err": 30.662273333026477,
+      "reached": false,
+      "theta_deg": -7.9061968170241315,
+      "xy": [
+        254.3134675568801,
+        286.61585560240854
+      ],
+      "episode_id": 9,
+      "command": "put T on the target",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7968058289989131,
+      "wall_s": 0.8063578080000298
+    },
+    {
+      "angle_err_rad": 1.5461639106930178,
+      "angle_err_deg": 88.58866651815225,
+      "xy_err": 375.9975697403706,
+      "reached": false,
+      "theta_deg": -148.02158950000427,
+      "xy": [
+        421.4098899614118,
+        471.29133544111187
+      ],
+      "episode_id": 64,
+      "command": "rotate T 90",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.7965479599988612,
+      "wall_s": 0.80723457699969
+    },
+    {
+      "angle_err_rad": 2.1061001296064026,
+      "angle_err_deg": 120.67064865840254,
+      "xy_err": 184.55840909929674,
+      "reached": false,
+      "theta_deg": -90.10357164025456,
+      "xy": [
+        86.28318392800116,
+        66.75508503827709
+      ],
+      "episode_id": 64,
+      "command": "rotate T 180",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.7966267409992724,
+      "wall_s": 0.8071637180000835
+    },
+    {
+      "angle_err_rad": 1.0741195084515835,
+      "angle_err_deg": 61.5425145269423,
+      "xy_err": 76.35311480986655,
+      "reached": false,
+      "theta_deg": -177.8904084549097,
+      "xy": [
+        200.45428503299732,
+        181.48414134958296
+      ],
+      "episode_id": 64,
+      "command": "rotate T -90",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.796655701000418,
+      "wall_s": 0.8068671419987368
+    },
+    {
+      "angle_err_rad": 2.3909963412981474,
+      "angle_err_deg": 136.9939991876052,
+      "xy_err": 107.4246842745266,
+      "reached": false,
+      "theta_deg": -178.0060008123948,
+      "xy": [
+        222.24299708417846,
+        357.98297674427306
+      ],
+      "episode_id": 64,
+      "command": "put T on the target",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.7956938709994574,
+      "wall_s": 0.8053296579982998
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -166.67442093473036,
+      "xy": [
+        236.24467604969567,
+        219.3045440263637
+      ],
+      "episode_id": 36,
+      "command": "rotate T 90",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.796771939001701,
+      "wall_s": 0.8064239359991916
+    },
+    {
+      "angle_err_rad": 1.7784249518311874,
+      "angle_err_deg": 101.89624392068376,
+      "xy_err": 75.90472692928783,
+      "reached": false,
+      "theta_deg": 115.22182298595337,
+      "xy": [
+        168.8655673591356,
+        254.25569969073976
+      ],
+      "episode_id": 36,
+      "command": "rotate T 180",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.7967093810002552,
+      "wall_s": 0.8065055450006184
+    },
+    {
+      "angle_err_rad": 1.4271928889255303,
+      "angle_err_deg": 81.77212908651617,
+      "xy_err": 27.910946737908226,
+      "reached": false,
+      "theta_deg": -174.9022918482142,
+      "xy": [
+        261.4234195896897,
+        231.34829018582587
+      ],
+      "episode_id": 36,
+      "command": "rotate T -90",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.7961911170004896,
+      "wall_s": 0.8057125339983031
+    },
+    {
+      "angle_err_rad": 2.5887697196161277,
+      "angle_err_deg": 148.3255790652696,
+      "xy_err": 41.675284204124495,
+      "reached": false,
+      "theta_deg": -166.67442093473036,
+      "xy": [
+        236.24467604969567,
+        219.3045440263637
+      ],
+      "episode_id": 36,
+      "command": "put T on the target",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.7961052369992103,
+      "wall_s": 0.8054898169993976
+    },
+    {
+      "angle_err_rad": 2.276503065675991,
+      "angle_err_deg": 130.43401771182752,
+      "xy_err": 176.3611198445886,
+      "reached": false,
+      "theta_deg": -90.06420079915982,
+      "xy": [
+        15.913883735813997,
+        302.1550073288285
+      ],
+      "episode_id": 20,
+      "command": "rotate T 90",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7971845049996773,
+      "wall_s": 0.8070078700002341
+    },
+    {
+      "angle_err_rad": 1.364024274889128,
+      "angle_err_deg": 78.15283410453947,
+      "xy_err": 243.99707435509578,
+      "reached": false,
+      "theta_deg": -151.47734898279282,
+      "xy": [
+        109.20224864261431,
+        475.4102800603055
+      ],
+      "episode_id": 20,
+      "command": "rotate T 180",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7968698480017338,
+      "wall_s": 0.8072175479992438
+    },
+    {
+      "angle_err_rad": 1.4317229208797961,
+      "angle_err_deg": 82.031680798555,
+      "xy_err": 132.6713979149533,
+      "reached": false,
+      "theta_deg": -57.598502288777276,
+      "xy": [
+        69.83389669016103,
+        171.43354706259194
+      ],
+      "episode_id": 20,
+      "command": "rotate T -90",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7965535100011039,
+      "wall_s": 0.806113839000318
+    },
+    {
+      "angle_err_rad": 1.8565039020182788,
+      "angle_err_deg": 106.36983823521629,
+      "xy_err": 39.87155103668974,
+      "reached": false,
+      "theta_deg": -61.369838235216285,
+      "xy": [
+        264.43101214984847,
+        294.9699706979677
+      ],
+      "episode_id": 20,
+      "command": "put T on the target",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7959036979991652,
+      "wall_s": 0.8051563890003308
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 168.43007621023318,
+      "xy": [
+        113.17061228834663,
+        375.4981787330114
+      ],
+      "episode_id": 11,
+      "command": "rotate T 90",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.7969886559985753,
+      "wall_s": 0.806317376998777
+    },
+    {
+      "angle_err_rad": 3.1216818345942716,
+      "angle_err_deg": 178.85919410490771,
+      "xy_err": 69.69145891008966,
+      "reached": false,
+      "theta_deg": 167.2892703151409,
+      "xy": [
+        99.39308588557384,
+        307.18215417626766
+      ],
+      "episode_id": 11,
+      "command": "rotate T 180",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.7965602309996029,
+      "wall_s": 0.805993320998823
+    },
+    {
+      "angle_err_rad": 1.6745616392493616,
+      "angle_err_deg": 95.94531446349713,
+      "xy_err": 130.16989357499648,
+      "reached": false,
+      "theta_deg": 174.37539067373032,
+      "xy": [
+        69.55137320479335,
+        498.14222944521566
+      ],
+      "episode_id": 11,
+      "command": "rotate T -90",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.7967105990010168,
+      "wall_s": 0.8075876530001551
+    },
+    {
+      "angle_err_rad": 2.154261225856094,
+      "angle_err_deg": 123.4300762102332,
+      "xy_err": 186.2258003462263,
+      "reached": false,
+      "theta_deg": 168.43007621023318,
+      "xy": [
+        113.17061228834663,
+        375.4981787330114
+      ],
+      "episode_id": 11,
+      "command": "put T on the target",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.7957851999999548,
+      "wall_s": 0.80511117900096
+    },
+    {
+      "angle_err_rad": 1.3888945177886889,
+      "angle_err_deg": 79.57779405814951,
+      "xy_err": 36.26530611325733,
+      "reached": false,
+      "theta_deg": 126.31872626728875,
+      "xy": [
+        359.2420018195942,
+        224.4260129612882
+      ],
+      "episode_id": 13,
+      "command": "rotate T 90",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7966985100010788,
+      "wall_s": 0.8064811049989657
+    },
+    {
+      "angle_err_rad": 2.424836475558193,
+      "angle_err_deg": 138.93289605886184,
+      "xy_err": 131.64342522994036,
+      "reached": false,
+      "theta_deg": 74.82941638430017,
+      "xy": [
+        455.4083599339852,
+        214.34820788745137
+      ],
+      "episode_id": 13,
+      "command": "rotate T 180",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7967760179999459,
+      "wall_s": 0.8062173680009437
+    },
+    {
+      "angle_err_rad": 1.1330604563085123,
+      "angle_err_deg": 64.91958207964497,
+      "xy_err": 144.38426530447603,
+      "reached": false,
+      "theta_deg": 90.81610240508324,
+      "xy": [
+        466.45653383303636,
+        238.99005176298573
+      ],
+      "episode_id": 13,
+      "command": "rotate T -90",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7965061810009502,
+      "wall_s": 0.8062145570002031
+    },
+    {
+      "angle_err_rad": 0.9860722487905438,
+      "angle_err_deg": 56.497778150672254,
+      "xy_err": 68.77177373503675,
+      "reached": false,
+      "theta_deg": 101.49777815067225,
+      "xy": [
+        316.4948313194089,
+        288.70981880566376
+      ],
+      "episode_id": 13,
+      "command": "put T on the target",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7960284979999415,
+      "wall_s": 0.8060654399996565
+    },
+    {
+      "angle_err_rad": 1.4746374675370335,
+      "angle_err_deg": 84.49050320173197,
+      "xy_err": 249.90203054774773,
+      "reached": false,
+      "theta_deg": 27.380907129063168,
+      "xy": [
+        75.4077640595557,
+        390.6452083439036
+      ],
+      "episode_id": 52,
+      "command": "rotate T 90",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7968257979991904,
+      "wall_s": 0.8080035780003527
+    },
+    {
+      "angle_err_rad": 1.8182612682484907,
+      "angle_err_deg": 104.17869672274296,
+      "xy_err": 140.50736669286013,
+      "reached": false,
+      "theta_deg": 97.69271360805217,
+      "xy": [
+        170.2552416126692,
+        335.11434749635447
+      ],
+      "episode_id": 52,
+      "command": "rotate T 180",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7967761679992691,
+      "wall_s": 0.8064079850009875
+    },
+    {
+      "angle_err_rad": 1.1863160412581877,
+      "angle_err_deg": 67.9709023327618,
+      "xy_err": 107.7849301324757,
+      "reached": false,
+      "theta_deg": -0.15768733644307342,
+      "xy": [
+        230.39382412292863,
+        344.0818385114231
+      ],
+      "episode_id": 52,
+      "command": "rotate T -90",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7965805610001553,
+      "wall_s": 0.806295346999832
+    },
+    {
+      "angle_err_rad": 0.41380003444675584,
+      "angle_err_deg": 23.708995536167194,
+      "xy_err": 31.856561728833604,
+      "reached": false,
+      "theta_deg": 21.291004463832806,
+      "xy": [
+        285.1415002647644,
+        243.13090960861166
+      ],
+      "episode_id": 52,
+      "command": "put T on the target",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7966724999987491,
+      "wall_s": 0.8062999459998537
+    },
+    {
+      "angle_err_rad": 1.0100793005582345,
+      "angle_err_deg": 57.87328089551301,
+      "xy_err": 23.328166578424153,
+      "reached": false,
+      "theta_deg": -143.4107821931661,
+      "xy": [
+        299.62194296128285,
+        282.84861383379706
+      ],
+      "episode_id": 8,
+      "command": "rotate T 90",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.7975608300002932,
+      "wall_s": 0.8073083449999103
+    },
+    {
+      "angle_err_rad": 2.4229464338486837,
+      "angle_err_deg": 138.82460464580328,
+      "xy_err": 27.44470436217322,
+      "reached": false,
+      "theta_deg": -134.3621059434564,
+      "xy": [
+        275.21215996169775,
+        292.4520776355762
+      ],
+      "episode_id": 8,
+      "command": "rotate T 180",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.7969705359992076,
+      "wall_s": 0.8069580190003762
+    },
+    {
+      "angle_err_rad": 1.9125325621191038,
+      "angle_err_deg": 109.5800439907666,
+      "xy_err": 9.412831209219188,
+      "reached": false,
+      "theta_deg": -155.95745730688657,
+      "xy": [
+        280.20761970161556,
+        275.11784665856027
+      ],
+      "episode_id": 8,
+      "command": "rotate T -90",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.7964311329997145,
+      "wall_s": 0.8061990670012165
+    },
+    {
+      "angle_err_rad": 2.434079785414273,
+      "angle_err_deg": 139.46249870234692,
+      "xy_err": 29.11612933133166,
+      "reached": false,
+      "theta_deg": -175.5375012976531,
+      "xy": [
+        283.26523825781123,
+        266.2154671936049
+      ],
+      "episode_id": 8,
+      "command": "put T on the target",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.795878728000389,
+      "wall_s": 0.8052397470000869
+    },
+    {
+      "angle_err_rad": 3.0992960266567673,
+      "angle_err_deg": 177.57658178909824,
+      "xy_err": 250.20631897970932,
+      "reached": false,
+      "theta_deg": -94.53519545582206,
+      "xy": [
+        11.64428782784384,
+        429.06090855088104
+      ],
+      "episode_id": 65,
+      "command": "rotate T 90",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7968053179993149,
+      "wall_s": 0.8079740590001165
+    },
+    {
+      "angle_err_rad": 2.420737985133341,
+      "angle_err_deg": 138.69806985514307,
+      "xy_err": 25.958221995714247,
+      "reached": false,
+      "theta_deg": 34.343316478133126,
+      "xy": [
+        218.98522585829662,
+        265.22900543253587
+      ],
+      "episode_id": 65,
+      "command": "rotate T 180",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.796212484001444,
+      "wall_s": 0.8061490469990531
+    },
+    {
+      "angle_err_rad": 2.972676462070334,
+      "angle_err_deg": 170.32181513451147,
+      "xy_err": 242.29676862367833,
+      "reached": false,
+      "theta_deg": 92.71957119876471,
+      "xy": [
+        452.5731766796,
+        221.80740406505004
+      ],
+      "episode_id": 65,
+      "command": "rotate T -90",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7964484809999703,
+      "wall_s": 0.8064706040004239
+    },
+    {
+      "angle_err_rad": 0.1625544356203994,
+      "angle_err_deg": 9.313683102179938,
+      "xy_err": 51.43576611603172,
+      "reached": false,
+      "theta_deg": 35.68631689782006,
+      "xy": [
+        218.77746776829025,
+        291.49818488602546
+      ],
+      "episode_id": 65,
+      "command": "put T on the target",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7959792670008028,
+      "wall_s": 0.8054172650008695
+    },
+    {
+      "angle_err_rad": 1.5496085942507891,
+      "angle_err_deg": 88.78603234777066,
+      "xy_err": 21.075407071471027,
+      "reached": false,
+      "theta_deg": 20.04551323084325,
+      "xy": [
+        390.8602827398973,
+        121.351049157893
+      ],
+      "episode_id": 16,
+      "command": "rotate T 90",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7966159700008575,
+      "wall_s": 0.8059758590006822
+    },
+    {
+      "angle_err_rad": 0.9915513508212985,
+      "angle_err_deg": 56.81170757255606,
+      "xy_err": 18.44439333861069,
+      "reached": false,
+      "theta_deg": 142.01983800605785,
+      "xy": [
+        385.5831386405909,
+        123.04125561984975
+      ],
+      "episode_id": 16,
+      "command": "rotate T 180",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7965943689996493,
+      "wall_s": 0.8065334939983586
+    },
+    {
+      "angle_err_rad": 1.7174132312341532,
+      "angle_err_deg": 98.40052982964231,
+      "xy_err": 10.349045214760215,
+      "reached": false,
+      "theta_deg": 27.232075408256225,
+      "xy": [
+        394.0006160520397,
+        137.26363519018562
+      ],
+      "episode_id": 16,
+      "command": "rotate T -90",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7964664709998033,
+      "wall_s": 0.8061494069988839
+    },
+    {
+      "angle_err_rad": 0.45672568981125483,
+      "angle_err_deg": 26.168454421386087,
+      "xy_err": 172.17006925829756,
+      "reached": false,
+      "theta_deg": 18.831545578613913,
+      "xy": [
+        384.5387809113556,
+        141.45605843070746
+      ],
+      "episode_id": 16,
+      "command": "put T on the target",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7964362920010899,
+      "wall_s": 0.8057752120002988
+    },
+    {
+      "angle_err_rad": 0.8676977017184067,
+      "angle_err_deg": 49.7154162016661,
+      "xy_err": 91.14964177126981,
+      "reached": false,
+      "theta_deg": 55.02832380759245,
+      "xy": [
+        290.8281549747687,
+        215.65830050192184
+      ],
+      "episode_id": 74,
+      "command": "rotate T 90",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7972939729988866,
+      "wall_s": 0.8071152779994009
+    },
+    {
+      "angle_err_rad": 2.8626221232896096,
+      "angle_err_deg": 164.01616600527302,
+      "xy_err": 240.51123295112117,
+      "reached": false,
+      "theta_deg": 30.727574003985538,
+      "xy": [
+        228.3089325273852,
+        351.5784805587137
+      ],
+      "episode_id": 74,
+      "command": "rotate T 180",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7966337090001616,
+      "wall_s": 0.806667301001653
+    },
+    {
+      "angle_err_rad": 1.4069648430614539,
+      "angle_err_deg": 80.61314743070753,
+      "xy_err": 172.95731137396487,
+      "reached": false,
+      "theta_deg": 5.3568874399661075,
+      "xy": [
+        292.4196785663166,
+        300.2298776287912
+      ],
+      "episode_id": 74,
+      "command": "rotate T -90",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7965646900011052,
+      "wall_s": 0.8063733260005392
+    },
+    {
+      "angle_err_rad": 1.1529542983406156,
+      "angle_err_deg": 66.05941526638445,
+      "xy_err": 34.69930303027134,
+      "reached": false,
+      "theta_deg": -21.05941526638445,
+      "xy": [
+        281.6124213284734,
+        279.41037172877355
+      ],
+      "episode_id": 74,
+      "command": "put T on the target",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7958651879998797,
+      "wall_s": 0.8056895820009231
+    },
+    {
+      "angle_err_rad": 0.3092408523620458,
+      "angle_err_deg": 17.718195693373417,
+      "xy_err": 41.6804324395597,
+      "reached": true,
+      "theta_deg": 79.51171680333499,
+      "xy": [
+        128.43688706830335,
+        241.95828071838923
+      ],
+      "episode_id": 75,
+      "command": "rotate T 90",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7966416500003106,
+      "wall_s": 0.8065252029991825
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "rotate T 180",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7969181469998148,
+      "wall_s": 0.8064116350014956
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "rotate T -90",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7971157949996268,
+      "wall_s": 0.8067988000002515
+    },
+    {
+      "angle_err_rad": 0.6592123856988028,
+      "angle_err_deg": 37.77008750329159,
+      "xy_err": 125.10346686236865,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "put T on the target",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7954328119976708,
+      "wall_s": 0.8050295899993216
+    },
+    {
+      "angle_err_rad": 2.410018769703443,
+      "angle_err_deg": 138.0839040513184,
+      "xy_err": 178.82152757288588,
+      "reached": false,
+      "theta_deg": -178.74320436875485,
+      "xy": [
+        234.20779309825673,
+        410.52853144887274
+      ],
+      "episode_id": 4,
+      "command": "rotate T 90",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7966418180003529,
+      "wall_s": 0.8067657000010513
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "rotate T 180",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7965732089996891,
+      "wall_s": 0.8060971480008448
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "rotate T -90",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7966810269990674,
+      "wall_s": 0.8059242599993013
+    },
+    {
+      "angle_err_rad": 1.6026853845160867,
+      "angle_err_deg": 91.82710842007326,
+      "xy_err": 79.50049466623302,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "put T on the target",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.795676709001782,
+      "wall_s": 0.8049704790009855
+    },
+    {
+      "angle_err_rad": 0.1626101764024579,
+      "angle_err_deg": 9.31687681373865,
+      "xy_err": 39.324057120396695,
+      "reached": true,
+      "theta_deg": 165.44324073332547,
+      "xy": [
+        346.42088410547984,
+        213.6646498141792
+      ],
+      "episode_id": 44,
+      "command": "rotate T 90",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7969849450000766,
+      "wall_s": 0.8070051579998108
+    },
+    {
+      "angle_err_rad": 1.6270981441170687,
+      "angle_err_deg": 93.225856511477,
+      "xy_err": 225.01027153332103,
+      "reached": false,
+      "theta_deg": -2.014025941458907,
+      "xy": [
+        413.79801458123274,
+        40.52506264410047
+      ],
+      "episode_id": 44,
+      "command": "rotate T 180",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7974369690000458,
+      "wall_s": 0.8080845069998759
+    },
+    {
+      "angle_err_rad": 1.0380410268070737,
+      "angle_err_deg": 59.47536979747167,
+      "xy_err": 116.37495628584014,
+      "reached": false,
+      "theta_deg": 54.23548734453578,
+      "xy": [
+        399.39686763964136,
+        156.1674536688119
+      ],
+      "episode_id": 44,
+      "command": "rotate T -90",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7972228319977148,
+      "wall_s": 0.8078037899995252
+    },
+    {
+      "angle_err_rad": 0.6939449621762401,
+      "angle_err_deg": 39.760117547064105,
+      "xy_err": 73.63824453542831,
+      "reached": false,
+      "theta_deg": 84.76011754706411,
+      "xy": [
+        329.31158555300766,
+        249.0716176517475
+      ],
+      "episode_id": 44,
+      "command": "put T on the target",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7968850269990071,
+      "wall_s": 0.8071007469989127
+    },
+    {
+      "angle_err_rad": 1.3595983302772559,
+      "angle_err_deg": 77.89924615792053,
+      "xy_err": 53.47431445258038,
+      "reached": false,
+      "theta_deg": -25.214131126731523,
+      "xy": [
+        330.2668845583807,
+        298.465214372539
+      ],
+      "episode_id": 23,
+      "command": "rotate T 90",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7973412119990826,
+      "wall_s": 0.8078981479993672
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "rotate T 180",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7974524300007033,
+      "wall_s": 0.8077475989994127
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "rotate T -90",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7974736069991195,
+      "wall_s": 0.8077602590001334
+    },
+    {
+      "angle_err_rad": 1.4366657661061417,
+      "angle_err_deg": 82.314884968811,
+      "xy_err": 41.335009448114775,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "put T on the target",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7964497999982996,
+      "wall_s": 0.8066766709998774
+    }
+  ],
+  "n_test_episodes": 20,
+  "method": "ridge probe cost on imagined z_H"
+}

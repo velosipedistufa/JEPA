@@ -1,0 +1,1101 @@
+{
+  "wall_s": 48.51096926899845,
+  "by_command": {
+    "rotate T 90": {
+      "n": 20,
+      "mean_angle_err_deg": 90.01572362384627,
+      "median_angle_err_deg": 90.0,
+      "mean_xy_err": 12.277210697787144,
+      "reach_rate": 0.0,
+      "mean_solve_seconds": 0.796932865850249
+    },
+    "rotate T 180": {
+      "n": 20,
+      "mean_angle_err_deg": 169.9681925672945,
+      "median_angle_err_deg": 180.0,
+      "mean_xy_err": 27.291933523596022,
+      "reach_rate": 0.0,
+      "mean_solve_seconds": 0.7965596910498789
+    },
+    "rotate T -90": {
+      "n": 20,
+      "mean_angle_err_deg": 85.44314881319576,
+      "median_angle_err_deg": 90.0,
+      "mean_xy_err": 16.17700515229093,
+      "reach_rate": 0.05,
+      "mean_solve_seconds": 0.7965002709500368
+    },
+    "put T on the target": {
+      "n": 0,
+      "status": "not measured"
+    }
+  },
+  "episodes": [
+    {
+      "angle_err_rad": 1.8475121571801312,
+      "angle_err_deg": 105.85464920553189,
+      "xy_err": 47.80189340711246,
+      "reached": false,
+      "theta_deg": 130.35242685579007,
+      "xy": [
+        367.99031367579306,
+        271.1653514304383
+      ],
+      "episode_id": 50,
+      "command": "rotate T 90",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.8036780339989491,
+      "wall_s": 0.8140809619999345
+    },
+    {
+      "angle_err_rad": 2.883943742593564,
+      "angle_err_deg": 165.23780480377428,
+      "xy_err": 100.01008590288946,
+      "reached": false,
+      "theta_deg": 131.44488086509625,
+      "xy": [
+        415.1103978738676,
+        293.9310442868809
+      ],
+      "episode_id": 50,
+      "command": "rotate T 180",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7946594799996092,
+      "wall_s": 0.8046956809994299
+    },
+    {
+      "angle_err_rad": 0.10093161123326233,
+      "angle_err_deg": 5.782955343121142,
+      "xy_err": 106.87169591793284,
+      "reached": true,
+      "theta_deg": 61.99003140444311,
+      "xy": [
+        396.6386925281209,
+        332.28751756502027
+      ],
+      "episode_id": 50,
+      "command": "rotate T -90",
+      "theta_now_deg": 146.20707606132197,
+      "solves": 2,
+      "solve_seconds": 0.7946387799984223,
+      "wall_s": 0.8040743980000116
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -57.77820283160771,
+      "xy": [
+        325.9393029939339,
+        243.1357937577556
+      ],
+      "episode_id": 5,
+      "command": "rotate T 90",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.7946222009995836,
+      "wall_s": 0.8040074000000459
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -57.77820283160771,
+      "xy": [
+        325.9393029939339,
+        243.1357937577556
+      ],
+      "episode_id": 5,
+      "command": "rotate T 180",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.7943302930016216,
+      "wall_s": 0.8034756939996441
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -57.77820283160771,
+      "xy": [
+        325.9393029939339,
+        243.1357937577556
+      ],
+      "episode_id": 5,
+      "command": "rotate T -90",
+      "theta_now_deg": -57.77820283160771,
+      "solves": 2,
+      "solve_seconds": 0.79481432799912,
+      "wall_s": 0.8040426689985907
+    },
+    {
+      "angle_err_rad": 1.6068868274919428,
+      "angle_err_deg": 92.06783337045471,
+      "xy_err": 14.63655933590654,
+      "reached": false,
+      "theta_deg": 80.40109206063718,
+      "xy": [
+        208.09506586150943,
+        255.43820203233793
+      ],
+      "episode_id": 19,
+      "command": "rotate T 90",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7945542399993428,
+      "wall_s": 0.8041396370008442
+    },
+    {
+      "angle_err_rad": 2.971316031071818,
+      "angle_err_deg": 170.24386817997774,
+      "xy_err": 9.593260984951815,
+      "reached": false,
+      "theta_deg": 72.71279361106963,
+      "xy": [
+        202.84001221603572,
+        254.31968344598394
+      ],
+      "episode_id": 19,
+      "command": "rotate T 180",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7949494459990092,
+      "wall_s": 0.8043595449998975
+    },
+    {
+      "angle_err_rad": 1.5179537112391568,
+      "angle_err_deg": 86.97234115022376,
+      "xy_err": 10.912532717939676,
+      "reached": false,
+      "theta_deg": 79.44126658131565,
+      "xy": [
+        203.7338216415845,
+        252.7158208303174
+      ],
+      "episode_id": 19,
+      "command": "rotate T -90",
+      "theta_now_deg": 82.46892543109188,
+      "solves": 2,
+      "solve_seconds": 0.7949215469998308,
+      "wall_s": 0.8046484019996569
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -11.20593606225188,
+      "xy": [
+        192.02959899631136,
+        285.82406178074046
+      ],
+      "episode_id": 66,
+      "command": "rotate T 90",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7948641359998874,
+      "wall_s": 0.804635013000734
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -11.20593606225188,
+      "xy": [
+        192.02959899631136,
+        285.82406178074046
+      ],
+      "episode_id": 66,
+      "command": "rotate T 180",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7967439380008727,
+      "wall_s": 0.8062476859995513
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -11.20593606225188,
+      "xy": [
+        192.02959899631136,
+        285.82406178074046
+      ],
+      "episode_id": 66,
+      "command": "rotate T -90",
+      "theta_now_deg": -11.20593606225188,
+      "solves": 2,
+      "solve_seconds": 0.7954616199986049,
+      "wall_s": 0.8050638080003409
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 85.98521892728854,
+      "xy": [
+        152.61131720636075,
+        207.52421475754454
+      ],
+      "episode_id": 53,
+      "command": "rotate T 90",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7960947539995686,
+      "wall_s": 0.8054625240001769
+    },
+    {
+      "angle_err_rad": 3.1283767557565882,
+      "angle_err_deg": 179.24278483168126,
+      "xy_err": 1.6667136258285908,
+      "reached": false,
+      "theta_deg": 85.22800375896982,
+      "xy": [
+        152.34833263328218,
+        205.87837958206512
+      ],
+      "episode_id": 53,
+      "command": "rotate T 180",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.7960277079982916,
+      "wall_s": 0.8056296159993508
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 85.98521892728854,
+      "xy": [
+        152.61131720636075,
+        207.52421475754454
+      ],
+      "episode_id": 53,
+      "command": "rotate T -90",
+      "theta_now_deg": 85.98521892728854,
+      "solves": 2,
+      "solve_seconds": 0.796269262998976,
+      "wall_s": 0.8060553659997822
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -7.9061968170241315,
+      "xy": [
+        254.3134675568801,
+        286.61585560240854
+      ],
+      "episode_id": 9,
+      "command": "rotate T 90",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7963101469995308,
+      "wall_s": 0.8059280200013745
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -7.9061968170241315,
+      "xy": [
+        254.3134675568801,
+        286.61585560240854
+      ],
+      "episode_id": 9,
+      "command": "rotate T 180",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.79581732600127,
+      "wall_s": 0.8047897850010486
+    },
+    {
+      "angle_err_rad": 1.5229118034439706,
+      "angle_err_deg": 87.2564189079963,
+      "xy_err": 6.0953940617683635,
+      "reached": false,
+      "theta_deg": -10.649777909027828,
+      "xy": [
+        248.2906533017616,
+        287.5536920575447
+      ],
+      "episode_id": 9,
+      "command": "rotate T -90",
+      "theta_now_deg": -7.9061968170241315,
+      "solves": 2,
+      "solve_seconds": 0.7964259189993754,
+      "wall_s": 0.8060163719983393
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -149.43292298185202,
+      "xy": [
+        258.8245151054058,
+        132.26306474145943
+      ],
+      "episode_id": 64,
+      "command": "rotate T 90",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.7969379700007266,
+      "wall_s": 0.8065222040004301
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -149.43292298185202,
+      "xy": [
+        258.8245151054058,
+        132.26306474145943
+      ],
+      "episode_id": 64,
+      "command": "rotate T 180",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.7974205049995362,
+      "wall_s": 0.8073086849999527
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -149.43292298185202,
+      "xy": [
+        258.8245151054058,
+        132.26306474145943
+      ],
+      "episode_id": 64,
+      "command": "rotate T -90",
+      "theta_now_deg": -149.43292298185202,
+      "solves": 2,
+      "solve_seconds": 0.797217373001331,
+      "wall_s": 0.8075947599991196
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -166.67442093473036,
+      "xy": [
+        236.24467604969567,
+        219.3045440263637
+      ],
+      "episode_id": 36,
+      "command": "rotate T 90",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.7969958230005432,
+      "wall_s": 0.8071290820007562
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -166.67442093473036,
+      "xy": [
+        236.24467604969567,
+        219.3045440263637
+      ],
+      "episode_id": 36,
+      "command": "rotate T 180",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.7971962570009055,
+      "wall_s": 0.8073450550000416
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -166.67442093473036,
+      "xy": [
+        236.24467604969567,
+        219.3045440263637
+      ],
+      "episode_id": 36,
+      "command": "rotate T -90",
+      "theta_now_deg": -166.67442093473036,
+      "solves": 2,
+      "solve_seconds": 0.797076554999876,
+      "wall_s": 0.8072462539985281
+    },
+    {
+      "angle_err_rad": 1.3731985202780455,
+      "angle_err_deg": 78.6784796455418,
+      "xy_err": 19.822064456948446,
+      "reached": false,
+      "theta_deg": -38.30866273287408,
+      "xy": [
+        200.45749512450746,
+        249.38548801927763
+      ],
+      "episode_id": 20,
+      "command": "rotate T 90",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7967988439995679,
+      "wall_s": 0.8069570529987686
+    },
+    {
+      "angle_err_rad": 2.65527457241837,
+      "angle_err_deg": 152.13602644797686,
+      "xy_err": 96.36668010199737,
+      "reached": false,
+      "theta_deg": -77.49415663935542,
+      "xy": [
+        248.3077420900509,
+        312.2950348634483
+      ],
+      "episode_id": 20,
+      "command": "rotate T 180",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7969673089992284,
+      "wall_s": 0.8072503769999457
+    },
+    {
+      "angle_err_rad": 1.5993330618487418,
+      "angle_err_deg": 91.63503447966836,
+      "xy_err": 6.326226948745209,
+      "reached": false,
+      "theta_deg": -47.99514860766392,
+      "xy": [
+        184.69947932323004,
+        248.14739926255595
+      ],
+      "episode_id": 20,
+      "command": "rotate T -90",
+      "theta_now_deg": -49.630183087332284,
+      "solves": 2,
+      "solve_seconds": 0.7972531160012295,
+      "wall_s": 0.8072945040003106
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 168.43007621023318,
+      "xy": [
+        113.17061228834663,
+        375.4981787330114
+      ],
+      "episode_id": 11,
+      "command": "rotate T 90",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.797224889998688,
+      "wall_s": 0.80729029000031
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 168.43007621023318,
+      "xy": [
+        113.17061228834663,
+        375.4981787330114
+      ],
+      "episode_id": 11,
+      "command": "rotate T 180",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.797004290001496,
+      "wall_s": 0.8070408090006822
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 168.43007621023318,
+      "xy": [
+        113.17061228834663,
+        375.4981787330114
+      ],
+      "episode_id": 11,
+      "command": "rotate T -90",
+      "theta_now_deg": 168.43007621023318,
+      "solves": 2,
+      "solve_seconds": 0.7970269060024293,
+      "wall_s": 0.8071172750005644
+    },
+    {
+      "angle_err_rad": 1.4971114109686035,
+      "angle_err_deg": 85.77816530937667,
+      "xy_err": 82.1946034019023,
+      "reached": false,
+      "theta_deg": 120.11835501606159,
+      "xy": [
+        395.72526119059813,
+        256.56030787434855
+      ],
+      "episode_id": 13,
+      "command": "rotate T 90",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7970956530007243,
+      "wall_s": 0.8076453390003735
+    },
+    {
+      "angle_err_rad": 1.7246139265475016,
+      "angle_err_deg": 98.8130992806568,
+      "xy_err": 112.67309501548358,
+      "reached": false,
+      "theta_deg": 34.709619606095124,
+      "xy": [
+        428.1978763830292,
+        259.1518893818599
+      ],
+      "episode_id": 13,
+      "command": "rotate T 180",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7972168789983698,
+      "wall_s": 0.8075394259994937
+    },
+    {
+      "angle_err_rad": 1.3383412588784926,
+      "angle_err_deg": 76.68130568196314,
+      "xy_err": 80.15578296681845,
+      "reached": false,
+      "theta_deg": 102.57782600740141,
+      "xy": [
+        402.64063148987276,
+        231.19268313405394
+      ],
+      "episode_id": 13,
+      "command": "rotate T -90",
+      "theta_now_deg": 115.89652032543827,
+      "solves": 2,
+      "solve_seconds": 0.7971924860012223,
+      "wall_s": 0.8072037960009766
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 21.871410330795133,
+      "xy": [
+        281.36732719978704,
+        249.11187932570914
+      ],
+      "episode_id": 52,
+      "command": "rotate T 90",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7972881730020163,
+      "wall_s": 0.8071712729997671
+    },
+    {
+      "angle_err_rad": 2.6237460784412674,
+      "angle_err_deg": 150.32957680868526,
+      "xy_err": 142.6056359806117,
+      "reached": false,
+      "theta_deg": -7.799012860519613,
+      "xy": [
+        157.30891815408907,
+        178.78493883712383
+      ],
+      "episode_id": 52,
+      "command": "rotate T 180",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7974222579978232,
+      "wall_s": 0.8079412030001549
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 21.871410330795133,
+      "xy": [
+        281.36732719978704,
+        249.11187932570914
+      ],
+      "episode_id": 52,
+      "command": "rotate T -90",
+      "theta_now_deg": 21.871410330795133,
+      "solves": 2,
+      "solve_seconds": 0.7970933289998356,
+      "wall_s": 0.8071488669993414
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -175.5375012976531,
+      "xy": [
+        283.26523825781123,
+        266.2154671936049
+      ],
+      "episode_id": 8,
+      "command": "rotate T 90",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.7969768450002448,
+      "wall_s": 0.8070104559992615
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -175.5375012976531,
+      "xy": [
+        283.26523825781123,
+        266.2154671936049
+      ],
+      "episode_id": 8,
+      "command": "rotate T 180",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.797577719000401,
+      "wall_s": 0.8075315090009099
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -175.5375012976531,
+      "xy": [
+        283.26523825781123,
+        266.2154671936049
+      ],
+      "episode_id": 8,
+      "command": "rotate T -90",
+      "theta_now_deg": -175.5375012976531,
+      "solves": 2,
+      "solve_seconds": 0.7977483040012885,
+      "wall_s": 0.8078823920004652
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -6.958613666723812,
+      "xy": [
+        220.41031405339405,
+        291.1480797372825
+      ],
+      "episode_id": 65,
+      "command": "rotate T 90",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7971795850007766,
+      "wall_s": 0.8072062649989675
+    },
+    {
+      "angle_err_rad": 3.1034655146071675,
+      "angle_err_deg": 177.81547585138682,
+      "xy_err": 0.15834042012286847,
+      "reached": false,
+      "theta_deg": -4.774089518110647,
+      "xy": [
+        220.25349978291402,
+        291.1700108389079
+      ],
+      "episode_id": 65,
+      "command": "rotate T 180",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7975357300001633,
+      "wall_s": 0.8076448979991255
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -6.958613666723812,
+      "xy": [
+        220.41031405339405,
+        291.1480797372825
+      ],
+      "episode_id": 65,
+      "command": "rotate T -90",
+      "theta_now_deg": -6.958613666723812,
+      "solves": 2,
+      "solve_seconds": 0.7972322480000003,
+      "wall_s": 0.8074044170007255
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 18.831545578613913,
+      "xy": [
+        384.5387809113556,
+        141.45605843070746
+      ],
+      "episode_id": 16,
+      "command": "rotate T 90",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7974252450003405,
+      "wall_s": 0.8075048739992781
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 18.831545578613913,
+      "xy": [
+        384.5387809113556,
+        141.45605843070746
+      ],
+      "episode_id": 16,
+      "command": "rotate T 180",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.7968843549988378,
+      "wall_s": 0.8069859150000411
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 18.831545578613913,
+      "xy": [
+        384.5387809113556,
+        141.45605843070746
+      ],
+      "episode_id": 16,
+      "command": "rotate T -90",
+      "theta_now_deg": 18.831545578613913,
+      "solves": 2,
+      "solve_seconds": 0.797476445997745,
+      "wall_s": 0.8075032870001451
+    },
+    {
+      "angle_err_rad": 1.5347612981850078,
+      "angle_err_deg": 87.93534494602021,
+      "xy_err": 81.08909335387314,
+      "reached": false,
+      "theta_deg": 16.808395063238343,
+      "xy": [
+        297.8293324623099,
+        207.35623452573202
+      ],
+      "episode_id": 74,
+      "command": "rotate T 90",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7978496910000104,
+      "wall_s": 0.8080265209991921
+    },
+    {
+      "angle_err_rad": 2.8666134374046273,
+      "angle_err_deg": 164.24485145877455,
+      "xy_err": 63.142017559608576,
+      "reached": false,
+      "theta_deg": 30.498888550484008,
+      "xy": [
+        380.5245437133422,
+        108.53973825050218
+      ],
+      "episode_id": 74,
+      "command": "rotate T 180",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7966316990004998,
+      "wall_s": 0.806625418999829
+    },
+    {
+      "angle_err_rad": 1.5454213137386876,
+      "angle_err_deg": 88.54611884678987,
+      "xy_err": 56.57645751775374,
+      "reached": false,
+      "theta_deg": 13.28985885604839,
+      "xy": [
+        374.75862762389386,
+        111.96864793186923
+      ],
+      "episode_id": 74,
+      "command": "rotate T -90",
+      "theta_now_deg": 14.743740009258548,
+      "solves": 2,
+      "solve_seconds": 0.7961884000014834,
+      "wall_s": 0.8059652110005118
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "rotate T 90",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7969476400012354,
+      "wall_s": 0.8065365430011298
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "rotate T 180",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.7967552499994781,
+      "wall_s": 0.8062456419993396
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 7.229912496708412,
+      "xy": [
+        133.906696941124,
+        283.27824717897454
+      ],
+      "episode_id": 75,
+      "command": "rotate T -90",
+      "theta_now_deg": 7.229912496708412,
+      "solves": 2,
+      "solve_seconds": 0.796507846998793,
+      "wall_s": 0.8058507519999694
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "rotate T 90",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7966877830003796,
+      "wall_s": 0.8055852220004454
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "rotate T 180",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7968491419997008,
+      "wall_s": 0.8060073060005379
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -46.827108420073266,
+      "xy": [
+        335.195864453863,
+        262.9529637983454
+      ],
+      "episode_id": 4,
+      "command": "rotate T -90",
+      "theta_now_deg": -46.827108420073266,
+      "solves": 2,
+      "solve_seconds": 0.7960983220000344,
+      "wall_s": 0.8050597799992829
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": 84.76011754706411,
+      "xy": [
+        329.31158555300766,
+        249.0716176517475
+      ],
+      "episode_id": 44,
+      "command": "rotate T 90",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7965449760013144,
+      "wall_s": 0.806099188999724
+    },
+    {
+      "angle_err_rad": 2.815222430932219,
+      "angle_err_deg": 161.30036368297607,
+      "xy_err": 19.62284088042643,
+      "reached": false,
+      "theta_deg": 103.45975386408806,
+      "xy": [
+        346.753415665408,
+        240.0805973231808
+      ],
+      "episode_id": 44,
+      "command": "rotate T 180",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7966517630011367,
+      "wall_s": 0.8062353850000363
+    },
+    {
+      "angle_err_rad": 1.7800403925190649,
+      "angle_err_deg": 101.98880185415285,
+      "xy_err": 56.60201291486038,
+      "reached": false,
+      "theta_deg": 96.74891940121697,
+      "xy": [
+        382.92638599975817,
+        230.92661726406098
+      ],
+      "episode_id": 44,
+      "command": "rotate T -90",
+      "theta_now_deg": 84.76011754706411,
+      "solves": 2,
+      "solve_seconds": 0.7968029090006894,
+      "wall_s": 0.8061806919995433
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "rotate T 90",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7965806870015513,
+      "wall_s": 0.8058002729994769
+    },
+    {
+      "angle_err_rad": 3.141592653589793,
+      "angle_err_deg": 180.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "rotate T 180",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.796552473999327,
+      "wall_s": 0.8059594879996439
+    },
+    {
+      "angle_err_rad": 1.5707963267948966,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "reached": false,
+      "theta_deg": -37.31488496881099,
+      "xy": [
+        297.3336470305146,
+        256.3356027898695
+      ],
+      "episode_id": 23,
+      "command": "rotate T -90",
+      "theta_now_deg": -37.31488496881099,
+      "solves": 2,
+      "solve_seconds": 0.7965597210004489,
+      "wall_s": 0.8061126640004659
+    }
+  ],
+  "method": "CEM chases pred delta z = MLP(z_t, one_hot)",
+  "n_train_pairs": 780,
+  "n_existing_train_pairs": 180,
+  "n_extra_pairs": 600,
+  "train_loss_trace": [
+    {
+      "step": 0,
+      "mse": 1.221289873123169
+    },
+    {
+      "step": 50,
+      "mse": 0.6595603227615356
+    },
+    {
+      "step": 100,
+      "mse": 0.5254246592521667
+    },
+    {
+      "step": 150,
+      "mse": 0.4727157950401306
+    },
+    {
+      "step": 200,
+      "mse": 0.43095290660858154
+    },
+    {
+      "step": 250,
+      "mse": 0.3851444125175476
+    },
+    {
+      "step": 300,
+      "mse": 0.3655667304992676
+    },
+    {
+      "step": 350,
+      "mse": 0.33113643527030945
+    },
+    {
+      "step": 399,
+      "mse": 0.28340792655944824
+    }
+  ],
+  "heldout_pair_mse": 0.7622510194778442,
+  "heldout_pair_mean_l2": 11.681241035461426,
+  "heldout_target_mean_l2": 16.277095794677734,
+  "put_T_on_the_target": "not measured; no same-xy pairs for that command"
+}

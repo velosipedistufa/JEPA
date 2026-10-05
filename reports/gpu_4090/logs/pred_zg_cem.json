@@ -1,0 +1,4 @@
+{
+  "status": "skipped",
+  "reason": "CEM cannot execute in-place 180\u00b0 even with a true goal image under this horizon/budget."
+}

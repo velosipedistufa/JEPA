@@ -1,0 +1,15 @@
+{
+  "verdict": "supports",
+  "decision": "continue",
+  "next": "One more disjoint 40/20 block, same velocities and the same ridge. No new label.",
+  "reasons": [
+    "v_x R^2 -0.003071 is below 0.2",
+    "mean paired RMSE 0.812931",
+    "decision continue",
+    "One more disjoint 40/20 block, same velocities and the same ridge. No new label."
+  ],
+  "r2_x": -0.0030707419982412,
+  "mean_pair_rmse": 0.812930856939769,
+  "n_test_frames": 40,
+  "git_commit": "8da6721a6370fae2c637b6833c28a8f4a4113cdb"
+}

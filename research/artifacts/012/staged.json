@@ -1,0 +1,817 @@
+{
+  "n": 20,
+  "reached": 1,
+  "f13_mean": [
+    -0.007812564379916167,
+    0.006860687229453028
+  ],
+  "f13_std": [
+    0.2084674874515821,
+    0.20674867061239938
+  ],
+  "action_scale": 1,
+  "torch_seed": 42,
+  "stage_budget": 25,
+  "episodes": [
+    {
+      "episode_id": 50,
+      "reached": false,
+      "angle_err_deg": 120.55630998069572,
+      "xy_err": 65.2256261518795,
+      "stage_xy_increases": [
+        33.75964081805998,
+        17.17425692186817,
+        14.291728411951347
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 45.81202007581208,
+          "xy_err": 33.75964081805998,
+          "xy_increase": 33.75964081805998,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 80.90068292735808,
+          "xy_err": 50.93389773992815,
+          "xy_increase": 17.17425692186817,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 120.55630998069572,
+          "xy_err": 65.2256261518795,
+          "xy_increase": 14.291728411951347,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 5,
+      "reached": false,
+      "angle_err_deg": 71.86677677154255,
+      "xy_err": 18.28795717214961,
+      "stage_xy_increases": [
+        18.28795717214961,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 11.866776771542566,
+          "xy_err": 18.28795717214961,
+          "xy_increase": 18.28795717214961,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 41.86677677154253,
+          "xy_err": 18.28795717214961,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 71.86677677154255,
+          "xy_err": 18.28795717214961,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 19,
+      "reached": false,
+      "angle_err_deg": 55.015753524726094,
+      "xy_err": 69.27586976261755,
+      "stage_xy_increases": [
+        68.57202288250677,
+        0.38147117364782446,
+        0.32237570646294955
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 31.337202539800753,
+          "xy_err": 68.57202288250677,
+          "xy_increase": 68.57202288250677,
+          "goal_render_dxy": 0.7286280020422401,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 30.04045144879267,
+          "xy_err": 68.9534940561546,
+          "xy_increase": 0.38147117364782446,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 55.015753524726094,
+          "xy_err": 69.27586976261755,
+          "xy_increase": 0.32237570646294955,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 66,
+      "reached": false,
+      "angle_err_deg": 136.0221143920569,
+      "xy_err": 204.82475230821538,
+      "stage_xy_increases": [
+        3.9204392260632965,
+        63.70606941883362,
+        137.19824366331846
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 28.247581066176554,
+          "xy_err": 3.9204392260632965,
+          "xy_increase": 3.9204392260632965,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 89.31113762391438,
+          "xy_err": 67.62650864489692,
+          "xy_increase": 63.70606941883362,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 136.0221143920569,
+          "xy_err": 204.82475230821538,
+          "xy_increase": 137.19824366331846,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 53,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 9,
+      "reached": false,
+      "angle_err_deg": 90.63877084013342,
+      "xy_err": 6.885252255449707,
+      "stage_xy_increases": [
+        6.885252255449707,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 30.638770840133443,
+          "xy_err": 6.885252255449707,
+          "xy_increase": 6.885252255449707,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 60.63877084013341,
+          "xy_err": 6.885252255449707,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.63877084013342,
+          "xy_err": 6.885252255449707,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 64,
+      "reached": false,
+      "angle_err_deg": 80.18334486730076,
+      "xy_err": 22.228359440900384,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        22.228359440900384
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 30.000000000000018,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 80.18334486730076,
+          "xy_err": 22.228359440900384,
+          "xy_increase": 22.228359440900384,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 36,
+      "reached": false,
+      "angle_err_deg": 90.00000000000003,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 60.00000000000001,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.00000000000003,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 20,
+      "reached": false,
+      "angle_err_deg": 66.97619851536744,
+      "xy_err": 24.1541950176028,
+      "stage_xy_increases": [
+        24.1541950176028,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 6.976198515367465,
+          "xy_err": 24.1541950176028,
+          "xy_increase": 24.1541950176028,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 36.97619851536743,
+          "xy_err": 24.1541950176028,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 66.97619851536744,
+          "xy_err": 24.1541950176028,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 11,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 13,
+      "reached": false,
+      "angle_err_deg": 101.30130666514893,
+      "xy_err": 55.32730515113628,
+      "stage_xy_increases": [
+        8.528995815972639,
+        46.79830933516364,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 14.318419726990077,
+          "xy_err": 8.528995815972639,
+          "xy_increase": 8.528995815972639,
+          "goal_render_dxy": 1.1291487955655386,
+          "reached": true
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 71.30130666514891,
+          "xy_err": 55.32730515113628,
+          "xy_increase": 46.79830933516364,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 101.30130666514893,
+          "xy_err": 55.32730515113628,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 52,
+      "reached": false,
+      "angle_err_deg": 0.6811628537839489,
+      "xy_err": 101.27519786472058,
+      "stage_xy_increases": [
+        202.0136808472471,
+        -13.137794566528498,
+        -87.60068841599801
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 1.2272151768403214,
+          "xy_err": 202.0136808472471,
+          "xy_increase": 202.0136808472471,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 44.13199690210119,
+          "xy_err": 188.8758862807186,
+          "xy_increase": -13.137794566528498,
+          "goal_render_dxy": 2.523154606361432,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 0.6811628537839489,
+          "xy_err": 101.27519786472058,
+          "xy_increase": -87.60068841599801,
+          "goal_render_dxy": 0.5704636906519911,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 8,
+      "reached": false,
+      "angle_err_deg": 89.99999999999997,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 60.00000000000001,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 89.99999999999997,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 65,
+      "reached": true,
+      "angle_err_deg": 8.24013259265088,
+      "xy_err": 1.9860090718821148,
+      "stage_xy_increases": [
+        1.3623657575266297,
+        0.0,
+        0.6236433143554851
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 2.4883567582651116,
+          "xy_err": 1.3623657575266297,
+          "xy_increase": 1.3623657575266297,
+          "goal_render_dxy": 0.0,
+          "reached": true
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 27.511643241734856,
+          "xy_err": 1.3623657575266297,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 8.24013259265088,
+          "xy_err": 1.9860090718821148,
+          "xy_increase": 0.6236433143554851,
+          "goal_render_dxy": 2.842170943040401e-14,
+          "reached": true
+        }
+      ]
+    },
+    {
+      "episode_id": 16,
+      "reached": false,
+      "angle_err_deg": 89.12508768034765,
+      "xy_err": 4.4723185694068945,
+      "stage_xy_increases": [
+        0.0,
+        4.4569905074772835,
+        0.015328061929611003
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.11658234695509,
+          "xy_err": 4.4569905074772835,
+          "xy_increase": 4.4569905074772835,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 89.12508768034765,
+          "xy_err": 4.4723185694068945,
+          "xy_increase": 0.015328061929611003,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 74,
+      "reached": false,
+      "angle_err_deg": 115.38374736083345,
+      "xy_err": 124.96401739565935,
+      "stage_xy_increases": [
+        61.75865899786973,
+        62.732402693320054,
+        0.4729557044695696
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 48.39071203378569,
+          "xy_err": 61.75865899786973,
+          "xy_increase": 61.75865899786973,
+          "goal_render_dxy": 1.8495746862128681,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 85.5655161049354,
+          "xy_err": 124.49106169118978,
+          "xy_increase": 62.732402693320054,
+          "goal_render_dxy": 1.5772122285613428,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 115.38374736083345,
+          "xy_err": 124.96401739565935,
+          "xy_increase": 0.4729557044695696,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 75,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 4,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 30.000000000000018,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 44,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 29.999999999999993,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    },
+    {
+      "episode_id": 23,
+      "reached": false,
+      "angle_err_deg": 90.0,
+      "xy_err": 0.0,
+      "stage_xy_increases": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "delta_deg": 29.999999999999996,
+          "angle_err_deg": 30.000000000000018,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 2,
+          "delta_deg": 59.99999999999999,
+          "angle_err_deg": 59.999999999999986,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        },
+        {
+          "stage": 3,
+          "delta_deg": 90.0,
+          "angle_err_deg": 90.0,
+          "xy_err": 0.0,
+          "xy_increase": 0.0,
+          "goal_render_dxy": 0.0,
+          "reached": false
+        }
+      ]
+    }
+  ]
+}

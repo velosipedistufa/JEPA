@@ -1,0 +1,36 @@
+{
+  "family": "xy-episode",
+  "cycle": "004",
+  "by_seed": {
+    "0": {
+      "frame_test_mae_x": 12.70093186924053,
+      "frame_test_mae_y": 9.677809205954556,
+      "episode_test_mae_x": 11.710440094140232,
+      "episode_test_mae_y": 9.989942039258745,
+      "episode_constant_mae_x": 74.9141706278158,
+      "episode_constant_mae_y": 54.22579626243668,
+      "n_test_episodes": 50,
+      "angle_pin_mae_deg": 13.751980913656148
+    },
+    "1": {
+      "frame_test_mae_x": 11.374770603169216,
+      "frame_test_mae_y": 11.400641675149357,
+      "episode_test_mae_x": 10.213864689000905,
+      "episode_test_mae_y": 10.989067528789096,
+      "episode_constant_mae_x": 71.87795783877485,
+      "episode_constant_mae_y": 68.0283524671003,
+      "n_test_episodes": 50,
+      "angle_pin_mae_deg": null
+    }
+  },
+  "fit_seconds": 0.02400806600053329,
+  "numpy": "2.2.6",
+  "sklearn": "1.7.2",
+  "python": "3.10.21",
+  "git_commit": "6be0b91c1b8e5f7ce73f5fca3c5d9406424cc2b2",
+  "script_blob": "a85f92e4eca58a22177429c1c62166761f6bb6a7",
+  "script_or_claim_dirty": false,
+  "status_porcelain": "",
+  "claim_sha256": "d076c1131391317b707fd465d48d31e3e7526ffcd5bdc1bf65d492f29d40f6bc",
+  "npz_sha256": "7ddf4d39f5cf2bc44dafa345abd7590ee9244e5249026343710d2fdfda7a5121"
+}
