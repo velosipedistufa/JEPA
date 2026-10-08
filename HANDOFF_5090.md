@@ -89,6 +89,28 @@ Goal nodes are the graph nodes that satisfy the command. Route as in check 2. Th
 
 The dry graph also answers a side question for the report: do the demos ever turn the T in place? Count nodes whose block moves less than 15 px while turning more than 90° within 50 steps.
 
+### Check 3 as run (written 2026-10-08 on the 5090, before any scored check-3 run)
+
+Script: `scripts/word_breadcrumbs.py`. It reuses the check-2 graph and planner code unchanged.
+
+- Sign convention, checked on the env render: screen y points down, so "up" is −y. A positive block angle turns the T clockwise on screen, so clockwise is θ0 + 90°.
+- Seven commands: target, turn cw, turn ccw, and push left/right/up/down.
+- Tolerances are the env's own `eval_state` ones: 20 px and 20°. Turns allow 40 px of xy drift. Pushes move the block 80 px with the angle free.
+- A push whose target point leaves the box [80, 432] is dropped before running.
+- Starts are live resets, seeds 0–9. That gives 64 command/start pairs (6 pushes dropped).
+- Both planners chase the same goal image: the rendered demo node that the graph route from the start ends at. Flat chases it for the whole budget. Crumbs adds the check-2 breadcrumbs.
+- Budget 300. Success is scored on the block only, at any step.
+
+The dry run (`--dry --n 10`) went first and changed no constant:
+- 56/64 pairs have a route.
+- In-place turns are in the demos: 8,040 of 427k nodes, in 1,691 of 16,817 episodes.
+
+| # | Command | Claim | Kill / stop if |
+|---|---|---|---|
+| 3a | `--dry --n 10` | Report only. 56/64 with a route | — |
+| 3b | `--planner flat --n 10`, then `--planner crumbs --n 10` | Crumbs beat flat by at least 10 points on the 64 pairs | crumbs at most flat + 1 episode |
+| 3c | the turn rows of 3b (20 pairs) | Crumbs reach at least 5/20 turns | crumbs at most 2/20. Also report the stricter 012 gate (drift under 15 px), report only |
+
 ## Where things are
 
 - Sasha's index of measured numbers: `reports/HANDOFF.md`, `research_os/lab/facts.md`, `research/LEDGER.md`.
