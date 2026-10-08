@@ -91,6 +91,8 @@ The JSON files are in `research/artifacts/5090/`. Scored runs use budget 300.
 | 2d | live: flat 0/20, crumbs 3/20; median block error 162 → 58 px | between claim (4) and kill (1) |
 | 3b | words: flat 18/64, crumbs 34/64 (+25 pts; paired 24 vs 8) | holds |
 | 3c | turns: crumbs 8/20 (flat 4/20). The 012 gate (drift under 15 px): crumbs 0/20, flat 1/20 | holds on the frozen gate. The turns happen while the block drifts 15–40 px, not strictly in place |
+| L1 | held-out parse: Qwen 101/120 (84.2%); keyword 31/120 (25.8%) | between claim (90%) and kill (75%) |
+| L2 | gold 57/111 (51.4%), parsed 51/111 (45.9%); gap −5.4 pts; 9 excluded pushes | misses the ≤5 pt loss claim by 0.4 pts; above the −15 pt kill |
 
 Crumbs per command: target 6/10, turn cw 5/10, turn ccw 3/10, left 4/8, right 4/8, up 7/10, down 5/8.
 
@@ -159,3 +161,53 @@ Do not edit the prompt, the few-shot examples, the tolerances or the claims afte
 3. (Smoke test passed 2026-10-08 14:20 after dev-only prompt fixes: turns now output a rotation word plus positive degrees, and compass words map to directions. These were tuned on Claude's own sentences only.) Check that `paraphrases.jsonl` has 120 lines with valid labels, then commit it on its own BEFORE running L1.
 4. Run L1 (~1 min), then L2 (~10–15 min on the 5090). Activate `.venv` first and run from the repo root.
 5. Commit the `research/artifacts/5090/parse_*.json` and `language_*.json` files, add an L1/L2 row to the results table above, and push this branch. Never push to master. Commit as FaithOgunwoye (repo-local git config is already set). No AI co-author lines.
+
+### Held-out language evaluation (Codex, 2026-10-08)
+
+The 120 sentences were committed separately as `f2d2942` before L1 ran.
+Counts: target 30, turn 45, push 45; plain 32, casual 29, indirect 24,
+odd 35. Turns: 23 clockwise, 22 counterclockwise. IDs, uniqueness, numeric
+ranges, null fields, and all action/style quotas passed validation.
+The handoff was read alongside the generation prompt; parser source and
+few-shot examples were first read after the test set was written.
+The existing model download was used. The unscored smoke test returned
+`{"action": "push", "dir": "down", "px": 40.0}`. No parser, prompt,
+few-shot, tolerance, or claim changes were made.
+
+L1: 101/120 correct (84.2%), below the 90% claim and above the 75% kill.
+Keyword baseline: 31/120 (25.8%). Invalid gold labels: 0. Label disputes:
+none identified. Failures include fractional-turn amounts, target requests
+misread as pushes, invalid rotation outputs, and negative push distances.
+
+| Breakdown | Correct |
+|---|---|
+| plain | 30/32 |
+| casual | 25/29 |
+| indirect | 18/24 |
+| odd | 28/35 |
+| target | 25/30 |
+| turn | 35/45 |
+| push | 41/45 |
+
+L1 artifact: `research/artifacts/5090/parse_paraphrases_n120.json`.
+
+L2: gold 57/111 (51.4%), parsed 51/111 (45.9%), a loss of 5.4 percentage
+points. This narrowly misses the claim (at most 5 points lost), but does not
+reach the kill threshold (at least 15 points lost). Nine pushes were excluded
+because their gold destinations fell outside the allowed arena. Budget: 300.
+Exactly matching commands reused 90 gold runs. Paired outcomes: 8 gold-only
+successes and 2 parsed-only successes. Both runs were scored on the gold
+region at any executed step, including when the parsed command was wrong.
+
+| Action | Gold success | Parsed success |
+|---|---|---|
+| target | 23/30 | 20/30 |
+| turn | 18/45 | 17/45 |
+| push | 16/36 | 14/36 |
+
+L2 artifact: `research/artifacts/5090/language_paraphrases_b300_n111.json`.
+Both evaluations completed without crashes or code fixes. Artifact row
+counts, excluded IDs, and success totals were checked against the summaries.
+Neither frozen language claim was met on this test set; neither kill
+threshold was reached. The stronger limitation remains execution: even gold
+commands succeeded on only 51.4% of the eligible tasks.

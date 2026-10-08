@@ -1,0 +1,2321 @@
+{
+  "summary": {
+    "n": 120,
+    "llm_correct": 101,
+    "llm_accuracy": 0.8416666666666667,
+    "keyword_correct": 31,
+    "keyword_accuracy": 0.25833333333333336,
+    "invalid_gold": 0,
+    "llm_by_style": {
+      "casual": "25/29",
+      "indirect": "18/24",
+      "odd": "28/35",
+      "plain": "30/32"
+    },
+    "llm_by_action": {
+      "target": "25/30",
+      "turn": "35/45",
+      "push": "41/45"
+    },
+    "ms_per_sentence": 137.08362181981406
+  },
+  "model": "Qwen2.5-1.5B-Instruct",
+  "deg_tol": 15.0,
+  "px_tol": 0.25,
+  "rows": [
+    {
+      "id": 0,
+      "text": "A bit of counterclockwise rotation in the same spot would be ideal.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 1,
+      "text": "That letter thing, make it match green ghost position AND angle.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 2,
+      "text": "I'd like the block's orientation 30 degrees clockwise from now, at the same position.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 3,
+      "text": "grey letter goes in green letter, exact same pose thx.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 4,
+      "text": "one tee-length toward screen top, slide da block.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 5,
+      "text": "I'm looking for complete overlap between the piece and the green template.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 6,
+      "text": "Send that piece far to the left.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 7,
+      "text": "Rotate the piece counterclockwise through 30 degrees in its current spot.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 8,
+      "text": "I'd go with a 75-degree clockwise twist at this spot.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 75}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 9,
+      "text": "nudge to the left for the tee plz.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 10,
+      "text": "Translate the block 30 pixels toward the left edge of the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 11,
+      "text": "Translate the letter 200 pixels rightward.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 200.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 200.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 200}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 12,
+      "text": "Rotate the T a half turn anticlockwise around its center.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "llm": null,
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"anticlockwise\", \"deg\": 180}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 13,
+      "text": "Rotate the letter 120 degrees clockwise, keeping its center still.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 120}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 14,
+      "text": "Make the piece and the green guide sit right on top of each other.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 15,
+      "text": "Align the block precisely with the green silhouette.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 16,
+      "text": "eighth-turn clockwise, that piece, in place if u please.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 80.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 80}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 17,
+      "text": "Match block to green shape all the way, no crooked angle pls.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 18,
+      "text": "I'd like the block a bit farther left than it is now.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 45}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 19,
+      "text": "Nudge that block toward the right side.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 20,
+      "text": "Let's swivel this piece a quarter turn clockwise where it sits.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 21,
+      "text": "Move the piece one and a half T lengths to the right.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 150.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 150.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 150}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 22,
+      "text": "The desired final pose is exactly the one drawn in green.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 23,
+      "text": "Seat the piece squarely in the green silhouette.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 24,
+      "text": "It would be good to have the solid letter perfectly matching the green letter.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 100}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 25,
+      "text": "I want the letter moved far to the left from here.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 26,
+      "text": "Twist it slightly counterclockwise, keeping it here.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 27,
+      "text": "Right edge-ward slide for the grey thing please.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 28,
+      "text": "Slide the T 200 pixels toward the bottom edge.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 200.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 200.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 200}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 29,
+      "text": "Clockwise rotation for this tee please, location unchanged.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 30,
+      "text": "grey dude spin counterclockwise 60 degrees, center stays.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 60}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 31,
+      "text": "green tee and grey tee: stack em exact, same facing.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": null,
+      "llm_raw": "{\"action\": \"stack\", \"tees\": [{\"color\": \"green\", \"shape\": \"T\"}, {\"color\": \"grey\", \"shape\": \"T\"}]}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 32,
+      "text": "Give the T a 60-degree clockwise rotation about its center.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 60}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 33,
+      "text": "Spin the block clockwise through 135 degrees in place.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 135}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 34,
+      "text": "Slide the letter half a T length toward the top of the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 50.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 50.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 50}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 35,
+      "text": "Let's spin the T clockwise by 150 degrees without sliding it.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 150}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 36,
+      "text": "The block should end up at the green outline's position and angle.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 37,
+      "text": "I'd say slide and swivel it until the two Ts match.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 100}, {\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 38,
+      "text": "Scoot the piece a little to the left.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 39,
+      "text": "Place the block in the pose indicated by the green outline.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 40,
+      "text": "Rotate the letter 120 degrees anticlockwise at the same location.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -120.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -120.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 120}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 41,
+      "text": "Move and orient the T so it coincides with the green marking.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 42,
+      "text": "screen-up a lot, scoot da tee.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 43,
+      "text": "Get the block nestled into that green T, facing the same way.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 44,
+      "text": "Give the piece an eighth of a turn clockwise in place.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 45,
+      "text": "The desired change is a 30-degree counterclockwise rotation with no shift.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 46,
+      "text": "rotat the tee a lil bit clockwise in place.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 47,
+      "text": "Shift it a lot toward the bottom of the screen.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 48,
+      "text": "eighth-turn counterclockwise for that letter thing, same location.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -80.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 80}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 49,
+      "text": "My goal is a grey T sitting flush over the green T guide.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 50,
+      "text": "Give the piece an eighth of a turn counterclockwise in place.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 51,
+      "text": "Match the letter's position and rotation to the green template.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 52,
+      "text": "tee, do a quarter spin clockwise on the spot pls.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 53,
+      "text": "two T lengths leftward, that block must travel.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 200.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 200.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 200}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 54,
+      "text": "I want the piece a quarter turn anticlockwise from its current pose, with its center unchanged.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm": null,
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"anticlockwise\", \"deg\": 90}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 55,
+      "text": "Rotate the T a half turn clockwise around its center.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 180}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 56,
+      "text": "60 degrees clockwise pls, spin the grey dude in place.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 60}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 57,
+      "text": "Rotate the block clockwise by 30 degrees without translating it.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 58,
+      "text": "Give that block a clockwise spin in place.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 59,
+      "text": "Bring the grey T into exact alignment with its green destination.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 60,
+      "text": "Let's slide the block toward the bottom edge.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 61,
+      "text": "Can you spin it counterclockwise by 150 degrees, staying here?",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 150}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 62,
+      "text": "anticlockwise swivel, block stays on this spot ok.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 63,
+      "text": "A slight downward shift of the block on the screen would be good.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 64,
+      "text": "Give the block a 60-degree counterclockwise rotation about its center.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 60}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 65,
+      "text": "I'd prefer the grey piece farther toward the top of the screen.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 66,
+      "text": "Move it a bit toward the top of the screen.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 67,
+      "text": "Move the grey block 75 pixels upward on the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 75.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 75.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 75}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 68,
+      "text": "Can you swivel the block a quarter turn anticlockwise without moving its center?",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm": null,
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"anticlockwise\", \"deg\": 90}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 69,
+      "text": "The position I want is two T lengths above the current one on screen.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 200.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 200.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 200}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 70,
+      "text": "A bit anticlockwise, twist that thing where it stands.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm": null,
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"anticlockwise\", \"deg\": 45}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 71,
+      "text": "Rightward by 120 pixels, move that letter thing.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 120.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 120.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 120}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 72,
+      "text": "I'd like the piece one T length to the right of its current location.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 73,
+      "text": "grey dude goes 150 pixels screen-down thx.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 150}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 74,
+      "text": "the tee needs half-turn counterclockwise, same center ya.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 90}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 75,
+      "text": "Put da piece flush in the green drawing, arms matching.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 76,
+      "text": "I'd like the piece facing a quarter turn clockwise from its present orientation, still here.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 77,
+      "text": "Slide the piece 60 pixels toward the screen's right edge.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 60.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 60.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 60}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 60.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 78,
+      "text": "For this piece, green stencil pose is wanted; align exact.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 79,
+      "text": "Move the letter far upward on the screen.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 80,
+      "text": "The goal is half a turn clockwise from this orientation, without translation.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 81,
+      "text": "Scoot the block a lot to the right.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 82,
+      "text": "Slide letter 90 pix down on screen pls.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 90.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 90.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "down",
+        "px": 90.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 83,
+      "text": "scoot teh tee 60 px leftward pls.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 60.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 60.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 60}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 84,
+      "text": "I want the green outline filled by the grey block, with their arms aligned.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 85,
+      "text": "quarter spin anticlockwise for da letter, same spot.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 86,
+      "text": "Slide it slightly toward the bottom edge.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 87,
+      "text": "Translate the piece one T length toward the bottom of the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 88,
+      "text": "Slide the grey block 135 pixels downward on the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 135.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 135.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 135}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 89,
+      "text": "The tee must wear the green outline like a perfect glove.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 90,
+      "text": "I'd prefer the block rotated clockwise by 120 degrees, staying in its current location.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 120}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 91,
+      "text": "pls fit teh tee exactly into the green stencil.",
+      "style": "odd",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 92,
+      "text": "Let's get that T lined up perfectly with the green one.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 93,
+      "text": "send that tee far toward screen bottom yeah.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": 160}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 94,
+      "text": "a bit rightward scooting for that piece pls.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 40}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 95,
+      "text": "Fit the grey piece inside the green T outline, matching its orientation.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 96,
+      "text": "Can you slide that grey piece toward the left edge?",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": -50.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": -50}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 97,
+      "text": "Can you make the grey shape cover the green outline exactly?",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 98,
+      "text": "A slight clockwise rotation is what I'm after; keep the center where it is.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 99,
+      "text": "I'd like both T shapes to coincide exactly.",
+      "style": "indirect",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 100,
+      "text": "Twist it a bit clockwise, right where it is.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 45}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 101,
+      "text": "My desired position is 30 pixels to the right of where the T is now.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 30}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 102,
+      "text": "Shift the block one T length to the left.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 100.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 100}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 103,
+      "text": "half-turn clockwise on spot for the tee, cheers.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 104,
+      "text": "Move the block 120 pixels toward the top of the screen.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 120.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 120.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 120}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 105,
+      "text": "Make letter spin 135 degrees clockwise, no slide thx.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 135}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 106,
+      "text": "The block should be half a T length lower on the screen.",
+      "style": "indirect",
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 50.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "down",
+        "px": -50.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"down\", \"px\": -50}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 107,
+      "text": "The goal is half a turn counterclockwise from this orientation, without translation.",
+      "style": "indirect",
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 45}",
+      "llm_ok": false,
+      "keyword": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 108,
+      "text": "Let's scoot the letter toward the screen's right side.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"right\", \"px\": 80}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 109,
+      "text": "Pop the block into the green shape with the same tilt.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 100}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 110,
+      "text": "Spin the block counterclockwise through 135 degrees in place.",
+      "style": "plain",
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 135}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "keyword_ok": true
+    },
+    {
+      "id": 111,
+      "text": "The green T is where this one belongs; line them up fully.",
+      "style": "casual",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "target"
+      },
+      "llm_raw": "{\"action\": \"target\"}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 112,
+      "text": "Make the solid T overlap the green T exactly.",
+      "style": "plain",
+      "gold": {
+        "action": "target"
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": -100.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": -100}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 113,
+      "text": "up a little on screen, move teh letter.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 20.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 20}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 114,
+      "text": "Give it a 75-degree anticlockwise twist right here.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": -75.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -75.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 75}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 115,
+      "text": "Give that block an anticlockwise spin in place.",
+      "style": "casual",
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 90}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 116,
+      "text": "Displace the T 180 pixels leftward.",
+      "style": "plain",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 180.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": 180.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": 180}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 117,
+      "text": "Get that piece moving toward the top edge.",
+      "style": "casual",
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"up\", \"px\": 80}",
+      "llm_ok": true,
+      "keyword": null,
+      "keyword_ok": false
+    },
+    {
+      "id": 118,
+      "text": "135 degrees anticlockwise for teh block, keep it here.",
+      "style": "odd",
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "llm": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "llm_raw": "{\"action\": \"turn\", \"rotation\": \"counterclockwise\", \"deg\": 135}",
+      "llm_ok": true,
+      "keyword": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "keyword_ok": false
+    },
+    {
+      "id": 119,
+      "text": "leftward scoot for this letter thing thx.",
+      "style": "odd",
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "llm": {
+        "action": "push",
+        "dir": "left",
+        "px": -50.0
+      },
+      "llm_raw": "{\"action\": \"push\", \"dir\": \"left\", \"px\": -50}",
+      "llm_ok": false,
+      "keyword": null,
+      "keyword_ok": false
+    }
+  ]
+}

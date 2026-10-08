@@ -1,0 +1,4528 @@
+{
+  "summary": {
+    "n": 111,
+    "dropped": 9,
+    "gold_successes": 57,
+    "parsed_successes": 51,
+    "same_command": 90,
+    "gold_by_action": {
+      "target": "23/30",
+      "turn": "18/45",
+      "push": "16/36"
+    },
+    "parsed_by_action": {
+      "target": "20/30",
+      "turn": "17/45",
+      "push": "14/36"
+    },
+    "gold_rate": 0.5135135135135135,
+    "parsed_rate": 0.4594594594594595
+  },
+  "args": {
+    "sentences": "research/language/paraphrases.jsonl",
+    "parsed": "None",
+    "budget": "300"
+  },
+  "parsed_from": "/home/agenticai/Faith/JEPA/research/artifacts/5090/parse_paraphrases_n120.json",
+  "wall_s": 393.37608456611633,
+  "dropped_ids": [
+    27,
+    28,
+    47,
+    53,
+    77,
+    82,
+    83,
+    86,
+    106
+  ],
+  "constants": {
+    "n_starts": 10,
+    "turn_drift": 40.0,
+    "tol_xy": 20.0,
+    "tol_ang_deg": 20.0
+  },
+  "rows": [
+    {
+      "id": 0,
+      "text": "A bit of counterclockwise rotation in the same spot would be ideal.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 1,
+      "text": "That letter thing, make it match green ghost position AND angle.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 100,
+        "n_hops": 4,
+        "n_crumb_hops": 2,
+        "end_block": [
+          246.11337655686037,
+          262.93787056142645,
+          0.8586563175843702
+        ],
+        "block_moved_px": 101.52507863061027,
+        "block_turned_deg": 9.899585776837206
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 100,
+        "n_hops": 4,
+        "n_crumb_hops": 2,
+        "end_block": [
+          246.11337655686037,
+          262.93787056142645,
+          0.8586563175843702
+        ],
+        "block_moved_px": 101.52507863061027,
+        "block_turned_deg": 9.899585776837206,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 2,
+      "text": "I'd like the block's orientation 30 degrees clockwise from now, at the same position.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          281.4967629209638,
+          385.8932421712556,
+          1.8563165348007786
+        ],
+        "block_moved_px": 12.337616743867452,
+        "block_turned_deg": 2.97107277944544
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          281.4967629209638,
+          385.8932421712556,
+          1.8563165348007786
+        ],
+        "block_moved_px": 12.337616743867452,
+        "block_turned_deg": 2.97107277944544,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 3,
+      "text": "grey letter goes in green letter, exact same pose thx.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 180,
+        "n_hops": 8,
+        "n_crumb_hops": 2,
+        "end_block": [
+          247.65619842107918,
+          240.12135265074645,
+          0.9696557200614544
+        ],
+        "block_moved_px": 117.1216776370809,
+        "block_turned_deg": -25.354504589165845
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 180,
+        "n_hops": 8,
+        "n_crumb_hops": 2,
+        "end_block": [
+          247.65619842107918,
+          240.12135265074645,
+          0.9696557200614544
+        ],
+        "block_moved_px": 117.1216776370809,
+        "block_turned_deg": -25.354504589165845,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 4,
+      "text": "one tee-length toward screen top, slide da block.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 176,
+        "n_hops": 8,
+        "n_crumb_hops": 6,
+        "end_block": [
+          323.68991133443535,
+          147.18774459015555,
+          0.7358099672740108
+        ],
+        "block_moved_px": 116.33560476271536,
+        "block_turned_deg": 88.9859140685333
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 176,
+        "n_hops": 8,
+        "n_crumb_hops": 6,
+        "end_block": [
+          323.68991133443535,
+          147.18774459015555,
+          0.7358099672740108
+        ],
+        "block_moved_px": 116.33560476271536,
+        "block_turned_deg": 88.9859140685333,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 5,
+      "text": "I'm looking for complete overlap between the piece and the green template.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 172,
+        "n_hops": 7,
+        "n_crumb_hops": 4,
+        "end_block": [
+          255.12674332893687,
+          238.82989382629992,
+          0.5684567375459588
+        ],
+        "block_moved_px": 70.94335332170643,
+        "block_turned_deg": 90.34837472876707
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 172,
+        "n_hops": 7,
+        "n_crumb_hops": 4,
+        "end_block": [
+          255.12674332893687,
+          238.82989382629992,
+          0.5684567375459588
+        ],
+        "block_moved_px": 70.94335332170643,
+        "block_turned_deg": 90.34837472876707,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 6,
+      "text": "Send that piece far to the left.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 7,
+      "text": "Rotate the piece counterclockwise through 30 degrees in its current spot.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          390.8437386520599,
+          302.422441420613,
+          5.9023448334607735
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          390.8437386520599,
+          302.422441420613,
+          5.9023448334607735
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 8,
+      "text": "I'd go with a 75-degree clockwise twist at this spot.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 212,
+        "n_hops": 9,
+        "n_crumb_hops": 6,
+        "end_block": [
+          257.7506103122647,
+          296.0275243971196,
+          4.711587400092763
+        ],
+        "block_moved_px": 39.2397119498257,
+        "block_turned_deg": 85.49157412998483
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 212,
+        "n_hops": 9,
+        "n_crumb_hops": 6,
+        "end_block": [
+          257.7506103122647,
+          296.0275243971196,
+          4.711587400092763
+        ],
+        "block_moved_px": 39.2397119498257,
+        "block_turned_deg": 85.49157412998483,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 9,
+      "text": "nudge to the left for the tee plz.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 76,
+        "n_hops": 4,
+        "n_crumb_hops": 1,
+        "end_block": [
+          233.64752531318518,
+          281.8020794644389,
+          0.5293779932888237
+        ],
+        "block_moved_px": 21.219180227478635,
+        "block_turned_deg": 38.23732159957856
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 76,
+        "n_hops": 4,
+        "n_crumb_hops": 1,
+        "end_block": [
+          233.64752531318518,
+          281.8020794644389,
+          0.5293779932888237
+        ],
+        "block_moved_px": 21.219180227478635,
+        "block_turned_deg": 38.23732159957856,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 10,
+      "text": "Translate the block 30 pixels toward the left edge of the screen.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 11,
+      "text": "Translate the letter 200 pixels rightward.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 200.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 200.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 94,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          343.60110195504217,
+          225.29592235171722,
+          6.123445361916306
+        ],
+        "block_moved_px": 187.06725331233437,
+        "block_turned_deg": -48.45022195622885
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 94,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          343.60110195504217,
+          225.29592235171722,
+          6.123445361916306
+        ],
+        "block_moved_px": 187.06725331233437,
+        "block_turned_deg": -48.45022195622885,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 12,
+      "text": "Rotate the T a half turn anticlockwise around its center.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "parsed": null,
+      "gold_run": {
+        "success": true,
+        "steps": 274,
+        "n_hops": 11,
+        "n_crumb_hops": 9,
+        "end_block": [
+          266.96787781306466,
+          371.79991483453955,
+          4.632997995953897
+        ],
+        "block_moved_px": 27.202174646533376,
+        "block_turned_deg": 162.06320155573778
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no parse"
+      }
+    },
+    {
+      "id": 13,
+      "text": "Rotate the letter 120 degrees clockwise, keeping its center still.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 10,
+        "end_block": [
+          242.8451575498674,
+          315.16843377597826,
+          4.827814183566126
+        ],
+        "block_moved_px": 138.18724839303604,
+        "block_turned_deg": -164.2983079376697
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 10,
+        "end_block": [
+          242.8451575498674,
+          315.16843377597826,
+          4.827814183566126
+        ],
+        "block_moved_px": 138.18724839303604,
+        "block_turned_deg": -164.2983079376697,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 14,
+      "text": "Make the piece and the green guide sit right on top of each other.",
+      "style": "casual",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 89,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          269.84156088686905,
+          252.81866709849277,
+          0.4654795676506627
+        ],
+        "block_moved_px": 66.13538360308681,
+        "block_turned_deg": 73.49712309603052
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 89,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          269.84156088686905,
+          252.81866709849277,
+          0.4654795676506627
+        ],
+        "block_moved_px": 66.13538360308681,
+        "block_turned_deg": 73.49712309603052,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 15,
+      "text": "Align the block precisely with the green silhouette.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 75,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          255.00840731028455,
+          267.67264904501667,
+          0.7511677940824235
+        ],
+        "block_moved_px": 75.05497471768767,
+        "block_turned_deg": 100.81694713868266
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 75,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          255.00840731028455,
+          267.67264904501667,
+          0.7511677940824235
+        ],
+        "block_moved_px": 75.05497471768767,
+        "block_turned_deg": 100.81694713868266,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 16,
+      "text": "eighth-turn clockwise, that piece, in place if u please.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 80.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 48,
+        "n_hops": 2,
+        "n_crumb_hops": 2,
+        "end_block": [
+          303.9990825014124,
+          422.47824266723006,
+          4.51237290901538
+        ],
+        "block_moved_px": 29.128019316322288,
+        "block_turned_deg": 29.314298065942065
+      }
+    },
+    {
+      "id": 17,
+      "text": "Match block to green shape all the way, no crooked angle pls.",
+      "style": "odd",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          273.22145347512,
+          233.88224257578926,
+          1.1899458084368728
+        ],
+        "block_moved_px": 136.13508301658823,
+        "block_turned_deg": 89.99942448456648
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          273.22145347512,
+          233.88224257578926,
+          1.1899458084368728
+        ],
+        "block_moved_px": 136.13508301658823,
+        "block_turned_deg": 89.99942448456648,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 18,
+      "text": "I'd like the block a bit farther left than it is now.",
+      "style": "indirect",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 52,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          262.4166081772959,
+          268.2867063035537,
+          3.2391431583315713
+        ],
+        "block_moved_px": 20.951262675188552,
+        "block_turned_deg": 1.1267335087279289
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          306.65474397689513,
+          284.12841678081486,
+          3.8186059960361627
+        ],
+        "block_moved_px": 29.46086795559464,
+        "block_turned_deg": 34.3275084938752
+      }
+    },
+    {
+      "id": 19,
+      "text": "Nudge that block toward the right side.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          259.61572021668843,
+          294.2430557252888,
+          0.0003608099573225609
+        ],
+        "block_moved_px": 9.289136934231777,
+        "block_turned_deg": 7.926869704784991
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          259.61572021668843,
+          294.2430557252888,
+          0.0003608099573225609
+        ],
+        "block_moved_px": 9.289136934231777,
+        "block_turned_deg": 7.926869704784991,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 20,
+      "text": "Let's swivel this piece a quarter turn clockwise where it sits.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 11,
+        "end_block": [
+          208.7713428569876,
+          326.91275926416034,
+          0.30681742610453
+        ],
+        "block_moved_px": 175.2254475468637,
+        "block_turned_deg": 92.84973224844695
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 11,
+        "end_block": [
+          208.7713428569876,
+          326.91275926416034,
+          0.30681742610453
+        ],
+        "block_moved_px": 175.2254475468637,
+        "block_turned_deg": 92.84973224844695,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 21,
+      "text": "Move the piece one and a half T lengths to the right.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 150.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 150.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 73,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          290.64221466675974,
+          219.4220558204379,
+          0.8374263376159359
+        ],
+        "block_moved_px": 133.88894423388388,
+        "block_turned_deg": 8.683197525498638
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 73,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          290.64221466675974,
+          219.4220558204379,
+          0.8374263376159359
+        ],
+        "block_moved_px": 133.88894423388388,
+        "block_turned_deg": 8.683197525498638,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 22,
+      "text": "The desired final pose is exactly the one drawn in green.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 117,
+        "n_hops": 5,
+        "n_crumb_hops": 1,
+        "end_block": [
+          266.81465327623715,
+          268.761409030459,
+          1.0679101135137563
+        ],
+        "block_moved_px": 128.8420861788919,
+        "block_turned_deg": -42.20128770131409
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 117,
+        "n_hops": 5,
+        "n_crumb_hops": 1,
+        "end_block": [
+          266.81465327623715,
+          268.761409030459,
+          1.0679101135137563
+        ],
+        "block_moved_px": 128.8420861788919,
+        "block_turned_deg": -42.20128770131409,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 23,
+      "text": "Seat the piece squarely in the green silhouette.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 9,
+        "end_block": [
+          109.08023674825994,
+          168.45873223762553,
+          5.987311186962883
+        ],
+        "block_moved_px": 69.44983730345689,
+        "block_turned_deg": -97.86402328496948
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 9,
+        "end_block": [
+          109.08023674825994,
+          168.45873223762553,
+          5.987311186962883
+        ],
+        "block_moved_px": 69.44983730345689,
+        "block_turned_deg": -97.86402328496948,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 24,
+      "text": "It would be good to have the solid letter perfectly matching the green letter.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 101,
+        "n_hops": 5,
+        "n_crumb_hops": 2,
+        "end_block": [
+          245.49891871325926,
+          272.21936445775344,
+          0.49343848497383735
+        ],
+        "block_moved_px": 90.17432149106247,
+        "block_turned_deg": 75.09905105840363
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 128,
+        "n_hops": 6,
+        "n_crumb_hops": 6,
+        "end_block": [
+          248.90848594792035,
+          274.697818375308,
+          0.5853665282270475
+        ],
+        "block_moved_px": 87.08302531757732,
+        "block_turned_deg": 80.36613995570866
+      }
+    },
+    {
+      "id": 25,
+      "text": "I want the letter moved far to the left from here.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 6,
+        "end_block": [
+          156.61043330607555,
+          259.5496229293714,
+          0.8169675044886562
+        ],
+        "block_moved_px": 170.12254376725826,
+        "block_turned_deg": 104.58699283814285
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 6,
+        "end_block": [
+          156.61043330607555,
+          259.5496229293714,
+          0.8169675044886562
+        ],
+        "block_moved_px": 170.12254376725826,
+        "block_turned_deg": 104.58699283814285,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 26,
+      "text": "Twist it slightly counterclockwise, keeping it here.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 29,
+      "text": "Clockwise rotation for this tee please, location unchanged.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 140,
+        "n_hops": 6,
+        "n_crumb_hops": 3,
+        "end_block": [
+          252.284598892329,
+          250.0334703682891,
+          1.0839119415535934
+        ],
+        "block_moved_px": 36.63860283192466,
+        "block_turned_deg": 70.00977643187576
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 140,
+        "n_hops": 6,
+        "n_crumb_hops": 3,
+        "end_block": [
+          252.284598892329,
+          250.0334703682891,
+          1.0839119415535934
+        ],
+        "block_moved_px": 36.63860283192466,
+        "block_turned_deg": 70.00977643187576,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 30,
+      "text": "grey dude spin counterclockwise 60 degrees, center stays.",
+      "style": "odd",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 284,
+        "n_hops": 12,
+        "n_crumb_hops": 10,
+        "end_block": [
+          379.1710061661855,
+          299.30542322758583,
+          3.611351222103746
+        ],
+        "block_moved_px": 19.287314838837325,
+        "block_turned_deg": -77.814427982453
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 284,
+        "n_hops": 12,
+        "n_crumb_hops": 10,
+        "end_block": [
+          379.1710061661855,
+          299.30542322758583,
+          3.611351222103746
+        ],
+        "block_moved_px": 19.287314838837325,
+        "block_turned_deg": -77.814427982453,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 31,
+      "text": "green tee and grey tee: stack em exact, same facing.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": null,
+      "gold_run": {
+        "success": true,
+        "steps": 50,
+        "n_hops": 2,
+        "n_crumb_hops": 2,
+        "end_block": [
+          239.996682249251,
+          254.78824338921012,
+          0.9297401225972468
+        ],
+        "block_moved_px": 92.36339476719589,
+        "block_turned_deg": 13.97238779580592
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no parse"
+      }
+    },
+    {
+      "id": 32,
+      "text": "Give the T a 60-degree clockwise rotation about its center.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          291.40097107782947,
+          386.54775391418224,
+          2.4898460196842964
+        ],
+        "block_moved_px": 18.230590505648852,
+        "block_turned_deg": 39.26963846036811
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          291.40097107782947,
+          386.54775391418224,
+          2.4898460196842964
+        ],
+        "block_moved_px": 18.230590505648852,
+        "block_turned_deg": 39.26963846036811,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 33,
+      "text": "Spin the block clockwise through 135 degrees in place.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          124.01072174581341,
+          197.33059316645083,
+          1.1940544469464518
+        ],
+        "block_moved_px": 37.729120896937246,
+        "block_turned_deg": -12.497404610546656
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          124.01072174581341,
+          197.33059316645083,
+          1.1940544469464518
+        ],
+        "block_moved_px": 37.729120896937246,
+        "block_turned_deg": -12.497404610546656,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 34,
+      "text": "Slide the letter half a T length toward the top of the screen.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 50.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 50.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          314.30990619038573,
+          178.48511158572728,
+          0.9178875891062974
+        ],
+        "block_moved_px": 87.01173087576419,
+        "block_turned_deg": 99.41819334330238
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          314.30990619038573,
+          178.48511158572728,
+          0.9178875891062974
+        ],
+        "block_moved_px": 87.01173087576419,
+        "block_turned_deg": 99.41819334330238,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 35,
+      "text": "Let's spin the T clockwise by 150 degrees without sliding it.",
+      "style": "casual",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 90,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          313.921303376117,
+          237.01241938329892,
+          1.2804398387502802
+        ],
+        "block_moved_px": 13.488069859827965,
+        "block_turned_deg": 131.14200151241045
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 90,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          313.921303376117,
+          237.01241938329892,
+          1.2804398387502802
+        ],
+        "block_moved_px": 13.488069859827965,
+        "block_turned_deg": 131.14200151241045,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 36,
+      "text": "The block should end up at the green outline's position and angle.",
+      "style": "indirect",
+      "seed": 6,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 37,
+      "text": "I'd say slide and swivel it until the two Ts match.",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 72,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          264.7511272349034,
+          272.2264781980061,
+          0.6281247850107174
+        ],
+        "block_moved_px": 129.65779131598327,
+        "block_turned_deg": 57.80945100052722
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no goal node"
+      }
+    },
+    {
+      "id": 38,
+      "text": "Scoot the piece a little to the left.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          235.39924201399697,
+          286.54906792750415,
+          0.26395317848143485
+        ],
+        "block_moved_px": 52.005854624440786,
+        "block_turned_deg": -169.33909558629733
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          235.39924201399697,
+          286.54906792750415,
+          0.26395317848143485
+        ],
+        "block_moved_px": 52.005854624440786,
+        "block_turned_deg": -169.33909558629733,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 39,
+      "text": "Place the block in the pose indicated by the green outline.",
+      "style": "plain",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 74,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          236.67749036971705,
+          260.20142713327516,
+          0.4394080206696875
+        ],
+        "block_moved_px": 31.760820560827774,
+        "block_turned_deg": 33.08242188559447
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 74,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          236.67749036971705,
+          260.20142713327516,
+          0.4394080206696875
+        ],
+        "block_moved_px": 31.760820560827774,
+        "block_turned_deg": 33.08242188559447,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 40,
+      "text": "Rotate the letter 120 degrees anticlockwise at the same location.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -120.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -120.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 227,
+        "n_hops": 10,
+        "n_crumb_hops": 8,
+        "end_block": [
+          359.9567734722452,
+          286.7814454543229,
+          2.5731597963912076
+        ],
+        "block_moved_px": 39.293771833810176,
+        "block_turned_deg": -137.29841500245118
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 227,
+        "n_hops": 10,
+        "n_crumb_hops": 8,
+        "end_block": [
+          359.9567734722452,
+          286.7814454543229,
+          2.5731597963912076
+        ],
+        "block_moved_px": 39.293771833810176,
+        "block_turned_deg": -137.29841500245118,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 41,
+      "text": "Move and orient the T so it coincides with the green marking.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 51,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          237.6084091083839,
+          254.5984166747105,
+          0.8764599241528117
+        ],
+        "block_moved_px": 90.13476234474767,
+        "block_turned_deg": 10.919657293320295
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 51,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          237.6084091083839,
+          254.5984166747105,
+          0.8764599241528117
+        ],
+        "block_moved_px": 90.13476234474767,
+        "block_turned_deg": 10.919657293320295,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 42,
+      "text": "screen-up a lot, scoot da tee.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 3,
+        "end_block": [
+          270.34761256647715,
+          253.12893867753615,
+          1.689721992230876
+        ],
+        "block_moved_px": 144.23710911223725,
+        "block_turned_deg": -6.574091399722511
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 3,
+        "end_block": [
+          270.34761256647715,
+          253.12893867753615,
+          1.689721992230876
+        ],
+        "block_moved_px": 144.23710911223725,
+        "block_turned_deg": -6.574091399722511,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 43,
+      "text": "Get the block nestled into that green T, facing the same way.",
+      "style": "casual",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 125,
+        "n_hops": 5,
+        "n_crumb_hops": 2,
+        "end_block": [
+          251.7235516342448,
+          269.60357539658725,
+          0.9166058766120924
+        ],
+        "block_moved_px": 126.04866860596117,
+        "block_turned_deg": -28.394036722644028
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 125,
+        "n_hops": 5,
+        "n_crumb_hops": 2,
+        "end_block": [
+          251.7235516342448,
+          269.60357539658725,
+          0.9166058766120924
+        ],
+        "block_moved_px": 126.04866860596117,
+        "block_turned_deg": -28.394036722644028,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 44,
+      "text": "Give the piece an eighth of a turn clockwise in place.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          364.0754281307765,
+          293.2488932428362,
+          0.2346733894236337
+        ],
+        "block_moved_px": 41.855376465568476,
+        "block_turned_deg": 60.272903198077486
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          364.0754281307765,
+          293.2488932428362,
+          0.2346733894236337
+        ],
+        "block_moved_px": 41.855376465568476,
+        "block_turned_deg": 60.272903198077486,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 45,
+      "text": "The desired change is a 30-degree counterclockwise rotation with no shift.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 7,
+        "end_block": [
+          251.69390272218135,
+          290.40712371454435,
+          0.4600782999906432
+        ],
+        "block_moved_px": 88.01680576683265,
+        "block_turned_deg": 84.13874766662535
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 7,
+        "end_block": [
+          251.69390272218135,
+          290.40712371454435,
+          0.4600782999906432
+        ],
+        "block_moved_px": 88.01680576683265,
+        "block_turned_deg": 84.13874766662535,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 46,
+      "text": "rotat the tee a lil bit clockwise in place.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 48,
+      "text": "eighth-turn counterclockwise for that letter thing, same location.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -80.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          285.2342199032045,
+          293.92579433871725,
+          3.268728518108052
+        ],
+        "block_moved_px": 27.780192929658444,
+        "block_turned_deg": 2.8218497592963745
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 286,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          263.96780528500045,
+          280.1164177683734,
+          2.771131935553958
+        ],
+        "block_moved_px": 23.782921313881555,
+        "block_turned_deg": -25.68833432118626
+      }
+    },
+    {
+      "id": 49,
+      "text": "My goal is a grey T sitting flush over the green T guide.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 63,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          257.87606530093694,
+          271.6264852286849,
+          0.4771725000759907
+        ],
+        "block_moved_px": 15.406924640778358,
+        "block_turned_deg": 35.24616717108436
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 63,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          257.87606530093694,
+          271.6264852286849,
+          0.4771725000759907
+        ],
+        "block_moved_px": 15.406924640778358,
+        "block_turned_deg": 35.24616717108436,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 50,
+      "text": "Give the piece an eighth of a turn counterclockwise in place.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 51,
+      "text": "Match the letter's position and rotation to the green template.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 49,
+        "n_hops": 2,
+        "n_crumb_hops": 1,
+        "end_block": [
+          241.4815223721189,
+          257.8514088033198,
+          1.0397820426541555
+        ],
+        "block_moved_px": 95.05688445067888,
+        "block_turned_deg": 20.27732538458279
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 49,
+        "n_hops": 2,
+        "n_crumb_hops": 1,
+        "end_block": [
+          241.4815223721189,
+          257.8514088033198,
+          1.0397820426541555
+        ],
+        "block_moved_px": 95.05688445067888,
+        "block_turned_deg": 20.27732538458279,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 52,
+      "text": "tee, do a quarter spin clockwise on the spot pls.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 7,
+        "end_block": [
+          321.0772480073397,
+          315.978022499304,
+          2.241157960684319
+        ],
+        "block_moved_px": 92.6151117334282,
+        "block_turned_deg": 25.020862264368997
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 7,
+        "end_block": [
+          321.0772480073397,
+          315.978022499304,
+          2.241157960684319
+        ],
+        "block_moved_px": 92.6151117334282,
+        "block_turned_deg": 25.020862264368997,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 54,
+      "text": "I want the piece a quarter turn anticlockwise from its current pose, with its center unchanged.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "parsed": null,
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          335.195864453863,
+          262.9529637983454,
+          5.465898086060948
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no parse"
+      }
+    },
+    {
+      "id": 55,
+      "text": "Rotate the T a half turn clockwise around its center.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 123,
+        "n_hops": 5,
+        "n_crumb_hops": 4,
+        "end_block": [
+          357.62451529283635,
+          239.28644895776716,
+          1.8548234968333652
+        ],
+        "block_moved_px": 31.91817873588212,
+        "block_turned_deg": 164.05176094185654
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 123,
+        "n_hops": 5,
+        "n_crumb_hops": 4,
+        "end_block": [
+          357.62451529283635,
+          239.28644895776716,
+          1.8548234968333652
+        ],
+        "block_moved_px": 31.91817873588212,
+        "block_turned_deg": 164.05176094185654,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 56,
+      "text": "60 degrees clockwise pls, spin the grey dude in place.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 57,
+      "text": "Rotate the block clockwise by 30 degrees without translating it.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 52,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          388.1996655712338,
+          301.5967789410658,
+          6.104735769166936
+        ],
+        "block_moved_px": 2.7699893477920194,
+        "block_turned_deg": 11.596146427666714
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 52,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          388.1996655712338,
+          301.5967789410658,
+          6.104735769166936
+        ],
+        "block_moved_px": 2.7699893477920194,
+        "block_turned_deg": 11.596146427666714,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 58,
+      "text": "Give that block a clockwise spin in place.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 269,
+        "n_hops": 11,
+        "n_crumb_hops": 9,
+        "end_block": [
+          293.09652670389875,
+          301.54495578747645,
+          5.053573772197762
+        ],
+        "block_moved_px": 36.671882918861314,
+        "block_turned_deg": 105.08594990259182
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 269,
+        "n_hops": 11,
+        "n_crumb_hops": 9,
+        "end_block": [
+          293.09652670389875,
+          301.54495578747645,
+          5.053573772197762
+        ],
+        "block_moved_px": 36.671882918861314,
+        "block_turned_deg": 105.08594990259182,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 59,
+      "text": "Bring the grey T into exact alignment with its green destination.",
+      "style": "plain",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 57,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          244.92928821641163,
+          269.3982461849059,
+          0.46508527332196914
+        ],
+        "block_moved_px": 19.608898386899558,
+        "block_turned_deg": 34.55362009206129
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 57,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          244.92928821641163,
+          269.3982461849059,
+          0.46508527332196914
+        ],
+        "block_moved_px": 19.608898386899558,
+        "block_turned_deg": 34.55362009206129,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 60,
+      "text": "Let's slide the block toward the bottom edge.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 148,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          374.9994307282425,
+          389.7538022529225,
+          1.7041970775156505
+        ],
+        "block_moved_px": 72.25235350025703,
+        "block_turned_deg": 172.91368865176634
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 145,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          399.7323771255663,
+          387.69632496072165,
+          1.8485224953374093
+        ],
+        "block_moved_px": 71.46541623292849,
+        "block_turned_deg": -178.81707403058468
+      }
+    },
+    {
+      "id": 61,
+      "text": "Can you spin it counterclockwise by 150 degrees, staying here?",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 150,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          176.45258430027542,
+          229.0253414365577,
+          4.644863238125212
+        ],
+        "block_moved_px": 24.3529698661446,
+        "block_turned_deg": -133.16673731294833
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 150,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          176.45258430027542,
+          229.0253414365577,
+          4.644863238125212
+        ],
+        "block_moved_px": 24.3529698661446,
+        "block_turned_deg": -133.16673731294833,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 62,
+      "text": "anticlockwise swivel, block stays on this spot ok.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 200,
+        "n_hops": 8,
+        "n_crumb_hops": 6,
+        "end_block": [
+          243.08533036477763,
+          378.2060589680364,
+          0.3599490321695519
+        ],
+        "block_moved_px": 38.56100406121633,
+        "block_turned_deg": -82.76446972185495
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 200,
+        "n_hops": 8,
+        "n_crumb_hops": 6,
+        "end_block": [
+          243.08533036477763,
+          378.2060589680364,
+          0.3599490321695519
+        ],
+        "block_moved_px": 38.56100406121633,
+        "block_turned_deg": -82.76446972185495,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 63,
+      "text": "A slight downward shift of the block on the screen would be good.",
+      "style": "indirect",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          135.2290261641426,
+          231.8661248095938,
+          1.4104168459249298
+        ],
+        "block_moved_px": 5.247890994768887,
+        "block_turned_deg": -0.10075230375423416
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          135.2290261641426,
+          231.8661248095938,
+          1.4104168459249298
+        ],
+        "block_moved_px": 5.247890994768887,
+        "block_turned_deg": -0.10075230375423416,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 64,
+      "text": "Give the block a 60-degree counterclockwise rotation about its center.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 11,
+        "end_block": [
+          270.34545758415413,
+          319.7918749530931,
+          1.0311325020574165
+        ],
+        "block_moved_px": 86.23361927012043,
+        "block_turned_deg": 105.9066489067279
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 11,
+        "end_block": [
+          270.34545758415413,
+          319.7918749530931,
+          1.0311325020574165
+        ],
+        "block_moved_px": 86.23361927012043,
+        "block_turned_deg": 105.9066489067279,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 65,
+      "text": "I'd prefer the grey piece farther toward the top of the screen.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          296.7741493249568,
+          170.34798933173428,
+          5.348564519503475
+        ],
+        "block_moved_px": 78.4134596972725,
+        "block_turned_deg": 4.228376252573885
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          304.68516185514403,
+          153.35500663740314,
+          5.50694768888576
+        ],
+        "block_moved_px": 92.2622796786295,
+        "block_turned_deg": 13.303063404084497
+      }
+    },
+    {
+      "id": 66,
+      "text": "Move it a bit toward the top of the screen.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          305.05764893235147,
+          377.22301973734295,
+          4.23461696809037
+        ],
+        "block_moved_px": 21.743221714856737,
+        "block_turned_deg": 13.400054916253929
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          305.05764893235147,
+          377.22301973734295,
+          4.23461696809037
+        ],
+        "block_moved_px": 21.743221714856737,
+        "block_turned_deg": 13.400054916253929,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 67,
+      "text": "Move the grey block 75 pixels upward on the screen.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 75.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 75.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 6,
+        "end_block": [
+          375.45448070091766,
+          223.75100217776455,
+          0.9490738019074163
+        ],
+        "block_moved_px": 80.16248881383355,
+        "block_turned_deg": 76.198475107581
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 6,
+        "end_block": [
+          375.45448070091766,
+          223.75100217776455,
+          0.9490738019074163
+        ],
+        "block_moved_px": 80.16248881383355,
+        "block_turned_deg": 76.198475107581,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 68,
+      "text": "Can you swivel the block a quarter turn anticlockwise without moving its center?",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "parsed": null,
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          284.1546893472943,
+          274.24513895960683,
+          3.1970034208262885
+        ],
+        "block_moved_px": 8.07878406137402,
+        "block_turned_deg": -1.2876956001139186
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no parse"
+      }
+    },
+    {
+      "id": 69,
+      "text": "The position I want is two T lengths above the current one on screen.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 200.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 200.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          284.7204790486052,
+          129.97142582189628,
+          0.3428643244710985
+        ],
+        "block_moved_px": 159.56836694382676,
+        "block_turned_deg": 27.550875554822106
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          284.7204790486052,
+          129.97142582189628,
+          0.3428643244710985
+        ],
+        "block_moved_px": 159.56836694382676,
+        "block_turned_deg": 27.550875554822106,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 70,
+      "text": "A bit anticlockwise, twist that thing where it stands.",
+      "style": "odd",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "parsed": null,
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          383.7717999951891,
+          318.03596539366947,
+          4.969469195953559
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "skipped": "no parse"
+      }
+    },
+    {
+      "id": 71,
+      "text": "Rightward by 120 pixels, move that letter thing.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 120.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 120.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 3,
+        "end_block": [
+          263.7272165782182,
+          224.28232764699695,
+          0.6671012535800536
+        ],
+        "block_moved_px": 107.32537321571425,
+        "block_turned_deg": -1.0757109349684926
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 175,
+        "n_hops": 7,
+        "n_crumb_hops": 3,
+        "end_block": [
+          263.7272165782182,
+          224.28232764699695,
+          0.6671012535800536
+        ],
+        "block_moved_px": 107.32537321571425,
+        "block_turned_deg": -1.0757109349684926,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 72,
+      "text": "I'd like the piece one T length to the right of its current location.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          394.5470389873462,
+          385.2307391955033,
+          1.5150489164045802
+        ],
+        "block_moved_px": 118.52853857329583,
+        "block_turned_deg": -16.582121439137865
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          394.5470389873462,
+          385.2307391955033,
+          1.5150489164045802
+        ],
+        "block_moved_px": 118.52853857329583,
+        "block_turned_deg": -16.582121439137865,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 73,
+      "text": "grey dude goes 150 pixels screen-down thx.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          132.89639070240963,
+          357.50480683503844,
+          1.1981061084939604
+        ],
+        "block_moved_px": 123.05774781299485,
+        "block_turned_deg": -12.265261503858959
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          132.89639070240963,
+          357.50480683503844,
+          1.1981061084939604
+        ],
+        "block_moved_px": 123.05774781299485,
+        "block_turned_deg": -12.265261503858959,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 74,
+      "text": "the tee needs half-turn counterclockwise, same center ya.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 200,
+        "n_hops": 8,
+        "n_crumb_hops": 7,
+        "end_block": [
+          346.71806217612124,
+          291.109450722762,
+          2.0804449781275665
+        ],
+        "block_moved_px": 30.42283346888739,
+        "block_turned_deg": 166.0278251759697
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          335.195864453863,
+          262.9529637983454,
+          5.465898086060948
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      }
+    },
+    {
+      "id": 75,
+      "text": "Put da piece flush in the green drawing, arms matching.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          239.37784980877916,
+          242.43394330358043,
+          0.4891801322774736
+        ],
+        "block_moved_px": 86.56429848145112,
+        "block_turned_deg": 85.80615983275828
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          239.37784980877916,
+          242.43394330358043,
+          0.4891801322774736
+        ],
+        "block_moved_px": 86.56429848145112,
+        "block_turned_deg": 85.80615983275828,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 76,
+      "text": "I'd like the piece facing a quarter turn clockwise from its present orientation, still here.",
+      "style": "indirect",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 78,
+      "text": "For this piece, green stencil pose is wanted; align exact.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          274.1515654657051,
+          373.8205228787373,
+          4.863130435080065
+        ],
+        "block_moved_px": 107.99030993918858,
+        "block_turned_deg": 94.17435044936062
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          274.1515654657051,
+          373.8205228787373,
+          4.863130435080065
+        ],
+        "block_moved_px": 107.99030993918858,
+        "block_turned_deg": 94.17435044936062,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 79,
+      "text": "Move the letter far upward on the screen.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 251,
+        "n_hops": 11,
+        "n_crumb_hops": 9,
+        "end_block": [
+          270.87592832270985,
+          135.9238327958572,
+          0.049770513470074614
+        ],
+        "block_moved_px": 151.59947507874108,
+        "block_turned_deg": 10.757837183058442
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 251,
+        "n_hops": 11,
+        "n_crumb_hops": 9,
+        "end_block": [
+          270.87592832270985,
+          135.9238327958572,
+          0.049770513470074614
+        ],
+        "block_moved_px": 151.59947507874108,
+        "block_turned_deg": 10.757837183058442,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 80,
+      "text": "The goal is half a turn clockwise from this orientation, without translation.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 68,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          358.24487659943236,
+          344.131894039289,
+          1.5448575260594888
+        ],
+        "block_moved_px": 36.50508608303917,
+        "block_turned_deg": 163.78420484382067
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          402.123230286661,
+          324.7454374385729,
+          5.405661890581401
+        ],
+        "block_moved_px": 19.539498685076154,
+        "block_turned_deg": 24.99200045661406
+      }
+    },
+    {
+      "id": 81,
+      "text": "Scoot the block a lot to the right.",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 73,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          300.2377280923014,
+          215.21023999766643,
+          1.1193068704133742
+        ],
+        "block_moved_px": 143.39851363546782,
+        "block_turned_deg": 24.833762381690832
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 73,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          300.2377280923014,
+          215.21023999766643,
+          1.1193068704133742
+        ],
+        "block_moved_px": 143.39851363546782,
+        "block_turned_deg": 24.833762381690832,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 84,
+      "text": "I want the green outline filled by the grey block, with their arms aligned.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 94,
+        "n_hops": 4,
+        "n_crumb_hops": 2,
+        "end_block": [
+          248.80929619056278,
+          272.045245877722,
+          0.8903611790348815
+        ],
+        "block_moved_px": 86.86373679344437,
+        "block_turned_deg": 97.84104622106385
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 94,
+        "n_hops": 4,
+        "n_crumb_hops": 2,
+        "end_block": [
+          248.80929619056278,
+          272.045245877722,
+          0.8903611790348815
+        ],
+        "block_moved_px": 86.86373679344437,
+        "block_turned_deg": 97.84104622106385,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 85,
+      "text": "quarter spin anticlockwise for da letter, same spot.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          217.9282015806288,
+          281.1995940190585,
+          1.813506064229817
+        ],
+        "block_moved_px": 114.52183599142846,
+        "block_turned_deg": 161.68444643335704
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          217.9282015806288,
+          281.1995940190585,
+          1.813506064229817
+        ],
+        "block_moved_px": 114.52183599142846,
+        "block_turned_deg": 161.68444643335704,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 87,
+      "text": "Translate the piece one T length toward the bottom of the screen.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          408.70995034256157,
+          419.05658545963627,
+          0.9230630986547865
+        ],
+        "block_moved_px": 117.994597655509,
+        "block_turned_deg": 74.70817158903812
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          408.70995034256157,
+          419.05658545963627,
+          0.9230630986547865
+        ],
+        "block_moved_px": 117.994597655509,
+        "block_turned_deg": 74.70817158903812,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 88,
+      "text": "Slide the grey block 135 pixels downward on the screen.",
+      "style": "plain",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 135.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 135.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          286.32725444743915,
+          445.4657174937141,
+          4.496127160778703
+        ],
+        "block_moved_px": 179.27640161437128,
+        "block_turned_deg": 73.14661176441048
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          286.32725444743915,
+          445.4657174937141,
+          4.496127160778703
+        ],
+        "block_moved_px": 179.27640161437128,
+        "block_turned_deg": 73.14661176441048,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 89,
+      "text": "The tee must wear the green outline like a perfect glove.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 159,
+        "n_hops": 7,
+        "n_crumb_hops": 1,
+        "end_block": [
+          251.38130201559431,
+          273.0169978352981,
+          0.4603028317489524
+        ],
+        "block_moved_px": 13.911381215810426,
+        "block_turned_deg": 34.27960637415956
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 159,
+        "n_hops": 7,
+        "n_crumb_hops": 1,
+        "end_block": [
+          251.38130201559431,
+          273.0169978352981,
+          0.4603028317489524
+        ],
+        "block_moved_px": 13.911381215810426,
+        "block_turned_deg": 34.27960637415956,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 90,
+      "text": "I'd prefer the block rotated clockwise by 120 degrees, staying in its current location.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 168,
+        "n_hops": 7,
+        "n_crumb_hops": 2,
+        "end_block": [
+          372.86100582892675,
+          343.4046588430017,
+          0.4577996702803695
+        ],
+        "block_moved_px": 27.615503556240586,
+        "block_turned_deg": 101.50037762113621
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 168,
+        "n_hops": 7,
+        "n_crumb_hops": 2,
+        "end_block": [
+          372.86100582892675,
+          343.4046588430017,
+          0.4577996702803695
+        ],
+        "block_moved_px": 27.615503556240586,
+        "block_turned_deg": 101.50037762113621,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 91,
+      "text": "pls fit teh tee exactly into the green stencil.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 44,
+        "n_hops": 2,
+        "n_crumb_hops": 1,
+        "end_block": [
+          240.73343756521143,
+          262.24047955346873,
+          0.9291634352410867
+        ],
+        "block_moved_px": 96.48196536664629,
+        "block_turned_deg": 13.939346044199388
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 44,
+        "n_hops": 2,
+        "n_crumb_hops": 1,
+        "end_block": [
+          240.73343756521143,
+          262.24047955346873,
+          0.9291634352410867
+        ],
+        "block_moved_px": 96.48196536664629,
+        "block_turned_deg": 13.939346044199388,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 92,
+      "text": "Let's get that T lined up perfectly with the green one.",
+      "style": "casual",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          251.36597206331982,
+          263.57805834045615,
+          1.2018466871034241
+        ],
+        "block_moved_px": 136.0175981869328,
+        "block_turned_deg": -34.527287312182736
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          251.36597206331982,
+          263.57805834045615,
+          1.2018466871034241
+        ],
+        "block_moved_px": 136.0175981869328,
+        "block_turned_deg": -34.527287312182736,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 93,
+      "text": "send that tee far toward screen bottom yeah.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          153.20334791241424,
+          381.8356384668023,
+          0.08691950452853107
+        ],
+        "block_moved_px": 149.0810692844572,
+        "block_turned_deg": -75.93156416255293
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          153.20334791241424,
+          381.8356384668023,
+          0.08691950452853107
+        ],
+        "block_moved_px": 149.0810692844572,
+        "block_turned_deg": -75.93156416255293,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 94,
+      "text": "a bit rightward scooting for that piece pls.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          399.4967166532019,
+          282.7816218851078,
+          1.1271284545401299
+        ],
+        "block_moved_px": 67.28874553060824,
+        "block_turned_deg": 111.40681183432578
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 1,
+        "end_block": [
+          399.4967166532019,
+          282.7816218851078,
+          1.1271284545401299
+        ],
+        "block_moved_px": 67.28874553060824,
+        "block_turned_deg": 111.40681183432578,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 95,
+      "text": "Fit the grey piece inside the green T outline, matching its orientation.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 75,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          250.3450501364435,
+          265.0314261158726,
+          0.726736928011487
+        ],
+        "block_moved_px": 78.70139631190806,
+        "block_turned_deg": 99.41716162296865
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 75,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          250.3450501364435,
+          265.0314261158726,
+          0.726736928011487
+        ],
+        "block_moved_px": 78.70139631190806,
+        "block_turned_deg": 99.41716162296865,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 96,
+      "text": "Can you slide that grey piece toward the left edge?",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": -50.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          356.9791701512103,
+          365.81817900170785,
+          4.3357115754597855
+        ],
+        "block_moved_px": 70.33933797371338,
+        "block_turned_deg": 19.19234925005361
+      }
+    },
+    {
+      "id": 97,
+      "text": "Can you make the grey shape cover the green outline exactly?",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 125,
+        "n_hops": 5,
+        "n_crumb_hops": 3,
+        "end_block": [
+          244.88692017521737,
+          254.43334984755018,
+          0.6935498803462572
+        ],
+        "block_moved_px": 153.64356729095357,
+        "block_turned_deg": 61.55803283749469
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 125,
+        "n_hops": 5,
+        "n_crumb_hops": 3,
+        "end_block": [
+          244.88692017521737,
+          254.43334984755018,
+          0.6935498803462572
+        ],
+        "block_moved_px": 153.64356729095357,
+        "block_turned_deg": 61.55803283749469,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 98,
+      "text": "A slight clockwise rotation is what I'm after; keep the center where it is.",
+      "style": "indirect",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          240.31853314540305,
+          240.89683630123218,
+          4.083588895719472
+        ],
+        "block_moved_px": 49.85431325649124,
+        "block_turned_deg": 49.50991028886726
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          240.31853314540305,
+          240.89683630123218,
+          4.083588895719472
+        ],
+        "block_moved_px": 49.85431325649124,
+        "block_turned_deg": 49.50991028886726,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 99,
+      "text": "I'd like both T shapes to coincide exactly.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 70,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          243.7601353037674,
+          271.7708499319356,
+          0.5147517678758664
+        ],
+        "block_moved_px": 18.213923657492458,
+        "block_turned_deg": 37.39930061320911
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 70,
+        "n_hops": 3,
+        "n_crumb_hops": 1,
+        "end_block": [
+          243.7601353037674,
+          271.7708499319356,
+          0.5147517678758664
+        ],
+        "block_moved_px": 18.213923657492458,
+        "block_turned_deg": 37.39930061320911,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 100,
+      "text": "Twist it a bit clockwise, right where it is.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 141,
+        "n_hops": 6,
+        "n_crumb_hops": 0,
+        "end_block": [
+          402.5815261271455,
+          330.53925053308296,
+          5.411256460557825
+        ],
+        "block_moved_px": 22.5862333388434,
+        "block_turned_deg": 25.312545704453743
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 141,
+        "n_hops": 6,
+        "n_crumb_hops": 0,
+        "end_block": [
+          402.5815261271455,
+          330.53925053308296,
+          5.411256460557825
+        ],
+        "block_moved_px": 22.5862333388434,
+        "block_turned_deg": 25.312545704453743,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 101,
+      "text": "My desired position is 30 pixels to the right of where the T is now.",
+      "style": "indirect",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          163.62243906631775,
+          213.6238765963701,
+          0.7789791734115026
+        ],
+        "block_moved_px": 6.850067628338379,
+        "block_turned_deg": 5.334421692076511
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          163.62243906631775,
+          213.6238765963701,
+          0.7789791734115026
+        ],
+        "block_moved_px": 6.850067628338379,
+        "block_turned_deg": 5.334421692076511,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 102,
+      "text": "Shift the block one T length to the left.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 100.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 98,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          194.28151934350643,
+          397.46372289302144,
+          1.2591787053983747
+        ],
+        "block_moved_px": 82.3461795484051,
+        "block_turned_deg": -31.242404632915246
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 98,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          194.28151934350643,
+          397.46372289302144,
+          1.2591787053983747
+        ],
+        "block_moved_px": 82.3461795484051,
+        "block_turned_deg": -31.242404632915246,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 103,
+      "text": "half-turn clockwise on spot for the tee, cheers.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 11,
+        "end_block": [
+          228.9131808879098,
+          240.54339120107574,
+          0.05956587119132377
+        ],
+        "block_moved_px": 98.42982543214015,
+        "block_turned_deg": -77.49881190712325
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 4,
+        "end_block": [
+          130.97343851807605,
+          257.08962699161526,
+          2.682637797714291
+        ],
+        "block_moved_px": 22.624466146791224,
+        "block_turned_deg": 72.79213884189274
+      }
+    },
+    {
+      "id": 104,
+      "text": "Move the block 120 pixels toward the top of the screen.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 120.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 120.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          278.62324151326726,
+          145.14279640250112,
+          4.7449214370236765
+        ],
+        "block_moved_px": 130.68931558553544,
+        "block_turned_deg": -41.308919117320436
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          278.62324151326726,
+          145.14279640250112,
+          4.7449214370236765
+        ],
+        "block_moved_px": 130.68931558553544,
+        "block_turned_deg": -41.308919117320436,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 105,
+      "text": "Make letter spin 135 degrees clockwise, no slide thx.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 147,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          348.24349601336655,
+          211.22476322823243,
+          1.6101908352552066
+        ],
+        "block_moved_px": 38.93315933371281,
+        "block_turned_deg": 150.03534190237588
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 147,
+        "n_hops": 6,
+        "n_crumb_hops": 5,
+        "end_block": [
+          348.24349601336655,
+          211.22476322823243,
+          1.6101908352552066
+        ],
+        "block_moved_px": 38.93315933371281,
+        "block_turned_deg": 150.03534190237588,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 107,
+      "text": "The goal is half a turn counterclockwise from this orientation, without translation.",
+      "style": "indirect",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 8,
+        "end_block": [
+          388.5719163277882,
+          183.6676874463852,
+          1.6077788493209493
+        ],
+        "block_moved_px": 118.77648238667632,
+        "block_turned_deg": 113.93949426834124
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 3,
+        "end_block": [
+          432.1842689255053,
+          304.0735529179975,
+          5.770685293194532
+        ],
+        "block_moved_px": 41.37348924693745,
+        "block_turned_deg": -7.5435359898883565
+      }
+    },
+    {
+      "id": 108,
+      "text": "Let's scoot the letter toward the screen's right side.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 242,
+        "n_hops": 10,
+        "n_crumb_hops": 5,
+        "end_block": [
+          371.48966607881454,
+          283.73383202290194,
+          5.796222322501445
+        ],
+        "block_moved_px": 89.94688861008908,
+        "block_turned_deg": 147.63657749650184
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 242,
+        "n_hops": 10,
+        "n_crumb_hops": 5,
+        "end_block": [
+          371.48966607881454,
+          283.73383202290194,
+          5.796222322501445
+        ],
+        "block_moved_px": 89.94688861008908,
+        "block_turned_deg": 147.63657749650184,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 109,
+      "text": "Pop the block into the green shape with the same tilt.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 113,
+        "n_hops": 5,
+        "n_crumb_hops": 1,
+        "end_block": [
+          250.45909670082568,
+          273.80072662566596,
+          0.45686079317106404
+        ],
+        "block_moved_px": 13.382216011802726,
+        "block_turned_deg": 34.08239209072531
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 2,
+        "end_block": [
+          241.1113242056736,
+          199.91585232964036,
+          1.5527426163384932
+        ],
+        "block_moved_px": 87.69941366145967,
+        "block_turned_deg": 96.87179540332103
+      }
+    },
+    {
+      "id": 110,
+      "text": "Spin the block counterclockwise through 135 degrees in place.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 243,
+        "n_hops": 10,
+        "n_crumb_hops": 7,
+        "end_block": [
+          391.422297212901,
+          283.8278123851954,
+          2.393296717081734
+        ],
+        "block_moved_px": 35.05321440223981,
+        "block_turned_deg": -147.60381033711084
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 243,
+        "n_hops": 10,
+        "n_crumb_hops": 7,
+        "end_block": [
+          391.422297212901,
+          283.8278123851954,
+          2.393296717081734
+        ],
+        "block_moved_px": 35.05321440223981,
+        "block_turned_deg": -147.60381033711084,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 111,
+      "text": "The green T is where this one belongs; line them up fully.",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "target"
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 50,
+        "n_hops": 2,
+        "n_crumb_hops": 2,
+        "end_block": [
+          237.02443149074406,
+          255.28093068505606,
+          0.8881631070461466
+        ],
+        "block_moved_px": 89.91865380994388,
+        "block_turned_deg": 11.59020027997809
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 50,
+        "n_hops": 2,
+        "n_crumb_hops": 2,
+        "end_block": [
+          237.02443149074406,
+          255.28093068505606,
+          0.8881631070461466
+        ],
+        "block_moved_px": 89.91865380994388,
+        "block_turned_deg": 11.59020027997809,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 112,
+      "text": "Make the solid T overlap the green T exactly.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": -100.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          280.1062844572969,
+          265.89280522660675,
+          1.1870778494606236
+        ],
+        "block_moved_px": 131.3825424860412,
+        "block_turned_deg": -35.37347937742915
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          277.1326220762158,
+          495.2586929277108,
+          2.9943225935874036
+        ],
+        "block_moved_px": 98.030715058748,
+        "block_turned_deg": 68.17401700823572
+      }
+    },
+    {
+      "id": 113,
+      "text": "up a little on screen, move teh letter.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 20.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          133.43862317165116,
+          217.83462105394955,
+          1.4034378009925856
+        ],
+        "block_moved_px": 16.8612381239019,
+        "block_turned_deg": -0.500622123409731
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          133.43862317165116,
+          217.83462105394955,
+          1.4034378009925856
+        ],
+        "block_moved_px": 16.8612381239019,
+        "block_turned_deg": -0.500622123409731
+      }
+    },
+    {
+      "id": 114,
+      "text": "Give it a 75-degree anticlockwise twist right here.",
+      "style": "casual",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -75.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -75.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          315.03383779649204,
+          444.49956373410384,
+          2.234332992615297
+        ],
+        "block_moved_px": 182.66273639461022,
+        "block_turned_deg": 174.8449589237647
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          315.03383779649204,
+          444.49956373410384,
+          2.234332992615297
+        ],
+        "block_moved_px": 182.66273639461022,
+        "block_turned_deg": 174.8449589237647,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 115,
+      "text": "Give that block an anticlockwise spin in place.",
+      "style": "casual",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          183.2802366640535,
+          316.89208466439516,
+          2.3972200175734244
+        ],
+        "block_moved_px": 160.59763277962116,
+        "block_turned_deg": -164.87120759715805
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 12,
+        "end_block": [
+          183.2802366640535,
+          316.89208466439516,
+          2.3972200175734244
+        ],
+        "block_moved_px": 160.59763277962116,
+        "block_turned_deg": -164.87120759715805,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 116,
+      "text": "Displace the T 180 pixels leftward.",
+      "style": "plain",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 180.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": 180.0
+      },
+      "gold_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 6,
+        "end_block": [
+          293.17874945853634,
+          395.4345391092244,
+          4.0007418898536855
+        ],
+        "block_moved_px": 0.0,
+        "block_turned_deg": 0.0,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 117,
+      "text": "Get that piece moving toward the top edge.",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 99,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          384.6191530488472,
+          239.39753342740957,
+          6.0838021496191494
+        ],
+        "block_moved_px": 63.331544221528965,
+        "block_turned_deg": 10.396738377645976
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 99,
+        "n_hops": 4,
+        "n_crumb_hops": 3,
+        "end_block": [
+          384.6191530488472,
+          239.39753342740957,
+          6.0838021496191494
+        ],
+        "block_moved_px": 63.331544221528965,
+        "block_turned_deg": 10.396738377645976,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 118,
+      "text": "135 degrees anticlockwise for teh block, keep it here.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "parsed": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 279,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          273.82000198174467,
+          304.0490548776259,
+          0.9443613770991046
+        ],
+        "block_moved_px": 38.994779719280736,
+        "block_turned_deg": -130.3545774594058
+      },
+      "parsed_run": {
+        "success": true,
+        "steps": 279,
+        "n_hops": 12,
+        "n_crumb_hops": 5,
+        "end_block": [
+          273.82000198174467,
+          304.0490548776259,
+          0.9443613770991046
+        ],
+        "block_moved_px": 38.994779719280736,
+        "block_turned_deg": -130.3545774594058,
+        "reused_gold": true
+      }
+    },
+    {
+      "id": 119,
+      "text": "leftward scoot for this letter thing thx.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "parsed": {
+        "action": "push",
+        "dir": "left",
+        "px": -50.0
+      },
+      "gold_run": {
+        "success": true,
+        "steps": 74,
+        "n_hops": 3,
+        "n_crumb_hops": 2,
+        "end_block": [
+          193.17801985529383,
+          289.86120761590564,
+          0.3927885835226328
+        ],
+        "block_moved_px": 61.22152624171421,
+        "block_turned_deg": 30.411324893792795
+      },
+      "parsed_run": {
+        "success": false,
+        "steps": 300,
+        "n_hops": 12,
+        "n_crumb_hops": 0,
+        "end_block": [
+          257.78564020710866,
+          291.6451907112548,
+          6.235800125833456
+        ],
+        "block_moved_px": 6.1114805530304155,
+        "block_turned_deg": 5.191225914428826
+      }
+    }
+  ]
+}
