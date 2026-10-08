@@ -1,0 +1,3618 @@
+{
+  "summary": {
+    "n": 50,
+    "successes": 34,
+    "success_rate": 0.68,
+    "mean_pos_l2": 161.2635135956547,
+    "median_block_xy_err": 11.505922485032222,
+    "median_angle_err_deg": 6.2919948867531605,
+    "stopped_early": 0
+  },
+  "args": {
+    "task": "dataset",
+    "planner": "crumbs",
+    "offset": 50,
+    "budget": 300,
+    "n": 50,
+    "dry": false
+  },
+  "wall_s": 99.96920585632324,
+  "graph": {
+    "nodes": 427396,
+    "forward_edges": 410579,
+    "jump_edges": 2852207
+  },
+  "constants": {
+    "stride": 5,
+    "hop_steps": 25,
+    "angle_px": 60.0,
+    "jump_radius": 15.0,
+    "jump_k": 8,
+    "entry_k": 16,
+    "goal_radius": 20.0,
+    "test_fraction": 0.1,
+    "split_seed": 0,
+    "task_seed": 42,
+    "torch_seed": 42
+  },
+  "planner": {
+    "cem": [
+      300,
+      30,
+      30
+    ],
+    "horizon": 5,
+    "action_block": 5,
+    "action_mean": [
+      -0.007812564379916167,
+      0.006860687229453028
+    ],
+    "action_std": [
+      0.2084674874515821,
+      0.20674867061239935
+    ]
+  },
+  "episodes": [
+    {
+      "success": true,
+      "steps": 75,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 16.27835006727892,
+      "block_xy_err": 12.895994704065464,
+      "agent_xy_err": 9.933680159215674,
+      "angle_err_deg": 5.994594112795477,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 15.452750549022342,
+          "path_cost": 16.697276858955565,
+          "crumb_steps": 28.801132930347517,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.96269454641128,
+          "path_cost": 15.070592054086251,
+          "crumb_steps": 29.809446078120484,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.64087129468438,
+          "path_cost": 5.146813622838058,
+          "crumb_steps": 17.867034057095147,
+          "edges": 4,
+          "jumps": 1
+        }
+      ],
+      "episode": 1211,
+      "start": 16,
+      "start_state": [
+        400.4706115722656,
+        434.06378173828125,
+        282.7911071777344,
+        389.281982421875,
+        0.8494445085525513,
+        39.33949661254883,
+        137.70468139648438
+      ]
+    },
+    {
+      "success": true,
+      "steps": 76,
+      "stopped": null,
+      "n_hops": 4,
+      "pos_l2": 19.17567337072651,
+      "block_xy_err": 15.81121693866324,
+      "agent_xy_err": 10.849510041440515,
+      "angle_err_deg": 0.012866151723891635,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 3.8026324757884336,
+          "path_cost": 14.531943932736503,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 5.825299040587492,
+          "path_cost": 7.504687063661046,
+          "crumb_steps": 26.261717659152616,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.557857475451918,
+          "path_cost": 3.5586619430598048,
+          "crumb_steps": 8.896654857649512,
+          "edges": 2,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.8403672718291055,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 1286,
+      "start": 66,
+      "start_state": [
+        114.47775268554688,
+        306.08038330078125,
+        171.79994201660156,
+        284.62274169921875,
+        0.7009072303771973,
+        52.61104202270508,
+        29.415966033935547
+      ]
+    },
+    {
+      "success": true,
+      "steps": 39,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 18.209366428675708,
+      "block_xy_err": 8.25993677330574,
+      "agent_xy_err": 16.228199845786143,
+      "angle_err_deg": 3.334732002493636,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 6.397086129454226,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.426735397186945,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 1678,
+      "start": 43,
+      "start_state": [
+        259.0780029296875,
+        149.2559356689453,
+        197.4116973876953,
+        195.3510284423828,
+        5.530040264129639,
+        12.00119400024414,
+        35.59458541870117
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 324.4675204902272,
+      "block_xy_err": 195.23070451266133,
+      "agent_xy_err": 259.160459693538,
+      "angle_err_deg": 22.12545855384322,
+      "n_crumb_hops": 12,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 30.998242981537626,
+          "path_cost": 10.33007822929753,
+          "crumb_steps": 25.82519557324383,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.783620534427495,
+          "path_cost": 54.245049698230154,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.269559248619682,
+          "path_cost": 47.012216967218556,
+          "crumb_steps": 26.41158314894255,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.921320987234594,
+          "path_cost": 36.98139440545401,
+          "crumb_steps": 28.55007057172854,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 40.440408100444884,
+          "path_cost": 27.289490782254283,
+          "crumb_steps": 25.807640414959973,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.33860230007394,
+          "path_cost": 20.966434616270295,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.275369028434103,
+          "path_cost": 74.77755777649246,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.511631847432735,
+          "path_cost": 67.41076255078866,
+          "crumb_steps": 27.201044836768258,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.793763794724885,
+          "path_cost": 54.84622569785677,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.966818226944028,
+          "path_cost": 49.84622569785677,
+          "crumb_steps": 26.347654440696594,
+          "edges": 10,
+          "jumps": 7
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.35817323442474,
+          "path_cost": 43.50046252788088,
+          "crumb_steps": 25.784544643336226,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.519333382943465,
+          "path_cost": 31.999831539095418,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 1816,
+      "start": 6,
+      "start_state": [
+        85.51849365234375,
+        302.9139404296875,
+        178.4974365234375,
+        483.5321044921875,
+        2.790006399154663,
+        -127.78196716308594,
+        248.13682556152344
+      ]
+    },
+    {
+      "success": true,
+      "steps": 40,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 12.148054016018197,
+      "block_xy_err": 2.2642255914833407,
+      "agent_xy_err": 11.935179045450795,
+      "angle_err_deg": 5.939032934810186,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 12.757060720575756,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 4.174068261935608,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "episode": 1934,
+      "start": 29,
+      "start_state": [
+        341.9359436035156,
+        428.3032531738281,
+        295.68389892578125,
+        301.330810546875,
+        5.89312219619751,
+        -52.753448486328125,
+        -77.22264862060547
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 25.224506402287,
+      "block_xy_err": 25.110080874719667,
+      "agent_xy_err": 2.399908686607742,
+      "angle_err_deg": 6.347415099738321,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 2.5583739174868354,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.448599899937665,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 24.318999736232456,
+          "path_cost": 3.9439900617761183,
+          "crumb_steps": 9.859975154440296,
+          "edges": 2,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 16.4928642072798,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.270942902231504,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 21.734854206624263,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.34843609417418,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 19.86914922499778,
+          "path_cost": 2.7264431542002674,
+          "crumb_steps": 4.316107885500669,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 24.751037038959733,
+          "path_cost": 2.7264431542002674,
+          "crumb_steps": 4.316107885500669,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.15052574666785,
+          "path_cost": 2.7264431542002674,
+          "crumb_steps": 4.316107885500669,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 21.95545587277167,
+          "path_cost": 2.7264431542002674,
+          "crumb_steps": 4.316107885500669,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 21.208276503988728,
+          "path_cost": 2.7264431542002674,
+          "crumb_steps": 4.316107885500669,
+          "edges": 1,
+          "jumps": 1
+        }
+      ],
+      "episode": 1985,
+      "start": 10,
+      "start_state": [
+        313.28692626953125,
+        492.3346862792969,
+        317.6068115234375,
+        356.8861999511719,
+        5.8128533363342285,
+        66.84453582763672,
+        45.23362350463867
+      ]
+    },
+    {
+      "success": true,
+      "steps": 71,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 17.262685381951666,
+      "block_xy_err": 13.27865044532252,
+      "agent_xy_err": 11.030763751761876,
+      "angle_err_deg": 3.5278514447794893,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 0.4532174971353899,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.241497209380061,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 6.679941186523715,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 2752,
+      "start": 25,
+      "start_state": [
+        133.25538635253906,
+        262.333251953125,
+        241.38465881347656,
+        317.9691162109375,
+        1.7993645668029785,
+        -33.92326736450195,
+        89.60909271240234
+      ]
+    },
+    {
+      "success": true,
+      "steps": 52,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 16.078916945222648,
+      "block_xy_err": 8.543092857996026,
+      "agent_xy_err": 13.621568725775504,
+      "angle_err_deg": 7.197816302767662,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 7.766531953982587,
+          "path_cost": 11.549900022636425,
+          "crumb_steps": 27.6983874279452,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.571311246110891,
+          "path_cost": 4.4705450514583465,
+          "crumb_steps": 13.676362628645867,
+          "edges": 3,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.483574380011289,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 3191,
+      "start": 50,
+      "start_state": [
+        187.39425659179688,
+        356.5502014160156,
+        213.7196502685547,
+        303.6245422363281,
+        6.038732528686523,
+        -20.197355270385742,
+        -45.6407470703125
+      ]
+    },
+    {
+      "success": true,
+      "steps": 71,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 14.573199775322873,
+      "block_xy_err": 7.271732182214494,
+      "agent_xy_err": 12.629333425071044,
+      "angle_err_deg": 5.426063811166501,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 5.859676128397616,
+          "path_cost": 9.816511047871938,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.425772396006428,
+          "path_cost": 3.4427836755101664,
+          "crumb_steps": 11.106959188775416,
+          "edges": 3,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.932535249541737,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 3455,
+      "start": 51,
+      "start_state": [
+        216.22909545898438,
+        383.95684814453125,
+        254.40931701660156,
+        310.7427062988281,
+        0.8494794964790344,
+        -14.283767700195312,
+        -42.57688903808594
+      ]
+    },
+    {
+      "success": true,
+      "steps": 23,
+      "stopped": null,
+      "n_hops": 1,
+      "pos_l2": 18.617825369920684,
+      "block_xy_err": 1.423139801908041,
+      "agent_xy_err": 18.56335353887027,
+      "angle_err_deg": 0.8926278817536996,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal",
+          "entry_gap": 5.247508123499863,
+          "path_cost": 9.243325584980909,
+          "crumb_steps": 28.10831396245227,
+          "edges": 8,
+          "jumps": 3
+        }
+      ],
+      "episode": 3799,
+      "start": 83,
+      "start_state": [
+        292.0583190917969,
+        207.1159210205078,
+        281.33673095703125,
+        216.17503356933594,
+        0.7440300583839417,
+        -65.44723510742188,
+        95.09386444091797
+      ]
+    },
+    {
+      "success": true,
+      "steps": 50,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 14.165706507734631,
+      "block_xy_err": 11.544079499118007,
+      "agent_xy_err": 8.20983979023456,
+      "angle_err_deg": 5.754373121193701,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 9.491889069830428,
+          "path_cost": 11.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.110338471493215,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 4204,
+      "start": 1,
+      "start_state": [
+        372.82354736328125,
+        259.5081787109375,
+        292.05389404296875,
+        375.3180236816406,
+        4.929239273071289,
+        48.383792877197266,
+        95.00947570800781
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 709.3239428232216,
+      "block_xy_err": 13.707631351198458,
+      "agent_xy_err": 709.1914809873427,
+      "angle_err_deg": 6.834335233547416,
+      "n_crumb_hops": 10,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 8.926815767669353,
+          "path_cost": 18.590705360909574,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 6.37265677408729,
+          "path_cost": 12.741819233524692,
+          "crumb_steps": 26.527437038945962,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 13.605687362028265,
+          "path_cost": 6.302999651459187,
+          "crumb_steps": 13.257499128647966,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 18.28055609880771,
+          "path_cost": 10.331926745134437,
+          "crumb_steps": 18.329816862836097,
+          "edges": 5,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 121.30513246181863,
+          "path_cost": 24.827523168127737,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 159.26417273319828,
+          "path_cost": 24.827523168127737,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 189.67911007343122,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 258.4703058388825,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 307.161787818061,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 358.85939529626467,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 418.234531278246,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 501.2690504771712,
+          "path_cost": 30.32827426010194,
+          "crumb_steps": 26.454031866021342,
+          "edges": 7,
+          "jumps": 3
+        }
+      ],
+      "episode": 5115,
+      "start": 122,
+      "start_state": [
+        125.60379791259766,
+        427.7822265625,
+        167.30819702148438,
+        327.0943298339844,
+        0.6700627207756042,
+        -31.998619079589844,
+        3.3100812435150146
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 189.61054528770353,
+      "block_xy_err": 169.65513499733018,
+      "agent_xy_err": 84.67168389336516,
+      "angle_err_deg": 71.66622701065836,
+      "n_crumb_hops": 7,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 4.366691059229449,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.636233784378605,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 4.659525082032071,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 27.26413610297024,
+          "path_cost": 6.604096808159852,
+          "crumb_steps": 6.510242020399629,
+          "edges": 4,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.105436625121193,
+          "path_cost": 15.817120229017599,
+          "crumb_steps": 25.564053752287265,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 15.503908048083975,
+          "path_cost": 7.591498728102692,
+          "crumb_steps": 28.97874682025673,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.954802548883176,
+          "path_cost": 8.345231896742877,
+          "crumb_steps": 28.36307974185719,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 29.21339381699805,
+          "path_cost": 7.001304972020453,
+          "crumb_steps": 20.00326243005113,
+          "edges": 5,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 44.311091315376075,
+          "path_cost": 13.81607146894861,
+          "crumb_steps": 26.81686195169204,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.314889497327883,
+          "path_cost": 12.264102812135704,
+          "crumb_steps": 28.16025703033926,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 42.38489285343366,
+          "path_cost": 16.909187895684518,
+          "crumb_steps": 29.399087271359356,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.605619282310847,
+          "path_cost": 14.849252587717901,
+          "crumb_steps": 28.457296080333517,
+          "edges": 6,
+          "jumps": 1
+        }
+      ],
+      "episode": 6513,
+      "start": 96,
+      "start_state": [
+        77.48800659179688,
+        260.3719787597656,
+        179.34986877441406,
+        307.29559326171875,
+        0.6513444185256958,
+        39.44552993774414,
+        -52.072200775146484
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 68.99979951282432,
+      "block_xy_err": 60.918794067930264,
+      "agent_xy_err": 32.40174165255713,
+      "angle_err_deg": 6.796174202654788,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 2.379668678437082,
+          "path_cost": 9.082795119393555,
+          "crumb_steps": 27.70698779848389,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.660515767542165,
+          "path_cost": 5.216459693628824,
+          "crumb_steps": 13.041149234072062,
+          "edges": 4,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 9.812972397026458,
+          "path_cost": 1.673571165729875,
+          "crumb_steps": 1.683927914324688,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 17.064343854511616,
+          "path_cost": 11.201224607670095,
+          "crumb_steps": 23.00306151917524,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 8.04932677016507,
+          "path_cost": 19.64742013145997,
+          "crumb_steps": 27.38277146078339,
+          "edges": 9,
+          "jumps": 8
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.572837912734023,
+          "path_cost": 16.25365277829108,
+          "crumb_steps": 25.634131945727702,
+          "edges": 8,
+          "jumps": 7
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.682595657145892,
+          "path_cost": 15.969373201538898,
+          "crumb_steps": 25.687654135980704,
+          "edges": 6,
+          "jumps": 5
+        },
+        {
+          "target": "goal",
+          "entry_gap": 11.354392990354945,
+          "path_cost": 16.25365277829108,
+          "crumb_steps": 25.634131945727702,
+          "edges": 8,
+          "jumps": 7
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.494974750756219,
+          "path_cost": 15.481244273596253,
+          "crumb_steps": 21.20311068399063,
+          "edges": 7,
+          "jumps": 7
+        },
+        {
+          "target": "goal",
+          "entry_gap": 11.646906878103316,
+          "path_cost": 16.25365277829108,
+          "crumb_steps": 25.634131945727702,
+          "edges": 8,
+          "jumps": 7
+        },
+        {
+          "target": "goal",
+          "entry_gap": 13.80970897438852,
+          "path_cost": 17.516834108682264,
+          "crumb_steps": 21.29208527170566,
+          "edges": 9,
+          "jumps": 9
+        },
+        {
+          "target": "goal",
+          "entry_gap": 15.304716231944013,
+          "path_cost": 17.516834108682264,
+          "crumb_steps": 21.29208527170566,
+          "edges": 9,
+          "jumps": 9
+        }
+      ],
+      "episode": 6933,
+      "start": 45,
+      "start_state": [
+        205.81924438476562,
+        464.382080078125,
+        149.69473266601562,
+        396.1429443359375,
+        5.120442867279053,
+        -77.27113342285156,
+        -101.3461685180664
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 35.46480132577104,
+      "block_xy_err": 28.905484885619195,
+      "agent_xy_err": 20.548116132717663,
+      "angle_err_deg": 6.4166994619155275,
+      "n_crumb_hops": 1,
+      "n_no_path": 6,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 1.3233877153576523,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 16.8152445512001,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 30.184981346381395
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 28.23659599657036
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 28.519714609586273
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 27.26238838339371
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 25.117319366533653
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 26.10344014003041
+        },
+        {
+          "target": "goal",
+          "entry_gap": 27.79766389382008,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 28.33076488943713,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 27.84053696635544,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 24.819599176481173,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 7456,
+      "start": 5,
+      "start_state": [
+        250.9022674560547,
+        333.25439453125,
+        321.5135498046875,
+        216.3193817138672,
+        4.167634010314941,
+        -77.06202697753906,
+        -218.2386932373047
+      ]
+    },
+    {
+      "success": true,
+      "steps": 125,
+      "stopped": null,
+      "n_hops": 5,
+      "pos_l2": 19.298038814412326,
+      "block_xy_err": 0.07310128671859324,
+      "agent_xy_err": 19.297900359480685,
+      "angle_err_deg": 19.06679138963977,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.06877979649088,
+          "path_cost": 57.36069841223322,
+          "crumb_steps": 29.00394617311447,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 16.654757872841024,
+          "path_cost": 36.43695962011216,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.887160500418844,
+          "path_cost": 31.83341067016053,
+          "crumb_steps": 25.206301626836822,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 10.48960649900399,
+          "path_cost": 30.852536179651548,
+          "crumb_steps": 28.787794322777398,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.314706987481145,
+          "path_cost": 21.33741845054059,
+          "crumb_steps": 29.036970403563203,
+          "edges": 6,
+          "jumps": 3
+        }
+      ],
+      "episode": 8066,
+      "start": 84,
+      "start_state": [
+        208.86192321777344,
+        372.4053649902344,
+        282.6706848144531,
+        275.76416015625,
+        2.563270330429077,
+        59.51417541503906,
+        -58.81802749633789
+      ]
+    },
+    {
+      "success": true,
+      "steps": 46,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 12.967308348163158,
+      "block_xy_err": 7.282427071683053,
+      "agent_xy_err": 10.729274986780782,
+      "angle_err_deg": 1.387830276489267,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 23.958914464400706,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.003856712958788,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "episode": 8200,
+      "start": 82,
+      "start_state": [
+        296.8607177734375,
+        430.4716796875,
+        232.63540649414062,
+        331.9137268066406,
+        5.963395118713379,
+        -104.10680389404297,
+        34.07365417480469
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 17.167960124829644,
+      "block_xy_err": 9.40527761910546,
+      "agent_xy_err": 14.36243738908179,
+      "angle_err_deg": 20.85487128328763,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 40.86806896760627,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 49.77817831179139,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 34.592727546148396,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 33.83644998380064,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 31.709650793634125,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 33.706995289413456,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 34.050102580633194,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 34.60308734054853,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 28.09668708290911,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 34.24952015957122,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 34.14792966488856,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 27.630403047206478,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 8277,
+      "start": 50,
+      "start_state": [
+        294.14019775390625,
+        169.58274841308594,
+        355.576171875,
+        280.7135314941406,
+        3.315458059310913,
+        -86.19506072998047,
+        -11.039399147033691
+      ]
+    },
+    {
+      "success": true,
+      "steps": 150,
+      "stopped": null,
+      "n_hops": 6,
+      "pos_l2": 14.704615597165656,
+      "block_xy_err": 12.95674148139196,
+      "agent_xy_err": 6.953313601786158,
+      "angle_err_deg": 6.224295245718439,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 4.759707620428103,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 14.077757640895975,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 5.49292809957341,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.473029483923602,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 9.581523834980404,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.198174734708839,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 8309,
+      "start": 31,
+      "start_state": [
+        417.8950500488281,
+        362.0086669921875,
+        366.19708251953125,
+        294.1655578613281,
+        5.988004207611084,
+        -89.2991943359375,
+        42.45820236206055
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 50.72549980263872,
+      "block_xy_err": 38.97976568293205,
+      "agent_xy_err": 32.46004001123866,
+      "angle_err_deg": 11.092868807954106,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 4.861202056810973,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 25.185560794091362,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 25.31390939037892,
+          "path_cost": 12.91011255793476,
+          "crumb_steps": 22.2752813948369,
+          "edges": 6,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.04920491277762,
+          "path_cost": 22.794474318177055,
+          "crumb_steps": 27.24007317289537,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 42.34023874202073,
+          "path_cost": 24.68634417755628,
+          "crumb_steps": 27.481173868454047,
+          "edges": 7,
+          "jumps": 5
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.268567819997347,
+          "path_cost": 6.845226801846772,
+          "crumb_steps": 9.613067004616932,
+          "edges": 3,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "entry_gap": 19.073076078051333,
+          "path_cost": 7.768044508287023,
+          "crumb_steps": 9.420111270717557,
+          "edges": 4,
+          "jumps": 4
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.051358875562475,
+          "path_cost": 2.145879785704376,
+          "crumb_steps": 2.86469946426094,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 24.258829711848577,
+          "path_cost": 7.628920880713828,
+          "crumb_steps": 11.57230220178457,
+          "edges": 3,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.559688273060573,
+          "path_cost": 4.86910314769237,
+          "crumb_steps": 7.172757869230925,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.975315270803627,
+          "path_cost": 4.86910314769237,
+          "crumb_steps": 7.172757869230925,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.653054491839082,
+          "path_cost": 4.86910314769237,
+          "crumb_steps": 7.172757869230925,
+          "edges": 2,
+          "jumps": 2
+        }
+      ],
+      "episode": 8392,
+      "start": 24,
+      "start_state": [
+        472.1300354003906,
+        331.8814392089844,
+        439.9153137207031,
+        398.24053955078125,
+        1.5094364881515503,
+        26.712263107299805,
+        110.51866149902344
+      ]
+    },
+    {
+      "success": true,
+      "steps": 50,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 11.117842835432823,
+      "block_xy_err": 2.5795938740782405,
+      "agent_xy_err": 10.814440566122824,
+      "angle_err_deg": 0.7493289750517519,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 7.517180133350951,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 16.230969563698878,
+          "path_cost": 4.82275174448646,
+          "crumb_steps": 17.05687936121615,
+          "edges": 4,
+          "jumps": 1
+        }
+      ],
+      "episode": 8392,
+      "start": 39,
+      "start_state": [
+        397.5827941894531,
+        342.912353515625,
+        395.5884094238281,
+        392.8772277832031,
+        1.3116381168365479,
+        -94.89653015136719,
+        -62.0726318359375
+      ]
+    },
+    {
+      "success": true,
+      "steps": 76,
+      "stopped": null,
+      "n_hops": 4,
+      "pos_l2": 18.844064684611656,
+      "block_xy_err": 17.8927373363057,
+      "agent_xy_err": 5.911744619974732,
+      "angle_err_deg": 10.725026456205859,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 5.721894514280059,
+          "path_cost": 11.383886972755093,
+          "crumb_steps": 25.959717431887732,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.87574112482777,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.69820604027445,
+          "path_cost": 6.19584268958041,
+          "crumb_steps": 7.989606723951026,
+          "edges": 3,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "entry_gap": 11.414561586453411,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 9784,
+      "start": 34,
+      "start_state": [
+        377.5652770996094,
+        251.2180938720703,
+        337.36407470703125,
+        153.52943420410156,
+        6.177369594573975,
+        -94.91529846191406,
+        72.83256530761719
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1813.9543730548648,
+      "block_xy_err": 45.975850062681566,
+      "agent_xy_err": 1813.3716355827014,
+      "angle_err_deg": 31.59602338869543,
+      "n_crumb_hops": 9,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 23.202170113374667,
+          "path_cost": 19.597882481769453,
+          "crumb_steps": 26.494706204423633,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.524786935887388,
+          "path_cost": 30.816746122596616,
+          "crumb_steps": 26.734411339719458,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.511681310812257,
+          "path_cost": 13.508829163285364,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 8.48993745272826,
+          "path_cost": 8.508829163285364,
+          "crumb_steps": 28.77207290821341,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 23.679905229066787,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 44.324665760812195,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 46.8451071622669,
+          "path_cost": 36.239952174535546,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 87.61714966448343,
+          "path_cost": 32.37651617750228,
+          "crumb_steps": 27.680919754010137,
+          "edges": 8,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 411.4611130439109
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 740.0131776176906,
+          "path_cost": 45.53649872901004,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 979.5997771544918,
+          "path_cost": 45.53649872901004,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 1255.2922403885034,
+          "path_cost": 45.53649872901004,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 9986,
+      "start": 56,
+      "start_state": [
+        243.10037231445312,
+        353.91668701171875,
+        198.1379852294922,
+        324.7880859375,
+        5.878416061401367,
+        -46.55750274658203,
+        -71.76065063476562
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 17.87426457211384,
+      "block_xy_err": 7.247683385943206,
+      "agent_xy_err": 16.338923450798305,
+      "angle_err_deg": 6.236574673768001,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 18.663849880131142,
+          "path_cost": 9.437410250987348,
+          "crumb_steps": 26.09352562746837,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 22.452406179123237,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 10214,
+      "start": 21,
+      "start_state": [
+        404.472900390625,
+        427.90777587890625,
+        346.8966369628906,
+        433.9515075683594,
+        1.5030001401901245,
+        -17.447669982910156,
+        193.37326049804688
+      ]
+    },
+    {
+      "success": true,
+      "steps": 24,
+      "stopped": null,
+      "n_hops": 1,
+      "pos_l2": 17.669652817157825,
+      "block_xy_err": 4.629153798729483,
+      "agent_xy_err": 17.05249441538105,
+      "angle_err_deg": 4.297095299909692,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal",
+          "entry_gap": 27.29444381535925,
+          "path_cost": 4.695034431935702,
+          "crumb_steps": 14.237586079839254,
+          "edges": 3,
+          "jumps": 1
+        }
+      ],
+      "episode": 10649,
+      "start": 99,
+      "start_state": [
+        100.26944732666016,
+        300.31884765625,
+        258.2514953613281,
+        219.07330322265625,
+        0.9213852286338806,
+        -174.23941040039062,
+        77.3862533569336
+      ]
+    },
+    {
+      "success": true,
+      "steps": 48,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 18.404234150379008,
+      "block_xy_err": 3.1861680454865837,
+      "agent_xy_err": 18.12633906358085,
+      "angle_err_deg": 8.897000537897139,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 9.250047349583513,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 4.797290545269288,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 10827,
+      "start": 94,
+      "start_state": [
+        41.215614318847656,
+        392.8565368652344,
+        182.44210815429688,
+        281.2817077636719,
+        0.13833145797252655,
+        -9.364059448242188,
+        -112.98389434814453
+      ]
+    },
+    {
+      "success": true,
+      "steps": 131,
+      "stopped": null,
+      "n_hops": 6,
+      "pos_l2": 18.39281632796508,
+      "block_xy_err": 17.836256190705914,
+      "agent_xy_err": 4.490396148867469,
+      "angle_err_deg": 5.453734767271615,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 42.46581447827689,
+          "path_cost": 71.42328996970396,
+          "crumb_steps": 29.09733545333227,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 48.62300595260325,
+          "path_cost": 73.4665540886376,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 46.266734593950396,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 45.197797893317514,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 50.08128072012954,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 53.25756349784478,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 12111,
+      "start": 63,
+      "start_state": [
+        176.737060546875,
+        559.4708251953125,
+        99.97209167480469,
+        499.91485595703125,
+        3.078904390335083,
+        198.4500732421875,
+        13.942391395568848
+      ]
+    },
+    {
+      "success": true,
+      "steps": 16,
+      "stopped": null,
+      "n_hops": 1,
+      "pos_l2": 19.627899233958463,
+      "block_xy_err": 14.631930414916074,
+      "agent_xy_err": 13.082852925546522,
+      "angle_err_deg": 13.632207714263542,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 7.444512919058646,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 12332,
+      "start": 46,
+      "start_state": [
+        78.92816925048828,
+        269.5710144042969,
+        164.30772399902344,
+        334.0441589355469,
+        1.9342765808105469,
+        -87.52509307861328,
+        54.00959777832031
+      ]
+    },
+    {
+      "success": true,
+      "steps": 190,
+      "stopped": null,
+      "n_hops": 8,
+      "pos_l2": 17.273078580060467,
+      "block_xy_err": 12.237964627997073,
+      "agent_xy_err": 12.1898098999466,
+      "angle_err_deg": 4.3431653646903445,
+      "n_crumb_hops": 6,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 2.400886154757129,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.06522233067661,
+          "path_cost": 27.50475160058509,
+          "crumb_steps": 28.2385195634727,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.610425741618407,
+          "path_cost": 20.20934377519601,
+          "crumb_steps": 26.93372387099696,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.608512678047678,
+          "path_cost": 16.91037412086097,
+          "crumb_steps": 27.27593530215242,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 57.07623680151218,
+          "path_cost": 24.82172256168921,
+          "crumb_steps": 29.097172218374173,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.14077585614228,
+          "path_cost": 17.18285367433954,
+          "crumb_steps": 26.116351367061718,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "goal",
+          "entry_gap": 27.205839661532426,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 28.678023516754696,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 12576,
+      "start": 26,
+      "start_state": [
+        481.4105529785156,
+        188.0871124267578,
+        328.5062561035156,
+        153.19187927246094,
+        5.0477070808410645,
+        -2.25803542137146,
+        -72.18952178955078
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1026.9757376083803,
+      "block_xy_err": 130.83121180260463,
+      "agent_xy_err": 1018.6080500636832,
+      "angle_err_deg": 111.40763101894416,
+      "n_crumb_hops": 11,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.70872731413524,
+          "path_cost": 107.02202811987463,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.231040368931442,
+          "path_cost": 99.12606216576522,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.888510601580013,
+          "path_cost": 94.12606216576522,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 57.86423206346091,
+          "path_cost": 103.67599107987292,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 32.7529186080495
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 116.3220801264157,
+          "path_cost": 103.89941269383554,
+          "crumb_steps": 27.576546632341547,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 358.7120485524161,
+          "path_cost": 99.63383370718255,
+          "crumb_steps": 26.73766107518124,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 441.5716594331628,
+          "path_cost": 99.96187581206895,
+          "crumb_steps": 27.55776633739727,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 460.0257322105506,
+          "path_cost": 99.96187581206895,
+          "crumb_steps": 27.55776633739727,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 586.2103177769179,
+          "path_cost": 74.93014356053419,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 710.0669751223696,
+          "path_cost": 99.96187581206895,
+          "crumb_steps": 27.55776633739727,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 733.4556525568009,
+          "path_cost": 99.96187581206895,
+          "crumb_steps": 27.55776633739727,
+          "edges": 7,
+          "jumps": 2
+        }
+      ],
+      "episode": 12923,
+      "start": 28,
+      "start_state": [
+        135.0252685546875,
+        338.2243957519531,
+        66.36923217773438,
+        289.2888488769531,
+        4.96908712387085,
+        -17.717737197875977,
+        -74.08253479003906
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 2488.315441212875,
+      "block_xy_err": 88.90883680132426,
+      "agent_xy_err": 2486.726553868974,
+      "angle_err_deg": 44.65752289664233,
+      "n_crumb_hops": 12,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 9.829888217470398,
+          "path_cost": 47.65792762138024,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.21550033444987,
+          "path_cost": 34.45610999060689,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.375599066318344,
+          "path_cost": 24.67991604261808,
+          "crumb_steps": 26.862362835554393,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 15.714080543007833,
+          "path_cost": 26.682472601370417,
+          "crumb_steps": 26.868754232435244,
+          "edges": 6,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.596138131698865,
+          "path_cost": 39.26101392892355,
+          "crumb_steps": 25.787141219727435,
+          "edges": 6,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.923904307939793,
+          "path_cost": 22.089613714253517,
+          "crumb_steps": 28.23540509833459,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 42.047996500046516,
+          "path_cost": 42.79542997243498,
+          "crumb_steps": 26.82403835680612,
+          "edges": 7,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.066505907550322,
+          "path_cost": 22.196822960863507,
+          "crumb_steps": 28.50342821485956,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 111.69840813344256,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 629.1769759101483,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 1093.1413550008942,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 1778.3937285515133,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 13228,
+      "start": 48,
+      "start_state": [
+        130.78167724609375,
+        233.38616943359375,
+        175.58644104003906,
+        268.72991943359375,
+        2.803304433822632,
+        17.120458602905273,
+        97.79366302490234
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 136.40015627430688,
+      "block_xy_err": 30.838046101698858,
+      "agent_xy_err": 132.86842192291152,
+      "angle_err_deg": 127.38715379765272,
+      "n_crumb_hops": 8,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 13.223448682307632,
+          "path_cost": 8.597739702366436,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 4.244964895075699,
+          "path_cost": 5.464833995766477,
+          "crumb_steps": 13.662084989416192,
+          "edges": 4,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 26.062866259037307,
+          "path_cost": 7.375312410062795,
+          "crumb_steps": 18.43828102515699,
+          "edges": 4,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 45.199010768305364,
+          "path_cost": 8.041676935423546,
+          "crumb_steps": 22.604192338558864,
+          "edges": 5,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.89428917234352,
+          "path_cost": 57.083500804761414,
+          "crumb_steps": 29.363821585646114,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 43.90137713494842,
+          "path_cost": 20.55813804054176,
+          "crumb_steps": 28.926352709744954,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 17.244405405164414,
+          "path_cost": 9.041676935423546,
+          "crumb_steps": 27.604192338558864,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.546169008007915,
+          "path_cost": 28.5194812840161,
+          "crumb_steps": 25.115315351778555,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 32.65215906668476,
+          "path_cost": 18.882176917772803,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.268195142778827,
+          "path_cost": 14.051798206856079,
+          "crumb_steps": 26.812535565442886,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 44.26374957310388,
+          "path_cost": 21.292902674668564,
+          "crumb_steps": 26.972723564565175,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.42022387043424,
+          "path_cost": 16.580250907734154,
+          "crumb_steps": 29.272119739895917,
+          "edges": 6,
+          "jumps": 1
+        }
+      ],
+      "episode": 13270,
+      "start": 99,
+      "start_state": [
+        84.57994842529297,
+        318.5357666015625,
+        219.6255340576172,
+        276.060302734375,
+        0.5785059928894043,
+        4.443491458892822,
+        -165.08749389648438
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 235.82424246913322,
+      "block_xy_err": 189.4272049453511,
+      "agent_xy_err": 140.46496845381944,
+      "angle_err_deg": 25.358054503953916,
+      "n_crumb_hops": 6,
+      "n_no_path": 3,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 9.336564425674878,
+          "path_cost": 7.829415573683516,
+          "crumb_steps": 27.07353893420879,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.406254318469582,
+          "path_cost": 19.055207968718626,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.946539792644629,
+          "path_cost": 15.532600449446194,
+          "crumb_steps": 26.331501123615485,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.783412624507024,
+          "path_cost": 11.773009884789662,
+          "crumb_steps": 29.432524711974153,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.574613285458653,
+          "path_cost": 5.556654895005637,
+          "crumb_steps": 18.891637237514093,
+          "edges": 4,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 14.069742126613262,
+          "path_cost": 10.438188843956818,
+          "crumb_steps": 28.595472109892043,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "entry_gap": 17.47721498419578,
+          "path_cost": 9.451412724295833,
+          "crumb_steps": 28.628531810739585,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 37.79083202763187,
+          "path_cost": 20.53107006600628,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.531164076759435,
+          "path_cost": 15.531070066006281,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 10.187954095676865
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 18.612823074241888
+        },
+        {
+          "target": "goal",
+          "no_path": true,
+          "entry_gap": 9.692656397794451
+        }
+      ],
+      "episode": 13512,
+      "start": 44,
+      "start_state": [
+        257.8433837890625,
+        191.57896423339844,
+        277.4647521972656,
+        251.24864196777344,
+        1.0150625705718994,
+        -24.273487091064453,
+        -3.264650583267212
+      ]
+    },
+    {
+      "success": true,
+      "steps": 48,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 14.757853220693411,
+      "block_xy_err": 12.138170887673724,
+      "agent_xy_err": 8.393988276448862,
+      "angle_err_deg": 3.9733175075027587,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal",
+          "entry_gap": 25.08060841037798,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 20.30064473192543,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 13931,
+      "start": 55,
+      "start_state": [
+        61.98451232910156,
+        476.853515625,
+        174.01177978515625,
+        409.1152648925781,
+        0.8180516362190247,
+        87.41212463378906,
+        108.79337310791016
+      ]
+    },
+    {
+      "success": true,
+      "steps": 75,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 9.889091324753133,
+      "block_xy_err": 6.738063858129213,
+      "agent_xy_err": 7.238274840946601,
+      "angle_err_deg": 0.9545249041828603,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 11.482234866180775,
+          "path_cost": 11.043505767595352,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 14.929718599353137,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.681608609742568,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "episode": 14224,
+      "start": 61,
+      "start_state": [
+        280.3602600097656,
+        219.00511169433594,
+        225.8369598388672,
+        253.59947204589844,
+        5.94614315032959,
+        7.976289749145508,
+        10.911236763000488
+      ]
+    },
+    {
+      "success": true,
+      "steps": 75,
+      "stopped": null,
+      "n_hops": 3,
+      "pos_l2": 18.474399838399442,
+      "block_xy_err": 6.939021088887305,
+      "agent_xy_err": 17.12172408716571,
+      "angle_err_deg": 16.98316199528377,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 6.580237803910276,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 7.4125607106099904,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 19.06447166702991,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 14271,
+      "start": 29,
+      "start_state": [
+        117.68476104736328,
+        209.65867614746094,
+        185.14913940429688,
+        251.10720825195312,
+        0.8806836605072021,
+        67.26100158691406,
+        31.92437171936035
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 8.562490319998878,
+      "block_xy_err": 2.6453652242860164,
+      "agent_xy_err": 8.143603828171694,
+      "angle_err_deg": 4.793576828858071,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 2.1592778371045203,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 9.895995935140295,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 14486,
+      "start": 51,
+      "start_state": [
+        176.37469482421875,
+        333.09503173828125,
+        167.2931671142578,
+        376.88275146484375,
+        1.4346470832824707,
+        -30.091285705566406,
+        -10.888056755065918
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 201.08651666768512,
+      "block_xy_err": 73.3284567712472,
+      "agent_xy_err": 187.23975169042106,
+      "angle_err_deg": 31.73983550028267,
+      "n_crumb_hops": 11,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 13.418064803680824,
+          "path_cost": 12.085924290036205,
+          "crumb_steps": 27.714810725090512,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.86149935980918,
+          "path_cost": 21.09653027811498,
+          "crumb_steps": 25.24132569528745,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 10.43383788575667,
+          "path_cost": 15.544556038489477,
+          "crumb_steps": 26.36139009622369,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.231927990447048,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 53.37469450549998,
+          "path_cost": 17.03727632133036,
+          "crumb_steps": 29.122615889907767,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.873677976916856,
+          "path_cost": 38.16901298045617,
+          "crumb_steps": 28.08361784681197,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 9.317573803069745,
+          "path_cost": 30.15619108156492,
+          "crumb_steps": 28.052398143090826,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 22.476216879800067,
+          "path_cost": 18.999786472722533,
+          "crumb_steps": 29.028891268388197,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 22.168211488643124,
+          "path_cost": 9.583297078149677,
+          "crumb_steps": 28.95824269537419,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 38.22689800639106,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 203.4174597949951,
+          "path_cost": 30.679764073396473,
+          "crumb_steps": 28.066864927839703,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 83.01487712038515,
+          "path_cost": 26.15759732556937,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "episode": 14532,
+      "start": 21,
+      "start_state": [
+        308.9243469238281,
+        477.4364318847656,
+        250.23928833007812,
+        451.677978515625,
+        2.2053818702697754,
+        -91.00373077392578,
+        15.054553985595703
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 17.603916394865344,
+      "block_xy_err": 8.311646854706163,
+      "agent_xy_err": 15.518195739197969,
+      "angle_err_deg": 5.5155355127504935,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 11.580417177884287,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 16.657945054639896,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 14589,
+      "start": 19,
+      "start_state": [
+        313.95623779296875,
+        64.1331787109375,
+        383.8017883300781,
+        127.9391098022461,
+        0.35174834728240967,
+        142.92916870117188,
+        -48.66630935668945
+      ]
+    },
+    {
+      "success": true,
+      "steps": 124,
+      "stopped": null,
+      "n_hops": 5,
+      "pos_l2": 18.471599964892462,
+      "block_xy_err": 9.447366832120705,
+      "agent_xy_err": 15.87284678948174,
+      "angle_err_deg": 4.97809383476557,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 11.217664704439464,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 14.935839791573331,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.358480970792137,
+          "path_cost": 15.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.114141494773996,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 31.165167950845845,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "episode": 14632,
+      "start": 59,
+      "start_state": [
+        317.23089599609375,
+        225.86318969726562,
+        316.2089538574219,
+        244.734375,
+        0.7322596907615662,
+        -19.7619571685791,
+        37.40320587158203
+      ]
+    },
+    {
+      "success": true,
+      "steps": 78,
+      "stopped": null,
+      "n_hops": 4,
+      "pos_l2": 16.893105137276372,
+      "block_xy_err": 11.467765470946436,
+      "agent_xy_err": 12.404328127006396,
+      "angle_err_deg": 11.544080411847121,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 5.981636594770633,
+          "path_cost": 9.81362059306224,
+          "crumb_steps": 29.534051482655602,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 5.846960338433027,
+          "path_cost": 3.4843458581664115,
+          "crumb_steps": 11.210864645416029,
+          "edges": 3,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.38779764687235,
+          "path_cost": 12.838809125373187,
+          "crumb_steps": 28.310075379016837,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 14.260785832673234,
+          "path_cost": 5.194843212177173,
+          "crumb_steps": 17.987108030442933,
+          "edges": 4,
+          "jumps": 1
+        }
+      ],
+      "episode": 15613,
+      "start": 48,
+      "start_state": [
+        348.92193603515625,
+        259.3232421875,
+        311.54595947265625,
+        242.683837890625,
+        0.792115330696106,
+        -24.980337142944336,
+        26.3728084564209
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 35.975718331458125,
+      "block_xy_err": 33.66797588975951,
+      "agent_xy_err": 12.677527714463272,
+      "angle_err_deg": 14.734933576088565,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 5.809601831144848,
+          "path_cost": 10.247616947093627,
+          "crumb_steps": 25.619042367734068,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 5.188335625577616,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 17.889822399738264,
+          "path_cost": 4.876631437795908,
+          "crumb_steps": 7.191578594489767,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.067063519753443,
+          "path_cost": 5.035105736371021,
+          "crumb_steps": 7.587764340927552,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.248886578958748,
+          "path_cost": 5.035105736371021,
+          "crumb_steps": 7.587764340927552,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 13.831981973716703,
+          "path_cost": 4.251824583795827,
+          "crumb_steps": 5.629561459489565,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.194071529018219,
+          "path_cost": 5.035105736371021,
+          "crumb_steps": 7.587764340927552,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 10.74713307975884,
+          "path_cost": 5.035105736371021,
+          "crumb_steps": 7.587764340927552,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 9.867724499364058,
+          "path_cost": 5.035105736371021,
+          "crumb_steps": 7.587764340927552,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 13.535286385953702,
+          "path_cost": 4.251824583795827,
+          "crumb_steps": 5.629561459489565,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 13.756150163385389,
+          "path_cost": 4.251824583795827,
+          "crumb_steps": 5.629561459489565,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal",
+          "entry_gap": 12.805899086712353,
+          "path_cost": 4.251824583795827,
+          "crumb_steps": 5.629561459489565,
+          "edges": 2,
+          "jumps": 2
+        }
+      ],
+      "episode": 15669,
+      "start": 149,
+      "start_state": [
+        352.9490051269531,
+        258.1744689941406,
+        268.5652160644531,
+        233.34825134277344,
+        0.8060925006866455,
+        -72.90763092041016,
+        -140.0372772216797
+      ]
+    },
+    {
+      "success": true,
+      "steps": 47,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 17.400477224917356,
+      "block_xy_err": 8.249737327191704,
+      "agent_xy_err": 15.320523544814241,
+      "angle_err_deg": 2.9866188804170544,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 4.997154109665768,
+          "path_cost": 9.012597974560844,
+          "crumb_steps": 27.53149493640211,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 5.302867115026074,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "episode": 15874,
+      "start": 23,
+      "start_state": [
+        51.102638244628906,
+        297.477783203125,
+        98.64107513427734,
+        247.56900024414062,
+        6.179545879364014,
+        -17.50128173828125,
+        -55.062435150146484
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 19.576087709846707,
+      "block_xy_err": 10.23949717602909,
+      "agent_xy_err": 16.68460091238935,
+      "angle_err_deg": 8.585933541997662,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 17.4184964794475,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 16.166777998160953,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 16060,
+      "start": 47,
+      "start_state": [
+        136.45274353027344,
+        286.6283874511719,
+        119.35770416259766,
+        208.29310607910156,
+        5.048831462860107,
+        -23.6953182220459,
+        -62.08404541015625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 175.15638819403674,
+      "block_xy_err": 28.446631300678437,
+      "agent_xy_err": 172.83098533776675,
+      "angle_err_deg": 0.20137452637673703,
+      "n_crumb_hops": 7,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 45.021442745456206,
+          "path_cost": 28.57518813667864,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 52.35821234408644,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 46.810366717521,
+          "path_cost": 2.3250370795832778,
+          "crumb_steps": 3.312592698958194,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal",
+          "entry_gap": 28.405309809136597,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 51.21583253967472,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 49.238318867224955,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 56.459669967221984,
+          "path_cost": 50.493125170190005,
+          "crumb_steps": 25.180751382549946,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.496171395211995,
+          "path_cost": 30.885407146606145,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.536521662184132,
+          "path_cost": 26.885407146606145,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 5.840592644992538,
+          "path_cost": 31.199163677640133,
+          "crumb_steps": 26.31156245624294,
+          "edges": 8,
+          "jumps": 7
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.85996013134115,
+          "path_cost": 29.033411347756427,
+          "crumb_steps": 25.897181631533677,
+          "edges": 7,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 16.7232466930967,
+          "path_cost": 11.674538695142958,
+          "crumb_steps": 29.186346737857395,
+          "edges": 6,
+          "jumps": 1
+        }
+      ],
+      "episode": 16060,
+      "start": 63,
+      "start_state": [
+        226.268798828125,
+        326.9211730957031,
+        116.26557159423828,
+        172.7210693359375,
+        5.360286235809326,
+        425.83770751953125,
+        44.50689697265625
+      ]
+    },
+    {
+      "success": true,
+      "steps": 50,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 13.643389629922467,
+      "block_xy_err": 7.070979917298585,
+      "agent_xy_err": 11.668047120364058,
+      "angle_err_deg": 7.236187299790504,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 0.19628264737282708,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 21.249562731184703,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        }
+      ],
+      "episode": 16472,
+      "start": 5,
+      "start_state": [
+        322.35321044921875,
+        441.84124755859375,
+        244.4431610107422,
+        408.997802734375,
+        3.131744623184204,
+        -70.34576416015625,
+        2.953462600708008
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 6.259672680064395,
+      "block_xy_err": 3.534960835959288,
+      "agent_xy_err": 5.165999801565868,
+      "angle_err_deg": 1.6908895346970934,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 9.532848696488252,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 9.749259645603924,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 16622,
+      "start": 34,
+      "start_state": [
+        408.5331726074219,
+        251.52500915527344,
+        390.47772216796875,
+        255.12721252441406,
+        0.757584273815155,
+        -89.09111022949219,
+        42.58601379394531
+      ]
+    },
+    {
+      "success": true,
+      "steps": 24,
+      "stopped": null,
+      "n_hops": 1,
+      "pos_l2": 10.40408687222888,
+      "block_xy_err": 1.6880236291767883,
+      "agent_xy_err": 10.266235915476818,
+      "angle_err_deg": 8.299867920983552,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal",
+          "entry_gap": 27.93798904182165,
+          "path_cost": 5.672673615201646,
+          "crumb_steps": 19.181684038004114,
+          "edges": 4,
+          "jumps": 1
+        }
+      ],
+      "episode": 17318,
+      "start": 115,
+      "start_state": [
+        72.06966400146484,
+        473.0206298828125,
+        118.24427032470703,
+        353.8154602050781,
+        0.5994266867637634,
+        -82.19386291503906,
+        42.19691848754883
+      ]
+    },
+    {
+      "success": true,
+      "steps": 172,
+      "stopped": null,
+      "n_hops": 7,
+      "pos_l2": 11.780058914028226,
+      "block_xy_err": 8.090276565073783,
+      "agent_xy_err": 8.562547116284605,
+      "angle_err_deg": 1.5077069586298124,
+      "n_crumb_hops": 6,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 6.036339543054174,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.868063293793224,
+          "path_cost": 47.33165038258992,
+          "crumb_steps": 28.645342678014444,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.92602426791711,
+          "path_cost": 38.873513311384144,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.53492416831323,
+          "path_cost": 27.873513311384144,
+          "crumb_steps": 29.599255475773738,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.13563512231768,
+          "path_cost": 12.304207182135938,
+          "crumb_steps": 25.760517955339846,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.183704944829763,
+          "path_cost": 11.81234423809656,
+          "crumb_steps": 27.030860595241396,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.535516534270947,
+          "path_cost": 4.623911252014768,
+          "crumb_steps": 14.05977813003692,
+          "edges": 3,
+          "jumps": 1
+        }
+      ],
+      "episode": 17951,
+      "start": 11,
+      "start_state": [
+        148.28439331054688,
+        384.2552795410156,
+        68.81787872314453,
+        304.5404968261719,
+        4.521441459655762,
+        -36.15593338012695,
+        33.38893127441406
+      ]
+    },
+    {
+      "success": true,
+      "steps": 48,
+      "stopped": null,
+      "n_hops": 2,
+      "pos_l2": 12.102707144332621,
+      "block_xy_err": 8.653683487911152,
+      "agent_xy_err": 8.461044989393082,
+      "angle_err_deg": 1.745776909780449,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 6.1519100276595315,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal",
+          "entry_gap": 8.727705744932608,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        }
+      ],
+      "episode": 18028,
+      "start": 35,
+      "start_state": [
+        424.39349365234375,
+        150.9215850830078,
+        398.6914367675781,
+        185.7685546875,
+        1.8578789234161377,
+        -39.47789001464844,
+        -35.2763671875
+      ]
+    }
+  ]
+}

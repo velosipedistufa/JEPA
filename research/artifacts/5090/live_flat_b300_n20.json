@@ -1,0 +1,1253 @@
+{
+  "summary": {
+    "n": 20,
+    "successes": 0,
+    "success_rate": 0.0,
+    "mean_pos_l2": 1191.936136529611,
+    "median_block_xy_err": 162.2391071354677,
+    "median_angle_err_deg": 76.26600583067953,
+    "stopped_early": 0
+  },
+  "args": {
+    "task": "live",
+    "planner": "flat",
+    "offset": 50,
+    "budget": 300,
+    "n": 20,
+    "dry": false
+  },
+  "wall_s": 78.83369255065918,
+  "graph": null,
+  "constants": {
+    "stride": 5,
+    "hop_steps": 25,
+    "angle_px": 60.0,
+    "jump_radius": 15.0,
+    "jump_k": 8,
+    "entry_k": 16,
+    "goal_radius": 20.0,
+    "test_fraction": 0.1,
+    "split_seed": 0,
+    "task_seed": 42,
+    "torch_seed": 42
+  },
+  "planner": {
+    "cem": [
+      300,
+      30,
+      30
+    ],
+    "horizon": 5,
+    "action_block": 5,
+    "action_mean": [
+      -0.007812564379916167,
+      0.006860687229453028
+    ],
+    "action_std": [
+      0.2084674874515821,
+      0.20674867061239935
+    ]
+  },
+  "episodes": [
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 319.58617132561494,
+      "block_xy_err": 317.1075614702835,
+      "agent_xy_err": 39.725500134494276,
+      "angle_err_deg": 169.6850090143951,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 0,
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 189.80016906427963,
+      "block_xy_err": 181.87132778604501,
+      "agent_xy_err": 54.285581015312935,
+      "angle_err_deg": 75.16465022211922,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 1,
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 72.83726733490373,
+      "block_xy_err": 63.04640820617739,
+      "agent_xy_err": 36.474894449693515,
+      "angle_err_deg": 4.614927589731971,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 2,
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 105.9343904251495,
+      "block_xy_err": 81.56489269686176,
+      "agent_xy_err": 67.59632648374786,
+      "angle_err_deg": 159.71091363333963,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 3,
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1805.9627627230682,
+      "block_xy_err": 263.1033649631768,
+      "agent_xy_err": 1786.6947472042866,
+      "angle_err_deg": 83.48126551648747,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 4,
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 135.71282269338388,
+      "block_xy_err": 92.71184017394837,
+      "agent_xy_err": 99.10845037112679,
+      "angle_err_deg": 104.53097924124738,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 5,
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 5651.727609393684,
+      "block_xy_err": 132.266241764138,
+      "agent_xy_err": 5650.179697325781,
+      "angle_err_deg": 124.13658395152432,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 6,
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1794.3264699731737,
+      "block_xy_err": 182.68071075682667,
+      "agent_xy_err": 1785.0028679987524,
+      "angle_err_deg": 145.37287507795918,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 7,
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 77.50763751707159,
+      "block_xy_err": 45.31869949130339,
+      "agent_xy_err": 62.878051416171445,
+      "angle_err_deg": 55.20213124347093,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 8,
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 196.3719893489224,
+      "block_xy_err": 150.71114072709508,
+      "agent_xy_err": 125.88927778643833,
+      "angle_err_deg": 77.36736143923984,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 9,
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 5469.409545613535,
+      "block_xy_err": 106.51816574912985,
+      "agent_xy_err": 5468.372212826583,
+      "angle_err_deg": 5.769262642476758,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 10,
+      "start_state": [
+        376.2105103266948,
+        163.11471211122807,
+        350.3060976095926,
+        150.81928037455032,
+        0.7156096761350899,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1352.294900460904,
+      "block_xy_err": 218.1292946875657,
+      "agent_xy_err": 1334.5864934921497,
+      "angle_err_deg": 160.1221228651635,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 11,
+      "start_state": [
+        368.82001701039155,
+        199.81044922226855,
+        113.17061228834663,
+        375.4981787330114,
+        2.939659389253542,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 110.23675925942337,
+      "block_xy_err": 31.272769582505436,
+      "agent_xy_err": 105.70788511109086,
+      "angle_err_deg": 16.096474053731697,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 12,
+      "start_state": [
+        165.56760424166401,
+        312.36270164480834,
+        391.37247227858626,
+        364.439828538059,
+        3.3196074793462444,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 361.8072719499302,
+      "block_xy_err": 288.3466008929707,
+      "agent_xy_err": 218.54230663494116,
+      "angle_err_deg": 68.6354941161139,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 13,
+      "start_state": [
+        214.85649354478733,
+        172.77317041678018,
+        323.7877529989629,
+        216.79917429425024,
+        2.022775871283428,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 2264.8691275024944,
+      "block_xy_err": 173.76707354384033,
+      "agent_xy_err": 2258.1933417814166,
+      "angle_err_deg": 58.120107506830486,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 14,
+      "start_state": [
+        354.7310782963397,
+        341.0070844594673,
+        240.5567718202254,
+        297.92346204193416,
+        0.25411350748523454,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1640.9579906921242,
+      "block_xy_err": 185.409623151264,
+      "agent_xy_err": 1630.4497535524483,
+      "angle_err_deg": 171.809671181411,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 15,
+      "start_state": [
+        264.61143899587694,
+        120.8512395337018,
+        169.74764300291173,
+        391.3877430166458,
+        0.9390980785997147,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 103.72312191191088,
+      "block_xy_err": 85.48386119249015,
+      "agent_xy_err": 58.745174225430674,
+      "angle_err_deg": 114.13114543248052,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 16,
+      "start_state": [
+        153.21885082195794,
+        309.4419755730588,
+        384.5387809113556,
+        141.45605843070746,
+        0.32867247358619345,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 1754.1097254301785,
+      "block_xy_err": 175.07379909827563,
+      "agent_xy_err": 1745.3509944186108,
+      "angle_err_deg": 51.794419636970325,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 17,
+      "start_state": [
+        277.4099140628561,
+        187.05915365200764,
+        340.1450563016937,
+        298.6106871273805,
+        2.469430796666754,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 313.47509111863667,
+      "block_xy_err": 267.13453834219683,
+      "agent_xy_err": 164.02978746721263,
+      "angle_err_deg": 72.44668609857419,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 18,
+      "start_state": [
+        122.95686307985409,
+        226.81663305068875,
+        223.3081783162666,
+        190.9084851951585,
+        0.9804975126415938,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "stopped": null,
+      "n_hops": 12,
+      "pos_l2": 118.07190685382929,
+      "block_xy_err": 99.89323084566038,
+      "agent_xy_err": 62.94694289093749,
+      "angle_err_deg": 43.180778816699046,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        },
+        {
+          "target": "goal"
+        }
+      ],
+      "seed": 19,
+      "start_state": [
+        72.80297148294892,
+        286.48250615707343,
+        193.49674014161133,
+        256.49544153655376,
+        1.4393542793542373,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}
