@@ -133,3 +133,29 @@ The dry run (`--dry --n 10`) went first and changed no constant:
 - Sasha's index of measured numbers: `reports/HANDOFF.md`, `research_os/lab/facts.md`, `research/LEDGER.md`.
 - Official planner: `scripts/eval_official_cem.py`. Live-goal run: `scripts/live_goal_cem.py`. Rendered breadcrumbs: `scripts/staged_rotate_cem.py`.
 - After the course: Faith and Didar plan the same method on the lab UR3 (camera over a table, 3D-printed T with a tag, teleop demos, LeWM retrained on those). Keep the code free of sim-only shortcuts where possible, so it can carry over.
+
+## Language part (frozen 2026-10-08, before the test sentences were read)
+
+Goal: any sentence → command with numbers → crumbs. Three scripts:
+- `scripts/command_parser.py`: the LLM parser (Qwen2.5-1.5B-Instruct, local, greedy, few-shot) plus a keyword baseline built only from the 7 check-3 templates.
+- `scripts/language_breadcrumbs.py`: runs each sentence end to end, twice. One run uses the gold command, the other the parsed command. Both are scored on the GOLD region, with the same tolerances as check 3. Start = live reset seed `id % 10`. A parse identical to gold reuses the gold run. A missing parse counts as a miss.
+- `research/language/CODEX_PARAPHRASE_PROMPT.md`: how the 120 held-out sentences are made. Codex writes `research/language/paraphrases.jsonl`. Claude never saw them before the freeze.
+
+A parse is correct when the action matches, and:
+- for a turn: same sign and |deg − gold| ≤ 15
+- for a push: same direction and |px − gold| ≤ max(20, 25% of gold)
+
+| # | Command | Claim | Kill if |
+|---|---|---|---|
+| L1 | `python scripts/command_parser.py --eval research/language/paraphrases.jsonl` | LLM parse accuracy ≥ 90% | ≤ 75%. Report by style and action. The keyword baseline is report only |
+| L2 | `python scripts/language_breadcrumbs.py research/language/paraphrases.jsonl` | Parsed success ≥ gold success − 5 pts | parsed ≤ gold − 15 pts |
+
+Do not edit the prompt, the few-shot examples, the tolerances or the claims after reading the sentences. If a gold label looks wrong, list it in the report as a "label dispute"; do not change it.
+
+### Next steps for whoever continues (Codex)
+
+1. Model files: `ls data/hf_models/Qwen2.5-1.5B-Instruct/*.safetensors`. If missing, run `hf download Qwen/Qwen2.5-1.5B-Instruct --local-dir data/hf_models/Qwen2.5-1.5B-Instruct` (it resumes). `data/hf_models/` and `data/datasets/` are git-excluded locally.
+2. Smoke test, not scored: `python scripts/command_parser.py "nudge the tee toward the bottom"` should print a push down of about 40. The parser and the end-to-end script were written but have NOT run yet. Fix only crashes; don't change the prompt or the tolerances.
+3. Check that `paraphrases.jsonl` has 120 lines with valid labels, then commit it on its own BEFORE running L1.
+4. Run L1 (~1 min), then L2 (~10–15 min on the 5090). Activate `.venv` first and run from the repo root.
+5. Commit the `research/artifacts/5090/parse_*.json` and `language_*.json` files, add an L1/L2 row to the results table above, and push this branch. Never push to master. Commit as FaithOgunwoye (repo-local git config is already set). No AI co-author lines.
