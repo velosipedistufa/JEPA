@@ -1,0 +1,120 @@
+{"id": 0, "text": "A bit of counterclockwise rotation in the same spot would be ideal.", "action": "turn", "deg": -45, "dir": null, "px": null, "style": "indirect"}
+{"id": 1, "text": "That letter thing, make it match green ghost position AND angle.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 2, "text": "I'd like the block's orientation 30 degrees clockwise from now, at the same position.", "action": "turn", "deg": 30, "dir": null, "px": null, "style": "indirect"}
+{"id": 3, "text": "grey letter goes in green letter, exact same pose thx.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 4, "text": "one tee-length toward screen top, slide da block.", "action": "push", "deg": null, "dir": "up", "px": 100, "style": "odd"}
+{"id": 5, "text": "I'm looking for complete overlap between the piece and the green template.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 6, "text": "Send that piece far to the left.", "action": "push", "deg": null, "dir": "left", "px": 160, "style": "casual"}
+{"id": 7, "text": "Rotate the piece counterclockwise through 30 degrees in its current spot.", "action": "turn", "deg": -30, "dir": null, "px": null, "style": "plain"}
+{"id": 8, "text": "I'd go with a 75-degree clockwise twist at this spot.", "action": "turn", "deg": 75, "dir": null, "px": null, "style": "casual"}
+{"id": 9, "text": "nudge to the left for the tee plz.", "action": "push", "deg": null, "dir": "left", "px": 40, "style": "odd"}
+{"id": 10, "text": "Translate the block 30 pixels toward the left edge of the screen.", "action": "push", "deg": null, "dir": "left", "px": 30, "style": "plain"}
+{"id": 11, "text": "Translate the letter 200 pixels rightward.", "action": "push", "deg": null, "dir": "right", "px": 200, "style": "plain"}
+{"id": 12, "text": "Rotate the T a half turn anticlockwise around its center.", "action": "turn", "deg": -180, "dir": null, "px": null, "style": "plain"}
+{"id": 13, "text": "Rotate the letter 120 degrees clockwise, keeping its center still.", "action": "turn", "deg": 120, "dir": null, "px": null, "style": "plain"}
+{"id": 14, "text": "Make the piece and the green guide sit right on top of each other.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 15, "text": "Align the block precisely with the green silhouette.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 16, "text": "eighth-turn clockwise, that piece, in place if u please.", "action": "turn", "deg": 45, "dir": null, "px": null, "style": "odd"}
+{"id": 17, "text": "Match block to green shape all the way, no crooked angle pls.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 18, "text": "I'd like the block a bit farther left than it is now.", "action": "push", "deg": null, "dir": "left", "px": 40, "style": "indirect"}
+{"id": 19, "text": "Nudge that block toward the right side.", "action": "push", "deg": null, "dir": "right", "px": 40, "style": "casual"}
+{"id": 20, "text": "Let's swivel this piece a quarter turn clockwise where it sits.", "action": "turn", "deg": 90, "dir": null, "px": null, "style": "casual"}
+{"id": 21, "text": "Move the piece one and a half T lengths to the right.", "action": "push", "deg": null, "dir": "right", "px": 150, "style": "plain"}
+{"id": 22, "text": "The desired final pose is exactly the one drawn in green.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 23, "text": "Seat the piece squarely in the green silhouette.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 24, "text": "It would be good to have the solid letter perfectly matching the green letter.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 25, "text": "I want the letter moved far to the left from here.", "action": "push", "deg": null, "dir": "left", "px": 160, "style": "indirect"}
+{"id": 26, "text": "Twist it slightly counterclockwise, keeping it here.", "action": "turn", "deg": -45, "dir": null, "px": null, "style": "casual"}
+{"id": 27, "text": "Right edge-ward slide for the grey thing please.", "action": "push", "deg": null, "dir": "right", "px": 80, "style": "odd"}
+{"id": 28, "text": "Slide the T 200 pixels toward the bottom edge.", "action": "push", "deg": null, "dir": "down", "px": 200, "style": "plain"}
+{"id": 29, "text": "Clockwise rotation for this tee please, location unchanged.", "action": "turn", "deg": 90, "dir": null, "px": null, "style": "odd"}
+{"id": 30, "text": "grey dude spin counterclockwise 60 degrees, center stays.", "action": "turn", "deg": -60, "dir": null, "px": null, "style": "odd"}
+{"id": 31, "text": "green tee and grey tee: stack em exact, same facing.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 32, "text": "Give the T a 60-degree clockwise rotation about its center.", "action": "turn", "deg": 60, "dir": null, "px": null, "style": "plain"}
+{"id": 33, "text": "Spin the block clockwise through 135 degrees in place.", "action": "turn", "deg": 135, "dir": null, "px": null, "style": "plain"}
+{"id": 34, "text": "Slide the letter half a T length toward the top of the screen.", "action": "push", "deg": null, "dir": "up", "px": 50, "style": "plain"}
+{"id": 35, "text": "Let's spin the T clockwise by 150 degrees without sliding it.", "action": "turn", "deg": 150, "dir": null, "px": null, "style": "casual"}
+{"id": 36, "text": "The block should end up at the green outline's position and angle.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 37, "text": "I'd say slide and swivel it until the two Ts match.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 38, "text": "Scoot the piece a little to the left.", "action": "push", "deg": null, "dir": "left", "px": 40, "style": "casual"}
+{"id": 39, "text": "Place the block in the pose indicated by the green outline.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 40, "text": "Rotate the letter 120 degrees anticlockwise at the same location.", "action": "turn", "deg": -120, "dir": null, "px": null, "style": "plain"}
+{"id": 41, "text": "Move and orient the T so it coincides with the green marking.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 42, "text": "screen-up a lot, scoot da tee.", "action": "push", "deg": null, "dir": "up", "px": 160, "style": "odd"}
+{"id": 43, "text": "Get the block nestled into that green T, facing the same way.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 44, "text": "Give the piece an eighth of a turn clockwise in place.", "action": "turn", "deg": 45, "dir": null, "px": null, "style": "plain"}
+{"id": 45, "text": "The desired change is a 30-degree counterclockwise rotation with no shift.", "action": "turn", "deg": -30, "dir": null, "px": null, "style": "indirect"}
+{"id": 46, "text": "rotat the tee a lil bit clockwise in place.", "action": "turn", "deg": 45, "dir": null, "px": null, "style": "odd"}
+{"id": 47, "text": "Shift it a lot toward the bottom of the screen.", "action": "push", "deg": null, "dir": "down", "px": 160, "style": "casual"}
+{"id": 48, "text": "eighth-turn counterclockwise for that letter thing, same location.", "action": "turn", "deg": -45, "dir": null, "px": null, "style": "odd"}
+{"id": 49, "text": "My goal is a grey T sitting flush over the green T guide.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 50, "text": "Give the piece an eighth of a turn counterclockwise in place.", "action": "turn", "deg": -45, "dir": null, "px": null, "style": "plain"}
+{"id": 51, "text": "Match the letter's position and rotation to the green template.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 52, "text": "tee, do a quarter spin clockwise on the spot pls.", "action": "turn", "deg": 90, "dir": null, "px": null, "style": "odd"}
+{"id": 53, "text": "two T lengths leftward, that block must travel.", "action": "push", "deg": null, "dir": "left", "px": 200, "style": "odd"}
+{"id": 54, "text": "I want the piece a quarter turn anticlockwise from its current pose, with its center unchanged.", "action": "turn", "deg": -90, "dir": null, "px": null, "style": "indirect"}
+{"id": 55, "text": "Rotate the T a half turn clockwise around its center.", "action": "turn", "deg": 180, "dir": null, "px": null, "style": "plain"}
+{"id": 56, "text": "60 degrees clockwise pls, spin the grey dude in place.", "action": "turn", "deg": 60, "dir": null, "px": null, "style": "odd"}
+{"id": 57, "text": "Rotate the block clockwise by 30 degrees without translating it.", "action": "turn", "deg": 30, "dir": null, "px": null, "style": "plain"}
+{"id": 58, "text": "Give that block a clockwise spin in place.", "action": "turn", "deg": 90, "dir": null, "px": null, "style": "casual"}
+{"id": 59, "text": "Bring the grey T into exact alignment with its green destination.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 60, "text": "Let's slide the block toward the bottom edge.", "action": "push", "deg": null, "dir": "down", "px": 80, "style": "casual"}
+{"id": 61, "text": "Can you spin it counterclockwise by 150 degrees, staying here?", "action": "turn", "deg": -150, "dir": null, "px": null, "style": "casual"}
+{"id": 62, "text": "anticlockwise swivel, block stays on this spot ok.", "action": "turn", "deg": -90, "dir": null, "px": null, "style": "odd"}
+{"id": 63, "text": "A slight downward shift of the block on the screen would be good.", "action": "push", "deg": null, "dir": "down", "px": 40, "style": "indirect"}
+{"id": 64, "text": "Give the block a 60-degree counterclockwise rotation about its center.", "action": "turn", "deg": -60, "dir": null, "px": null, "style": "plain"}
+{"id": 65, "text": "I'd prefer the grey piece farther toward the top of the screen.", "action": "push", "deg": null, "dir": "up", "px": 80, "style": "indirect"}
+{"id": 66, "text": "Move it a bit toward the top of the screen.", "action": "push", "deg": null, "dir": "up", "px": 40, "style": "casual"}
+{"id": 67, "text": "Move the grey block 75 pixels upward on the screen.", "action": "push", "deg": null, "dir": "up", "px": 75, "style": "plain"}
+{"id": 68, "text": "Can you swivel the block a quarter turn anticlockwise without moving its center?", "action": "turn", "deg": -90, "dir": null, "px": null, "style": "casual"}
+{"id": 69, "text": "The position I want is two T lengths above the current one on screen.", "action": "push", "deg": null, "dir": "up", "px": 200, "style": "indirect"}
+{"id": 70, "text": "A bit anticlockwise, twist that thing where it stands.", "action": "turn", "deg": -45, "dir": null, "px": null, "style": "odd"}
+{"id": 71, "text": "Rightward by 120 pixels, move that letter thing.", "action": "push", "deg": null, "dir": "right", "px": 120, "style": "odd"}
+{"id": 72, "text": "I'd like the piece one T length to the right of its current location.", "action": "push", "deg": null, "dir": "right", "px": 100, "style": "indirect"}
+{"id": 73, "text": "grey dude goes 150 pixels screen-down thx.", "action": "push", "deg": null, "dir": "down", "px": 150, "style": "odd"}
+{"id": 74, "text": "the tee needs half-turn counterclockwise, same center ya.", "action": "turn", "deg": -180, "dir": null, "px": null, "style": "odd"}
+{"id": 75, "text": "Put da piece flush in the green drawing, arms matching.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 76, "text": "I'd like the piece facing a quarter turn clockwise from its present orientation, still here.", "action": "turn", "deg": 90, "dir": null, "px": null, "style": "indirect"}
+{"id": 77, "text": "Slide the piece 60 pixels toward the screen's right edge.", "action": "push", "deg": null, "dir": "right", "px": 60, "style": "plain"}
+{"id": 78, "text": "For this piece, green stencil pose is wanted; align exact.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 79, "text": "Move the letter far upward on the screen.", "action": "push", "deg": null, "dir": "up", "px": 160, "style": "casual"}
+{"id": 80, "text": "The goal is half a turn clockwise from this orientation, without translation.", "action": "turn", "deg": 180, "dir": null, "px": null, "style": "indirect"}
+{"id": 81, "text": "Scoot the block a lot to the right.", "action": "push", "deg": null, "dir": "right", "px": 160, "style": "casual"}
+{"id": 82, "text": "Slide letter 90 pix down on screen pls.", "action": "push", "deg": null, "dir": "down", "px": 90, "style": "odd"}
+{"id": 83, "text": "scoot teh tee 60 px leftward pls.", "action": "push", "deg": null, "dir": "left", "px": 60, "style": "odd"}
+{"id": 84, "text": "I want the green outline filled by the grey block, with their arms aligned.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 85, "text": "quarter spin anticlockwise for da letter, same spot.", "action": "turn", "deg": -90, "dir": null, "px": null, "style": "odd"}
+{"id": 86, "text": "Slide it slightly toward the bottom edge.", "action": "push", "deg": null, "dir": "down", "px": 40, "style": "casual"}
+{"id": 87, "text": "Translate the piece one T length toward the bottom of the screen.", "action": "push", "deg": null, "dir": "down", "px": 100, "style": "plain"}
+{"id": 88, "text": "Slide the grey block 135 pixels downward on the screen.", "action": "push", "deg": null, "dir": "down", "px": 135, "style": "plain"}
+{"id": 89, "text": "The tee must wear the green outline like a perfect glove.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 90, "text": "I'd prefer the block rotated clockwise by 120 degrees, staying in its current location.", "action": "turn", "deg": 120, "dir": null, "px": null, "style": "indirect"}
+{"id": 91, "text": "pls fit teh tee exactly into the green stencil.", "action": "target", "deg": null, "dir": null, "px": null, "style": "odd"}
+{"id": 92, "text": "Let's get that T lined up perfectly with the green one.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 93, "text": "send that tee far toward screen bottom yeah.", "action": "push", "deg": null, "dir": "down", "px": 160, "style": "odd"}
+{"id": 94, "text": "a bit rightward scooting for that piece pls.", "action": "push", "deg": null, "dir": "right", "px": 40, "style": "odd"}
+{"id": 95, "text": "Fit the grey piece inside the green T outline, matching its orientation.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 96, "text": "Can you slide that grey piece toward the left edge?", "action": "push", "deg": null, "dir": "left", "px": 80, "style": "casual"}
+{"id": 97, "text": "Can you make the grey shape cover the green outline exactly?", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 98, "text": "A slight clockwise rotation is what I'm after; keep the center where it is.", "action": "turn", "deg": 45, "dir": null, "px": null, "style": "indirect"}
+{"id": 99, "text": "I'd like both T shapes to coincide exactly.", "action": "target", "deg": null, "dir": null, "px": null, "style": "indirect"}
+{"id": 100, "text": "Twist it a bit clockwise, right where it is.", "action": "turn", "deg": 45, "dir": null, "px": null, "style": "casual"}
+{"id": 101, "text": "My desired position is 30 pixels to the right of where the T is now.", "action": "push", "deg": null, "dir": "right", "px": 30, "style": "indirect"}
+{"id": 102, "text": "Shift the block one T length to the left.", "action": "push", "deg": null, "dir": "left", "px": 100, "style": "plain"}
+{"id": 103, "text": "half-turn clockwise on spot for the tee, cheers.", "action": "turn", "deg": 180, "dir": null, "px": null, "style": "odd"}
+{"id": 104, "text": "Move the block 120 pixels toward the top of the screen.", "action": "push", "deg": null, "dir": "up", "px": 120, "style": "plain"}
+{"id": 105, "text": "Make letter spin 135 degrees clockwise, no slide thx.", "action": "turn", "deg": 135, "dir": null, "px": null, "style": "odd"}
+{"id": 106, "text": "The block should be half a T length lower on the screen.", "action": "push", "deg": null, "dir": "down", "px": 50, "style": "indirect"}
+{"id": 107, "text": "The goal is half a turn counterclockwise from this orientation, without translation.", "action": "turn", "deg": -180, "dir": null, "px": null, "style": "indirect"}
+{"id": 108, "text": "Let's scoot the letter toward the screen's right side.", "action": "push", "deg": null, "dir": "right", "px": 80, "style": "casual"}
+{"id": 109, "text": "Pop the block into the green shape with the same tilt.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 110, "text": "Spin the block counterclockwise through 135 degrees in place.", "action": "turn", "deg": -135, "dir": null, "px": null, "style": "plain"}
+{"id": 111, "text": "The green T is where this one belongs; line them up fully.", "action": "target", "deg": null, "dir": null, "px": null, "style": "casual"}
+{"id": 112, "text": "Make the solid T overlap the green T exactly.", "action": "target", "deg": null, "dir": null, "px": null, "style": "plain"}
+{"id": 113, "text": "up a little on screen, move teh letter.", "action": "push", "deg": null, "dir": "up", "px": 40, "style": "odd"}
+{"id": 114, "text": "Give it a 75-degree anticlockwise twist right here.", "action": "turn", "deg": -75, "dir": null, "px": null, "style": "casual"}
+{"id": 115, "text": "Give that block an anticlockwise spin in place.", "action": "turn", "deg": -90, "dir": null, "px": null, "style": "casual"}
+{"id": 116, "text": "Displace the T 180 pixels leftward.", "action": "push", "deg": null, "dir": "left", "px": 180, "style": "plain"}
+{"id": 117, "text": "Get that piece moving toward the top edge.", "action": "push", "deg": null, "dir": "up", "px": 80, "style": "casual"}
+{"id": 118, "text": "135 degrees anticlockwise for teh block, keep it here.", "action": "turn", "deg": -135, "dir": null, "px": null, "style": "odd"}
+{"id": 119, "text": "leftward scoot for this letter thing thx.", "action": "push", "deg": null, "dir": "left", "px": 80, "style": "odd"}
