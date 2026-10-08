@@ -77,6 +77,23 @@ All scored runs use `--budget 300`. Expect each CEM plan to take under a second 
 
 Report back to Faith: the `SUMMARY` line of each run, and the JSON files under `research/artifacts/5090/`. Commit them on this branch with a short plain message. Do not push without asking.
 
+## Results on the 5090 (2026-10-08)
+
+The JSON files are in `research/artifacts/5090/`. Scored runs use budget 300.
+
+| # | Result | Verdict |
+|---|---|---|
+| 0 | official CEM 47/50 (4090: 45/50) | setup holds |
+| 1a | 50/50 with a route, median 0.5 jumps | holds |
+| 1b | 13/20 with a route; median entry/goal gap 37/39 px | report |
+| 2a / 2b | offset 50: flat 24/50, crumbs 34/50 (+20 pts; paired 16 crumbs-only vs 6 flat-only) | holds |
+| 2c | offset 100: flat 10/50, crumbs 29/50 (+38 pts; paired 23 vs 4) | holds, gap grows |
+| 2d | live: flat 0/20, crumbs 3/20; median block error 162 → 58 px | between claim (4) and kill (1) |
+| 3b | words: flat 18/64, crumbs 34/64 (+25 pts; paired 24 vs 8) | holds |
+| 3c | turns: crumbs 8/20 (flat 4/20). The 012 gate (drift under 15 px): crumbs 0/20, flat 1/20 | holds on the frozen gate. The turns happen while the block drifts 15–40 px, not strictly in place |
+
+Crumbs per command: target 6/10, turn cw 5/10, turn ccw 3/10, left 4/8, right 4/8, up 7/10, down 5/8.
+
 ## Check 3, after check 2 holds (not written yet)
 
 Words pick the goal region instead of a goal image:

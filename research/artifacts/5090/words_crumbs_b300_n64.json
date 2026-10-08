@@ -1,0 +1,6938 @@
+{
+  "summary": {
+    "n": 64,
+    "successes": 34,
+    "success_rate": 0.53125,
+    "turn_successes": "8/20",
+    "turn_gate_012": "0/20",
+    "success_by_command": {
+      "target": "6/10",
+      "turn_cw": "5/10",
+      "turn_ccw": "3/10",
+      "push_left": "4/8",
+      "push_right": "4/8",
+      "push_up": "7/10",
+      "push_down": "5/8"
+    }
+  },
+  "in_place_turns": {
+    "nodes": 8040,
+    "of_nodes": 427396,
+    "episodes": 1691,
+    "of_episodes": 16817,
+    "rule": "block moves < 15.0 px while turning > 90 deg within 50 demo steps"
+  },
+  "args": {
+    "planner": "crumbs",
+    "budget": 300,
+    "n": 10,
+    "dry": false
+  },
+  "wall_s": 184.27751779556274,
+  "dropped_pairs": [
+    [
+      0,
+      "push_right"
+    ],
+    [
+      1,
+      "push_left"
+    ],
+    [
+      2,
+      "push_down"
+    ],
+    [
+      3,
+      "push_left"
+    ],
+    [
+      6,
+      "push_down"
+    ],
+    [
+      7,
+      "push_right"
+    ]
+  ],
+  "commands": {
+    "target": "put the T on the target",
+    "turn_cw": "turn the T 90 degrees clockwise",
+    "turn_ccw": "turn the T 90 degrees counter-clockwise",
+    "push_left": "push the T left",
+    "push_right": "push the T right",
+    "push_up": "push the T up",
+    "push_down": "push the T down"
+  },
+  "constants": {
+    "tol_xy": 20.0,
+    "tol_ang_deg": 20.0,
+    "turn_drift": 40.0,
+    "push_px": 80.0,
+    "target": [
+      256.0,
+      256.0,
+      0.7853981633974483
+    ],
+    "arena": [
+      80.0,
+      432.0
+    ],
+    "screen": "y down; positive block angle is clockwise on screen"
+  },
+  "graph": {
+    "nodes": 427396,
+    "forward_edges": 410579,
+    "jump_edges": 2852207
+  },
+  "episodes": [
+    {
+      "success": true,
+      "steps": 125,
+      "n_hops": 5,
+      "end_block": [
+        268.5428834963725,
+        268.9668501875908,
+        1.0054043731523592
+      ],
+      "block_moved_px": 125.24169139946437,
+      "block_turned_deg": 132.8758159372167,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 76.36831820303978,
+          "path_cost": 15.100161475891447,
+          "crumb_steps": 25.0,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.01989078440168,
+          "path_cost": 9.553800097346237,
+          "crumb_steps": 26.54401510226898,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.336589004970413,
+          "path_cost": 6.870470950136394,
+          "crumb_steps": 24.676177375340984,
+          "edges": 5,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.25101338763836,
+          "path_cost": 8.860589982128866,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.086454978323458,
+          "path_cost": 3.8605899821288667,
+          "crumb_steps": 12.151474955322167,
+          "edges": 3,
+          "jumps": 1
+        }
+      ],
+      "seed": 0,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 62.750403689728614,
+      "jumps": 2,
+      "goal_node_state": [
+        249.28713989257812,
+        327.2956848144531,
+        247.8350830078125,
+        273.5602111816406,
+        0.5608224272727966,
+        14.794974327087402,
+        -147.1356201171875
+      ]
+    },
+    {
+      "success": true,
+      "steps": 224,
+      "n_hops": 9,
+      "end_block": [
+        360.25035666290523,
+        346.48832734544607,
+        0.27419656361391187
+      ],
+      "block_moved_px": 36.91605608768013,
+      "block_turned_deg": 90.98069450365792,
+      "gate_012": false,
+      "n_crumb_hops": 6,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 76.36831820303978,
+          "path_cost": 11.26947534619557,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.669047399327464,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.50534409386285,
+          "path_cost": 41.79209133086071,
+          "crumb_steps": 27.925329906576508,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.468995852509266,
+          "path_cost": 25.28064540108392,
+          "crumb_steps": 27.030300647872973,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.096195073909747,
+          "path_cost": 26.583310857845095,
+          "crumb_steps": 25.91352610906395,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 6.890891760369683,
+          "path_cost": 22.672398154966256,
+          "crumb_steps": 26.452928768115402,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.997904360187631,
+          "path_cost": 17.66731707946399,
+          "crumb_steps": 27.729106382755944,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.647806080752623,
+          "path_cost": 6.899305635689611,
+          "crumb_steps": 24.74826408922403,
+          "edges": 5,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.58212187144129,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 0,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 653,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 48.17368836548892,
+      "jumps": 1,
+      "goal_node_state": [
+        319.6319580078125,
+        469.8665771484375,
+        354.59307861328125,
+        339.4287109375,
+        6.280909538269043,
+        -35.73945236206055,
+        -24.913925170898438
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        379.5562400433688,
+        294.9590877683379,
+        2.8518641489991055
+      ],
+      "block_moved_px": 23.458755863044406,
+      "block_turned_deg": -121.32983186609273,
+      "gate_012": false,
+      "n_crumb_hops": 9,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 76.36831820303978,
+          "path_cost": 49.13959142868668,
+          "crumb_steps": 26.11828425333837,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.197510498598753,
+          "path_cost": 44.27068885170164,
+          "crumb_steps": 26.446027810875776,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.829854377618354,
+          "path_cost": 41.1558633391858,
+          "crumb_steps": 28.020477689892488,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.939410262775645,
+          "path_cost": 41.34939592732413,
+          "crumb_steps": 26.539806329232206,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.755897237894892,
+          "path_cost": 44.9371078675257,
+          "crumb_steps": 28.267427302203593,
+          "edges": 11,
+          "jumps": 8
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.930582861428444,
+          "path_cost": 30.630136946644257,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.99552971348653,
+          "path_cost": 24.630136946644257,
+          "crumb_steps": 27.07643706745338,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.404098642443937,
+          "path_cost": 13.799562119662902,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.48506737128516,
+          "path_cost": 8.799562119662902,
+          "crumb_steps": 29.498905299157254,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 44.16758588904435,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 36.14888001706696,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 37.05219265967848,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 0,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 732,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 170.3489785717167,
+      "jumps": 10,
+      "goal_node_state": [
+        353.1385803222656,
+        275.494140625,
+        358.23724365234375,
+        332.5583190917969,
+        3.7188258171081543,
+        -83.46752166748047,
+        58.23112487792969
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        340.89397166528425,
+        320.4396811497953,
+        1.4956757099639386
+      ],
+      "block_moved_px": 42.94515120156218,
+      "block_turned_deg": 160.96629435275707,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 76.36831820303978,
+          "path_cost": 11.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.317922746915414,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.02932979657197,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.345799404283484,
+          "path_cost": 2.8987135564787145,
+          "crumb_steps": 4.7467838911967855,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 20.545150779115954,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.95266576084243,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.54691877789083,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.42267582874967,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.205575496724364,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.69982526918502,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.772230201554688,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.984347938937905,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 0,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5921,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 55.0,
+      "jumps": 0,
+      "goal_node_state": [
+        249.67530822753906,
+        388.38909912109375,
+        297.1297607421875,
+        328.67645263671875,
+        1.0729657411575317,
+        -18.025917053222656,
+        -58.04400634765625
+      ]
+    },
+    {
+      "success": true,
+      "steps": 25,
+      "n_hops": 1,
+      "end_block": [
+        379.66513292364834,
+        256.7655166776775,
+        5.582508746105742
+      ],
+      "block_moved_px": 61.40791968708497,
+      "block_turned_deg": 35.12457889831865,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 73.09044659134491,
+          "path_cost": 5.839842245043869,
+          "crumb_steps": 19.599605612609672,
+          "edges": 4,
+          "jumps": 1
+        }
+      ],
+      "seed": 0,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 618,
+      "route": true,
+      "entry_gap": 73.09044659134491,
+      "demo_steps": 19.599605612609672,
+      "jumps": 1,
+      "goal_node_state": [
+        360.7238464355469,
+        269.9979248046875,
+        388.7634582519531,
+        223.37513732910156,
+        6.226816177368164,
+        -0.06155851483345032,
+        -3.6438987255096436
+      ]
+    },
+    {
+      "success": true,
+      "steps": 197,
+      "n_hops": 8,
+      "end_block": [
+        372.7553028759685,
+        382.3536103640403,
+        2.2235467985908635
+      ],
+      "block_moved_px": 65.25429229799728,
+      "block_turned_deg": -157.32976423932743,
+      "n_crumb_hops": 7,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 76.36831820303978,
+          "path_cost": 33.95778215946258,
+          "crumb_steps": 25.615957254682037,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.2467284894163,
+          "path_cost": 26.485883769915674,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 10.198247859772241,
+          "path_cost": 30.38666964443784,
+          "crumb_steps": 27.84370047443542,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.975707154422107,
+          "path_cost": 28.59737537036716,
+          "crumb_steps": 29.491279459936955,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 7.685196547423846,
+          "path_cost": 25.236323551435504,
+          "crumb_steps": 27.383996671611378,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.923829163843305,
+          "path_cost": 18.69443382654475,
+          "crumb_steps": 26.48204868947036,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 8.116863787937136,
+          "path_cost": 10.101614350756604,
+          "crumb_steps": 27.754035876891507,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 3.1222419890853357,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 0,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 743,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 132.39445539865648,
+      "jumps": 5,
+      "goal_node_state": [
+        346.927978515625,
+        354.1623840332031,
+        369.0669860839844,
+        403.42791748046875,
+        2.1327145099639893,
+        -35.960845947265625,
+        62.522544860839844
+      ]
+    },
+    {
+      "success": true,
+      "steps": 75,
+      "n_hops": 3,
+      "end_block": [
+        243.18718478380086,
+        261.2443656796911,
+        0.6941691553025855
+      ],
+      "block_moved_px": 98.14556559469703,
+      "block_turned_deg": 0.47516559400747804,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 14.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.002686330252107,
+          "path_cost": 8.50837320881832,
+          "crumb_steps": 26.2709330220458,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.38709707981702,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 1,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 70.0,
+      "jumps": 0,
+      "goal_node_state": [
+        186.85079956054688,
+        281.0140075683594,
+        241.3145294189453,
+        268.8351745605469,
+        0.7706798911094666,
+        -15.285511016845703,
+        2.527026653289795
+      ]
+    },
+    {
+      "success": true,
+      "steps": 175,
+      "n_hops": 7,
+      "end_block": [
+        138.9006012345918,
+        201.06047921656278,
+        2.032746890094222
+      ],
+      "block_moved_px": 22.468579044800876,
+      "block_turned_deg": 77.17002034775025,
+      "gate_012": false,
+      "n_crumb_hops": 6,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 38.434238043421885,
+          "crumb_steps": 25.860717526742107,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.825244954099343,
+          "path_cost": 30.95364905421426,
+          "crumb_steps": 28.89992134633723,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 22.846219762837197,
+          "path_cost": 28.74394889647225,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.606920568193566,
+          "path_cost": 19.234796480317613,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.0711733391121,
+          "path_cost": 27.564571000277756,
+          "crumb_steps": 26.754020236344928,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 15.358470198598841,
+          "path_cost": 16.695861515827886,
+          "crumb_steps": 29.239653789569715,
+          "edges": 7,
+          "jumps": 4
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 23.248013283178693
+        }
+      ],
+      "seed": 1,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2114,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 153.5855951085547,
+      "jumps": 5,
+      "goal_node_state": [
+        78.59728240966797,
+        193.900390625,
+        170.20921325683594,
+        226.5799102783203,
+        2.232203483581543,
+        52.324440002441406,
+        61.11504364013672
+      ]
+    },
+    {
+      "success": true,
+      "steps": 154,
+      "n_hops": 7,
+      "end_block": [
+        195.11015189607758,
+        225.10838243244564,
+        5.716517920586156
+      ],
+      "block_moved_px": 39.68928117371751,
+      "block_turned_deg": -71.7654469125038,
+      "gate_012": false,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 35.691128427152535,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.878525813825625,
+          "path_cost": 28.418241862327335,
+          "crumb_steps": 26.70724282954402,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.095481201945745,
+          "path_cost": 24.366017848525104,
+          "crumb_steps": 28.786817602769485,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 32.88057871320098,
+          "path_cost": 27.747954789728293,
+          "crumb_steps": 29.25019388372594,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.07627467892376,
+          "path_cost": 28.668391117696988,
+          "crumb_steps": 27.483806408568892,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.442780479952138,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.032618187269605,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 1,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2534,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 94.22782106788132,
+      "jumps": 10,
+      "goal_node_state": [
+        162.46107482910156,
+        300.5821838378906,
+        163.5008544921875,
+        246.72303771972656,
+        5.714059352874756,
+        37.1052131652832,
+        -60.19144821166992
+      ]
+    },
+    {
+      "success": true,
+      "steps": 47,
+      "n_hops": 2,
+      "end_block": [
+        227.9515376642168,
+        228.9977749637368,
+        1.1886272218513962
+      ],
+      "block_moved_px": 72.55626183040359,
+      "block_turned_deg": 28.805525953453124,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 13.953579289026013,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 30.75653081048972,
+          "path_cost": 7.897088887313405,
+          "crumb_steps": 22.24272221828351,
+          "edges": 5,
+          "jumps": 2
+        }
+      ],
+      "seed": 1,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7007,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 54.88394822256503,
+      "jumps": 2,
+      "goal_node_state": [
+        172.7917022705078,
+        208.42755126953125,
+        228.01161193847656,
+        228.8319854736328,
+        1.2188903093338013,
+        56.70569610595703,
+        -26.122285842895508
+      ]
+    },
+    {
+      "success": true,
+      "steps": 120,
+      "n_hops": 5,
+      "end_block": [
+        158.93065799251065,
+        151.64838934949998,
+        0.2257969465439187
+      ],
+      "block_moved_px": 62.97434000600061,
+      "block_turned_deg": -26.360585209084462,
+      "n_crumb_hops": 4,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 27.384295104855113,
+          "crumb_steps": 25.023041243755337,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.46202136383342,
+          "path_cost": 20.303912077116042,
+          "crumb_steps": 27.099538884694333,
+          "edges": 7,
+          "jumps": 7
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 15.860680949356519,
+          "path_cost": 23.239243044792715,
+          "crumb_steps": 25.729809490004047,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 8.034162855910404,
+          "path_cost": 19.64071772250799,
+          "crumb_steps": 29.538054485771898,
+          "edges": 8,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.181231959280437,
+          "path_cost": 8.07967720833166,
+          "crumb_steps": 22.69919302082915,
+          "edges": 5,
+          "jumps": 2
+        }
+      ],
+      "seed": 1,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 927,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 108.46073776213777,
+      "jumps": 4,
+      "goal_node_state": [
+        205.46339416503906,
+        174.19554138183594,
+        149.02674865722656,
+        129.65199279785156,
+        6.27776575088501,
+        118.26641845703125,
+        -24.731107711791992
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        165.95301260951544,
+        253.89500673002536,
+        1.110323237275911
+      ],
+      "block_moved_px": 40.34940807485323,
+      "block_turned_deg": 24.319038118220327,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.571248724029736,
+          "path_cost": 14.30723058313925,
+          "crumb_steps": 25.329602935407383,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.72082440557584,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.674783321747057,
+          "path_cost": 14.89819084616732,
+          "crumb_steps": 26.881156422195335,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 9.026393393159802,
+          "path_cost": 13.179523038629217,
+          "crumb_steps": 25.448807596573037,
+          "edges": 7,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 10.242652401746463,
+          "path_cost": 11.378866370401031,
+          "crumb_steps": 28.44716592600258,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 17.14820534328237,
+          "path_cost": 2.5579793657764376,
+          "crumb_steps": 3.894948414441094,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 16.62591515672306,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 17.79495123904121,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.957860049077786,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.658462388687255,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 31.82155446935165,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 30.67844275625724,
+          "path_cost": 2.2771422811112085,
+          "crumb_steps": 3.1928557027780213,
+          "edges": 1,
+          "jumps": 1
+        }
+      ],
+      "seed": 1,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6749,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 58.268076457848125,
+      "jumps": 2,
+      "goal_node_state": [
+        144.605712890625,
+        251.66957092285156,
+        151.2600860595703,
+        279.261962890625,
+        0.7844421863555908,
+        -9.584783554077148,
+        43.692657470703125
+      ]
+    },
+    {
+      "success": true,
+      "steps": 123,
+      "n_hops": 5,
+      "end_block": [
+        268.6344625178556,
+        269.2738322221607,
+        1.1093128083824015
+      ],
+      "block_moved_px": 128.20484816774223,
+      "block_turned_deg": -39.829088024872746,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 49.95722861814694,
+          "path_cost": 5.55312765403958,
+          "crumb_steps": 21.38281913509895,
+          "edges": 5,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.413559284446038,
+          "path_cost": 4.333805133720394,
+          "crumb_steps": 15.834512834300984,
+          "edges": 4,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 10.006507516503184,
+          "path_cost": 1.941688869395854,
+          "crumb_steps": 2.3542221734896356,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 2.133586622274267,
+          "path_cost": 3.5549646430674593,
+          "crumb_steps": 11.387411607668648,
+          "edges": 3,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 5.291115359421727,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "seed": 2,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 21.38281913509895,
+      "jumps": 1,
+      "goal_node_state": [
+        282.8866882324219,
+        332.01019287109375,
+        254.1039276123047,
+        261.5709228515625,
+        1.0042608976364136,
+        2.662360668182373,
+        -21.447017669677734
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        320.9938911264538,
+        406.21295559140583,
+        2.5811339074750794
+      ],
+      "block_moved_px": 45.266931139484996,
+      "block_turned_deg": 44.50004915144381,
+      "gate_012": false,
+      "n_crumb_hops": 7,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 49.106873343115694,
+          "path_cost": 30.318397287253344,
+          "crumb_steps": 29.898986583345497,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 7.813129676506231,
+          "path_cost": 18.05639136496216,
+          "crumb_steps": 27.49956027328325,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 10.135768014628134,
+          "path_cost": 11.056567255648858,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.437524284923256,
+          "path_cost": 6.056567255648859,
+          "crumb_steps": 22.641418139122145,
+          "edges": 5,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.993107802965312,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.95895279715025,
+          "path_cost": 14.673234247496143,
+          "crumb_steps": 14.18308561874036,
+          "edges": 9,
+          "jumps": 9
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 30.818850493155747,
+          "path_cost": 2.815049156484136,
+          "crumb_steps": 4.537622891210339,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.25860831430124,
+          "path_cost": 26.366548980115958,
+          "crumb_steps": 29.580127246822848,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.53716039688014,
+          "path_cost": 27.271849867004136,
+          "crumb_steps": 28.09610004647341,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.079193856607256,
+          "path_cost": 16.033409848414774,
+          "crumb_steps": 29.94210648191479,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.711818039274526,
+          "path_cost": 20.496575202383656,
+          "crumb_steps": 26.100019866837,
+          "edges": 7,
+          "jumps": 5
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.805710978758736,
+          "path_cost": 6.056567255648859,
+          "crumb_steps": 22.641418139122145,
+          "edges": 5,
+          "jumps": 1
+        }
+      ],
+      "seed": 2,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1650,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 108.29599321813336,
+      "jumps": 5,
+      "goal_node_state": [
+        318.3993835449219,
+        363.01513671875,
+        290.5105895996094,
+        409.21234130859375,
+        3.0980591773986816,
+        -90.47380828857422,
+        23.424861907958984
+      ]
+    },
+    {
+      "success": true,
+      "steps": 197,
+      "n_hops": 8,
+      "end_block": [
+        253.14965687148504,
+        365.75677067207255,
+        0.004073691818828915
+      ],
+      "block_moved_px": 39.264763160668224,
+      "block_turned_deg": -103.1546247567331,
+      "gate_012": false,
+      "n_crumb_hops": 7,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 49.106873343115694,
+          "path_cost": 30.181270746847566,
+          "crumb_steps": 29.049419705408447,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.967697729989498,
+          "path_cost": 21.115074448472527,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.559305576489464,
+          "path_cost": 16.115074448472527,
+          "crumb_steps": 27.41485735603032,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.132703396988365,
+          "path_cost": 12.115074448472527,
+          "crumb_steps": 25.287686121181316,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.20403886434037,
+          "path_cost": 29.538019577212953,
+          "crumb_steps": 26.992022537294485,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 16.19192680052248,
+          "path_cost": 25.181039482574114,
+          "crumb_steps": 27.870336188456406,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.203959777899595,
+          "path_cost": 16.032905007191548,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.16186434269913,
+          "path_cost": 4.202333712780945,
+          "crumb_steps": 13.00583428195236,
+          "edges": 3,
+          "jumps": 1
+        }
+      ],
+      "seed": 2,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 165,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 100.45317686711891,
+      "jumps": 6,
+      "goal_node_state": [
+        306.32232666015625,
+        359.7032470703125,
+        287.7745056152344,
+        369.99102783203125,
+        0.26513704657554626,
+        29.204755783081055,
+        44.31606674194336
+      ]
+    },
+    {
+      "success": true,
+      "steps": 72,
+      "n_hops": 3,
+      "end_block": [
+        207.05952629243367,
+        382.18329472120655,
+        1.6829563300190056
+      ],
+      "block_moved_px": 71.17630136166585,
+      "block_turned_deg": -6.961735290073803,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 49.106873343115694,
+          "path_cost": 30.15111449433084,
+          "crumb_steps": 29.049419705408447,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.730692664598493,
+          "path_cost": 19.534562882641623,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.589907323288136,
+          "path_cost": 7.780574995739279,
+          "crumb_steps": 29.451437489348198,
+          "edges": 6,
+          "jumps": 1
+        }
+      ],
+      "seed": 2,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2414,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 100.37778623582709,
+      "jumps": 6,
+      "goal_node_state": [
+        203.94210815429688,
+        385.7034606933594,
+        191.1197052001953,
+        398.91937255859375,
+        1.4153785705566406,
+        -35.873291015625,
+        -24.045339584350586
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        322.87691239951477,
+        409.0578087906584,
+        2.7440613862147374
+      ],
+      "block_moved_px": 47.738189271043986,
+      "block_turned_deg": 53.835106049933636,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 49.95722861814694,
+          "path_cost": 24.09220720447802,
+          "crumb_steps": 27.209020663610747,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.47236441881636,
+          "path_cost": 29.132830146520316,
+          "crumb_steps": 29.4967725584863,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.333791993413985,
+          "path_cost": 15.966787709999604,
+          "crumb_steps": 26.95071866369315,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.03337918922232,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.284309997809952,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.678870344677573,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.37048745679616,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.838626034790074,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.300282300407215,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.120606300669365,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.79779876356406,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.54656196342481,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 2,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 720,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 87.73051801119504,
+      "jumps": 4,
+      "goal_node_state": [
+        312.3805236816406,
+        372.0213928222656,
+        360.9173889160156,
+        416.670166015625,
+        1.8583097457885742,
+        -124.18621826171875,
+        63.069252014160156
+      ]
+    },
+    {
+      "success": true,
+      "steps": 50,
+      "n_hops": 2,
+      "end_block": [
+        292.5121413461949,
+        329.3703402578887,
+        1.5806400475393814
+      ],
+      "block_moved_px": 69.69334121421078,
+      "block_turned_deg": -12.824026451624626,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 49.95722861814694,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.194976017426995,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "seed": 2,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7049,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 10.0,
+      "jumps": 0,
+      "goal_node_state": [
+        283.175048828125,
+        402.0617980957031,
+        276.1094665527344,
+        327.8980407714844,
+        1.5310399532318115,
+        13.42484188079834,
+        -65.63873291015625
+      ]
+    },
+    {
+      "success": true,
+      "steps": 121,
+      "n_hops": 5,
+      "end_block": [
+        244.95081533991296,
+        246.83519860529202,
+        0.9025675305964548
+      ],
+      "block_moved_px": 114.94705543418023,
+      "block_turned_deg": -29.19837470068436,
+      "n_crumb_hops": 2,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 53.3579095642739,
+          "path_cost": 13.630706871079454,
+          "crumb_steps": 29.662141057085485,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.494160173843245,
+          "path_cost": 11.077653539836586,
+          "crumb_steps": 27.694133849591463,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 17.76721702578118,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.221149117439837,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "seed": 3,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        136.95297241210938,
+        349.4397277832031,
+        238.2481689453125,
+        247.06488037109375,
+        0.9715439677238464,
+        38.3351936340332,
+        -25.06391716003418
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        157.93416805590925,
+        246.62735319654925,
+        2.601357342470207
+      ],
+      "block_moved_px": 29.852063594677357,
+      "block_turned_deg": 68.13511179950476,
+      "gate_012": false,
+      "n_crumb_hops": 8,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 51.047607169971926,
+          "path_cost": 55.52713828247812,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.623626976929597,
+          "path_cost": 32.32690099231998,
+          "crumb_steps": 27.74854862564226,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 35.79221639452745,
+          "path_cost": 38.094559307089554,
+          "crumb_steps": 27.073461726479334,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.552500540564456,
+          "path_cost": 23.960179334206288,
+          "crumb_steps": 28.977906879111842,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 41.2069440916111,
+          "path_cost": 36.573743750993415,
+          "crumb_steps": 29.67240012182445,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 43.51764959734667,
+          "path_cost": 34.76045090227582,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.720050061622677,
+          "path_cost": 33.070613224526596,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 9.626242294296125,
+          "path_cost": 29.00479289722997,
+          "crumb_steps": 29.618483559343773,
+          "edges": 8,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.114968002722826,
+          "path_cost": 9.583349939923623,
+          "crumb_steps": 21.45837484980906,
+          "edges": 5,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.7406081777527,
+          "path_cost": 3.8619426016084497,
+          "crumb_steps": 9.654856504021124,
+          "edges": 2,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.31409481204891,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 3,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1901,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        121.9195327758789,
+        364.7079772949219,
+        145.47421264648438,
+        265.2875671386719,
+        2.767507314682007,
+        35.06565856933594,
+        -49.774959564208984
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        178.8292897564637,
+        222.6436952753067,
+        0.3489746941087418
+      ],
+      "block_moved_px": 49.58838474344687,
+      "block_turned_deg": -60.9169078001062,
+      "gate_012": false,
+      "n_crumb_hops": 4,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 49.796163652378944,
+          "path_cost": 26.2206139004986,
+          "crumb_steps": 29.59982518351859,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 35.95217798236838,
+          "path_cost": 19.38068382709116,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.411714505404156,
+          "path_cost": 9.744592405891973,
+          "crumb_steps": 26.861481014729936,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.677538918600572,
+          "path_cost": 16.87630264222009,
+          "crumb_steps": 27.90802812246178,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 16.7422854833425,
+          "path_cost": 7.479672665711595,
+          "crumb_steps": 18.69918166427899,
+          "edges": 4,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 16.50537965010147,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.932219642176657,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.641229022054912,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.836047224415468,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.411410067547243,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.8074708916487,
+          "path_cost": 4.202101443047599,
+          "crumb_steps": 5.5052536076189975,
+          "edges": 2,
+          "jumps": 2
+        }
+      ],
+      "seed": 3,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2284,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        136.93450927734375,
+        359.0697326660156,
+        123.9506607055664,
+        225.0455780029297,
+        6.258373260498047,
+        223.26910400390625,
+        -59.983577728271484
+      ]
+    },
+    {
+      "success": true,
+      "steps": 172,
+      "n_hops": 7,
+      "end_block": [
+        218.53473819628366,
+        217.7018952236712,
+        1.695979998845652
+      ],
+      "block_moved_px": 89.44885180642918,
+      "block_turned_deg": 16.26081114305207,
+      "n_crumb_hops": 2,
+      "n_no_path": 3,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 31.02413645632774
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.74881007511732
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 44.541492284111165,
+          "path_cost": 7.694707279731937,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 40.728507809357005,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.826361907901074,
+          "path_cost": 10.961094500677808,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 46.280068035587334,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 3,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 11170,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        172.6058349609375,
+        353.78472900390625,
+        196.93463134765625,
+        230.9799346923828,
+        1.5454089641571045,
+        76.04322814941406,
+        -113.85162353515625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        280.9611523013061,
+        192.15133188153374,
+        0.7227461917028765
+      ],
+      "block_moved_px": 156.13371407932894,
+      "block_turned_deg": -39.50137848567807,
+      "n_crumb_hops": 5,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 39.132900328949326,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 38.41024877144652,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 36.68281600700455,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 36.01085619318048,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 34.84772651664076,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 35.83543899395915,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.97314901569912,
+          "path_cost": 36.75607368952595,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.75783805021806,
+          "path_cost": 28.038371120277723,
+          "crumb_steps": 29.32750287409956,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.49493233555644,
+          "path_cost": 20.3073699706379,
+          "crumb_steps": 28.675525941066926,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.410080710546161,
+          "path_cost": 12.837159594211132,
+          "crumb_steps": 29.592898985527828,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.746746580823956,
+          "path_cost": 15.516047118115209,
+          "crumb_steps": 26.29011779528802,
+          "edges": 6,
+          "jumps": 2
+        }
+      ],
+      "seed": 3,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1086,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        135.96798706054688,
+        332.4280090332031,
+        145.63705444335938,
+        166.0898895263672,
+        0.2539878189563751,
+        -133.62115478515625,
+        176.9158935546875
+      ]
+    },
+    {
+      "success": true,
+      "steps": 150,
+      "n_hops": 6,
+      "end_block": [
+        143.01669908451328,
+        304.67935928666463,
+        0.2617903519900543
+      ],
+      "block_moved_px": 71.28929950113071,
+      "block_turned_deg": -65.91220264313165,
+      "n_crumb_hops": 4,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.287893886299162
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 44.88056800791431,
+          "path_cost": 36.74602782130195,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.750523328505277,
+          "path_cost": 28.724599458554653,
+          "crumb_steps": 25.430617050723875,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.43088340903272,
+          "path_cost": 22.859415394981628,
+          "crumb_steps": 26.52736914889089,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.32514789956163,
+          "path_cost": 12.248467735425272,
+          "crumb_steps": 28.12116933856318,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.752950510028803,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        }
+      ],
+      "seed": 3,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2597,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        133.79373168945312,
+        379.94171142578125,
+        136.0523223876953,
+        299.4509582519531,
+        1.222123384475708,
+        39.91707992553711,
+        -67.98805236816406
+      ]
+    },
+    {
+      "success": true,
+      "steps": 140,
+      "n_hops": 6,
+      "end_block": [
+        244.45552206852255,
+        242.69337287708566,
+        0.6020226703545681
+      ],
+      "block_moved_px": 92.97451672638908,
+      "block_turned_deg": 81.32046660258564,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 11.082707997785278,
+          "crumb_steps": 25.206769994463194,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.54699298470806,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.748042168684886,
+          "path_cost": 10.384655989040525,
+          "crumb_steps": 25.96163997260131,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 32.29698539955763,
+          "path_cost": 8.179006173489999,
+          "crumb_steps": 12.947515433724995,
+          "edges": 3,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.369732626870515,
+          "path_cost": 9.183482425812649,
+          "crumb_steps": 27.95870606453162,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.159366179085374,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 50.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        238.71728515625,
+        298.6520080566406,
+        245.24559020996094,
+        245.33335876464844,
+        0.7138078808784485,
+        11.276007652282715,
+        -84.52500915527344
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        372.4094317669682,
+        294.0517805651243,
+        0.5535554984489748
+      ],
+      "block_moved_px": 48.497278237656815,
+      "block_turned_deg": 78.54350220746011,
+      "gate_012": false,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 20.649397245864982,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.092474233563445,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.793406520338428,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.97080728262293,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.334313937770824,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.15678326610478,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.264024309327564,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.773353071234208,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 22.164185033832016,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.085521086402043,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.564814952345237,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5948,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 40.0,
+      "jumps": 0,
+      "goal_node_state": [
+        313.12664794921875,
+        391.9065856933594,
+        348.234619140625,
+        291.41119384765625,
+        0.6186419129371643,
+        -106.33849334716797,
+        -15.178619384765625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 12,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 75.3774847344204
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 114.01473145384269
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 138.64575209863528
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 345.096077941271
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 683.0825557474216
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1045.4332368717091
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1402.2449870769963
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1769.2907103055697
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 2151.5869818777896
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 2533.06051817688
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 2902.5737439983723
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 3258.383163789831
+        }
+      ],
+      "seed": 4,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 139,
+      "route": false,
+      "entry_gap": 75.3774847344204,
+      "goal_node_state": [
+        191.8834686279297,
+        167.59698486328125,
+        338.7065124511719,
+        233.13731384277344,
+        4.112921237945557,
+        68.9186782836914,
+        -44.08517837524414
+      ]
+    },
+    {
+      "success": true,
+      "steps": 100,
+      "n_hops": 4,
+      "end_block": [
+        257.66142901998364,
+        280.1019445383091,
+        0.265833573176125
+      ],
+      "block_moved_px": 79.40828809683568,
+      "block_turned_deg": 62.05825021594735,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 10.082707997785278,
+          "crumb_steps": 25.206769994463194,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.198939348638085,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 32.57823521845164,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.921256555800996,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 45130,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 45.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        253.480224609375,
+        335.9398498535156,
+        268.6878356933594,
+        272.12640380859375,
+        0.6902011036872864,
+        -85.6587905883789,
+        -74.8084716796875
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        423.4545811623007,
+        303.70520846223025,
+        0.16574593746906885
+      ],
+      "block_moved_px": 97.21289276719106,
+      "block_turned_deg": 56.32365110849016,
+      "n_crumb_hops": 2,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 29.732569221771037,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.823667203448824,
+          "path_cost": 27.556699537840284,
+          "crumb_steps": 27.060325790173117,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 18.435168607756054
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 47.63556904333477,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 37.36920606372821,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 40.21484215375861,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 40.38202566316608,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 39.35512757068406,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 42.379122862353576,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 45.62471164955092,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 46.60779214975667,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 45.08903948803365,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 751,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 139.3314230544276,
+      "jumps": 1,
+      "goal_node_state": [
+        366.8381042480469,
+        249.51171875,
+        411.7618713378906,
+        278.7253723144531,
+        1.5587928295135498,
+        55.68092346191406,
+        64.9789047241211
+      ]
+    },
+    {
+      "success": true,
+      "steps": 165,
+      "n_hops": 7,
+      "end_block": [
+        321.42464009295395,
+        195.13196494718335,
+        0.7664831246487216
+      ],
+      "block_moved_px": 69.20501792188065,
+      "block_turned_deg": 90.74335653044481,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 18.183655682252446,
+          "crumb_steps": 27.959139205631114,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.334788930643345,
+          "path_cost": 15.925251857447806,
+          "crumb_steps": 26.402292834429858,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.557052314772932,
+          "path_cost": 13.824309406894029,
+          "crumb_steps": 28.02022176010162,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.675106818603744,
+          "path_cost": 1.9748693152951886,
+          "crumb_steps": 2.4371732882379713,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 4.9384963746541315,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 5.635745248621434,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.475813990136674,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5678,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 82.95913920563112,
+      "jumps": 1,
+      "goal_node_state": [
+        351.28057861328125,
+        246.70333862304688,
+        334.0550231933594,
+        195.46412658691406,
+        0.26326242089271545,
+        10.872766494750977,
+        -73.18988037109375
+      ]
+    },
+    {
+      "success": true,
+      "steps": 131,
+      "n_hops": 6,
+      "end_block": [
+        340.5304551894711,
+        326.7587386557102,
+        6.202956433251111
+      ],
+      "block_moved_px": 64.02839029262847,
+      "block_turned_deg": 42.23033254888446,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 75.3774847344204,
+          "path_cost": 21.059713082138643,
+          "crumb_steps": 25.046133364800994,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 37.81845800067543,
+          "path_cost": 17.271048812533586,
+          "crumb_steps": 29.333364495144295,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.57800412397908,
+          "path_cost": 4.837534962336049,
+          "crumb_steps": 14.593837405840123,
+          "edges": 3,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 38.774441456796666,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 19.4467874750362,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 33.62742887089538,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 4,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4318,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 57.649282705346614,
+      "jumps": 6,
+      "goal_node_state": [
+        315.7185363769531,
+        386.6483459472656,
+        320.1115417480469,
+        332.9092102050781,
+        0.6661975979804993,
+        -29.889820098876953,
+        -30.967315673828125
+      ]
+    },
+    {
+      "success": true,
+      "steps": 125,
+      "n_hops": 5,
+      "end_block": [
+        249.89504854556978,
+        237.04715637447413,
+        0.8373574869815075
+      ],
+      "block_moved_px": 76.28761458973952,
+      "block_turned_deg": 105.75525277932886,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 52.12041095276681,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.44553776875605,
+          "path_cost": 24.061283873306966,
+          "crumb_steps": 29.18529621145482,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 16.956181328783874,
+          "path_cost": 13.5917212676248,
+          "crumb_steps": 29.864619770788778,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.325140289253586,
+          "path_cost": 4.645873359309287,
+          "crumb_steps": 16.61468339827322,
+          "edges": 4,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 2.5931218806601546,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 5,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 52.12041095276681,
+      "demo_steps": 30.0,
+      "jumps": 0,
+      "goal_node_state": [
+        261.2489013671875,
+        328.1495666503906,
+        272.4024658203125,
+        248.61170959472656,
+        0.5205885171890259,
+        -38.805084228515625,
+        -69.12340545654297
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        278.29182574876125,
+        246.46521449093166,
+        0.3051894261600472
+      ],
+      "block_moved_px": 47.76365909609257,
+      "block_turned_deg": 75.26426890259789,
+      "gate_012": false,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 41.006635707560186,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.80857619426137,
+          "path_cost": 2.397999566970066,
+          "crumb_steps": 3.4949989174251646,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.867299828463207,
+          "path_cost": 9.609661834177182,
+          "crumb_steps": 29.024154585442954,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 30.18624391221869,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.427621569184717,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.466345531142291,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.184866638303596,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.601251883995834,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.789156158562882,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.423218928941273,
+          "path_cost": 2.824932172593084,
+          "crumb_steps": 4.562330431482709,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.143699244746827,
+          "path_cost": 2.824932172593084,
+          "crumb_steps": 4.562330431482709,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.108468792153174,
+          "path_cost": 2.824932172593084,
+          "crumb_steps": 4.562330431482709,
+          "edges": 1,
+          "jumps": 1
+        }
+      ],
+      "seed": 5,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7580,
+      "route": true,
+      "entry_gap": 41.006635707560186,
+      "demo_steps": 20.0,
+      "jumps": 0,
+      "goal_node_state": [
+        318.5022277832031,
+        340.4349060058594,
+        331.8730163574219,
+        215.82559204101562,
+        0.3433462381362915,
+        -118.28814697265625,
+        9.952421188354492
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        272.2109295462153,
+        199.76027393978586,
+        0.581062728768778
+      ],
+      "block_moved_px": 69.05196472814222,
+      "block_turned_deg": 91.07064482241357,
+      "gate_012": false,
+      "n_crumb_hops": 12,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 52.411820294554765,
+          "path_cost": 95.74475950467897,
+          "crumb_steps": 26.254268922361216,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.494460059290297,
+          "path_cost": 95.4164191859303,
+          "crumb_steps": 26.707055544104925,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.008417557063517,
+          "path_cost": 79.73927279391528,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.57716760510634,
+          "path_cost": 66.50582177343195,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.076664553349243,
+          "path_cost": 61.50582177343195,
+          "crumb_steps": 27.206615492647632,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.4105679969801,
+          "path_cost": 45.92535358642135,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 39.06523528849129,
+          "path_cost": 106.32890625287499,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 35.134725777072184,
+          "path_cost": 84.34229465042596,
+          "crumb_steps": 29.919006500322826,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.01283115239726,
+          "path_cost": 76.6001848012053,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.66598604640621,
+          "path_cost": 76.54755367764787,
+          "crumb_steps": 29.82017961206578,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 20.16516234657781,
+          "path_cost": 74.01599984893292,
+          "crumb_steps": 25.991295040278395,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.712511182185283,
+          "path_cost": 89.00825663867609,
+          "crumb_steps": 26.86015517745209,
+          "edges": 7,
+          "jumps": 3
+        }
+      ],
+      "seed": 5,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 237,
+      "route": true,
+      "entry_gap": 52.411820294554765,
+      "demo_steps": 314.36189876169743,
+      "jumps": 21,
+      "goal_node_state": [
+        283.8708190917969,
+        204.23817443847656,
+        302.2087097167969,
+        256.2451477050781,
+        3.3728153705596924,
+        18.750293731689453,
+        118.74018859863281
+      ]
+    },
+    {
+      "success": true,
+      "steps": 104,
+      "n_hops": 5,
+      "end_block": [
+        227.84670371173894,
+        250.21547954957092,
+        0.27320136688127494
+      ],
+      "block_moved_px": 98.34775027853004,
+      "block_turned_deg": 73.43148811110994,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 53.62081056358835,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 35.450716839198826,
+          "path_cost": 33.20389679404397,
+          "crumb_steps": 25.47368969688431,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.067142003058148,
+          "path_cost": 21.294022536068372,
+          "crumb_steps": 29.072385090807735,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 35.311083723489794,
+          "path_cost": 6.882646972398369,
+          "crumb_steps": 19.706617430995923,
+          "edges": 5,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.222877852781993,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 5,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 35525,
+      "route": true,
+      "entry_gap": 53.62081056358835,
+      "demo_steps": 35.0,
+      "jumps": 0,
+      "goal_node_state": [
+        263.234619140625,
+        305.86627197265625,
+        260.5770568847656,
+        250.05235290527344,
+        0.5152826309204102,
+        9.28935432434082,
+        -70.88936614990234
+      ]
+    },
+    {
+      "success": true,
+      "steps": 174,
+      "n_hops": 7,
+      "end_block": [
+        406.9109425968759,
+        229.1015366506441,
+        1.3507981430254343
+      ],
+      "block_moved_px": 82.17887071831319,
+      "block_turned_deg": 135.17323540107404,
+      "n_crumb_hops": 6,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 52.792222942408934,
+          "path_cost": 28.92678135779728,
+          "crumb_steps": 25.696488537778627,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 47.010352594378325,
+          "path_cost": 20.46374702071067,
+          "crumb_steps": 27.248103537742296,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 22.73778629322934,
+          "path_cost": 33.704827425781886,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.54355496637759,
+          "path_cost": 20.60481448068286,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 4.979342250947343,
+          "path_cost": 21.50843559591431,
+          "crumb_steps": 29.41543934524406,
+          "edges": 9,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 9.300710381059703,
+          "path_cost": 13.69096858273994,
+          "crumb_steps": 29.227421456849854,
+          "edges": 8,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.799379741705641,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 5,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 201,
+      "route": true,
+      "entry_gap": 52.792222942408934,
+      "demo_steps": 114.81695339449321,
+      "jumps": 4,
+      "goal_node_state": [
+        361.23822021484375,
+        323.4942321777344,
+        413.9540710449219,
+        254.8306884765625,
+        0.3020305633544922,
+        36.442527770996094,
+        106.81687927246094
+      ]
+    },
+    {
+      "success": true,
+      "steps": 149,
+      "n_hops": 6,
+      "end_block": [
+        322.69758253556836,
+        179.40957329564662,
+        1.0734079149184241
+      ],
+      "block_moved_px": 63.80861952679672,
+      "block_turned_deg": 119.27994605237117,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 41.96627255865748,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.554454519744457,
+          "path_cost": 33.088046452886076,
+          "crumb_steps": 29.344136986420036,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.964882242250027,
+          "path_cost": 21.680492642111208,
+          "crumb_steps": 28.649177825636208,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 12.347514409569582,
+          "path_cost": 18.156378045353076,
+          "crumb_steps": 27.98904013189038,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.039519922178533,
+          "path_cost": 14.328189779036741,
+          "crumb_steps": 25.820474447591852,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.829783008757406,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 5,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5931,
+      "route": true,
+      "entry_gap": 41.96627255865748,
+      "demo_steps": 50.0,
+      "jumps": 0,
+      "goal_node_state": [
+        366.90252685546875,
+        193.19021606445312,
+        323.0205078125,
+        162.1626434326172,
+        4.747917175292969,
+        -82.71800994873047,
+        -107.92826080322266
+      ]
+    },
+    {
+      "success": true,
+      "steps": 152,
+      "n_hops": 7,
+      "end_block": [
+        313.413601696984,
+        314.84778306500397,
+        0.9435684537787088
+      ],
+      "block_moved_px": 72.79768267866304,
+      "block_turned_deg": 111.84069291481262,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 52.12041095276681,
+          "path_cost": 19.818847733311046,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.156764963434355,
+          "path_cost": 24.92464430475069,
+          "crumb_steps": 26.213983622294474,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.918594253375314,
+          "path_cost": 14.499430127257236,
+          "crumb_steps": 27.13243914991604,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 7.203499070704143,
+          "path_cost": 17.2724251941968,
+          "crumb_steps": 27.682752471840146,
+          "edges": 8,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.168410359532748,
+          "path_cost": 12.070681954094823,
+          "crumb_steps": 27.676704885237054,
+          "edges": 8,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.589333068790913,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.374596874352886,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 5,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6886,
+      "route": true,
+      "entry_gap": 52.12041095276681,
+      "demo_steps": 82.04711933327762,
+      "jumps": 2,
+      "goal_node_state": [
+        275.42315673828125,
+        269.4322204589844,
+        325.95751953125,
+        323.60516357421875,
+        1.4735230207443237,
+        2.2981860637664795,
+        19.000986099243164
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        295.0057919668007,
+        306.3813324101384,
+        1.2295052836039293
+      ],
+      "block_moved_px": 89.07194680547371,
+      "block_turned_deg": -158.78016157026858,
+      "n_crumb_hops": 4,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.82913410728907,
+          "path_cost": 29.864380689736652,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.30926504668676,
+          "path_cost": 16.846439630052565,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 9.106812834766066,
+          "path_cost": 16.06873747707683,
+          "crumb_steps": 27.67184369269207,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.63746541580292,
+          "path_cost": 5.718311673127893,
+          "crumb_steps": 19.295779182819732,
+          "edges": 4,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.82601710432275,
+          "path_cost": 19.576184177754076,
+          "crumb_steps": 29.406403673684345,
+          "edges": 7,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.016891213471723,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 32.544552205897546,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.34363546992086,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.877643815081882,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.98501848448797,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.72036991623232,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.15085305131824,
+          "path_cost": 6.316619277429759,
+          "crumb_steps": 13.291548193574398,
+          "edges": 3,
+          "jumps": 2
+        }
+      ],
+      "seed": 6,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 122.16095172434163,
+      "jumps": 3,
+      "goal_node_state": [
+        241.14894104003906,
+        213.0505828857422,
+        248.7310791015625,
+        254.62220764160156,
+        1.0294231176376343,
+        -55.39671325683594,
+        11.395376205444336
+      ]
+    },
+    {
+      "success": true,
+      "steps": 201,
+      "n_hops": 9,
+      "end_block": [
+        308.837406950601,
+        359.01777919622236,
+        5.500768023624942
+      ],
+      "block_moved_px": 39.64055949422287,
+      "block_turned_deg": 85.94516662441923,
+      "gate_012": false,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.82913410728907,
+          "path_cost": 61.80179083066675,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 40.39797663017148,
+          "path_cost": 48.10733107357526,
+          "crumb_steps": 25.08476170045117,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 39.43575626120426,
+          "path_cost": 40.451729701923725,
+          "crumb_steps": 28.387140506753884,
+          "edges": 8,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 41.38121568153953,
+          "path_cost": 26.023853027490205,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.24414117044362,
+          "path_cost": 9.60451338989064,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 34.32479231744589,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 20.808596592501345,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.153293332610378,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.809692749021112,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 6,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1909,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 204.50447707666683,
+      "jumps": 12,
+      "goal_node_state": [
+        300.04742431640625,
+        425.93463134765625,
+        305.932373046875,
+        371.01080322265625,
+        5.762730598449707,
+        -74.94331359863281,
+        -30.774295806884766
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        320.2434387978935,
+        319.36555474392617,
+        2.6128412063240054
+      ],
+      "block_moved_px": 80.74024889362117,
+      "block_turned_deg": -79.5208515495728,
+      "gate_012": false,
+      "n_crumb_hops": 12,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.82913410728907,
+          "path_cost": 21.75364553755439,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.61475186212264,
+          "path_cost": 8.097030553131003,
+          "crumb_steps": 25.242576382827508,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.61552732196884,
+          "path_cost": 16.968808011802476,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 48.43712907428528,
+          "path_cost": 11.782088647562773,
+          "crumb_steps": 29.45522161890693,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 40.56947309951232,
+          "path_cost": 29.17519860687708,
+          "crumb_steps": 28.428284155399854,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 30.452263134644667,
+          "path_cost": 19.16627140990745,
+          "crumb_steps": 28.93092633621211,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.120060396286195,
+          "path_cost": 11.524252710656391,
+          "crumb_steps": 29.410664796289964,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.76381474600123,
+          "path_cost": 39.50085720777854,
+          "crumb_steps": 28.70090067445593,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 49.32023815082326,
+          "path_cost": 23.928349392099957,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.638887573955998,
+          "path_cost": 36.749488950906176,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.37571887502551,
+          "path_cost": 31.060001854954624,
+          "crumb_steps": 28.981486633835374,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.948472635617023,
+          "path_cost": 16.707727634877386,
+          "crumb_steps": 26.224300631525487,
+          "edges": 6,
+          "jumps": 3
+        }
+      ],
+      "seed": 6,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 509,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 84.38411384388597,
+      "jumps": 3,
+      "goal_node_state": [
+        351.27178955078125,
+        364.1382141113281,
+        314.96356201171875,
+        362.1026611328125,
+        2.7745325565338135,
+        22.532325744628906,
+        -90.58351135253906
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 3,
+      "n_no_path": 9,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.82913410728907,
+          "path_cost": 32.8510895281657,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 50.75116285575932,
+          "path_cost": 12.797547548726119,
+          "crumb_steps": 27.555190947030198,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 619.4302194073001
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 696.7612416527203
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 803.0429681470004
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 957.4037262166734
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1019.26750948985
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1167.8862423896915
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1365.8749779185869
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1501.081919492147
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 1699.611300183411,
+          "path_cost": 15.038014020376401,
+          "crumb_steps": 27.595035050941,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 1725.6799776988437
+        }
+      ],
+      "seed": 6,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4963,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 137.12772382041425,
+      "jumps": 3,
+      "goal_node_state": [
+        248.18115234375,
+        367.7978210449219,
+        216.6085205078125,
+        411.4175109863281,
+        3.190474510192871,
+        -127.04106903076172,
+        -9.746131896972656
+      ]
+    },
+    {
+      "success": true,
+      "steps": 111,
+      "n_hops": 5,
+      "end_block": [
+        355.85285969072896,
+        397.70799494499863,
+        3.76177240232767
+      ],
+      "block_moved_px": 62.7153306204651,
+      "block_turned_deg": -13.691943067644862,
+      "n_crumb_hops": 4,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.30757083888394,
+          "path_cost": 30.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 41.57985032980569,
+          "path_cost": 21.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.84640145682562,
+          "path_cost": 16.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.153354849353516,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 16.26880687451214,
+          "path_cost": 3.0,
+          "crumb_steps": 15.0,
+          "edges": 3,
+          "jumps": 0
+        }
+      ],
+      "seed": 6,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1155,
+      "route": true,
+      "entry_gap": 38.30757083888394,
+      "demo_steps": 150.0,
+      "jumps": 0,
+      "goal_node_state": [
+        355.59088134765625,
+        335.4781494140625,
+        354.8221435546875,
+        391.8989562988281,
+        3.70869517326355,
+        35.27887725830078,
+        15.844820976257324
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        286.93141869338035,
+        334.5776767341599,
+        6.038136379356057
+      ],
+      "block_moved_px": 61.17668542694022,
+      "block_turned_deg": 116.73410545169682,
+      "n_crumb_hops": 8,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 38.82913410728907,
+          "path_cost": 21.686279521388045,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 45.24848359245854,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 37.74847660976066,
+          "path_cost": 9.757117307781337,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.57529656239585,
+          "path_cost": 23.196897197128205,
+          "crumb_steps": 28.560047922306595,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 44.740335683493065,
+          "path_cost": 15.77287802820557,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 46.13397509610304,
+          "path_cost": 7.934107266043509,
+          "crumb_steps": 29.835268165108772,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 48.7827898710166,
+          "path_cost": 19.83358451978807,
+          "crumb_steps": 27.52540677473902,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 35.05845781542642,
+          "path_cost": 13.82308639875416,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.185838749351486,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.990289400838627,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.015837843275353,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.686873555416948,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 6,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7187,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 84.2156988034701,
+      "jumps": 3,
+      "goal_node_state": [
+        303.9422302246094,
+        324.77227783203125,
+        304.98199462890625,
+        309.78448486328125,
+        3.1795618534088135,
+        51.39031982421875,
+        2.988396644592285
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        238.8283556562694,
+        245.67650675609025,
+        1.13756835268141
+      ],
+      "block_moved_px": 162.26144880502937,
+      "block_turned_deg": 86.99841732814527,
+      "n_crumb_hops": 3,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.73576031392347,
+          "path_cost": 11.082707997785278,
+          "crumb_steps": 25.206769994463194,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 34.81641316883543,
+          "path_cost": 7.691387583381727,
+          "crumb_steps": 29.228468958454318,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.531649766575722,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.28118964698641
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 18.791563069528888,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.176332289246757,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.669959490519656,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.581381282966957,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.542399992118996,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.939989329254562,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.1272656958984,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.334690972792632,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 7,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 50.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        238.71728515625,
+        298.6520080566406,
+        245.24559020996094,
+        245.33335876464844,
+        0.7138078808784485,
+        11.276007652282715,
+        -84.52500915527344
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        344.016320188662,
+        265.2527797424413,
+        5.848913648466343
+      ],
+      "block_moved_px": 59.78620969099751,
+      "block_turned_deg": -3.061381394563587,
+      "gate_012": false,
+      "n_crumb_hops": 1,
+      "n_no_path": 10,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.73576031392347,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 31.344171589853485,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 17.29275644931
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 18.868299121864325
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 25.34167388930303
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 17.692759676328592
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 21.527691874531392
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 22.365806892642947
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 24.615674750015444
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 21.103010709177727
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 21.008770723906668
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 18.89725356554484
+        }
+      ],
+      "seed": 7,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1857,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 45.0,
+      "jumps": 0,
+      "goal_node_state": [
+        270.8139953613281,
+        376.9322509765625,
+        361.1068115234375,
+        290.2579650878906,
+        1.044037938117981,
+        -146.06312561035156,
+        3.1190574169158936
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        415.60863252245036,
+        294.73918769738,
+        6.066421939353686
+      ],
+      "block_moved_px": 25.929372460344577,
+      "block_turned_deg": 9.400925682384948,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 12,
+      "hops": [
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 34.73576031392347
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 31.483771965171552
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 29.95287541475248
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.359060987117324
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.352667898083123
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.718006194521966
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.921219117510105
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 33.31986912128518
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 31.313722181223994
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.699369107420868
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 31.357237618718543
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 28.479254020772313
+        }
+      ],
+      "seed": 7,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1,
+      "route": false,
+      "entry_gap": 34.73576031392347,
+      "goal_node_state": [
+        336.638671875,
+        303.5718078613281,
+        358.3535461425781,
+        318.3753662109375,
+        4.370518684387207,
+        -14.224654197692871,
+        14.515043258666992
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        328.95877976357343,
+        318.5269102993936,
+        1.4750802401718905
+      ],
+      "block_moved_px": 63.94608709293538,
+      "block_turned_deg": 106.33642401684408,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.73576031392347,
+          "path_cost": 7.640273265175963,
+          "crumb_steps": 26.600683162939905,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 38.003260019550815,
+          "path_cost": 9.577260729071506,
+          "crumb_steps": 26.443151822678765,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.369343735661076,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 20.11462371840952,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.225296083863108,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.566952007357624,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 5.494027287266369,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.400450641890524,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 10.397163405083052,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.309628109814122,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.672808458891886,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.7868880278589,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 7,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6679,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 31.600683162939905,
+      "jumps": 1,
+      "goal_node_state": [
+        355.20184326171875,
+        310.7014465332031,
+        302.5787658691406,
+        318.1719055175781,
+        5.156027317047119,
+        -178.7386016845703,
+        19.078371047973633
+      ]
+    },
+    {
+      "success": true,
+      "steps": 75,
+      "n_hops": 3,
+      "end_block": [
+        375.9005700281625,
+        220.59435572003898,
+        5.941389573726145
+      ],
+      "block_moved_px": 83.1813314268455,
+      "block_turned_deg": 2.2370988293902814,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.73576031392347,
+          "path_cost": 20.60893947718213,
+          "crumb_steps": 25.234973272423247,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 37.674721856809924,
+          "path_cost": 17.17600250365242,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 37.90520697265177,
+          "path_cost": 5.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        }
+      ],
+      "seed": 7,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 457,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 89.02234869295532,
+      "jumps": 2,
+      "goal_node_state": [
+        339.7120666503906,
+        263.56170654296875,
+        372.17193603515625,
+        220.6373291015625,
+        1.2216107845306396,
+        -35.4340705871582,
+        -79.78521728515625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        419.83990730189527,
+        405.2267146197245,
+        0.7393325365758932
+      ],
+      "block_moved_px": 106.81524415722339,
+      "block_turned_deg": 64.18118581435117,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 34.73576031392347,
+          "path_cost": 6.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 35.00341691124124,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 44.700272442046234,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 27.22643596609211,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 25.080890218932307,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 29.829806955269017,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 45.14232054024518,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 49.67408825960077,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 52.52632553261013,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 50.56578910154741,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 44.352224044423615,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 48.590848391860355,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 7,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1134,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 30.0,
+      "jumps": 0,
+      "goal_node_state": [
+        392.5602722167969,
+        370.6490478515625,
+        397.2591857910156,
+        389.180908203125,
+        0.43867671489715576,
+        -88.02265930175781,
+        32.76267623901367
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        237.76867201299692,
+        240.88755356290272,
+        1.0900989768838025
+      ],
+      "block_moved_px": 52.07149651155695,
+      "block_turned_deg": -122.00442807537591,
+      "n_crumb_hops": 5,
+      "n_no_path": 1,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 30.11847864507195,
+          "crumb_steps": 29.39906793958001,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.8081906220398,
+          "path_cost": 22.358851469239944,
+          "crumb_steps": 29.70670958023112,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 30.950275154273655
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 46.27440286568227,
+          "path_cost": 22.652603535367284,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.943077414127668,
+          "path_cost": 13.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.184199522380595,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 10.326172015489268,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.286980072620791,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 10.941445352468012,
+          "path_cost": 2.1414576983286144,
+          "crumb_steps": 2.853644245821535,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.66751556059096,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 6.199760400016085,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.414498202376762,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 112.79619661267986,
+      "jumps": 4,
+      "goal_node_state": [
+        167.6275177001953,
+        267.4978332519531,
+        272.3284912109375,
+        246.4314727783203,
+        1.0896179676055908,
+        -1.7096017599105835,
+        55.50467300415039
+      ]
+    },
+    {
+      "success": true,
+      "steps": 220,
+      "n_hops": 9,
+      "end_block": [
+        248.2911550281073,
+        255.9029696626247,
+        5.108428305467658
+      ],
+      "block_moved_px": 36.46277695245838,
+      "block_turned_deg": 108.22888314611684,
+      "gate_012": false,
+      "n_crumb_hops": 8,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 90.07541251582188,
+          "path_cost": 55.57096237527267,
+          "crumb_steps": 29.322249549513316,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 36.04799433412338,
+          "path_cost": 28.784745803503384,
+          "crumb_steps": 27.713035346438808,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 41.00206491859419,
+          "path_cost": 38.46645760293258,
+          "crumb_steps": 25.56111518992483,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.51228051215447,
+          "path_cost": 34.79265770892371,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.867883515626016,
+          "path_cost": 29.79265770892371,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 10.899249803859187,
+          "path_cost": 25.71274456916852,
+          "crumb_steps": 25.93274718287246,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 11.53410158024823,
+          "path_cost": 17.339645696019534,
+          "crumb_steps": 26.623207906261825,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 6.588578694360182,
+          "path_cost": 8.690362533514804,
+          "crumb_steps": 29.22590633378701,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 26.16699165574325,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 836,
+      "route": true,
+      "entry_gap": 90.07541251582188,
+      "demo_steps": 203.92740593818166,
+      "jumps": 8,
+      "goal_node_state": [
+        304.2077941894531,
+        347.4095458984375,
+        265.0771484375,
+        297.5167541503906,
+        5.131782531738281,
+        -22.249969482421875,
+        -62.920936584472656
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        182.95674833406338,
+        293.47094900881973,
+        1.008800565045456
+      ],
+      "block_moved_px": 103.94543972566632,
+      "block_turned_deg": -126.66248395482957,
+      "gate_012": false,
+      "n_crumb_hops": 11,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 21.37996402842778,
+          "crumb_steps": 29.39906793958001,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 56.30562285430948,
+          "path_cost": 13.620336852595774,
+          "crumb_steps": 26.550842131489436,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 52.23902780633977,
+          "path_cost": 19.40610434620318,
+          "crumb_steps": 29.778739104269498,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 55.52850854549182,
+          "path_cost": 25.923231555981378,
+          "crumb_steps": 28.30902389966976,
+          "edges": 7,
+          "jumps": 5
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 27.6091926578665,
+          "path_cost": 26.410588061597153,
+          "crumb_steps": 28.206998829133912,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 55.14303721673115,
+          "path_cost": 21.8431769895657,
+          "crumb_steps": 29.24664833739071,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.73690037257595,
+          "path_cost": 14.790275355491588,
+          "crumb_steps": 26.422890080792158,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.55909651426467,
+          "path_cost": 27.81959904719661,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.78923208730649,
+          "path_cost": 22.81959904719661,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.377947425026402,
+          "path_cost": 14.278986141504543,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.230235266621095,
+          "path_cost": 9.278986141504543,
+          "crumb_steps": 28.19746535376136,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.03490204583549,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4115,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 70.94991007106944,
+      "jumps": 4,
+      "goal_node_state": [
+        337.05859375,
+        192.09344482421875,
+        298.1544189453125,
+        242.4540252685547,
+        1.9969109296798706,
+        -29.927392959594727,
+        -54.332218170166016
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        226.39579818517194,
+        276.5062250098116,
+        1.348019485092931
+      ],
+      "block_moved_px": 57.79301783613079,
+      "block_turned_deg": -107.22667150512355,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 33.44465687052368,
+          "crumb_steps": 29.39906793958001,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 65.40424300275751,
+          "path_cost": 25.685029694691675,
+          "crumb_steps": 29.701563406799956,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.576159500007762,
+          "path_cost": 18.849580429735823,
+          "crumb_steps": 25.11294024441032,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 14.895243802676069,
+          "path_cost": 15.365801222620638,
+          "crumb_steps": 27.03732412417398,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 8.023199863277792,
+          "path_cost": 8.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.291128723810804,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.043776992516415,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.085456177982094,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 17.79366849373338,
+          "path_cost": 2.45524006955344,
+          "crumb_steps": 3.638100173883601,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.631776701481206,
+          "path_cost": 6.5095833972612605,
+          "crumb_steps": 16.273958493153152,
+          "edges": 4,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.395094533615337,
+          "path_cost": 2.380686151910801,
+          "crumb_steps": 3.451715379777002,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.153881014317273,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 10853,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 131.1116421763092,
+      "jumps": 4,
+      "goal_node_state": [
+        168.76678466796875,
+        181.43812561035156,
+        208.7769012451172,
+        249.4825897216797,
+        1.3617675304412842,
+        67.57208251953125,
+        47.64662551879883
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        224.1331367921952,
+        233.81387064912155,
+        5.005130439689982
+      ],
+      "block_moved_px": 67.42750835060856,
+      "block_turned_deg": 102.3103514043471,
+      "n_crumb_hops": 6,
+      "n_no_path": 5,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 28.401791037904655,
+          "crumb_steps": 29.39906793958001,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 57.60549622693972,
+          "path_cost": 26.900786862668937,
+          "crumb_steps": 27.967044374370005,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 36.441380393488096,
+          "path_cost": 10.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 49.95129608291981,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 29.77314741636261
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 32.51740301092631
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 29.35893457983386
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 35.469247344946204
+        },
+        {
+          "target": "goal_image",
+          "no_path": true,
+          "entry_gap": 51.66224347944298
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 71.06595304567374,
+          "path_cost": 22.552439302698904,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 50.971950792545215,
+          "path_cost": 23.403965985732864,
+          "crumb_steps": 27.128816707584896,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 43.950940330585794,
+          "path_cost": 26.46319818236697,
+          "crumb_steps": 26.213983622294474,
+          "edges": 6,
+          "jumps": 1
+        }
+      ],
+      "seed": 8,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 3545,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 113.50447759476162,
+      "jumps": 3,
+      "goal_node_state": [
+        297.9788513183594,
+        283.66510009765625,
+        351.10791015625,
+        280.9594421386719,
+        2.1181743144989014,
+        162.00697326660156,
+        73.34461212158203
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        313.71592170960315,
+        179.72490090298965,
+        0.6541982899463552
+      ],
+      "block_moved_px": 91.69439557547969,
+      "block_turned_deg": -146.979697723745,
+      "n_crumb_hops": 9,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 25.06668676963342,
+          "crumb_steps": 29.39906793958001,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.220556118288815,
+          "path_cost": 26.9848212795033,
+          "crumb_steps": 29.029168753137903,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 37.52010786577597,
+          "path_cost": 17.02741332833954,
+          "crumb_steps": 28.704251307162718,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 28.346542352568456,
+          "path_cost": 10.0227985005861,
+          "crumb_steps": 26.19271423777912,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 46.220620721689095,
+          "path_cost": 24.867117925534558,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 33.702354709700025,
+          "path_cost": 13.446188455617428,
+          "crumb_steps": 26.11547113904357,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 16.821775117127423,
+          "path_cost": 4.0,
+          "crumb_steps": 20.0,
+          "edges": 4,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.481648430814552,
+          "path_cost": 22.559104364746467,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 40.66054161126531,
+          "path_cost": 10.514268746859901,
+          "crumb_steps": 28.785671867149752,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 31.768043244799784,
+          "path_cost": 15.03246845075562,
+          "crumb_steps": 27.58117112688905,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.722762237652756,
+          "path_cost": 6.8926993994740355,
+          "crumb_steps": 19.73174849868509,
+          "edges": 5,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.935161537283758,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5734,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 87.66671692408354,
+      "jumps": 4,
+      "goal_node_state": [
+        276.6983337402344,
+        217.84814453125,
+        271.34088134765625,
+        201.03543090820312,
+        2.265071392059326,
+        -42.65550231933594,
+        19.079208374023438
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        299.6047285074158,
+        372.20122199784663,
+        1.5097027629989004
+      ],
+      "block_moved_px": 107.23786254416753,
+      "block_turned_deg": -97.9629020632707,
+      "n_crumb_hops": 3,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 93.0446185618431,
+          "path_cost": 26.53505937513171,
+          "crumb_steps": 29.873033513842117,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 21.994691223714575,
+          "path_cost": 18.933598031078887,
+          "crumb_steps": 26.089218352419497,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 23.35993954153542,
+          "path_cost": 14.028187594579801,
+          "crumb_steps": 28.11061504347412,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.095801337752736,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.152580113666183,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.985244122672302,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 21.814578350561753,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.153211024652556,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.819020874397612,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.471697661137885,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 24.230283537042965,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 23.80105392464188,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 8,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4898,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 86.33764843782929,
+      "jumps": 5,
+      "goal_node_state": [
+        225.65347290039062,
+        414.50164794921875,
+        301.5152893066406,
+        340.2118835449219,
+        0.5172967910766602,
+        206.13084411621094,
+        168.6653289794922
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        249.8777604357306,
+        275.48061161012777,
+        0.37579934073633847
+      ],
+      "block_moved_px": 11.986206924304351,
+      "block_turned_deg": 29.43791298501508,
+      "n_crumb_hops": 1,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 43.09788386536433,
+          "path_cost": 8.517888785417291,
+          "crumb_steps": 23.79472196354323,
+          "edges": 5,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 29.213083092099545,
+          "path_cost": 9.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 15.100439104381271,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 17.683256398243678,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.0045416262342,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.09120700721918,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.774134582805935,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 14.079491628580802,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 8.23749456595932,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.508966030336586,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.005955305943111,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.159261995374484,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 9,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 23.79472196354323,
+      "jumps": 2,
+      "goal_node_state": [
+        305.1183166503906,
+        268.5411682128906,
+        271.78424072265625,
+        267.4053039550781,
+        0.5648064613342285,
+        64.80692291259766,
+        32.41978454589844
+      ]
+    },
+    {
+      "success": true,
+      "steps": 120,
+      "n_hops": 5,
+      "end_block": [
+        268.5165718300506,
+        250.55716709599457,
+        1.2148531051255724
+      ],
+      "block_moved_px": 38.75509241115476,
+      "block_turned_deg": 77.51215246908232,
+      "gate_012": false,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.09788386536433,
+          "path_cost": 12.048581838540851,
+          "crumb_steps": 27.62145459635213,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 17.30376414240989,
+          "path_cost": 9.713410320037854,
+          "crumb_steps": 29.283525800094633,
+          "edges": 7,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.807317998774485,
+          "path_cost": 2.4415911746385808,
+          "crumb_steps": 6.103977936596452,
+          "edges": 2,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.535029451164494,
+          "path_cost": 4.508797174117326,
+          "crumb_steps": 6.271992935293317,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 13.014583392005251,
+          "path_cost": 0.0,
+          "crumb_steps": 0.0,
+          "edges": 0,
+          "jumps": 0
+        }
+      ],
+      "seed": 9,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 9305,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 32.62145459635213,
+      "jumps": 3,
+      "goal_node_state": [
+        273.63690185546875,
+        345.0157470703125,
+        245.32044982910156,
+        314.7276916503906,
+        1.169360637664795,
+        -186.50100708007812,
+        6.350651741027832
+      ]
+    },
+    {
+      "success": true,
+      "steps": 105,
+      "n_hops": 5,
+      "end_block": [
+        270.37768887442576,
+        278.315966514736,
+        4.834095821004647
+      ],
+      "block_moved_px": 18.08168591162766,
+      "block_turned_deg": -75.12051487758094,
+      "gate_012": false,
+      "n_crumb_hops": 4,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 36.48148684190488,
+          "path_cost": 33.41368050147958,
+          "crumb_steps": 29.90739477363346,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 50.718688242225255,
+          "path_cost": 24.73457849597291,
+          "crumb_steps": 25.581451199628397,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 26.160651512560566,
+          "path_cost": 17.529679542647408,
+          "crumb_steps": 27.56920381631464,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 34.11305322926988,
+          "path_cost": 7.0,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 28.1566113878106,
+          "path_cost": 2.0,
+          "crumb_steps": 10.0,
+          "edges": 2,
+          "jumps": 0
+        }
+      ],
+      "seed": 9,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 576,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 111.03420125369897,
+      "jumps": 6,
+      "goal_node_state": [
+        316.2158508300781,
+        269.8664245605469,
+        255.49099731445312,
+        249.49095153808594,
+        4.549574851989746,
+        -77.73004913330078,
+        -77.84503936767578
+      ]
+    },
+    {
+      "success": true,
+      "steps": 54,
+      "n_hops": 3,
+      "end_block": [
+        193.74737169109386,
+        283.0882850341012,
+        0.32448056228247113
+      ],
+      "block_moved_px": 60.668737604618066,
+      "block_turned_deg": 26.49756356984155,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 36.48148684190488,
+          "path_cost": 19.757390838728632,
+          "crumb_steps": 29.77840083608911,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 13.616860758308967,
+          "path_cost": 9.929869482843937,
+          "crumb_steps": 27.32467370710984,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.464791694326813,
+          "path_cost": 1.0,
+          "crumb_steps": 5.0,
+          "edges": 1,
+          "jumps": 0
+        }
+      ],
+      "seed": 9,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 8050,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 74.39347709682158,
+      "jumps": 3,
+      "goal_node_state": [
+        226.4726104736328,
+        324.74853515625,
+        157.91409301757812,
+        285.25445556640625,
+        0.18451063334941864,
+        -66.7249984741211,
+        -37.9293327331543
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        303.22355769848417,
+        259.6212541116026,
+        1.0785672953453513
+      ],
+      "block_moved_px": 55.86506446167638,
+      "block_turned_deg": 69.70355076115293,
+      "n_crumb_hops": 5,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.09788386536433,
+          "path_cost": 26.171233485557305,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 56.036025733143994,
+          "path_cost": 23.34634634478701,
+          "crumb_steps": 27.11833095493985,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 54.88977164037134,
+          "path_cost": 23.028272630446974,
+          "crumb_steps": 26.89458163045246,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 66.93895964119858,
+          "path_cost": 25.73081678316459,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 22.27291705055711,
+          "path_cost": 19.314065341139393,
+          "crumb_steps": 27.489432622988062,
+          "edges": 6,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.919887440542636,
+          "path_cost": 12.751460175342157,
+          "crumb_steps": 26.878650438355397,
+          "edges": 6,
+          "jumps": 4
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 11.96675743458308,
+          "path_cost": 5.060613780219772,
+          "crumb_steps": 5.1515344505494305,
+          "edges": 3,
+          "jumps": 3
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 6.371237748256617,
+          "path_cost": 4.904150886560891,
+          "crumb_steps": 7.260377216402227,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 12.15181188751393,
+          "path_cost": 1.955613171129288,
+          "crumb_steps": 2.38903292782322,
+          "edges": 1,
+          "jumps": 1
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.418036274514318,
+          "path_cost": 4.904150886560891,
+          "crumb_steps": 7.260377216402227,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 7.158843016139766,
+          "path_cost": 5.280291516556069,
+          "crumb_steps": 8.200728791390173,
+          "edges": 2,
+          "jumps": 2
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 9.792958661237444,
+          "path_cost": 4.904150886560891,
+          "crumb_steps": 7.260377216402227,
+          "edges": 2,
+          "jumps": 2
+        }
+      ],
+      "seed": 9,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5307,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 77.92808371389326,
+      "jumps": 6,
+      "goal_node_state": [
+        313.87884521484375,
+        350.09967041015625,
+        322.5279541015625,
+        275.3764343261719,
+        0.5194288492202759,
+        -44.6416015625,
+        -12.446009635925293
+      ]
+    },
+    {
+      "success": true,
+      "steps": 73,
+      "n_hops": 3,
+      "end_block": [
+        254.44958423169308,
+        220.24313992196593,
+        0.8456394339984368
+      ],
+      "block_moved_px": 66.37285525383125,
+      "block_turned_deg": 56.357767374966286,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "crumb",
+          "entry_gap": 43.09788386536433,
+          "path_cost": 19.02528398632667,
+          "crumb_steps": 27.983199025541623,
+          "edges": 6,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 24.944409863150796,
+          "path_cost": 12.84276607832657,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.29392794997792,
+          "path_cost": 7.842766078326569,
+          "crumb_steps": 22.106915195816427,
+          "edges": 5,
+          "jumps": 2
+        }
+      ],
+      "seed": 9,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5111,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 60.063209965816675,
+      "jumps": 4,
+      "goal_node_state": [
+        255.73350524902344,
+        280.17559814453125,
+        255.2772979736328,
+        226.19261169433594,
+        0.5795310139656067,
+        -2.6178531646728516,
+        -12.63945198059082
+      ]
+    },
+    {
+      "success": true,
+      "steps": 97,
+      "n_hops": 4,
+      "end_block": [
+        237.32094953517208,
+        362.9622943863677,
+        5.95026060906878
+      ],
+      "block_moved_px": 78.21460467016948,
+      "block_turned_deg": -11.168983280392094,
+      "n_crumb_hops": 2,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_node",
+          "entry_gap": 36.48148684190488,
+          "path_cost": 7.909915140933907,
+          "crumb_steps": 29.774787852334768,
+          "edges": 6,
+          "jumps": 1
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 25.114361591076804,
+          "path_cost": 23.576833641375952,
+          "crumb_steps": 29.534878885784522,
+          "edges": 7,
+          "jumps": 3
+        },
+        {
+          "target": "crumb",
+          "entry_gap": 19.015941303778696,
+          "path_cost": 17.449079902162097,
+          "crumb_steps": 25.0,
+          "edges": 5,
+          "jumps": 0
+        },
+        {
+          "target": "goal_node",
+          "entry_gap": 18.525482546934615,
+          "path_cost": 8.039480652242851,
+          "crumb_steps": 22.598701630607128,
+          "edges": 5,
+          "jumps": 2
+        }
+      ],
+      "seed": 9,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2781,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 29.774787852334768,
+      "jumps": 1,
+      "goal_node_state": [
+        297.4740905761719,
+        385.7973937988281,
+        263.59661865234375,
+        360.74932861328125,
+        1.0005755424499512,
+        -40.35471725463867,
+        56.756046295166016
+      ]
+    }
+  ]
+}

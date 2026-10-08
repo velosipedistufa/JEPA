@@ -1,0 +1,4624 @@
+{
+  "summary": {
+    "n": 64,
+    "successes": 18,
+    "success_rate": 0.28125,
+    "turn_successes": "4/20",
+    "turn_gate_012": "1/20",
+    "success_by_command": {
+      "target": "2/10",
+      "turn_cw": "3/10",
+      "turn_ccw": "1/10",
+      "push_left": "3/8",
+      "push_right": "3/8",
+      "push_up": "3/10",
+      "push_down": "3/8"
+    }
+  },
+  "in_place_turns": {
+    "nodes": 8040,
+    "of_nodes": 427396,
+    "episodes": 1691,
+    "of_episodes": 16817,
+    "rule": "block moves < 15.0 px while turning > 90 deg within 50 demo steps"
+  },
+  "args": {
+    "planner": "flat",
+    "budget": 300,
+    "n": 10,
+    "dry": false
+  },
+  "wall_s": 205.5883252620697,
+  "dropped_pairs": [
+    [
+      0,
+      "push_right"
+    ],
+    [
+      1,
+      "push_left"
+    ],
+    [
+      2,
+      "push_down"
+    ],
+    [
+      3,
+      "push_left"
+    ],
+    [
+      6,
+      "push_down"
+    ],
+    [
+      7,
+      "push_right"
+    ]
+  ],
+  "commands": {
+    "target": "put the T on the target",
+    "turn_cw": "turn the T 90 degrees clockwise",
+    "turn_ccw": "turn the T 90 degrees counter-clockwise",
+    "push_left": "push the T left",
+    "push_right": "push the T right",
+    "push_up": "push the T up",
+    "push_down": "push the T down"
+  },
+  "constants": {
+    "tol_xy": 20.0,
+    "tol_ang_deg": 20.0,
+    "turn_drift": 40.0,
+    "push_px": 80.0,
+    "target": [
+      256.0,
+      256.0,
+      0.7853981633974483
+    ],
+    "arena": [
+      80.0,
+      432.0
+    ],
+    "screen": "y down; positive block angle is clockwise on screen"
+  },
+  "graph": {
+    "nodes": 427396,
+    "forward_edges": 410579,
+    "jump_edges": 2852207
+  },
+  "episodes": [
+    {
+      "success": true,
+      "steps": 75,
+      "n_hops": 3,
+      "end_block": [
+        261.28054154087675,
+        262.6098903011118,
+        0.4824566735783895
+      ],
+      "block_moved_px": 134.44760391277705,
+      "block_turned_deg": 102.91311984555291,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 62.750403689728614,
+      "jumps": 2,
+      "goal_node_state": [
+        249.28713989257812,
+        327.2956848144531,
+        247.8350830078125,
+        273.5602111816406,
+        0.5608224272727966,
+        14.794974327087402,
+        -147.1356201171875
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        384.876538246102,
+        298.03997110203335,
+        5.1397232370791865
+      ],
+      "block_moved_px": 20.02648831708082,
+      "block_turned_deg": 9.75483800154519,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 653,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 48.17368836548892,
+      "jumps": 1,
+      "goal_node_state": [
+        319.6319580078125,
+        469.8665771484375,
+        354.59307861328125,
+        339.4287109375,
+        6.280909538269043,
+        -35.73945236206055,
+        -24.913925170898438
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        404.4196361142928,
+        311.95647027022176,
+        5.440105082006113
+      ],
+      "block_moved_px": 21.524251377397274,
+      "block_turned_deg": 26.965449958211252,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 732,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 170.3489785717167,
+      "jumps": 10,
+      "goal_node_state": [
+        353.1385803222656,
+        275.494140625,
+        358.23724365234375,
+        332.5583190917969,
+        3.7188258171081543,
+        -83.46752166748047,
+        58.23112487792969
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        257.8329095814985,
+        401.5478954199656,
+        2.2284366378545335
+      ],
+      "block_moved_px": 151.11203319176323,
+      "block_turned_deg": -157.0495970870218,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5921,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 55.0,
+      "jumps": 0,
+      "goal_node_state": [
+        249.67530822753906,
+        388.38909912109375,
+        297.1297607421875,
+        328.67645263671875,
+        1.0729657411575317,
+        -18.025917053222656,
+        -58.04400634765625
+      ]
+    },
+    {
+      "success": true,
+      "steps": 25,
+      "n_hops": 1,
+      "end_block": [
+        380.19495853035994,
+        252.38915321787596,
+        5.5114043297110085
+      ],
+      "block_moved_px": 65.74418410558026,
+      "block_turned_deg": 31.050595934159585,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 618,
+      "route": true,
+      "entry_gap": 73.09044659134491,
+      "demo_steps": 19.599605612609672,
+      "jumps": 1,
+      "goal_node_state": [
+        360.7238464355469,
+        269.9979248046875,
+        388.7634582519531,
+        223.37513732910156,
+        6.226816177368164,
+        -0.06155851483345032,
+        -3.6438987255096436
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        489.05254177712465,
+        537.6858241734312,
+        3.1380355861033435
+      ],
+      "block_moved_px": 243.57769818299022,
+      "block_turned_deg": -104.9334163028264,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 0,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        235.7827122332356,
+        303.60737773694973,
+        383.7717999951891,
+        318.03596539366947,
+        4.969469195953559,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 743,
+      "route": true,
+      "entry_gap": 76.36831820303978,
+      "demo_steps": 132.39445539865648,
+      "jumps": 5,
+      "goal_node_state": [
+        346.927978515625,
+        354.1623840332031,
+        369.0669860839844,
+        403.42791748046875,
+        2.1327145099639893,
+        -35.960845947265625,
+        62.522544860839844
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        307.82944589969816,
+        311.40180330879787,
+        0.8945562032255658
+      ],
+      "block_moved_px": 179.36150108230618,
+      "block_turned_deg": 11.95649770908002,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 70.0,
+      "jumps": 0,
+      "goal_node_state": [
+        186.85079956054688,
+        281.0140075683594,
+        241.3145294189453,
+        268.8351745605469,
+        0.7706798911094666,
+        -15.285511016845703,
+        2.527026653289795
+      ]
+    },
+    {
+      "success": true,
+      "steps": 25,
+      "n_hops": 1,
+      "end_block": [
+        146.44902460124854,
+        190.21334478047677,
+        1.930150261465493
+      ],
+      "block_moved_px": 26.497351308760646,
+      "block_turned_deg": 71.29166653505303,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2114,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 153.5855951085547,
+      "jumps": 5,
+      "goal_node_state": [
+        78.59728240966797,
+        193.900390625,
+        170.20921325683594,
+        226.5799102783203,
+        2.232203483581543,
+        52.324440002441406,
+        61.11504364013672
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2534,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 94.22782106788132,
+      "jumps": 10,
+      "goal_node_state": [
+        162.46107482910156,
+        300.5821838378906,
+        163.5008544921875,
+        246.72303771972656,
+        5.714059352874756,
+        37.1052131652832,
+        -60.19144821166992
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        381.8101069898874,
+        305.80115962282537,
+        5.6040590354405975
+      ],
+      "block_moved_px": 242.7573463508644,
+      "block_turned_deg": -78.2088664000908,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7007,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 54.88394822256503,
+      "jumps": 2,
+      "goal_node_state": [
+        172.7917022705078,
+        208.42755126953125,
+        228.01161193847656,
+        228.8319854736328,
+        1.2188903093338013,
+        56.70569610595703,
+        -26.122285842895508
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        83.76315342059193,
+        108.12035260579577,
+        6.231562392706256
+      ],
+      "block_moved_px": 129.13433084320314,
+      "block_turned_deg": -42.255572398478634,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 927,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 108.46073776213777,
+      "jumps": 4,
+      "goal_node_state": [
+        205.46339416503906,
+        174.19554138183594,
+        149.02674865722656,
+        129.65199279785156,
+        6.27776575088501,
+        118.26641845703125,
+        -24.731107711791992
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        122.0259686840129,
+        261.1669760362935,
+        0.8111221289078783
+      ],
+      "block_moved_px": 58.151988862406945,
+      "block_turned_deg": 7.176077383095669,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 1,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        298.6584868094097,
+        136.82133956698533,
+        156.84056433397726,
+        214.58803510390447,
+        0.6858759511949604,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6749,
+      "route": true,
+      "entry_gap": 43.571248724029736,
+      "demo_steps": 58.268076457848125,
+      "jumps": 2,
+      "goal_node_state": [
+        144.605712890625,
+        251.66957092285156,
+        151.2600860595703,
+        279.261962890625,
+        0.7844421863555908,
+        -9.584783554077148,
+        43.692657470703125
+      ]
+    },
+    {
+      "success": true,
+      "steps": 43,
+      "n_hops": 2,
+      "end_block": [
+        262.772588273579,
+        241.58722429929736,
+        0.7372249709519312
+      ],
+      "block_moved_px": 156.25749366699182,
+      "block_turned_deg": -61.148150717788596,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 21.38281913509895,
+      "jumps": 1,
+      "goal_node_state": [
+        282.8866882324219,
+        332.01019287109375,
+        254.1039276123047,
+        261.5709228515625,
+        1.0042608976364136,
+        2.662360668182373,
+        -21.447017669677734
+      ]
+    },
+    {
+      "success": true,
+      "steps": 67,
+      "n_hops": 3,
+      "end_block": [
+        309.7873422496299,
+        419.5557255100633,
+        3.2709329335200046
+      ],
+      "block_moved_px": 39.97567075743513,
+      "block_turned_deg": 84.02262205605277,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1650,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 108.29599321813336,
+      "jumps": 5,
+      "goal_node_state": [
+        318.3993835449219,
+        363.01513671875,
+        290.5105895996094,
+        409.21234130859375,
+        3.0980591773986816,
+        -90.47380828857422,
+        23.424861907958984
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        306.4584016444904,
+        465.59957441055155,
+        2.5292858423323166
+      ],
+      "block_moved_px": 74.59482491217103,
+      "block_turned_deg": 41.529373842844144,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 165,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 100.45317686711891,
+      "jumps": 6,
+      "goal_node_state": [
+        306.32232666015625,
+        359.7032470703125,
+        287.7745056152344,
+        369.99102783203125,
+        0.26513704657554626,
+        29.204755783081055,
+        44.31606674194336
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "n_hops": 2,
+      "end_block": [
+        192.47176960860446,
+        409.01756789527064,
+        1.5703068584597013
+      ],
+      "block_moved_px": 84.97722044737216,
+      "block_turned_deg": -13.416074574800964,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2414,
+      "route": true,
+      "entry_gap": 49.106873343115694,
+      "demo_steps": 100.37778623582709,
+      "jumps": 6,
+      "goal_node_state": [
+        203.94210815429688,
+        385.7034606933594,
+        191.1197052001953,
+        398.91937255859375,
+        1.4153785705566406,
+        -35.873291015625,
+        -24.045339584350586
+      ]
+    },
+    {
+      "success": true,
+      "steps": 48,
+      "n_hops": 2,
+      "end_block": [
+        356.5325793572548,
+        388.47236003511455,
+        2.209879026491311
+      ],
+      "block_moved_px": 80.38362334865174,
+      "block_turned_deg": 23.22871134744219,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 720,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 87.73051801119504,
+      "jumps": 4,
+      "goal_node_state": [
+        312.3805236816406,
+        372.0213928222656,
+        360.9173889160156,
+        416.670166015625,
+        1.8583097457885742,
+        -124.18621826171875,
+        63.069252014160156
+      ]
+    },
+    {
+      "success": true,
+      "steps": 50,
+      "n_hops": 2,
+      "end_block": [
+        286.4780692604926,
+        328.9520937082726,
+        1.4256445531606914
+      ],
+      "block_moved_px": 68.98413246026793,
+      "block_turned_deg": -21.704614123067213,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 2,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        151.0552827926896,
+        442.2242636350129,
+        276.6273651568853,
+        397.22927994173546,
+        1.8044615324830762,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7049,
+      "route": true,
+      "entry_gap": 49.95722861814694,
+      "demo_steps": 10.0,
+      "jumps": 0,
+      "goal_node_state": [
+        283.175048828125,
+        402.0617980957031,
+        276.1094665527344,
+        327.8980407714844,
+        1.5310399532318115,
+        13.42484188079834,
+        -65.63873291015625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        169.91967500027584,
+        188.42492765384833,
+        0.990582060356672
+      ],
+      "block_moved_px": 60.50075421371899,
+      "block_turned_deg": -24.15551360959533,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        136.95297241210938,
+        349.4397277832031,
+        238.2481689453125,
+        247.06488037109375,
+        0.9715439677238464,
+        38.3351936340332,
+        -25.06391716003418
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        127.44826602720616,
+        220.2542229652557,
+        1.2883137357925636
+      ],
+      "block_moved_px": 14.573768245580832,
+      "block_turned_deg": -7.096745179759908,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1901,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        121.9195327758789,
+        364.7079772949219,
+        145.47421264648438,
+        265.2875671386719,
+        2.767507314682007,
+        35.06565856933594,
+        -49.774959564208984
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        142.2674150115787,
+        184.61206015493076,
+        0.7857210806291773
+      ],
+      "block_moved_px": 51.1860144050102,
+      "block_turned_deg": -35.8931831348959,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2284,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        136.93450927734375,
+        359.0697326660156,
+        123.9506607055664,
+        225.0455780029297,
+        6.258373260498047,
+        223.26910400390625,
+        -59.983577728271484
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        127.83382115402658,
+        245.46083833664255,
+        1.696014657276082
+      ],
+      "block_moved_px": 11.353877645575766,
+      "block_turned_deg": 16.26279692484026,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 11170,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        172.6058349609375,
+        353.78472900390625,
+        196.93463134765625,
+        230.9799346923828,
+        1.5454089641571045,
+        76.04322814941406,
+        -113.85162353515625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        172.93058285948604,
+        166.82333674511648,
+        0.7000637335643128
+      ],
+      "block_moved_px": 79.75935815603994,
+      "block_turned_deg": -40.80098760599993,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1086,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        135.96798706054688,
+        332.4280090332031,
+        145.63705444335938,
+        166.0898895263672,
+        0.2539878189563751,
+        -133.62115478515625,
+        176.9158935546875
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        132.14651718180775,
+        222.5873129026381,
+        1.2893782794795168
+      ],
+      "block_moved_px": 11.971139700656066,
+      "block_turned_deg": -7.035751319390169,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 3,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        138.43521784844847,
+        362.7003292183004,
+        130.6710809101235,
+        234.46718131692714,
+        1.4121753053544106,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2597,
+      "route": false,
+      "entry_gap": 30.287893886299162,
+      "goal_node_state": [
+        133.79373168945312,
+        379.94171142578125,
+        136.0523223876953,
+        299.4509582519531,
+        1.222123384475708,
+        39.91707992553711,
+        -67.98805236816406
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 50.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        238.71728515625,
+        298.6520080566406,
+        245.24559020996094,
+        245.33335876464844,
+        0.7138078808784485,
+        11.276007652282715,
+        -84.52500915527344
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        340.9438402391185,
+        252.75680395052015,
+        5.2257834439358835
+      ],
+      "block_moved_px": 11.704738411014912,
+      "block_turned_deg": -13.757555593060358,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5948,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 40.0,
+      "jumps": 0,
+      "goal_node_state": [
+        313.12664794921875,
+        391.9065856933594,
+        348.234619140625,
+        291.41119384765625,
+        0.6186419129371643,
+        -106.33849334716797,
+        -15.178619384765625
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 139,
+      "route": false,
+      "entry_gap": 75.3774847344204,
+      "goal_node_state": [
+        191.8834686279297,
+        167.59698486328125,
+        338.7065124511719,
+        233.13731384277344,
+        4.112921237945557,
+        68.9186782836914,
+        -44.08517837524414
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 45130,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 45.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        253.480224609375,
+        335.9398498535156,
+        268.6878356933594,
+        272.12640380859375,
+        0.6902011036872864,
+        -85.6587905883789,
+        -74.8084716796875
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        492.8081734944343,
+        280.25442908770583,
+        1.7171180915756867
+      ],
+      "block_moved_px": 158.5590762531729,
+      "block_turned_deg": 145.21072799291852,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 751,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 139.3314230544276,
+      "jumps": 1,
+      "goal_node_state": [
+        366.8381042480469,
+        249.51171875,
+        411.7618713378906,
+        278.7253723144531,
+        1.5587928295135498,
+        55.68092346191406,
+        64.9789047241211
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5678,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 82.95913920563112,
+      "jumps": 1,
+      "goal_node_state": [
+        351.28057861328125,
+        246.70333862304688,
+        334.0550231933594,
+        195.46412658691406,
+        0.26326242089271545,
+        10.872766494750977,
+        -73.18988037109375
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 4,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        148.16283456906592,
+        93.14258784030068,
+        335.195864453863,
+        262.9529637983454,
+        5.465898086060948,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4318,
+      "route": true,
+      "entry_gap": 75.3774847344204,
+      "demo_steps": 57.649282705346614,
+      "jumps": 6,
+      "goal_node_state": [
+        315.7185363769531,
+        386.6483459472656,
+        320.1115417480469,
+        332.9092102050781,
+        0.6661975979804993,
+        -29.889820098876953,
+        -30.967315673828125
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        351.8511992285637,
+        214.72883143455354,
+        1.5931002837415145
+      ],
+      "block_moved_px": 38.44973179238113,
+      "block_turned_deg": 149.0561254310904,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 52.12041095276681,
+      "demo_steps": 30.0,
+      "jumps": 0,
+      "goal_node_state": [
+        261.2489013671875,
+        328.1495666503906,
+        272.4024658203125,
+        248.61170959472656,
+        0.5205885171890259,
+        -38.805084228515625,
+        -69.12340545654297
+      ]
+    },
+    {
+      "success": true,
+      "steps": 243,
+      "n_hops": 10,
+      "end_block": [
+        320.201777915756,
+        235.57896313952233,
+        0.21983359184782714
+      ],
+      "block_moved_px": 9.48814433993224,
+      "block_turned_deg": 70.37373983968975,
+      "gate_012": true,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7580,
+      "route": true,
+      "entry_gap": 41.006635707560186,
+      "demo_steps": 20.0,
+      "jumps": 0,
+      "goal_node_state": [
+        318.5022277832031,
+        340.4349060058594,
+        331.8730163574219,
+        215.82559204101562,
+        0.3433462381362915,
+        -118.28814697265625,
+        9.952421188354492
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        355.4478545483438,
+        201.2429339777187,
+        5.875773165227562
+      ],
+      "block_moved_px": 51.242231756521896,
+      "block_turned_deg": 34.43520657537193,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 237,
+      "route": true,
+      "entry_gap": 52.411820294554765,
+      "demo_steps": 314.36189876169743,
+      "jumps": 21,
+      "goal_node_state": [
+        283.8708190917969,
+        204.23817443847656,
+        302.2087097167969,
+        256.2451477050781,
+        3.3728153705596924,
+        18.750293731689453,
+        118.74018859863281
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        268.68618601717435,
+        322.7524390174519,
+        5.889519674095351
+      ],
+      "block_moved_px": 98.06492546248545,
+      "block_turned_deg": 35.2228235165354,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 35525,
+      "route": true,
+      "entry_gap": 53.62081056358835,
+      "demo_steps": 35.0,
+      "jumps": 0,
+      "goal_node_state": [
+        263.234619140625,
+        305.86627197265625,
+        260.5770568847656,
+        250.05235290527344,
+        0.5152826309204102,
+        9.28935432434082,
+        -70.88936614990234
+      ]
+    },
+    {
+      "success": true,
+      "steps": 144,
+      "n_hops": 6,
+      "end_block": [
+        417.5230966880315,
+        258.24789400770385,
+        3.815219661377439
+      ],
+      "block_moved_px": 92.82223247351638,
+      "block_turned_deg": -83.62581265613395,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 201,
+      "route": true,
+      "entry_gap": 52.792222942408934,
+      "demo_steps": 114.81695339449321,
+      "jumps": 4,
+      "goal_node_state": [
+        361.23822021484375,
+        323.4942321777344,
+        413.9540710449219,
+        254.8306884765625,
+        0.3020305633544922,
+        36.442527770996094,
+        106.81687927246094
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        259.21910542694,
+        71.71524378444357,
+        4.509820586818141
+      ],
+      "block_moved_px": 183.9472471023458,
+      "block_turned_deg": -43.82811118250054,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5931,
+      "route": true,
+      "entry_gap": 41.96627255865748,
+      "demo_steps": 50.0,
+      "jumps": 0,
+      "goal_node_state": [
+        366.90252685546875,
+        193.19021606445312,
+        323.0205078125,
+        162.1626434326172,
+        4.747917175292969,
+        -82.71800994873047,
+        -107.92826080322266
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        392.1926971202189,
+        407.09538384119145,
+        5.469397216903189
+      ],
+      "block_moved_px": 176.83964321831564,
+      "block_turned_deg": 11.151579840758895,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 5,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        421.46401146919715,
+        73.4082672203721,
+        325.9393029939339,
+        243.1357937577556,
+        5.274765431882921,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6886,
+      "route": true,
+      "entry_gap": 52.12041095276681,
+      "demo_steps": 82.04711933327762,
+      "jumps": 2,
+      "goal_node_state": [
+        275.42315673828125,
+        269.4322204589844,
+        325.95751953125,
+        323.60516357421875,
+        1.4735230207443237,
+        2.2981860637664795,
+        19.000986099243164
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        77.71995558665381,
+        344.50125558830865,
+        4.466937483760442
+      ],
+      "block_moved_px": 221.39713464032985,
+      "block_turned_deg": 26.71103995845199,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 122.16095172434163,
+      "jumps": 3,
+      "goal_node_state": [
+        241.14894104003906,
+        213.0505828857422,
+        248.7310791015625,
+        254.62220764160156,
+        1.0294231176376343,
+        -55.39671325683594,
+        11.395376205444336
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        343.30887650477393,
+        495.3646860640815,
+        2.993090958400607
+      ],
+      "block_moved_px": 111.79921246632853,
+      "block_turned_deg": -57.73414559468762,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1909,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 204.50447707666683,
+      "jumps": 12,
+      "goal_node_state": [
+        300.04742431640625,
+        425.93463134765625,
+        305.932373046875,
+        371.01080322265625,
+        5.762730598449707,
+        -74.94331359863281,
+        -30.774295806884766
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        245.7698717800818,
+        344.0296948193164,
+        4.232654835516778
+      ],
+      "block_moved_px": 69.92896180553772,
+      "block_turned_deg": 13.28763300094197,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 509,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 84.38411384388597,
+      "jumps": 3,
+      "goal_node_state": [
+        351.27178955078125,
+        364.1382141113281,
+        314.96356201171875,
+        362.1026611328125,
+        2.7745325565338135,
+        22.532325744628906,
+        -90.58351135253906
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        115.42161755022019,
+        437.0179606764968,
+        5.176036589385498
+      ],
+      "block_moved_px": 182.5562348798638,
+      "block_turned_deg": 67.33942596726904,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4963,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 137.12772382041425,
+      "jumps": 3,
+      "goal_node_state": [
+        248.18115234375,
+        367.7978210449219,
+        216.6085205078125,
+        411.4175109863281,
+        3.190474510192871,
+        -127.04106903076172,
+        -9.746131896972656
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        410.82210235529254,
+        415.36696205437664,
+        3.895445708750914
+      ],
+      "block_moved_px": 119.3199897974147,
+      "block_turned_deg": -6.0330267760339815,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1155,
+      "route": true,
+      "entry_gap": 38.30757083888394,
+      "demo_steps": 150.0,
+      "jumps": 0,
+      "goal_node_state": [
+        355.59088134765625,
+        335.4781494140625,
+        354.8221435546875,
+        391.8989562988281,
+        3.70869517326355,
+        35.27887725830078,
+        15.844820976257324
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        256.57160444430536,
+        279.5906872010511,
+        3.725124004657058
+      ],
+      "block_moved_px": 121.49025101223441,
+      "block_turned_deg": -15.791741580088008,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 6,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        208.50885506244228,
+        373.131970258631,
+        293.17874945853634,
+        395.4345391092244,
+        4.0007418898536855,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 7187,
+      "route": true,
+      "entry_gap": 38.82913410728907,
+      "demo_steps": 84.2156988034701,
+      "jumps": 3,
+      "goal_node_state": [
+        303.9422302246094,
+        324.77227783203125,
+        304.98199462890625,
+        309.78448486328125,
+        3.1795618534088135,
+        51.39031982421875,
+        2.988396644592285
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 50.206769994463194,
+      "jumps": 1,
+      "goal_node_state": [
+        238.71728515625,
+        298.6520080566406,
+        245.24559020996094,
+        245.33335876464844,
+        0.7138078808784485,
+        11.276007652282715,
+        -84.52500915527344
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        438.69628123060687,
+        166.90669130240366,
+        6.0482997126477684
+      ],
+      "block_moved_px": 143.7163329664816,
+      "block_turned_deg": 8.362598576756628,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1857,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 45.0,
+      "jumps": 0,
+      "goal_node_state": [
+        270.8139953613281,
+        376.9322509765625,
+        361.1068115234375,
+        290.2579650878906,
+        1.044037938117981,
+        -146.06312561035156,
+        3.1190574169158936
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        401.00277325226136,
+        291.65207671725557,
+        6.0738922035935685
+      ],
+      "block_moved_px": 14.80563203147428,
+      "block_turned_deg": 9.828940295177745,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1,
+      "route": false,
+      "entry_gap": 34.73576031392347,
+      "goal_node_state": [
+        336.638671875,
+        303.5718078613281,
+        358.3535461425781,
+        318.3753662109375,
+        4.370518684387207,
+        -14.224654197692871,
+        14.515043258666992
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "n_hops": 2,
+      "end_block": [
+        328.2583671798249,
+        301.9592805948107,
+        5.745741799987738
+      ],
+      "block_moved_px": 62.587085251417534,
+      "block_turned_deg": -8.972692876950893,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 6679,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 31.600683162939905,
+      "jumps": 1,
+      "goal_node_state": [
+        355.20184326171875,
+        310.7014465332031,
+        302.5787658691406,
+        318.1719055175781,
+        5.156027317047119,
+        -178.7386016845703,
+        19.078371047973633
+      ]
+    },
+    {
+      "success": true,
+      "steps": 51,
+      "n_hops": 3,
+      "end_block": [
+        406.07067604232475,
+        230.15181642968724,
+        0.32555583119930986
+      ],
+      "block_moved_px": 73.85731418665361,
+      "block_turned_deg": 40.473526935444816,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 457,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 89.02234869295532,
+      "jumps": 2,
+      "goal_node_state": [
+        339.7120666503906,
+        263.56170654296875,
+        372.17193603515625,
+        220.6373291015625,
+        1.2216107845306396,
+        -35.4340705871582,
+        -79.78521728515625
+      ]
+    },
+    {
+      "success": true,
+      "steps": 74,
+      "n_hops": 3,
+      "end_block": [
+        408.6958895674246,
+        384.7251772879648,
+        0.26362531687491053
+      ],
+      "block_moved_px": 84.21662320204983,
+      "block_turned_deg": 36.925169841582246,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 7,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        174.37051779505643,
+        113.63297791469216,
+        390.8437386520599,
+        302.422441420613,
+        5.9023448334607735,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 1134,
+      "route": true,
+      "entry_gap": 34.73576031392347,
+      "demo_steps": 30.0,
+      "jumps": 0,
+      "goal_node_state": [
+        392.5602722167969,
+        370.6490478515625,
+        397.2591857910156,
+        389.180908203125,
+        0.43867671489715576,
+        -88.02265930175781,
+        32.76267623901367
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        424.6940500970502,
+        455.5249295636135,
+        2.8670496943666772
+      ],
+      "block_moved_px": 236.30527154737905,
+      "block_turned_deg": -20.192651560863684,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 112.79619661267986,
+      "jumps": 4,
+      "goal_node_state": [
+        167.6275177001953,
+        267.4978332519531,
+        272.3284912109375,
+        246.4314727783203,
+        1.0896179676055908,
+        -1.7096017599105835,
+        55.50467300415039
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        402.0073065734025,
+        237.55068150682274,
+        1.8336593592584176
+      ],
+      "block_moved_px": 122.15297264632449,
+      "block_turned_deg": -79.40155635217678,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 836,
+      "route": true,
+      "entry_gap": 90.07541251582188,
+      "demo_steps": 203.92740593818166,
+      "jumps": 8,
+      "goal_node_state": [
+        304.2077941894531,
+        347.4095458984375,
+        265.0771484375,
+        297.5167541503906,
+        5.131782531738281,
+        -22.249969482421875,
+        -62.920936584472656
+      ]
+    },
+    {
+      "success": true,
+      "steps": 219,
+      "n_hops": 9,
+      "end_block": [
+        316.21887189109424,
+        265.0699988436885,
+        1.7527946328501205
+      ],
+      "block_moved_px": 32.97353586404256,
+      "block_turned_deg": -84.0347638868523,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4115,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 70.94991007106944,
+      "jumps": 4,
+      "goal_node_state": [
+        337.05859375,
+        192.09344482421875,
+        298.1544189453125,
+        242.4540252685547,
+        1.9969109296798706,
+        -29.927392959594727,
+        -54.332218170166016
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 10853,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 131.1116421763092,
+      "jumps": 4,
+      "goal_node_state": [
+        168.76678466796875,
+        181.43812561035156,
+        208.7769012451172,
+        249.4825897216797,
+        1.3617675304412842,
+        67.57208251953125,
+        47.64662551879883
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        386.056035426075,
+        312.82069858923796,
+        2.3147243209882413
+      ],
+      "block_moved_px": 112.86272890519548,
+      "block_turned_deg": -51.83856437343542,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 3545,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 113.50447759476162,
+      "jumps": 3,
+      "goal_node_state": [
+        297.9788513183594,
+        283.66510009765625,
+        351.10791015625,
+        280.9594421386719,
+        2.1181743144989014,
+        162.00697326660156,
+        73.34461212158203
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207
+      ],
+      "block_moved_px": 0.0,
+      "block_turned_deg": 0.0,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5734,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 87.66671692408354,
+      "jumps": 4,
+      "goal_node_state": [
+        276.6983337402344,
+        217.84814453125,
+        271.34088134765625,
+        201.03543090820312,
+        2.265071392059326,
+        -42.65550231933594,
+        19.079208374023438
+      ]
+    },
+    {
+      "success": true,
+      "steps": 174,
+      "n_hops": 7,
+      "end_block": [
+        290.5695179689009,
+        336.15438280851066,
+        3.064137052509499
+      ],
+      "block_moved_px": 70.3193033205445,
+      "block_turned_deg": -8.900377743896673,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 8,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        62.65458494466309,
+        62.661489299650384,
+        283.26523825781123,
+        266.2154671936049,
+        3.2194779488117207,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 4898,
+      "route": true,
+      "entry_gap": 93.0446185618431,
+      "demo_steps": 86.33764843782929,
+      "jumps": 5,
+      "goal_node_state": [
+        225.65347290039062,
+        414.50164794921875,
+        301.5152893066406,
+        340.2118835449219,
+        0.5172967910766602,
+        206.13084411621094,
+        168.6653289794922
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        250.61096424509608,
+        334.0979704711998,
+        0.3435761784130552
+      ],
+      "block_moved_px": 47.626250778188066,
+      "block_turned_deg": 27.591661781325996,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "target",
+      "words": "put the T on the target",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 43545,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 23.79472196354323,
+      "jumps": 2,
+      "goal_node_state": [
+        305.1183166503906,
+        268.5411682128906,
+        271.78424072265625,
+        267.4053039550781,
+        0.5648064613342285,
+        64.80692291259766,
+        32.41978454589844
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        174.8857057061896,
+        296.90719925387,
+        5.468309224355179
+      ],
+      "block_moved_px": 80.09170435670902,
+      "block_turned_deg": -38.78276355496729,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "turn_cw",
+      "words": "turn the T 90 degrees clockwise",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 9305,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 32.62145459635213,
+      "jumps": 3,
+      "goal_node_state": [
+        273.63690185546875,
+        345.0157470703125,
+        245.32044982910156,
+        314.7276916503906,
+        1.169360637664795,
+        -186.50100708007812,
+        6.350651741027832
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        99.15397359344169,
+        188.11394501358316,
+        4.86045612852501
+      ],
+      "block_moved_px": 183.78545904570151,
+      "block_turned_deg": -73.61018050999716,
+      "gate_012": false,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "turn_ccw",
+      "words": "turn the T 90 degrees counter-clockwise",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 576,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 111.03420125369897,
+      "jumps": 6,
+      "goal_node_state": [
+        316.2158508300781,
+        269.8664245605469,
+        255.49099731445312,
+        249.49095153808594,
+        4.549574851989746,
+        -77.73004913330078,
+        -77.84503936767578
+      ]
+    },
+    {
+      "success": true,
+      "steps": 20,
+      "n_hops": 1,
+      "end_block": [
+        186.503135022773,
+        279.6836163298341,
+        5.820940244746211
+      ],
+      "block_moved_px": 68.16375238877633,
+      "block_turned_deg": -18.578494361169504,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "push_left",
+      "words": "push the T left",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 8050,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 74.39347709682158,
+      "jumps": 3,
+      "goal_node_state": [
+        226.4726104736328,
+        324.74853515625,
+        157.91409301757812,
+        285.25445556640625,
+        0.18451063334941864,
+        -66.7249984741211,
+        -37.9293327331543
+      ]
+    },
+    {
+      "success": true,
+      "steps": 71,
+      "n_hops": 3,
+      "end_block": [
+        315.5657625018188,
+        291.87326098733035,
+        0.5017937982494605
+      ],
+      "block_moved_px": 61.47750765445171,
+      "block_turned_deg": 36.65686364255733,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "push_right",
+      "words": "push the T right",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5307,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 77.92808371389326,
+      "jumps": 6,
+      "goal_node_state": [
+        313.87884521484375,
+        350.09967041015625,
+        322.5279541015625,
+        275.3764343261719,
+        0.5194288492202759,
+        -44.6416015625,
+        -12.446009635925293
+      ]
+    },
+    {
+      "success": false,
+      "steps": 300,
+      "n_hops": 12,
+      "end_block": [
+        195.6607166231906,
+        198.72230795905008,
+        0.3000930806674219
+      ],
+      "block_moved_px": 105.66655530216143,
+      "block_turned_deg": 25.100263800346344,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "push_up",
+      "words": "push the T up",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 5111,
+      "route": true,
+      "entry_gap": 43.09788386536433,
+      "demo_steps": 60.063209965816675,
+      "jumps": 4,
+      "goal_node_state": [
+        255.73350524902344,
+        280.17559814453125,
+        255.2772979736328,
+        226.19261169433594,
+        0.5795310139656067,
+        -2.6178531646728516,
+        -12.63945198059082
+      ]
+    },
+    {
+      "success": true,
+      "steps": 49,
+      "n_hops": 2,
+      "end_block": [
+        266.03921477196565,
+        356.42401538918773,
+        0.7656841574809409
+      ],
+      "block_moved_px": 70.78610259484965,
+      "block_turned_deg": 51.776667480712305,
+      "n_crumb_hops": 0,
+      "n_no_path": 0,
+      "hops": [
+        {
+          "target": "goal_image"
+        },
+        {
+          "target": "goal_image"
+        }
+      ],
+      "seed": 9,
+      "command": "push_down",
+      "words": "push the T down",
+      "start_state": [
+        415.96146115203686,
+        242.24598213257275,
+        254.3134675568801,
+        286.61585560240854,
+        6.1451961414118195,
+        0.0,
+        0.0
+      ],
+      "n_goal_nodes": 2781,
+      "route": true,
+      "entry_gap": 36.48148684190488,
+      "demo_steps": 29.774787852334768,
+      "jumps": 1,
+      "goal_node_state": [
+        297.4740905761719,
+        385.7973937988281,
+        263.59661865234375,
+        360.74932861328125,
+        1.0005755424499512,
+        -40.35471725463867,
+        56.756046295166016
+      ]
+    }
+  ]
+}
