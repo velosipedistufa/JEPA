@@ -156,6 +156,6 @@ Do not edit the prompt, the few-shot examples, the tolerances or the claims afte
 
 1. Model files: `ls data/hf_models/Qwen2.5-1.5B-Instruct/*.safetensors`. If missing, run `hf download Qwen/Qwen2.5-1.5B-Instruct --local-dir data/hf_models/Qwen2.5-1.5B-Instruct` (it resumes). `data/hf_models/` and `data/datasets/` are git-excluded locally.
 2. Smoke test, not scored: `python scripts/command_parser.py "nudge the tee toward the bottom"` should print a push down of about 40. The parser and the end-to-end script were written but have NOT run yet. Fix only crashes; don't change the prompt or the tolerances.
-3. Check that `paraphrases.jsonl` has 120 lines with valid labels, then commit it on its own BEFORE running L1.
+3. (Smoke test passed 2026-10-08 14:20 after dev-only prompt fixes: turns now output a rotation word plus positive degrees, and compass words map to directions. These were tuned on Claude's own sentences only.) Check that `paraphrases.jsonl` has 120 lines with valid labels, then commit it on its own BEFORE running L1.
 4. Run L1 (~1 min), then L2 (~10–15 min on the 5090). Activate `.venv` first and run from the repo root.
 5. Commit the `research/artifacts/5090/parse_*.json` and `language_*.json` files, add an L1/L2 row to the results table above, and push this branch. Never push to master. Commit as FaithOgunwoye (repo-local git config is already set). No AI co-author lines.

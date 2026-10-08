@@ -31,6 +31,7 @@ MODEL_DIR = ROOT / "data" / "hf_models" / "Qwen2.5-1.5B-Instruct"
 OUT = ROOT / "research" / "artifacts" / "5090"
 
 DIRS = ("left", "right", "up", "down")
+ALIASES = {"west": "left", "east": "right", "north": "up", "south": "down", "top": "up", "bottom": "down"}
 DEG_TOL = 15.0  # a turn parse is right if the sign matches and |deg - gold| <= this
 PX_TOL = 0.25  # a push parse is right if the dir matches and |px - gold| <= max(20, this * gold)
 
@@ -41,26 +42,28 @@ a round pusher moves it, and a green T outline marks the target pose.
 
 Output exactly one JSON object and nothing else, in one of these forms:
 {"action": "target"}
-{"action": "turn", "deg": D}
+{"action": "turn", "rotation": "clockwise|counterclockwise", "deg": D}
 {"action": "push", "dir": "left|right|up|down", "px": P}
 
 Rules:
 - target: put the T on the green target outline (also "goal", "outline", "where it belongs").
-- turn: rotate the T in place. D is signed: positive = clockwise as seen on screen, negative = counter-clockwise \
-(anticlockwise). "to the right" for a rotation means clockwise, "to the left" means counter-clockwise.
+- turn: rotate the T in place. rotation is as seen on screen; anticlockwise = counterclockwise. D is a positive \
+number of degrees. "to the right" for a rotation means clockwise, "to the left" means counterclockwise.
 - push: slide the T. up = toward the top of the screen. "away from you"/"north" = up, "toward you"/"south" = down, \
 "west" = left, "east" = right.
 - Amounts: no amount given -> turn 90, push 80. "a little", "slightly", "a bit", "nudge" -> turn 45, push 40. \
 "a lot", "far" -> push 160. Quarter turn = 90, half turn = 180, eighth of a turn = 45. One T length = 100 px."""
 
 FEW_SHOT = [
-    ("Rotate the block 60 degrees anticlockwise.", {"action": "turn", "deg": -60}),
+    ("Rotate the block 60 degrees anticlockwise.", {"action": "turn", "rotation": "counterclockwise", "deg": 60}),
+    ("turn it 30 degrees clockwise", {"action": "turn", "rotation": "clockwise", "deg": 30}),
     ("could you slide it over to the right a little", {"action": "push", "dir": "right", "px": 40}),
     ("Line the T up with the green outline.", {"action": "target"}),
-    ("spin it half way round", {"action": "turn", "deg": 180}),
+    ("spin it half way round", {"action": "turn", "rotation": "clockwise", "deg": 180}),
     ("move the piece two T lengths toward the top", {"action": "push", "dir": "up", "px": 200}),
-    ("i want it pointing a quarter turn more to the right", {"action": "turn", "deg": 90}),
+    ("i want it pointing a quarter turn more to the right", {"action": "turn", "rotation": "clockwise", "deg": 90}),
     ("shove it down 120px", {"action": "push", "dir": "down", "px": 120}),
+    ("move it 50 pixels east", {"action": "push", "dir": "right", "px": 50}),
     ("put the letter back where it belongs", {"action": "target"}),
 ]
 
@@ -83,7 +86,14 @@ def normalize(cmd):
     if action == "target":
         return {"action": "target"}
     if action == "turn" and isinstance(cmd.get("deg"), (int, float)):
-        return {"action": "turn", "deg": float(cmd["deg"])}
+        rot = cmd.get("rotation")
+        if rot is None:  # gold labels carry a signed deg
+            return {"action": "turn", "deg": float(cmd["deg"])}
+        if rot in ("clockwise", "counterclockwise"):
+            return {"action": "turn", "deg": abs(float(cmd["deg"])) * (1.0 if rot == "clockwise" else -1.0)}
+        return None
+    if action == "push" and isinstance(cmd.get("dir"), str):
+        cmd = dict(cmd, dir=ALIASES.get(cmd["dir"].lower(), cmd["dir"].lower()))
     if action == "push" and cmd.get("dir") in DIRS and isinstance(cmd.get("px"), (int, float)):
         return {"action": "push", "dir": cmd["dir"], "px": float(cmd["px"])}
     return None
@@ -128,7 +138,7 @@ class LLMParser:
 
         self.torch = torch
         self.tok = AutoTokenizer.from_pretrained(model_dir)
-        self.model = AutoModelForCausalLM.from_pretrained(model_dir, torch_dtype=torch.bfloat16).cuda().eval()
+        self.model = AutoModelForCausalLM.from_pretrained(model_dir, dtype=torch.bfloat16).cuda().eval()
 
     def messages(self, text: str):
         msgs = [{"role": "system", "content": SYSTEM}]
