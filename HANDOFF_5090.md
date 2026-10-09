@@ -211,3 +211,20 @@ counts, excluded IDs, and success totals were checked against the summaries.
 Neither frozen language claim was met on this test set; neither kill
 threshold was reached. The stronger limitation remains execution: even gold
 commands succeeded on only 51.4% of the eligible tasks.
+
+## Words into the latent: subgoal head (frozen 2026-10-09 14:39, before any run)
+
+Sasha's point: Qwen + graph keeps the words outside LeWM. The planner is only reliable about 25 steps out, so the words should produce the next nearby subgoal latent, not the final goal. This is the stretch idea from check 3.
+
+`scripts/latent_subgoal.py`:
+- `head(z_start, z_now, text) → z_next`. The z values are LeWM latents (192-d); the text is a frozen Qwen2.5-1.5B embedding (mean-pooled last layer).
+- Trained on graph routes (train episodes only): 6000 random (start, command) plans, cut into 25-step hops, with 3 grammar sentences per plan. Training starts are demo states and live resets with seed ≥ 1000; the test uses seeds 0–9.
+- At test time there's no graph and no parser. Every hop, the head gives the target latent and the official CEM chases it.
+- Eval uses the same 111 held-out Codex sentences, starts and gold scoring as L2.
+- References from L2: graph + parser 51/111, graph + gold 57/111.
+
+| # | Command | Claim | Kill if |
+|---|---|---|---|
+| S1 | `latent_subgoal.py data`, then `train` | Val MSE ≤ 0.7 × the copy-z_now baseline on held-out plans | ≥ 0.9 × copy |
+| S2 | `latent_subgoal.py eval research/language/paraphrases.jsonl` | Head reaches ≥ 34/111 (60% of graph + gold) | ≤ 11/111 |
+| S3 | same with `--shuffle` (each sentence gets another row's text) | Words matter: head ≥ shuffled + 10 | head ≤ shuffled + 3 |
