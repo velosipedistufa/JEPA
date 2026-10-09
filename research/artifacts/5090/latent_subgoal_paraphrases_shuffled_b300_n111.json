@@ -1,0 +1,1588 @@
+{
+  "summary": {
+    "n": 111,
+    "dropped": 9,
+    "successes": 10,
+    "by_action": {
+      "target": "2/30",
+      "turn": "3/45",
+      "push": "5/36"
+    },
+    "shuffled_text": true,
+    "rate": 0.09009009009009009
+  },
+  "wall_s": 416.2131588459015,
+  "dropped_ids": [
+    27,
+    28,
+    47,
+    53,
+    77,
+    82,
+    83,
+    86,
+    106
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "text": "A bit of counterclockwise rotation in the same spot would be ideal.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 122.2938201481774
+    },
+    {
+      "id": 1,
+      "text": "That letter thing, make it match green ghost position AND angle.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 80.42546053288945
+    },
+    {
+      "id": 2,
+      "text": "I'd like the block's orientation 30 degrees clockwise from now, at the same position.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 128.25153572529524
+    },
+    {
+      "id": 3,
+      "text": "grey letter goes in green letter, exact same pose thx.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 94.98501369137448
+    },
+    {
+      "id": 4,
+      "text": "one tee-length toward screen top, slide da block.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 100.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 6.82145009244085
+    },
+    {
+      "id": 5,
+      "text": "I'm looking for complete overlap between the piece and the green template.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 197.35825891066563
+    },
+    {
+      "id": 6,
+      "text": "Send that piece far to the left.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 7,
+      "text": "Rotate the piece counterclockwise through 30 degrees in its current spot.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 193.83995522641385
+    },
+    {
+      "id": 8,
+      "text": "I'd go with a 75-degree clockwise twist at this spot.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 75.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 106.93189971884021
+    },
+    {
+      "id": 9,
+      "text": "nudge to the left for the tee plz.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "success": true,
+      "steps": 25,
+      "hops": 1,
+      "block_moved_px": 24.297099454475454
+    },
+    {
+      "id": 10,
+      "text": "Translate the block 30 pixels toward the left edge of the screen.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 30.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 94.68209721085483
+    },
+    {
+      "id": 11,
+      "text": "Translate the letter 200 pixels rightward.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 200.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 82.80387850267378
+    },
+    {
+      "id": 12,
+      "text": "Rotate the T a half turn anticlockwise around its center.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 201.64506505902662
+    },
+    {
+      "id": 13,
+      "text": "Rotate the letter 120 degrees clockwise, keeping its center still.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 59.2735579815351
+    },
+    {
+      "id": 14,
+      "text": "Make the piece and the green guide sit right on top of each other.",
+      "style": "casual",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 8.538135689989348
+    },
+    {
+      "id": 15,
+      "text": "Align the block precisely with the green silhouette.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 36.332690749515834
+    },
+    {
+      "id": 16,
+      "text": "eighth-turn clockwise, that piece, in place if u please.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 17,
+      "text": "Match block to green shape all the way, no crooked angle pls.",
+      "style": "odd",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 140.54259859040482
+    },
+    {
+      "id": 18,
+      "text": "I'd like the block a bit farther left than it is now.",
+      "style": "indirect",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 112.98584062878747
+    },
+    {
+      "id": 19,
+      "text": "Nudge that block toward the right side.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 51.548177652145085
+    },
+    {
+      "id": 20,
+      "text": "Let's swivel this piece a quarter turn clockwise where it sits.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 126.05887912657622
+    },
+    {
+      "id": 21,
+      "text": "Move the piece one and a half T lengths to the right.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 150.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 137.21180771216572
+    },
+    {
+      "id": 22,
+      "text": "The desired final pose is exactly the one drawn in green.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 107.27126713617633
+    },
+    {
+      "id": 23,
+      "text": "Seat the piece squarely in the green silhouette.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 88.11565904379587
+    },
+    {
+      "id": 24,
+      "text": "It would be good to have the solid letter perfectly matching the green letter.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 90.09447089261477
+    },
+    {
+      "id": 25,
+      "text": "I want the letter moved far to the left from here.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 160.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 200.3116844594885
+    },
+    {
+      "id": 26,
+      "text": "Twist it slightly counterclockwise, keeping it here.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 29,
+      "text": "Clockwise rotation for this tee please, location unchanged.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 41.084320349615325
+    },
+    {
+      "id": 30,
+      "text": "grey dude spin counterclockwise 60 degrees, center stays.",
+      "style": "odd",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "success": true,
+      "steps": 25,
+      "hops": 1,
+      "block_moved_px": 19.032166677904954
+    },
+    {
+      "id": 31,
+      "text": "green tee and grey tee: stack em exact, same facing.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 95.55830246273142
+    },
+    {
+      "id": 32,
+      "text": "Give the T a 60-degree clockwise rotation about its center.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 95.95555753217954
+    },
+    {
+      "id": 33,
+      "text": "Spin the block clockwise through 135 degrees in place.",
+      "style": "plain",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 56.960198089094675
+    },
+    {
+      "id": 34,
+      "text": "Slide the letter half a T length toward the top of the screen.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 50.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 153.9174456566284
+    },
+    {
+      "id": 35,
+      "text": "Let's spin the T clockwise by 150 degrees without sliding it.",
+      "style": "casual",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 150.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 275.75773627416487
+    },
+    {
+      "id": 36,
+      "text": "The block should end up at the green outline's position and angle.",
+      "style": "indirect",
+      "seed": 6,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 37,
+      "text": "I'd say slide and swivel it until the two Ts match.",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 134.59969062833693
+    },
+    {
+      "id": 38,
+      "text": "Scoot the piece a little to the left.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 143.58090349968737
+    },
+    {
+      "id": 39,
+      "text": "Place the block in the pose indicated by the green outline.",
+      "style": "plain",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 75.10774161190541
+    },
+    {
+      "id": 40,
+      "text": "Rotate the letter 120 degrees anticlockwise at the same location.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -120.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 195.30695715601644
+    },
+    {
+      "id": 41,
+      "text": "Move and orient the T so it coincides with the green marking.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": true,
+      "steps": 53,
+      "hops": 3,
+      "block_moved_px": 103.96647088566823
+    },
+    {
+      "id": 42,
+      "text": "screen-up a lot, scoot da tee.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "success": true,
+      "steps": 175,
+      "hops": 7,
+      "block_moved_px": 170.22265114436357
+    },
+    {
+      "id": 43,
+      "text": "Get the block nestled into that green T, facing the same way.",
+      "style": "casual",
+      "seed": 3,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 61.25767683209449
+    },
+    {
+      "id": 44,
+      "text": "Give the piece an eighth of a turn clockwise in place.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 103.53138931700168
+    },
+    {
+      "id": 45,
+      "text": "The desired change is a 30-degree counterclockwise rotation with no shift.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -30.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 7.319280036867186
+    },
+    {
+      "id": 46,
+      "text": "rotat the tee a lil bit clockwise in place.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 48,
+      "text": "eighth-turn counterclockwise for that letter thing, same location.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 284.92658633877244
+    },
+    {
+      "id": 49,
+      "text": "My goal is a grey T sitting flush over the green T guide.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": true,
+      "steps": 49,
+      "hops": 2,
+      "block_moved_px": 28.813426287382143
+    },
+    {
+      "id": 50,
+      "text": "Give the piece an eighth of a turn counterclockwise in place.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 94.21229584640042
+    },
+    {
+      "id": 51,
+      "text": "Match the letter's position and rotation to the green template.",
+      "style": "plain",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 61.63164958210315
+    },
+    {
+      "id": 52,
+      "text": "tee, do a quarter spin clockwise on the spot pls.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 137.66095226405133
+    },
+    {
+      "id": 54,
+      "text": "I want the piece a quarter turn anticlockwise from its current pose, with its center unchanged.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 173.08327630423653
+    },
+    {
+      "id": 55,
+      "text": "Rotate the T a half turn clockwise around its center.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 161.37412609524654
+    },
+    {
+      "id": 56,
+      "text": "60 degrees clockwise pls, spin the grey dude in place.",
+      "style": "odd",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 60.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 29.87555868479702
+    },
+    {
+      "id": 57,
+      "text": "Rotate the block clockwise by 30 degrees without translating it.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": 30.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 146.67586505410304
+    },
+    {
+      "id": 58,
+      "text": "Give that block a clockwise spin in place.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 20.479647733367468
+    },
+    {
+      "id": 59,
+      "text": "Bring the grey T into exact alignment with its green destination.",
+      "style": "plain",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 82.943561222625
+    },
+    {
+      "id": 60,
+      "text": "Let's slide the block toward the bottom edge.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 80.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 96.97833059796288
+    },
+    {
+      "id": 61,
+      "text": "Can you spin it counterclockwise by 150 degrees, staying here?",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "turn",
+        "deg": -150.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 21.444076974555355
+    },
+    {
+      "id": 62,
+      "text": "anticlockwise swivel, block stays on this spot ok.",
+      "style": "odd",
+      "seed": 2,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 169.85629421948414
+    },
+    {
+      "id": 63,
+      "text": "A slight downward shift of the block on the screen would be good.",
+      "style": "indirect",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 73.35486880485773
+    },
+    {
+      "id": 64,
+      "text": "Give the block a 60-degree counterclockwise rotation about its center.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -60.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 85.73776171608017
+    },
+    {
+      "id": 65,
+      "text": "I'd prefer the grey piece farther toward the top of the screen.",
+      "style": "indirect",
+      "seed": 5,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 182.8014377965132
+    },
+    {
+      "id": 66,
+      "text": "Move it a bit toward the top of the screen.",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 176.29910602127504
+    },
+    {
+      "id": 67,
+      "text": "Move the grey block 75 pixels upward on the screen.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 75.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 171.2429237583441
+    },
+    {
+      "id": 68,
+      "text": "Can you swivel the block a quarter turn anticlockwise without moving its center?",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 44.879442855464944
+    },
+    {
+      "id": 69,
+      "text": "The position I want is two T lengths above the current one on screen.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 200.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 49.87142852221886
+    },
+    {
+      "id": 70,
+      "text": "A bit anticlockwise, twist that thing where it stands.",
+      "style": "odd",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -45.0
+      },
+      "success": true,
+      "steps": 24,
+      "hops": 1,
+      "block_moved_px": 22.206318572574464
+    },
+    {
+      "id": 71,
+      "text": "Rightward by 120 pixels, move that letter thing.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 120.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 100.70322890076022
+    },
+    {
+      "id": 72,
+      "text": "I'd like the piece one T length to the right of its current location.",
+      "style": "indirect",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 100.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 119.1888847107445
+    },
+    {
+      "id": 73,
+      "text": "grey dude goes 150 pixels screen-down thx.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 150.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 61.40282196284879
+    },
+    {
+      "id": 74,
+      "text": "the tee needs half-turn counterclockwise, same center ya.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 21.0518490191296
+    },
+    {
+      "id": 75,
+      "text": "Put da piece flush in the green drawing, arms matching.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 90.83983097013812
+    },
+    {
+      "id": 76,
+      "text": "I'd like the piece facing a quarter turn clockwise from its present orientation, still here.",
+      "style": "indirect",
+      "seed": 6,
+      "gold": {
+        "action": "turn",
+        "deg": 90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 93.84584955559686
+    },
+    {
+      "id": 78,
+      "text": "For this piece, green stencil pose is wanted; align exact.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 17.91948934535669
+    },
+    {
+      "id": 79,
+      "text": "Move the letter far upward on the screen.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 160.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 116.88788402722132
+    },
+    {
+      "id": 80,
+      "text": "The goal is half a turn clockwise from this orientation, without translation.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 133.34792383789238
+    },
+    {
+      "id": 81,
+      "text": "Scoot the block a lot to the right.",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 160.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 101.2352607962852
+    },
+    {
+      "id": 84,
+      "text": "I want the green outline filled by the grey block, with their arms aligned.",
+      "style": "indirect",
+      "seed": 4,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 49.65855963389517
+    },
+    {
+      "id": 85,
+      "text": "quarter spin anticlockwise for da letter, same spot.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 163.65998359841174
+    },
+    {
+      "id": 87,
+      "text": "Translate the piece one T length toward the bottom of the screen.",
+      "style": "plain",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 100.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 383.4763347643785
+    },
+    {
+      "id": 88,
+      "text": "Slide the grey block 135 pixels downward on the screen.",
+      "style": "plain",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 135.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 135.47384456308222
+    },
+    {
+      "id": 89,
+      "text": "The tee must wear the green outline like a perfect glove.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 64.11217513458546
+    },
+    {
+      "id": 90,
+      "text": "I'd prefer the block rotated clockwise by 120 degrees, staying in its current location.",
+      "style": "indirect",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 120.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 171.82199468575627
+    },
+    {
+      "id": 91,
+      "text": "pls fit teh tee exactly into the green stencil.",
+      "style": "odd",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 66.99711715809876
+    },
+    {
+      "id": 92,
+      "text": "Let's get that T lined up perfectly with the green one.",
+      "style": "casual",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 151.09235043535946
+    },
+    {
+      "id": 93,
+      "text": "send that tee far toward screen bottom yeah.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "down",
+        "px": 160.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 56.87972140977902
+    },
+    {
+      "id": 94,
+      "text": "a bit rightward scooting for that piece pls.",
+      "style": "odd",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 40.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 4.651997506031367
+    },
+    {
+      "id": 95,
+      "text": "Fit the grey piece inside the green T outline, matching its orientation.",
+      "style": "plain",
+      "seed": 5,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 162.60222697729813
+    },
+    {
+      "id": 96,
+      "text": "Can you slide that grey piece toward the left edge?",
+      "style": "casual",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 97,
+      "text": "Can you make the grey shape cover the green outline exactly?",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 241.06180437395133
+    },
+    {
+      "id": 98,
+      "text": "A slight clockwise rotation is what I'm after; keep the center where it is.",
+      "style": "indirect",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "success": true,
+      "steps": 43,
+      "hops": 2,
+      "block_moved_px": 25.327531443999575
+    },
+    {
+      "id": 99,
+      "text": "I'd like both T shapes to coincide exactly.",
+      "style": "indirect",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 89.77201009680962
+    },
+    {
+      "id": 100,
+      "text": "Twist it a bit clockwise, right where it is.",
+      "style": "casual",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": 45.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 117.4492720942545
+    },
+    {
+      "id": 101,
+      "text": "My desired position is 30 pixels to the right of where the T is now.",
+      "style": "indirect",
+      "seed": 1,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 30.0
+      },
+      "success": true,
+      "steps": 49,
+      "hops": 2,
+      "block_moved_px": 22.518457058038152
+    },
+    {
+      "id": 102,
+      "text": "Shift the block one T length to the left.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 100.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 166.35339068429198
+    },
+    {
+      "id": 103,
+      "text": "half-turn clockwise on spot for the tee, cheers.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "turn",
+        "deg": 180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 71.8892591792782
+    },
+    {
+      "id": 104,
+      "text": "Move the block 120 pixels toward the top of the screen.",
+      "style": "plain",
+      "seed": 4,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 120.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 2.3794551650237095
+    },
+    {
+      "id": 105,
+      "text": "Make letter spin 135 degrees clockwise, no slide thx.",
+      "style": "odd",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": 135.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 172.11912550915204
+    },
+    {
+      "id": 107,
+      "text": "The goal is half a turn counterclockwise from this orientation, without translation.",
+      "style": "indirect",
+      "seed": 7,
+      "gold": {
+        "action": "turn",
+        "deg": -180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 54.39673239394034
+    },
+    {
+      "id": 108,
+      "text": "Let's scoot the letter toward the screen's right side.",
+      "style": "casual",
+      "seed": 8,
+      "gold": {
+        "action": "push",
+        "dir": "right",
+        "px": 80.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 141.509314925728
+    },
+    {
+      "id": 109,
+      "text": "Pop the block into the green shape with the same tilt.",
+      "style": "casual",
+      "seed": 9,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 106.78041038393414
+    },
+    {
+      "id": 110,
+      "text": "Spin the block counterclockwise through 135 degrees in place.",
+      "style": "plain",
+      "seed": 0,
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 114.38575633347261
+    },
+    {
+      "id": 111,
+      "text": "The green T is where this one belongs; line them up fully.",
+      "style": "casual",
+      "seed": 1,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 112.53240918388165
+    },
+    {
+      "id": 112,
+      "text": "Make the solid T overlap the green T exactly.",
+      "style": "plain",
+      "seed": 2,
+      "gold": {
+        "action": "target"
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 167.64190420125564
+    },
+    {
+      "id": 113,
+      "text": "up a little on screen, move teh letter.",
+      "style": "odd",
+      "seed": 3,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 40.0
+      },
+      "success": true,
+      "steps": 119,
+      "hops": 5,
+      "block_moved_px": 22.712711536703438
+    },
+    {
+      "id": 114,
+      "text": "Give it a 75-degree anticlockwise twist right here.",
+      "style": "casual",
+      "seed": 4,
+      "gold": {
+        "action": "turn",
+        "deg": -75.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 91.5222684723141
+    },
+    {
+      "id": 115,
+      "text": "Give that block an anticlockwise spin in place.",
+      "style": "casual",
+      "seed": 5,
+      "gold": {
+        "action": "turn",
+        "deg": -90.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 24.387418309720076
+    },
+    {
+      "id": 116,
+      "text": "Displace the T 180 pixels leftward.",
+      "style": "plain",
+      "seed": 6,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 180.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 0.0
+    },
+    {
+      "id": 117,
+      "text": "Get that piece moving toward the top edge.",
+      "style": "casual",
+      "seed": 7,
+      "gold": {
+        "action": "push",
+        "dir": "up",
+        "px": 80.0
+      },
+      "success": true,
+      "steps": 248,
+      "hops": 10,
+      "block_moved_px": 61.193162197385966
+    },
+    {
+      "id": 118,
+      "text": "135 degrees anticlockwise for teh block, keep it here.",
+      "style": "odd",
+      "seed": 8,
+      "gold": {
+        "action": "turn",
+        "deg": -135.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 228.30806642243084
+    },
+    {
+      "id": 119,
+      "text": "leftward scoot for this letter thing thx.",
+      "style": "odd",
+      "seed": 9,
+      "gold": {
+        "action": "push",
+        "dir": "left",
+        "px": 80.0
+      },
+      "success": false,
+      "steps": 300,
+      "hops": 12,
+      "block_moved_px": 85.57338564826047
+    }
+  ]
+}

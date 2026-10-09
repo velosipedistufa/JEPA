@@ -1,0 +1,11 @@
+{
+  "summary": {
+    "examples": 22420,
+    "plans": 5521,
+    "val_examples": 2210,
+    "val_mse": 122.85804748535156,
+    "val_copy_now_mse": 184.7183837890625,
+    "ratio_to_copy": 0.665110017558665,
+    "val_shuffled_text_mse": 158.49432373046875
+  }
+}

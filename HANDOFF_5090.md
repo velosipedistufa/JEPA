@@ -228,3 +228,13 @@ Sasha's point: Qwen + graph keeps the words outside LeWM. The planner is only re
 | S1 | `latent_subgoal.py data`, then `train` | Val MSE ≤ 0.7 × the copy-z_now baseline on held-out plans | ≥ 0.9 × copy |
 | S2 | `latent_subgoal.py eval research/language/paraphrases.jsonl` | Head reaches ≥ 34/111 (60% of graph + gold) | ≤ 11/111 |
 | S3 | same with `--shuffle` (each sentence gets another row's text) | Words matter: head ≥ shuffled + 10 | head ≤ shuffled + 3 |
+
+### Subgoal head results (2026-10-09)
+
+| # | Result | Verdict |
+|---|---|---|
+| S1 | val MSE 122.9 vs copy-z_now 184.7 (ratio 0.67); shuffled text 158.5 | holds. Train MSE 39 vs val 123: it overfits |
+| S2 | head 18/111 (target 11/30, turn 3/45, push 4/36). References: graph + parser 51/111, graph + gold 57/111 | between claim (34) and kill (11) |
+| S3 | shuffled text 10/111 (target 2/30, turn 3/45, push 5/36). Head − shuffled = +8; paired 12 head-only vs 4 shuffled-only | between claim (+10) and kill (+3) |
+
+In plain words: words fed straight into the latent do steer the planner for "put it on the target" (11/30 vs 2/30 with the wrong words). They don't yet work for turns and pushes, which are relative to where the block starts. The parser + graph route stays about 3× better (51 vs 18).
