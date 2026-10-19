@@ -1,0 +1,138 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{default}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{amsmath}
+
+\title{Language over demo breadcrumbs}
+\subtitle{Frozen LeWorldModel on Push-T}
+\author{Alexander Bashirov \and Didar Seyidov \and Faith Ogunwoye}
+\institute{Skoltech}
+\date{19 October 2026}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{The problem}
+  LeWorldModel encodes a Push-T frame as 192 numbers and predicts the next latent from an action.
+  The public checkpoint stays frozen. It was not trained with language.
+
+  The planner reaches a goal image about 25 demonstration steps ahead: 45/50 on the 4090, 47/50 on the 5090 setup check.
+
+  It does not reach a long live goal (0/20 at budget 50), and it does not spin the T in place.
+  A rendered in-place goal scores 0.00 at budgets 50 and 100.
+
+  The course task is to let a sentence name a goal this planner can follow.
+\end{frame}
+
+\begin{frame}{What we tried first}
+  Angle is already in the latent.
+  A ridge readout has held-out circular error 12.08 degrees on $180^{\circ}$ frames and 14.58 degrees near angle 0.
+  The encoder is not finetuned.
+
+  A constant latent step per command does not fit. Residual ratio 0.991.
+
+  A planning cost written on the angle probe reaches $+90^{\circ}$ on 0.10 of 20 starts and $180^{\circ}$ on 0.00.
+  Three rendered stages at $+30^{\circ}$, $+60^{\circ}$, and $+90^{\circ}$ pass the in-place gate on 1 of 20.
+
+  The miss is the planner under this horizon, not a missing text encoder.
+\end{frame}
+
+\begin{frame}{The idea}
+  The planner is reliable for a short hop.
+  Expert demonstrations already contain those hops.
+
+  Build a graph on the train split: one node every 5 demonstration steps.
+  Forward edges follow a demo.
+  Jump edges link different demos that pass near the same state.
+
+  From the live state, take the cheapest route and hand the planner the frame about 25 steps along it.
+  Execute, read the graph again, and repeat.
+  Words choose the goal region. The graph chooses the frames.
+\end{frame}
+
+\begin{frame}{Demo breadcrumbs}
+  \begin{center}
+  \small
+  \begin{tabular}{llrr}
+    \toprule
+    Task & $n$ & Flat & Crumbs \\
+    \midrule
+    Dataset goal, 50 steps ahead & 50 & 24 & 34 \\
+    Dataset goal, 100 steps ahead & 50 & 10 & 29 \\
+    Live random goal & 20 & 0 & 3 \\
+    Seven word templates & 64 & 18 & 34 \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+
+  Budget 300. Flat is the same planner aimed at the final frame.
+
+  The dry graph has a route for 50/50 offset-50 tasks and for 13/20 live resets.
+  On the live set, median block error falls from 162 px to 58 px.
+\end{frame}
+
+\begin{frame}{Words as the goal}
+  Seven templates: on the target, turn 90 degrees either way, push left, right, up, or down.
+
+  Qwen2.5-1.5B-Instruct, local and greedy, maps a sentence to one command.
+  The test set is 120 sentences, written before the parser was scored.
+
+  \begin{center}
+  \small
+  \begin{tabular}{lrr}
+    \toprule
+    & Count & Rate \\
+    \midrule
+    Parser correct & 101/120 & 0.842 \\
+    Keyword baseline & 31/120 & 0.258 \\
+    Gold command executed & 57/111 & 0.514 \\
+    Parsed command executed & 51/111 & 0.459 \\
+    \bottomrule
+  \end{tabular}
+  \end{center}
+
+  Nine pushes are excluded because the gold destination leaves the arena.
+  Parsing costs 6 successes. Execution is the larger gap.
+\end{frame}
+
+\begin{frame}{Turns are not in-place}
+  On the 20 turn templates, crumbs reach 8/20 and flat reaches 4/20.
+  The success rule allows 40 px of drift.
+
+  The stricter gate, drift under 15 px, is 0/20 for crumbs and 1/20 for flat.
+  The block does turn, and it slides while it turns.
+
+  The demonstrations do contain in-place turns: 8,040 of 427,396 nodes, in 1,691 of 16,817 episodes.
+  Having the frame in the dataset is not the same as the short-horizon planner following it.
+\end{frame}
+
+\begin{frame}{A head instead of the graph}
+  A small network predicts the next latent from the start latent, the current latent, and a frozen sentence embedding.
+  At test time there is no graph and no parser.
+
+  Validation error is 0.67 times the error of copying the current latent.
+
+  On the same 111 sentences the head reaches 18/111.
+  With the sentence replaced by another row's text, it reaches 10/111.
+  The word effect is on ``put it on the target'' (11/30 against 2/30), not on turns or pushes.
+
+  Parser plus graph remains at 51/111.
+\end{frame}
+
+\begin{frame}{What the defense should take}
+  Short demonstration goals are followable. Long goals and in-place spins are not, with this horizon and budget.
+
+  Routes through other demonstrations raise success from 24/50 to 34/50 at offset 50, and from 10/50 to 29/50 at offset 100.
+
+  A sentence can name the route. The 1.5B parser is right on 101/120 lines, and the parsed run loses 6 successes against the gold command.
+
+  Predicting the latent from the sentence, without retrieving a demonstration frame, is the weaker interface.
+\end{frame}
+
+\end{document}
