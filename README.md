@@ -1,14 +1,26 @@
-[![Watch the one-minute robot demonstration](media/JEPA_robot_demo_poster.jpg)](media/JEPA_robot_demo.mp4)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/velosipedistufa/JEPA/master/media/JEPA_robot_demo_poster.jpg" alt="UR5e arm following a frozen LeWM Push-T trajectory, with the next demonstration subgoal and a live overhead task view" width="1000" />
+</p>
 
-**[Watch: From words to contact — 60 seconds](media/JEPA_robot_demo.mp4)** · Actual frozen-LeWM Push-T trajectories visualized with a UR5e arm.
+<h1 align="center">Language over Demo Breadcrumbs</h1>
 
-# Language over demo breadcrumbs
+<p align="center"><strong>Words name the goal. Demonstrations supply the steps.</strong></p>
 
-Alexander Bashirov · Didar Seyidov · Faith Ogunwoye — Skoltech
+<p align="center">
+  <a href="https://raw.githubusercontent.com/velosipedistufa/JEPA/master/media/JEPA_robot_demo.mp4"><strong>Watch the 60-second demo ↗</strong></a>
+  &nbsp;·&nbsp;
+  <a href="presentation/JEPA_defence_clean.pdf">Slides · PDF</a>
+  &nbsp;·&nbsp;
+  <a href="presentation/JEPA_defence_clean.pptx">PowerPoint</a>
+  &nbsp;·&nbsp;
+  <a href="media/README.md">Demo evidence</a>
+</p>
+
+<p align="center">Alexander Bashirov · Didar Seyidov · Faith Ogunwoye<br />Skoltech</p>
+
+<p align="center"><em>Teaser: actual frozen-LeWM Push-T motion visualized with a UR5e arm.</em></p>
 
 A frozen world model can plan useful short pushes. We give it nearby goals from expert demonstrations so it can tackle longer tasks, and let language choose the goal region.
-
-**[Presentation (PPTX, speaker notes removed)](presentation/JEPA_defence_clean.pptx)** · **[Presentation (PDF)](presentation/JEPA_defence_clean.pdf)** · [Video evidence and reproduction](media/README.md)
 
 ## What worked—and what remains
 
