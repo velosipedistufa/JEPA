@@ -1,0 +1,26 @@
+{
+  "far3_flat": {
+    "max_tip_error_m": 0.04821679569982114,
+    "mean_tip_error_m": 0.0008997312676824604
+  },
+  "far3_crumbs": {
+    "max_tip_error_m": 4.964272617671329e-05,
+    "mean_tip_error_m": 1.1298850115656397e-05
+  },
+  "far11_flat": {
+    "max_tip_error_m": 4.995624122907897e-05,
+    "mean_tip_error_m": 8.050994339948774e-06
+  },
+  "far11_crumbs": {
+    "max_tip_error_m": 4.917102569349237e-05,
+    "mean_tip_error_m": 1.2066999847855378e-05
+  },
+  "target": {
+    "max_tip_error_m": 4.974653315552361e-05,
+    "mean_tip_error_m": 9.55842937908385e-06
+  },
+  "turn_cw": {
+    "max_tip_error_m": 4.930698398537597e-05,
+    "mean_tip_error_m": 1.0629996505824695e-05
+  }
+}

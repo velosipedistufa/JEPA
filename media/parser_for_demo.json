@@ -1,0 +1,17 @@
+[
+  {
+    "text": "Fit the T into the green outline.",
+    "raw": "{\"action\": \"target\"}",
+    "command": {
+      "action": "target"
+    }
+  },
+  {
+    "text": "Turn it clockwise. Stay in place.",
+    "raw": "{\"action\": \"turn\", \"rotation\": \"clockwise\", \"deg\": 90}",
+    "command": {
+      "action": "turn",
+      "deg": 90.0
+    }
+  }
+]

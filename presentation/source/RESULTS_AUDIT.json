@@ -1,0 +1,52 @@
+{
+  "source_sha256": {
+    "research/artifacts/5090/check0_official_cem_n50.json": "e6352ca9662f3989cb1c175561d09d44b6d649d75728e3e1e111100ed0097347",
+    "research/artifacts/5090/dataset50_flat_b300_n50.json": "d83ec9dddc546685bb352b4fabf76e7c5f00afb59e5143a1ecd8c4a8e076621c",
+    "research/artifacts/5090/dataset50_crumbs_b300_n50.json": "531d7aa399a1c3d82be69968a20f8bb491d8543d36955bf0cc2b276c57513001",
+    "research/artifacts/5090/dataset100_flat_b300_n50.json": "abe9f286f8f494abf41a0c1bf42fb5a46a88fbd00c3b08ce52f4fa159ba0bd5c",
+    "research/artifacts/5090/dataset100_crumbs_b300_n50.json": "7018936cc240f6b23b455626ccf0075a94dd95d901584ed13cb87fd6d61bac6d",
+    "research/artifacts/5090/live_flat_b300_n20.json": "07ee37577aa758183870d07dd015f8c1028d5cffd1dc05d77874ef0be2faa425",
+    "research/artifacts/5090/live_crumbs_b300_n20.json": "a4b49fd5d2e604cc5198bb64cbceafeef2c39fb5487d17d21a5bfa7d360df2e7",
+    "research/artifacts/5090/words_flat_b300_n64.json": "c15655fc7660b78636148c01cae64cd2bce3ac17d3bc201c8c6b4483c36cc876",
+    "research/artifacts/5090/words_crumbs_b300_n64.json": "0d01c690fec6dbc43a291dd294da6d7becc3d74bd2960a10507c3bc6428205be",
+    "research/artifacts/5090/parse_paraphrases_n120.json": "afb56dbef278baed54cb1d334b49e1a45ddc7377f905e0dbe0a5be18c2c58e9f",
+    "research/artifacts/5090/language_paraphrases_b300_n111.json": "d05efd6a016ac9c88d75fac23b9c5e7fed540adfe5bba96a628596a6031e4049",
+    "research/artifacts/5090/latent_subgoal_paraphrases_b300_n111.json": "3103e5199203e103ad17162e300c227d962f66e40386456a7a433eb7a975fb98",
+    "research/artifacts/5090/latent_subgoal_paraphrases_shuffled_b300_n111.json": "b74542107fb39eb61d114e0ed4c92b71023f3c261ba4d3a7f2732acbdf593473",
+    "research/artifacts/5090/latent_subgoal_train.json": "d5e723e67d3da564f7b76d2e6b5879ff4b70c654e96c8456296c24ca4a8fb01a",
+    "research/artifacts/5090/dataset50_dry_n50.json": "e1c860cd65d69eb78198b12ffea9f4af65fbf7ab822f632d5ef3839c9435af81",
+    "research/artifacts/5090/live_dry_n20.json": "7050131851af3706d3c4dea5e5a02e4b6a819ba5a2052ace2288ccf0cf7fdf4f",
+    "research/artifacts/5090/words_dry_n64.json": "696e8bcacba3cb76df69ead1a56af963dedb791953148a1c1b997eacd367f82f"
+  },
+  "paired_outcomes": {
+    "d50": {
+      "both": 18,
+      "flat_only": 6,
+      "crumbs_only": 16,
+      "neither": 10
+    },
+    "d100": {
+      "both": 6,
+      "flat_only": 4,
+      "crumbs_only": 23,
+      "neither": 17
+    },
+    "live": {
+      "both": 0,
+      "flat_only": 0,
+      "crumbs_only": 3,
+      "neither": 17
+    },
+    "w": {
+      "both": 10,
+      "flat_only": 8,
+      "crumbs_only": 24,
+      "neither": 22
+    }
+  },
+  "slides": 17,
+  "main_slides": 11,
+  "backup_slides": 5,
+  "references_slide": 1,
+  "new_experiments": false
+}
