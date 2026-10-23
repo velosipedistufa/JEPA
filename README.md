@@ -9,9 +9,9 @@
 <p align="center">
   <a href="https://raw.githubusercontent.com/velosipedistufa/JEPA/master/media/JEPA_robot_demo.mp4"><strong>Watch the 60-second demo ↗</strong></a>
   &nbsp;·&nbsp;
-  <a href="presentation/JEPA_defence_clean.pdf">Slides · PDF</a>
+  <a href="presentation/JEPA_defence.pdf">Slides · PDF</a>
   &nbsp;·&nbsp;
-  <a href="presentation/JEPA_defence_clean.pptx">PowerPoint</a>
+  <a href="presentation/JEPA_defence.pptx">PowerPoint</a>
   &nbsp;·&nbsp;
   <a href="media/README.md">Demo evidence</a>
 </p>
@@ -34,7 +34,7 @@ A frozen world model can plan useful short pushes. We give it nearby goals from 
 
 The encoder and world model stay frozen. The demo graph uses simulator state for retrieval. Real-robot transfer remains future work: the video uses recorded Push-T physics and a UR5e kinematic visualization, rather than an evaluated robot-arm controller.
 
-## Course archive
+## Resources
 
 - [Experiment handoff and frozen claims](HANDOFF_5090.md)
 - [Saved evaluation artifacts](research/artifacts/5090/)
@@ -44,4 +44,4 @@ The encoder and world model stay frozen. The demo graph uses simulator state for
 - [Setup notes](SETUP.md)
 - [Presentation source and provenance](presentation/source/)
 
-`media/` retains the new visualization captures, renderer source, robot-model attribution, and reproduction instructions. The final course snapshot also preserves the local run logs and trained subgoal-head artifacts. Downloadable upstream datasets, foundation-model caches and virtual environments are not bundled.
+`media/` retains the new visualization captures, renderer source, robot-model attribution, and reproduction instructions. Experiment logs and trained subgoal-head artifacts accompany the saved results.

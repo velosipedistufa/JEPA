@@ -1,4 +1,4 @@
-"""60-second grading cut. Complete recorded runs, time-compressed; duplicate success removed."""
+"""60-second project demonstration using complete, time-resampled recorded runs."""
 import render as full
 from robot import *
 from PIL import ImageDraw
@@ -10,7 +10,7 @@ def frame(r,t):
  a,b,x,y=next(c for c in CUTS if c[0]<=t<c[1])
  old=x+(y-x)*(t-a)/(b-a)
  im=full.frame(r,old);d=ImageDraw.Draw(im)
- # Replace the original clock and progress line with the grading-cut timeline.
+ # Replace the original clock and progress line with the one-minute timeline.
  d.rectangle((1510,1025,1919,1074),fill='#080e17')
  full.text(d,(1575,1032),f'{int(t)//60:02d}:{int(t)%60:02d}  /  01:00',21,full.MUTE,mono=True)
  d.rectangle((0,1076,1919,1079),fill='#080e17');d.rectangle((0,1076,1920*t/DURATION,1079),fill=full.TEAL)

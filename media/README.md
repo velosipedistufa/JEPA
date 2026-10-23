@@ -4,7 +4,7 @@
 
 The robot footage is a MuJoCo rendering of the **actual block and pusher trajectories** from fresh frozen-LeWM/CEM Push-T runs on the RTX 5090. A UR5e follows those pusher positions through inverse kinematics. This is a visualization of embodiment, not an evaluation of a UR5e pushing policy, arm collision avoidance, joint dynamics, or sim-to-real transfer. The block motion comes from the original Push-T physics, not MuJoCo contact. Frame interpolation and playback speed are for presentation; these are not real-time planner timings. The green task pose and amber next-demo pose are rendered from the commands and captured subgoals.
 
-## What the one-minute film shows
+## Demo overview
 
 - 00:00 — A target request and successful actual rollout.
 - 00:06 — Why contact planning is needed.
@@ -16,13 +16,13 @@ The robot footage is a MuJoCo rendering of the **actual block and pusher traject
 - 00:49 — Fresh-run failure metrics and the saved strict-turn result.
 - 00:54 — Contribution and the remaining real-arm work.
 
-The duplicate successful demo and extended target replay were removed for the grading cut. Complete selected trajectories are time-compressed; no failed sections within them were edited out.
+Selected trajectories are shown in full at accelerated playback speed.
 
 ## Evidence and limits
 
-`rollouts.json` retains every state, executed action, subgoal selection, and result from six new visualization captures. The main paired example is held-out demo episode 5121, start 37, offset 100. Both variants use the same initial state, goal, seed 42, frozen model, original CEM, and budget 300. Flat misses; breadcrumbs succeeds in 73 steps. Episode 2041/start 28 is retained as an unused capture; its duplicate success demonstration was removed from the short cut. The target task uses reset seed 0. The turn uses reset seed 1 and misses: +90.79 degrees with 42.53 px drift. These fresh captures are illustrative examples selected using existing saved results; they do not replace or expand the frozen scored evaluations.
+`rollouts.json` retains every state, executed action, subgoal selection, and result from six new visualization captures. The main paired example is held-out demo episode 5121, start 37, offset 100. Both variants use the same initial state, goal, seed 42, frozen model, original CEM, and budget 300. Flat misses; breadcrumbs succeeds in 73 steps. Additional captures from episode 2041/start 28 are retained with the trajectory data. The target task uses reset seed 0. The turn uses reset seed 1 and misses: +90.79 degrees with 42.53 px drift. These fresh captures are illustrative examples selected using existing saved results; they do not replace or expand the frozen scored evaluations.
 
-`parser_for_demo.json` records the frozen Qwen parser's exact outputs for both displayed commands. `ik_checks.json` reports tool tracking errors; all selected trajectories used on screen track the pusher to within 0.1 mm at recorded states. `far3_flat` and `far3_crumbs` are unused captures and are not shown in the grading cut.
+`parser_for_demo.json` records the frozen Qwen parser's exact outputs for both displayed commands. `ik_checks.json` reports tool tracking errors; all selected trajectories used on screen track the pusher to within 0.1 mm at recorded states. `far3_flat` and `far3_crumbs` are unused captures and are not shown in the video.
 
 Saved aggregate sources:
 
